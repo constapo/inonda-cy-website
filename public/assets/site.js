@@ -1,4 +1,4 @@
-/* Inonda LTD (inonda.cy) — language switching, menu, header, reveal, hero video, cookie notice, forms */
+/* Inonda LTD (inonda.org) — language switching, menu, header, reveal, hero video, cookie notice, forms */
 (function () {
   "use strict";
   var STORE = "inondacy_lang";
