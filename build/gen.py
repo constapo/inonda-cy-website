@@ -375,14 +375,6 @@ def hero_media(up, alt):
     return '<div class="hero-media">' + "".join(parts) + "</div>"
 
 # ---------------------------------------------------------------- presentation video (homepage)
-VIDEO_TXT = {
- "el": ("Δείτε τι κάνουμε", "Η Inonda σε 3 λεπτά", "Συντήρηση, επισκευές και ανακαινίσεις: όλες οι υπηρεσίες μας σε ένα βίντεο, με ελληνικούς και αγγλικούς υπότιτλους."),
- "en": ("See what we do", "Inonda in 3 minutes", "Maintenance, repairs and home transformation: all our services in one short video, with Greek and English captions."),
- "ru": ("Посмотрите, что мы делаем", "Inonda за 3 минуты", "Обслуживание, ремонт и отделка: все наши услуги в одном видео с подписями на греческом и английском."),
- "uk": ("Подивіться, що ми робимо", "Inonda за 3 хвилини", "Обслуговування, ремонт і оздоблення: усі наші послуги в одному відео з підписами грецькою та англійською."),
- "he": ("ראו מה אנחנו עושים", "Inonda ב-3 דקות", "תחזוקה, תיקונים ושיפוצים: כל השירותים שלנו בסרטון אחד, עם כתוביות ביוונית ובאנגלית."),
- "ro": ("Vedeți ce facem", "Inonda în 3 minute", "Întreținere, reparații și renovări: toate serviciile noastre într-un singur video, cu subtitrări în greacă și engleză."),
-}
 VIDEO_LEN = "PT3M16S"
 
 def video_section(T):
@@ -394,8 +386,7 @@ def video_section(T):
 def video_ld(T):
     if not has_video("presentation.mp4"):
         return []
-    ey, h2, txt = VIDEO_TXT[T["lang"]]
-    return [{"@type": "VideoObject", "name": f"Inonda LTD — {h2}", "description": txt, "thumbnailUrl": BASE + "/assets/img/presentation-poster.jpg",
+    return [{"@type": "VideoObject", "name": "Inonda LTD", "description": T["ui"]["org_desc"], "thumbnailUrl": BASE + "/assets/img/presentation-poster.jpg",
              "uploadDate": "2026-10-04", "duration": VIDEO_LEN, "contentUrl": BASE + "/assets/video/presentation.mp4", "inLanguage": ["el", "en"]}]
 
 # ---------------------------------------------------------------- pages
