@@ -40,7 +40,7 @@ SERVICES = [
     ("emergency-repairs", "repairs", "siren", "emergency"),
     ("kitchen-renovation", "transformation", "kitchen", "kitchen"),
     ("bathroom-renovation", "transformation", "bath", "bathroom"),
-    ("home-renovation", "transformation", "home", "hero"),
+    ("home-renovation", "transformation", "home", "renovation"),
     ("painting-plastering-gypsum", "transformation", "roller", "painting"),
     ("flooring-tiling", "transformation", "tiles", "tiling"),
     ("doors-windows-carpentry", "transformation", "door", "carpentry"),
@@ -167,11 +167,11 @@ def ver(name):
     with open(os.path.join(PUB, "assets", name), "rb") as f:
         return hashlib.md5(f.read()).hexdigest()[:8]
 
-def head(T, page, title, desc, ld_extra=None, up="../"):
-    lang = T["lang"]
-    alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{url(l, page)}">' for l in LANGS)
-    alts += f'<link rel="alternate" hreflang="x-default" href="{url("en", page)}">'
-    loc_alt = "".join(f'<meta property="og:locale:alternate" content="{ALL[l]["locale"]}">' for l in LANGS if l != lang)
+def head(T, page, title, desc, ld_extra=None, up="../", langs=None):
+    lang = T["lang"]; langs = langs or LANGS
+    alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{url(l, page)}">' for l in langs)
+    alts += f'<link rel="alternate" hreflang="x-default" href="{url("en" if "en" in langs else langs[0], page)}">'
+    loc_alt = "".join(f'<meta property="og:locale:alternate" content="{ALL[l]["locale"]}">' for l in langs if l != lang)
     graph = [business_ld(T), {"@type": "WebSite", "@id": BASE + "/#website", "url": BASE + "/", "name": "Inonda LTD",
              "inLanguage": LANGS, "publisher": {"@id": BASE + "/#business"}}]
     if ld_extra:
@@ -216,12 +216,13 @@ def nav_items(T):
     return [("services", u["services"]), ("how-we-work", u["process"]), ("service-areas", u["areas"]),
             ("about", u["about"]), ("faq", u["faq"]), ("contact", u["contact"])]
 
-def header(T, page, up):
+def header(T, page, up, langs=None):
     u = T["ui"]
     home = up if up else "./"
     links = "".join(f'<a href="{up}{p}/"' + (' aria-current="page"' if p == page else "") + f'>{e(n)}</a>' for p, n in nav_items(T))
     opts = "".join(f'<option value="{l}">{ALL[l]["label"]} {ALL[l]["name"]}</option>' for l in LANGS)
-    mob_l = "".join(f'<a href="{up}../{l}/' + (page + "/" if page else "") + f'" hreflang="{l}" lang="{l}" data-golang="{l}">{ALL[l]["label"]}</a>' for l in LANGS)
+    langs = langs or LANGS
+    mob_l = "".join(f'<a href="{up}../{l}/' + (page + "/" if page and l in langs else "") + f'" hreflang="{l}" lang="{l}" data-golang="{l}">{ALL[l]["label"]}</a>' for l in LANGS)
     return f'''<body class="{'home' if page == '' else 'inner'}">
 <a class="skip" href="#main">{e(u["skip"])}</a>
 <header class="site"><div class="wrap bar">
@@ -251,7 +252,7 @@ def footer(T, up):
 <a href="tel:{PHONE1}">{PHONE1_TXT}</a><a href="tel:{PHONE2}">{PHONE2_TXT}</a>
 <a href="https://wa.me/{WA}" rel="noopener" target="_blank">WhatsApp</a><a href="mailto:{EMAIL}">{EMAIL}</a>
 <p class="fh" style="margin-top:22px">{e(u["company"])}</p>
-<a href="{up}how-we-work/">{e(u["nav"]["process"])}</a><a href="{up}service-areas/">{e(u["nav"]["areas"])}</a><a href="{up}about/">{e(u["nav"]["about"])}</a><a href="{up}faq/">{e(u["nav"]["faq"])}</a></div>
+{guides_link(T, up)}<a href="{up}how-we-work/">{e(u["nav"]["process"])}</a><a href="{up}service-areas/">{e(u["nav"]["areas"])}</a><a href="{up}about/">{e(u["nav"]["about"])}</a><a href="{up}faq/">{e(u["nav"]["faq"])}</a></div>
 </div>
 <div class="legal"><span>© {datetime.date.today().year} INONDA LTD. {e(u["rights"])}</span>
 <span><a href="{up}privacy-policy/">{e(u["privacy"])}</a> · <a href="{up}terms-of-service/">{e(u["terms"])}</a> · <a href="https://www.inonda.site/{T["lang"]}/" rel="noopener">{e(u["sister"])}</a></span></div>
@@ -264,6 +265,10 @@ def footer(T, up):
 </body>
 </html>
 '''
+
+def guides_link(T, up):
+    L = LOCAL.get(T["lang"])
+    return f'<a href="{up}guides/">{e(L["ui"]["guides"])}</a>' if L else ""
 
 # ---------------------------------------------------------------- blocks
 def team(T, compact=False):
@@ -369,10 +374,37 @@ def hero_media(up, alt):
         parts.append(BLUEPRINT)
     return '<div class="hero-media">' + "".join(parts) + "</div>"
 
+# ---------------------------------------------------------------- presentation video (homepage)
+VIDEO_TXT = {
+ "el": ("Δείτε τι κάνουμε", "Η Inonda σε 3 λεπτά", "Συντήρηση, επισκευές και ανακαινίσεις: όλες οι υπηρεσίες μας σε ένα βίντεο, με ελληνικούς και αγγλικούς υπότιτλους."),
+ "en": ("See what we do", "Inonda in 3 minutes", "Maintenance, repairs and home transformation: all our services in one short video, with Greek and English captions."),
+ "ru": ("Посмотрите, что мы делаем", "Inonda за 3 минуты", "Обслуживание, ремонт и отделка: все наши услуги в одном видео с подписями на греческом и английском."),
+ "uk": ("Подивіться, що ми робимо", "Inonda за 3 хвилини", "Обслуговування, ремонт і оздоблення: усі наші послуги в одному відео з підписами грецькою та англійською."),
+ "he": ("ראו מה אנחנו עושים", "Inonda ב-3 דקות", "תחזוקה, תיקונים ושיפוצים: כל השירותים שלנו בסרטון אחד, עם כתוביות ביוונית ובאנגלית."),
+ "ro": ("Vedeți ce facem", "Inonda în 3 minute", "Întreținere, reparații și renovări: toate serviciile noastre într-un singur video, cu subtitrări în greacă și engleză."),
+}
+VIDEO_LEN = "PT3M16S"
+
+def video_section(T):
+    if not has_video("presentation.mp4"):
+        return ""
+    ey, h2, txt = VIDEO_TXT[T["lang"]]
+    return (f'<section class="video-sec"><div class="wrap split"><div class="rv"><p class="eyebrow">{e(ey)}</p><h2>{e(h2)}</h2><p class="lead">{e(txt)}</p>'
+            f'<div class="btns"><a class="btn btn-primary" href="contact/#quote">{e(T["ui"]["cta_quote"])}</a></div></div>'
+            f'<div class="vframe rv"><video controls preload="none" playsinline poster="../assets/img/presentation-poster.jpg">'
+            f'<source src="../assets/video/presentation.mp4" type="video/mp4"></video></div></div></section>')
+
+def video_ld(T):
+    if not has_video("presentation.mp4"):
+        return []
+    ey, h2, txt = VIDEO_TXT[T["lang"]]
+    return [{"@type": "VideoObject", "name": f"Inonda LTD — {h2}", "description": txt, "thumbnailUrl": BASE + "/assets/img/presentation-poster.jpg",
+             "uploadDate": "2026-10-04", "duration": VIDEO_LEN, "contentUrl": BASE + "/assets/video/presentation.mp4", "inLanguage": ["el", "en"]}]
+
 # ---------------------------------------------------------------- pages
 def page_home(T):
     u = T["ui"]; H = T["home"]; up = ""
-    ld = [faq_ld(H["faqs"])]
+    ld = [faq_ld(H["faqs"])] + video_ld(T)
     out = [head(T, "", H["title"], H["desc"], ld, up="../" if False else ""), header(T, "", up)]
     chips = "".join(f'<span class="chip">{ic("check")}{e(c)}</span>' for c in H["chips"])
     out.append(f'''<section class="hero">{hero_media("", H["hero_alt"])}
@@ -381,6 +413,7 @@ def page_home(T):
 <div class="chips">{chips}</div></div><span class="scroll-cue" aria-hidden="true"></span></section>''')
     trades = "".join(f"<span>{e(t)}</span>" for t in H["ticker"])
     out.append(f'<div class="ticker" aria-hidden="true"><div class="track">{trades}{trades}</div></div>')
+    out.append(video_section(T))
     # pillars
     pills = []
     for i, g in enumerate(GROUPS):
@@ -411,6 +444,10 @@ def page_home(T):
     # areas teaser + faq
     out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(T["areas"]["eyebrow"])}</p><h2>{e(H["a_title"])}</h2><p>{e(H["a_text"])}</p><div class="btns"><a class="btn btn-line" href="service-areas/">{ic("pin")}{e(u["nav"]["areas"])}</a></div></div>'
                f'<div class="sec-head rv" style="margin-top:72px"><p class="eyebrow">FAQ</p><h2>{e(H["q_title"])}</h2></div>{faq_block(H["faqs"])}<div class="btns" style="margin-top:26px"><a class="btn btn-line" href="faq/">{e(u["faq_more"])}</a></div></div></section>')
+    L = LOCAL.get(T["lang"])
+    if L:
+        out.append(f'<section class="stone"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(L["ui"]["guides"])}</p><h2>{e(L["ui"]["guides_h1"])}</h2><p>{e(L["ui"]["guides_lead"])}</p></div>'
+                   f'<div class="grid g3">{guide_cards(T, list(L["guides"])[:3], "")}</div><div class="btns" style="margin-top:26px"><a class="btn btn-line" href="guides/">{e(L["ui"]["all_guides"])}</a></div></div></section>')
     out.append(cta_band(T))
     out.append(footer(T, ""))
     return "".join(out)
@@ -433,6 +470,11 @@ def page_service(T, slug):
     out.append(f'<section><div class="wrap aside-grid"><div><div class="sec-head rv" style="margin-bottom:30px"><p class="eyebrow">{e(G["name"])}</p><h2>{e(u["scope_title"])}</h2><p>{e(d["intro"])}</p></div><div class="scope">{scope}</div>{notes}</div>{aside}</div></section>')
     out.append(f'<section class="dark tight"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(u["process_eyebrow"])}</p><h2>{e(u["process_title"])}</h2></div>{steps(T)}</div></section>')
     out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">FAQ</p><h2>{e(u["svc_faq_title"])}</h2></div>{faq_block(d["faqs"])}</div></section>')
+    L = LOCAL.get(T["lang"])
+    if L:
+        rg = [g for g in L["guides"] if slug in L["guides"][g]["services"]][:3]
+        if rg:
+            out.append(f'<section class="tight"><div class="wrap"><div class="sec-head rv"><h2>{e(L["ui"]["related_guides"])}</h2></div><div class="grid g3">{guide_cards(T, rg, up)}</div></div></section>')
     rel = [x[0] for x in SERVICES if x[1] == s[1] and x[0] != slug][:3]
     if len(rel) < 3:
         rel += [x[0] for x in SERVICES if x[0] != slug and x[0] not in rel][: 3 - len(rel)]
@@ -475,6 +517,10 @@ def page_areas(T):
     out = [head(T, "service-areas", P["title"], P["desc"], [crumbs_ld(T, trail)]), header(T, "service-areas", up)]
     out.append(page_hero(T, [(u["nav"]["home"], up), (u["nav"]["areas"], "")], P["h1"], P["lead"]))
     cards = "".join(f'<div class="area rv"><span class="tag">{e(t)}</span><h3>{e(n)}</h3><p>{e(p)}</p></div>' for t, n, p in P["list"])
+    L = LOCAL.get(T["lang"])
+    if L:
+        links = "".join(f'<a class="btn btn-line" href="../areas/{a}/">{ic("pin")}{e(L["areas"][a]["name"])}</a>' for a in L["areas"])
+        out.append(f'<section class="tight stone"><div class="wrap"><div class="sec-head rv" style="margin-bottom:20px"><h2>{e(L["ui"]["areas_title"])}</h2></div><div class="btns">{links}</div></div></section>')
     out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(P["eyebrow"])}</p><h2>{e(P["l_title"])}</h2><p>{e(P["l_text"])}</p></div><div class="areas">{cards}</div>'
                f'<div class="note rv" style="margin-top:32px"><h3>{e(P["n_title"])}</h3><p style="margin:0">{e(P["n_text"])}</p></div></div></section>')
     out.append(cta_band(T)); out.append(footer(T, up))
@@ -533,6 +579,82 @@ def page_legal(T, key, slug):
     out.append(footer(T, up))
     return "".join(out)
 
+# ---------------------------------------------------------------- local pages (areas + guides), el/en/ru/ro only
+LOCAL = {}
+
+def local_langs(kind, slug):
+    return [l for l in LANGS if l in LOCAL and slug in LOCAL[l][kind]]
+
+def guide_cards(T, slugs, up):
+    L = LOCAL[T["lang"]]; out = ""
+    for g in slugs:
+        G = L["guides"][g]
+        media = f'<div class="gmedia">{picture(G["img"], G["h1"], up + "../", icon="doc")}</div>'
+        out += (f'<a class="card guide rv" href="{up}guides/{g}/">{media}<span class="tag">{e(L["ui"]["guide"])} · {G["mins"]} {e(L["ui"]["minutes"])}</span>'
+                f'<h3>{e(G["h1"])}</h3><p>{e(G["desc"])}</p><span class="more">{e(L["ui"]["read"])} {ic("arrow")}</span></a>')
+    return out
+
+def page_area(T, slug):
+    u = T["ui"]; L = LOCAL[T["lang"]]; A = L["areas"][slug]; langs = local_langs("areas", slug)
+    page = "areas/" + slug; up2 = "../../"
+    trail = [(u["nav"]["home"], url(T["lang"], "")), (u["nav"]["areas"], url(T["lang"], "service-areas")), (A["name"], url(T["lang"], page))]
+    ld = [crumbs_ld(T, trail), faq_ld(A["faqs"]),
+          {"@type": "Service", "name": A["h1"], "provider": {"@id": BASE + "/#business"}, "areaServed": {"@type": "Place", "name": A["name"]}, "url": url(T["lang"], page)}]
+    out = [head(T, page, A["title"], A["desc"], ld, up=up2, langs=langs), header(T, page, up2, langs)]
+    out.append(page_hero(T, [(u["nav"]["home"], up2), (u["nav"]["areas"], up2 + "service-areas/"), (A["name"], "")], A["h1"], A["lead"],
+                         media=picture(A["img"], A["name"], up2 + "../", eager=True, icon="pin")))
+    hoods = "".join(f"<li>{e(h)}</li>" for h in A["hoods"])
+    paras = "".join(f"<p>{e(x)}</p>" for x in A["intro"])
+    notes = "".join(f"<li>{e(x)}</li>" for x in A["notes"])
+    out.append(f'<section><div class="wrap aside-grid"><div class="rv"><p class="eyebrow">{e(A["name"])}</p><h2>{e(L["ui"]["why_local"])}</h2>{paras}'
+               f'<div class="note" style="margin-top:24px"><h3>{e(u["good_to_know"])}</h3><ul class="ticks">{notes}</ul></div></div>'
+               f'<aside class="sticky"><div class="cta-card"><h3>{e(L["ui"]["neighbourhoods"])}</h3><ul class="ticks hoods">{hoods}</ul>'
+               f'<a class="btn btn-primary" href="#quote">{e(u["cta_quote"])}</a></div></aside></div></section>')
+    cards = "".join(svc_card(T, s_[0], up2) for s_ in SERVICES)
+    out.append(f'<section class="stone"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(A["name"])}</p>'
+               f'<h2>{e(L["ui"]["local_services"].format(area=A["name"]))}</h2></div><div class="grid g3">{cards}</div></div></section>')
+    out.append(f'<section class="dark tight"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(u["process_eyebrow"])}</p><h2>{e(u["process_title"])}</h2></div>{steps(T)}</div></section>')
+    out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">FAQ</p><h2>{e(u["svc_faq_title"])}</h2></div>{faq_block(A["faqs"])}</div></section>')
+    links = "".join(f'<a class="btn btn-line" href="../{a}/">{ic("pin")}{e(L["areas"][a]["name"])}</a>' for a in L["areas"] if a != slug)
+    out.append(f'<section class="stone tight"><div class="wrap"><div class="sec-head rv"><h2>{e(L["ui"]["areas_title"])}</h2></div><div class="btns">{links}</div></div></section>')
+    out.append(cta_band(T)); out.append(footer(T, up2))
+    return "".join(out)
+
+def page_guides(T):
+    u = T["ui"]; L = LOCAL[T["lang"]]; up = "../"; langs = [l for l in LANGS if l in LOCAL]
+    trail = [(u["nav"]["home"], url(T["lang"], "")), (L["ui"]["guides"], url(T["lang"], "guides"))]
+    ld = [crumbs_ld(T, trail), {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": url(T["lang"], "guides/" + g), "name": L["guides"][g]["h1"]} for i, g in enumerate(L["guides"])]}]
+    out = [head(T, "guides", L["ui"]["guides_title"], L["ui"]["guides_desc"], ld, langs=langs), header(T, "guides", up, langs)]
+    out.append(page_hero(T, [(u["nav"]["home"], up), (L["ui"]["guides"], "")], L["ui"]["guides_h1"], L["ui"]["guides_lead"], buttons=False))
+    out.append(f'<section><div class="wrap"><div class="grid g3">{guide_cards(T, list(L["guides"]), up)}</div></div></section>')
+    out.append(cta_band(T)); out.append(footer(T, up))
+    return "".join(out)
+
+def page_guide(T, slug):
+    u = T["ui"]; L = LOCAL[T["lang"]]; G = L["guides"][slug]; up2 = "../../"; langs = local_langs("guides", slug)
+    page = "guides/" + slug
+    trail = [(u["nav"]["home"], url(T["lang"], "")), (L["ui"]["guides"], url(T["lang"], "guides")), (G["h1"], url(T["lang"], page))]
+    art = {"@type": "Article", "headline": G["h1"], "description": G["desc"], "inLanguage": T["lang"], "datePublished": G.get("date", TODAY), "dateModified": TODAY,
+           "author": {"@id": BASE + "/#business"}, "publisher": {"@id": BASE + "/#business"}, "image": f"{BASE}/assets/img/{G['img']}.webp", "mainEntityOfPage": url(T["lang"], page)}
+    out = [head(T, page, G["title"], G["desc"], [crumbs_ld(T, trail), art, faq_ld(G["faqs"])], up=up2, langs=langs), header(T, page, up2, langs)]
+    out.append(page_hero(T, [(u["nav"]["home"], up2), (L["ui"]["guides"], up2 + "guides/"), (G["h1"], "")], G["h1"], G["lead"],
+                         media=picture(G["img"], G["h1"], up2 + "../", eager=True, icon="doc"), buttons=False))
+    body = ""
+    for h, paras, bullets in G["sections"]:
+        body += f"<h2>{e(h)}</h2>" + "".join(f"<p>{e(x)}</p>" for x in paras)
+        if bullets:
+            body += '<ul class="ticks">' + "".join(f"<li>{e(b)}</li>" for b in bullets) + "</ul>"
+    svc = "".join(f'<a class="btn btn-line btn-sm" href="{up2}{x}/">{e(T["svc"][x]["name"])}</a>' for x in G["services"])
+    aside = (f'<aside class="sticky"><div class="cta-card"><h3>{e(u["aside_title"])}</h3><p>{e(u["aside_text"])}</p>'
+             f'<a class="btn btn-primary" href="#quote">{e(u["cta_quote"])}</a><a class="btn btn-ghost" href="https://wa.me/{WA}" target="_blank" rel="noopener">{WA_SVG}WhatsApp</a></div></aside>')
+    out.append(f'<section><div class="wrap aside-grid"><article class="prose rv"><p class="tag">{G["mins"]} {e(L["ui"]["minutes"])} · {e(u["updated"])} {TODAY}</p>{body}'
+               f'<h2>{e(L["ui"]["related_services"])}</h2><div class="btns">{svc}</div></article>{aside}</div></section>')
+    out.append(f'<section class="stone"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">FAQ</p><h2>{e(u["svc_faq_title"])}</h2></div>{faq_block(G["faqs"])}</div></section>')
+    more = [g for g in L["guides"] if g != slug][:3]
+    out.append(f'<section class="tight"><div class="wrap"><div class="sec-head rv"><h2>{e(L["ui"]["more_guides"])}</h2></div><div class="grid g3">{guide_cards(T, more, up2)}</div></div></section>')
+    out.append(cta_band(T)); out.append(footer(T, up2))
+    return "".join(out)
+
 # ---------------------------------------------------------------- root files
 def root_index():
     items = "".join(f'<li><a href="{l}/" hreflang="{l}" lang="{l}"><b>{ALL[l]["label"]}</b> {ALL[l]["name"]}<small>{e(ALL[l]["ui"]["tagline_short"])}</small></a></li>' for l in LANGS)
@@ -567,6 +689,15 @@ def sitemap():
         pr = "1.0" if p == "" else ("0.9" if p in SVC or p == "services" else ("0.3" if p in ("privacy-policy", "terms-of-service") else "0.7"))
         for l in LANGS:
             rows.append(f"<url><loc>{url(l, p)}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority>{alts}</url>")
+    extra = {}
+    for l in LOCAL:
+        for a in LOCAL[l]["areas"]: extra.setdefault("areas/" + a, []).append(l)
+        extra.setdefault("guides", []).append(l)
+        for g in LOCAL[l]["guides"]: extra.setdefault("guides/" + g, []).append(l)
+    for p, ls in extra.items():
+        alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{url(l, p)}"/>' for l in ls) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{url("en" if "en" in ls else ls[0], p)}"/>'
+        for l in ls:
+            rows.append(f"<url><loc>{url(l, p)}</loc><lastmod>{TODAY}</lastmod><priority>0.8</priority>{alts}</url>")
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(rows) + "\n</urlset>\n"
 
 def llms():
@@ -595,6 +726,11 @@ def main():
     for l in LANGS:
         if os.path.exists(os.path.join(ROOT, "build", "content", l + ".py")):
             ALL[l] = load(l)
+    for l in LANGS:
+        lp = os.path.join(ROOT, "build", "content", f"local_{l}.py")
+        if os.path.exists(lp):
+            spec = importlib.util.spec_from_file_location("local_" + l, lp)
+            m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); LOCAL[l] = m.L
     missing = [l for l in LANGS if l not in ALL]
     if missing:
         print("missing languages (using English):", missing)
@@ -617,6 +753,12 @@ def main():
         n += 8
         for s in SERVICES:
             write(f"{l}/{s[0]}/index.html", page_service(T, s[0])); n += 1
+        if l in LOCAL:
+            for a in LOCAL[l]["areas"]:
+                write(f"{l}/areas/{a}/index.html", page_area(T, a)); n += 1
+            write(f"{l}/guides/index.html", page_guides(T)); n += 1
+            for g in LOCAL[l]["guides"]:
+                write(f"{l}/guides/{g}/index.html", page_guide(T, g)); n += 1
     write("index.html", root_index())
     write("404.html", page_404())
     write("sitemap.xml", sitemap())

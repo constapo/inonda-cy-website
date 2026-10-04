@@ -310,3 +310,20 @@ html[dir="rtl"] .cookie{left:auto;right:18px}
 @media (max-width:960px){section{padding:72px 0}.pillars,.g3{grid-template-columns:1fr 1fr}.split,.page-hero.has-media .wrap,.cta-band .wrap,.aside-grid{grid-template-columns:1fr;gap:40px}.split.rev>:first-child{order:0}.fgrid4{grid-template-columns:1fr 1fr}.sticky{position:static}.pillar{min-height:440px}}
 @media (max-width:640px){.wrap{padding:0 16px}section{padding:60px 0}.pillars,.g2,.g3,.g4,.scope,.steps,.areas,.promises,.fgrid,.fgrid4{grid-template-columns:1fr}.promise{border-inline-end:0;border-bottom:1px solid var(--line)}.promise:last-child{border-bottom:0}.nav-right .btn-sm{display:none}select.langsel{padding:8px}.hero{padding-bottom:56px}.hero h1{font-size:clamp(34px,10vw,46px)}.btns .btn{width:100%}form.quote{padding:22px}.cookie{left:12px;right:12px;max-width:none}.float-btn{width:50px;height:50px}.brand small{display:none}.scroll-cue{display:none}}
 
+
+/* guides + area pages */
+.card.guide{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.card.guide .gmedia{aspect-ratio:16/9;background:var(--concrete);position:relative;overflow:hidden}
+.card.guide .gmedia img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card.guide:hover .gmedia img{transform:scale(1.05)}
+.card.guide .gmedia .art{position:absolute;inset:0;display:grid;place-items:center;background:var(--navy);color:var(--amber)}
+.card.guide .gmedia .art svg{width:56px;height:56px}
+.card.guide .tag,.card.guide h3,.card.guide p,.card.guide .more{margin-inline:26px}
+.card.guide .tag{margin-top:22px}.card.guide .more{margin-bottom:24px}
+.cta-card .hoods li{color:#E3E8F3;font-size:.95rem}
+.prose .ticks{margin:8px 0 18px}
+
+/* presentation video */
+.video-sec{background:linear-gradient(180deg,var(--stone),#fff)}
+.vframe{border-radius:var(--r-lg);overflow:hidden;box-shadow:0 30px 70px rgba(11,21,48,.25);background:var(--navy);aspect-ratio:16/9}
+.vframe video{width:100%;height:100%;display:block;object-fit:cover}

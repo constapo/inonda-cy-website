@@ -28,7 +28,7 @@ python3 build/check_content.py && python3 build/gen.py
 
 - Photos: save a JPG or PNG in `build/source-images/` named after its slot, then rebuild.
   Slots: `hero`, `kitchen`, `bathroom`, `plumbing`, `electrical`, `roof`, `painting`, `outdoor`, `ac`,
-  `tiling`, `carpentry`, `handyman`, `emergency`, `maintenance`. They are converted to WebP automatically,
+  `tiling`, `carpentry`, `handyman`, `emergency`, `maintenance`, `renovation`. They are converted to WebP automatically,
   and `hero` also becomes the social-share image. Until a photo exists the slot shows a drawn icon.
 - Hero video: put `hero.mp4` (1080p, 8–15 s, muted, ideally under 6 MB) and optionally `hero-sm.mp4`
   (720p, for phones) in `public/assets/video/`, then rebuild. Until then the hero shows the animated blueprint,
