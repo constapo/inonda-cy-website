@@ -28,9 +28,17 @@ log-remote-address = false
 
 [advanced]
 
+# Pages: browsers re-check after 5 minutes, so updates show up quickly.
+# (Clean addresses like /en/ do not end in .html, so match everything first...)
+[[advanced.headers]]
+source = "**"
+headers = { Cache-Control = "public, max-age=300, must-revalidate", Referrer-Policy = "strict-origin-when-cross-origin" }
+
 [[advanced.headers]]
 source = "**/*.{html,xml,txt}"
-headers = { Cache-Control = "public, max-age=3600", Referrer-Policy = "strict-origin-when-cross-origin" }
+headers = { Cache-Control = "public, max-age=300, must-revalidate", Referrer-Policy = "strict-origin-when-cross-origin" }
+
+# ...then let static files keep a long cache (their URLs carry a version or change name).
 
 [[advanced.headers]]
 source = "/assets/**"
