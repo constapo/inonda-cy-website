@@ -1,0 +1,41 @@
+# Inonda LTD — Wasmer Edge static web server settings
+# (Wasmer serves the "public" folder with wasmer/static-web-server using this file.)
+
+[general]
+host = "::"
+port = 8080
+root = "/public"
+log-level = "error"
+
+cache-control-headers = true
+compression = true
+compression-static = true
+
+# Error page
+page404 = "./404.html"
+
+# Security headers (HSTS, nosniff, frame options, ...). HTTPS itself is provided by Wasmer Edge.
+security-headers = true
+
+# Never show folder listings; "/en/about" -> "/en/about/"
+directory-listing = false
+redirect-trailing-slash = true
+index-files = "index.html"
+
+threads-multiplier = 1
+grace-period = 0
+log-remote-address = false
+
+[advanced]
+
+[[advanced.headers]]
+source = "**/*.{html,xml,txt}"
+headers = { Cache-Control = "public, max-age=3600", Referrer-Policy = "strict-origin-when-cross-origin" }
+
+[[advanced.headers]]
+source = "/assets/**"
+headers = { Cache-Control = "public, max-age=31536000" }
+
+[[advanced.headers]]
+source = "/assets/video/**"
+headers = { Cache-Control = "public, max-age=31536000" }
