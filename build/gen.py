@@ -26,6 +26,7 @@ EMAIL = "inonda2026@outlook.com"
 REG = "HE 490415"
 ADDR = {"street": "29 Charalampou Mouskou", "locality": "Strovolos, Nicosia", "postal": "2014"}
 TODAY = datetime.date.today().isoformat()
+GSC_TOKEN = "ADV3fYCmHBO56b8IEcEpqdFcPNTT8Wj4_rADsPaRq3M"  # Google Search Console (https://www.inonda.org/)
 
 GROUPS = ["maintenance", "repairs", "transformation"]
 # slug, group, icon, image key
@@ -181,6 +182,7 @@ def head(T, page, title, desc, ld_extra=None, up="../"):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google-site-verification" content="{GSC_TOKEN}">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
@@ -538,7 +540,7 @@ def root_index():
     T = ALL["en"]
     ld = json.dumps({"@context": "https://schema.org", "@graph": [business_ld(T), {"@type": "WebSite", "@id": BASE + "/#website", "url": BASE + "/", "name": "Inonda LTD", "inLanguage": LANGS}]}, ensure_ascii=False)
     return f'''<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google-site-verification" content="{GSC_TOKEN}">
 <title>Inonda LTD | Maintenance, Repairs &amp; Renovation Contractor in Cyprus</title>
 <meta name="description" content="Inonda LTD — contractor for maintenance, repairs and home renovation in Nicosia and across Cyprus. Εργολάβος συντήρησης, επισκευών και ανακαινίσεων.">
 <link rel="canonical" href="{BASE}/">{alts}
