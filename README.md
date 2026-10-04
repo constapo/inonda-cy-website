@@ -1,4 +1,4 @@
-# inonda.cy
+# inonda.org
 
 Website of Inonda LTD: maintenance, repairs and home transformation in Nicosia and across Cyprus.
 6 languages (el, en, ru, uk, he, ro). Replies and quotes are in Greek, English, Russian and Romanian;

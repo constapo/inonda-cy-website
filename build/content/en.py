@@ -46,7 +46,7 @@ T = {
     "contact": "Preferred contact", "contact_opts": ["WhatsApp", "Phone call", "Viber", "Email"],
     "msg": "What needs doing?", "msg_ph": "E.g. leaking shower tray, bathroom renovation 6 m², AC service for 3 units…",
     "consent": "I agree that Inonda LTD may contact me about this request, as described in the Privacy Policy.",
-    "submit": "Send request", "subject": "Quote request — inonda.cy", "sending": "Preparing…",
+    "submit": "Send request", "subject": "Quote request — inonda.org", "sending": "Preparing…",
     "sent": "Thank you! We'll get back to you shortly.", "error": "Something went wrong. Please call or WhatsApp us.",
     "wa_note": "Your request is ready in WhatsApp — press send there. If WhatsApp didn't open, email or call us below.",
     "alt": "Prefer email or phone?",
@@ -485,7 +485,7 @@ T = {
   "tips": ["Send 3–5 photos of the problem or the room, including a wide shot.", "For renovations, include rough measurements or a floor plan if you have one.", "Tell us your area and the best time for a visit."],
 },
 "privacy": {
-  "title": "Privacy Policy | Inonda LTD", "desc": "How Inonda LTD collects and uses personal data from inonda.cy, in line with the GDPR.", "h1": "Privacy Policy",
+  "title": "Privacy Policy | Inonda LTD", "desc": "How Inonda LTD collects and uses personal data from inonda.org, in line with the GDPR.", "h1": "Privacy Policy",
   "lead": "We collect only what we need to answer your request and carry out the work.",
   "sections": [
     ("Who we are", ["INONDA LTD (registration HE 490415), 29 Charalampou Mouskou, 2014 Strovolos, Nicosia, Cyprus, is the controller of personal data collected through this website. Contact: inonda2026@outlook.com."]),
@@ -497,10 +497,10 @@ T = {
   ],
 },
 "terms": {
-  "title": "Terms of Service | Inonda LTD", "desc": "Terms for using inonda.cy and for quotes and works carried out by Inonda LTD in Cyprus.", "h1": "Terms of Service",
+  "title": "Terms of Service | Inonda LTD", "desc": "Terms for using inonda.org and for quotes and works carried out by Inonda LTD in Cyprus.", "h1": "Terms of Service",
   "lead": "The basics of how quotes, works, payments and warranty work with us.",
   "sections": [
-    ("This website", ["Information on inonda.cy is general and may change. Photos may be illustrative. Nothing on the site is a binding offer until we confirm a written quote."]),
+    ("This website", ["Information on inonda.org is general and may change. Photos may be illustrative. Nothing on the site is a binding offer until we confirm a written quote."]),
     ("Quotes", ["Quotes are written, itemised and valid for the period stated. Work starts only after you accept the quote. Additional work found during the job is quoted and agreed in writing before it's done."]),
     ("Access & schedule", ["You provide access, water and electricity at the agreed times. Schedules may move for weather, material delivery or unforeseen conditions; we inform you promptly."]),
     ("Payments", ["Small jobs are paid on completion. Projects follow the deposit and stage-payment plan in the quote. Materials remain our property until paid for."]),

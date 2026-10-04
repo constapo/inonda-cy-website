@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the inonda.cy static site into ../public.
+"""Build the inonda.org static site into ../public.
 
 Usage:  python3 build/gen.py
 
@@ -14,7 +14,7 @@ import html, importlib.util, json, os, re, sys, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUB = os.path.join(ROOT, "public")
 SRC_IMG = os.path.join(ROOT, "build", "source-images")
-BASE = "https://www.inonda.cy"
+BASE = "https://www.inonda.org"
 LANGS = ["el", "en", "ru", "uk", "he", "ro"]
 PHONE1, PHONE1_TXT = "+35794091616", "+357 94 091 616"   # Irina, main line (WhatsApp, form, call button)
 PHONE2, PHONE2_TXT = "+35794091613", "+357 94 091 613"   # Constantin
@@ -556,7 +556,7 @@ def page_404():
     T = ALL["en"]
     links = " · ".join(f'<a href="/{l}/">{ALL[l]["name"]}</a>' for l in LANGS)
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found | Inonda LTD</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css?v={ver("site.css")}"></head>
-<body class="inner"><section class="page-hero" style="min-height:100vh"><div class="wrap"><p class="eyebrow">404</p><h1>This page doesn't exist.</h1><p class="lead">Η σελίδα δεν βρέθηκε · Страница не найдена · הדף לא נמצא</p><p>{links}</p><div class="btns"><a class="btn btn-primary" href="/">inonda.cy</a><a class="btn btn-ghost" href="tel:{PHONE1}">{PHONE1_TXT}</a></div></div></section></body></html>'''
+<body class="inner"><section class="page-hero" style="min-height:100vh"><div class="wrap"><p class="eyebrow">404</p><h1>This page doesn't exist.</h1><p class="lead">Η σελίδα δεν βρέθηκε · Страница не найдена · הדף לא נמצא</p><p>{links}</p><div class="btns"><a class="btn btn-primary" href="/">inonda.org</a><a class="btn btn-ghost" href="tel:{PHONE1}">{PHONE1_TXT}</a></div></div></section></body></html>'''
 
 def sitemap():
     rows = []
@@ -569,7 +569,7 @@ def sitemap():
 
 def llms():
     T = ALL["en"]
-    lines = ["# Inonda LTD (inonda.cy)", "", "> " + T["ui"]["org_desc"], "",
+    lines = ["# Inonda LTD (inonda.org)", "", "> " + T["ui"]["org_desc"], "",
              f"Registered company {REG}, {ADDR['street']}, {ADDR['postal']} {ADDR['locality']}, Cyprus. Email {EMAIL}.",
              f"Irina, Director: {PHONE1_TXT} (WhatsApp, Viber), Russian, Greek, English. Constantin, Secretary / Handyman / Foreman: {PHONE2_TXT}, Romanian, Greek, English.",
              "We answer and quote in Greek, English, Russian and Romanian (website also in Ukrainian and Hebrew). Property management services: https://www.inonda.site/", "", "## Services"]

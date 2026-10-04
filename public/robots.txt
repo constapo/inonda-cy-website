@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.inonda.cy/sitemap.xml
+Sitemap: https://www.inonda.org/sitemap.xml

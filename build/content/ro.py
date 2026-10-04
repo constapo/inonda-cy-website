@@ -46,7 +46,7 @@ T = {
     "contact": "Contact preferat", "contact_opts": ["WhatsApp", "Apel telefonic", "Viber", "Email"],
     "msg": "Ce trebuie făcut?", "msg_ph": "De ex.: cădiță de duș care curge, renovare baie 6 m², revizie la 3 aparate de aer condiționat…",
     "consent": "Sunt de acord ca Inonda LTD să mă contacteze în legătură cu această cerere, conform Politicii de confidențialitate.",
-    "submit": "Trimite cererea", "subject": "Cerere de ofertă — inonda.cy", "sending": "Se pregătește…",
+    "submit": "Trimite cererea", "subject": "Cerere de ofertă — inonda.org", "sending": "Se pregătește…",
     "sent": "Mulțumim! Vă contactăm în curând.", "error": "Ceva nu a mers. Sunați-ne sau scrieți-ne pe WhatsApp.",
     "wa_note": "Cererea este gata în WhatsApp — apăsați trimite acolo. Dacă WhatsApp nu s-a deschis, scrieți-ne un email sau sunați-ne.",
     "alt": "Preferați email sau telefon?",
@@ -485,7 +485,7 @@ T = {
   "tips": ["Trimiteți 3–5 fotografii ale problemei sau încăperii, inclusiv o imagine de ansamblu.", "Pentru renovări, adăugați dimensiuni aproximative sau un plan, dacă aveți.", "Spuneți-ne zona și ora potrivită pentru o vizită."],
 },
 "privacy": {
-  "title": "Politica de confidențialitate | Inonda LTD", "desc": "Cum colectează și folosește Inonda LTD datele personale de pe inonda.cy, conform GDPR.", "h1": "Politica de confidențialitate",
+  "title": "Politica de confidențialitate | Inonda LTD", "desc": "Cum colectează și folosește Inonda LTD datele personale de pe inonda.org, conform GDPR.", "h1": "Politica de confidențialitate",
   "lead": "Colectăm doar ce este necesar pentru a răspunde cererii dumneavoastră și a executa lucrarea.",
   "sections": [
     ("Cine suntem", ["INONDA LTD (număr de înregistrare HE 490415), 29 Charalampou Mouskou, 2014 Strovolos, Nicosia, Cipru, este operatorul datelor personale colectate prin acest site. Contact: inonda2026@outlook.com."]),
@@ -497,10 +497,10 @@ T = {
   ],
 },
 "terms": {
-  "title": "Termeni și condiții | Inonda LTD", "desc": "Termenii de utilizare a inonda.cy și condițiile pentru ofertele și lucrările Inonda LTD în Cipru.", "h1": "Termeni și condiții",
+  "title": "Termeni și condiții | Inonda LTD", "desc": "Termenii de utilizare a inonda.org și condițiile pentru ofertele și lucrările Inonda LTD în Cipru.", "h1": "Termeni și condiții",
   "lead": "Esențialul despre cum funcționează la noi ofertele, lucrările, plățile și garanția.",
   "sections": [
-    ("Site-ul", ["Informațiile de pe inonda.cy sunt generale și se pot schimba. Fotografiile pot fi ilustrative. Nimic de pe site nu reprezintă o ofertă fermă până nu confirmăm o ofertă scrisă."]),
+    ("Site-ul", ["Informațiile de pe inonda.org sunt generale și se pot schimba. Fotografiile pot fi ilustrative. Nimic de pe site nu reprezintă o ofertă fermă până nu confirmăm o ofertă scrisă."]),
     ("Oferte", ["Ofertele sunt scrise, detaliate și valabile pentru perioada precizată. Lucrarea începe doar după ce acceptați oferta. Lucrările suplimentare descoperite pe parcurs se ofertează și se agreează în scris înainte de execuție."]),
     ("Acces și program", ["Asigurați accesul, apa și curentul la orele stabilite. Programul se poate decala din cauza vremii, livrării materialelor sau a unor situații neprevăzute; vă anunțăm prompt."]),
     ("Plăți", ["Lucrările mici se plătesc la final. Proiectele urmează planul de avans și plăți pe etape din ofertă. Materialele rămân proprietatea noastră până la plată."]),
