@@ -388,11 +388,8 @@ VIDEO_LEN = "PT3M16S"
 def video_section(T):
     if not has_video("presentation.mp4"):
         return ""
-    ey, h2, txt = VIDEO_TXT[T["lang"]]
-    return (f'<section class="video-sec"><div class="wrap split"><div class="rv"><p class="eyebrow">{e(ey)}</p><h2>{e(h2)}</h2><p class="lead">{e(txt)}</p>'
-            f'<div class="btns"><a class="btn btn-primary" href="contact/#quote">{e(T["ui"]["cta_quote"])}</a></div></div>'
-            f'<div class="vframe rv"><video controls preload="none" playsinline poster="../assets/img/presentation-poster.jpg">'
-            f'<source src="../assets/video/presentation.mp4" type="video/mp4"></video></div></div></section>')
+    return ('<section class="video-sec"><div class="wrap"><div class="vframe rv"><video controls preload="none" playsinline poster="../assets/img/presentation-poster.jpg">'
+            '<source src="../assets/video/presentation.mp4" type="video/mp4"></video></div></div></section>')
 
 def video_ld(T):
     if not has_video("presentation.mp4"):
