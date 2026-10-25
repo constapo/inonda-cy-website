@@ -11,6 +11,9 @@ import re
 import sys
 from urllib.parse import urlencode
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from inonda_seo import enhance_seo
+
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
@@ -76,6 +79,7 @@ def section(site, lang='en', page=''):
 
 
 def enhance_html(text, site, page=''):
+    text = enhance_seo(text, site, page)
     if '<main' not in text or '<header' not in text or 'http-equiv="refresh"' in text:
         return text
     match = re.search(r'<html\b[^>]*\blang=[\"\']([a-z]+)', text, re.I)

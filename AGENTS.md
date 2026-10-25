@@ -19,3 +19,5 @@
 - The owner explicitly requested social-media brand icons in every footer. Preserve the self-hosted facebook-brand.svg, instagram-brand.svg, tiktok-brand.svg and youtube-brand.svg assets and their attribution comments. The company-only photography rule does not exclude these requested platform brand symbols.
 
 - Increment the shared VERSION before changing cached shared assets, and regenerate all affected pages. Keep versioned static-asset URLs. The Staticfile host currently ignores legacy settings/config.toml overrides; verify actual response headers before claiming a cache change.
+
+- Free-search promotion: see SEARCH-SETUP.md. Preserve tools/inonda_seo.py and tools/search-config.json across builds. Public search ownership tokens are deliberately public and are not login credentials. The owner confirmed a service-area business visiting customers; do not invent a walk-in office, opening hours, ratings or accreditation.
