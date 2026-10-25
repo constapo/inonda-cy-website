@@ -21,3 +21,5 @@
 - Increment the shared VERSION before changing cached shared assets, and regenerate all affected pages. Keep versioned static-asset URLs. The Staticfile host currently ignores legacy settings/config.toml overrides; verify actual response headers before claiming a cache change.
 
 - Free-search promotion: see SEARCH-SETUP.md. Preserve tools/inonda_seo.py and tools/search-config.json across builds. Public search ownership tokens are deliberately public and are not login credentials. The owner confirmed a service-area business visiting customers; do not invent a walk-in office, opening hours, ratings or accreditation.
+
+- Latest owner correction (25 October 2026): Facebook https://www.facebook.com/inondalimited and Instagram https://www.instagram.com/inondaltd replace all earlier profile URLs, including schema and listing drafts. Preserve the social brand icons.
