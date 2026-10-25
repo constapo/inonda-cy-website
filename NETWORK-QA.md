@@ -19,3 +19,5 @@ The shared six-language chatbot was tested through a complete cleaning request: 
 Footer follow links include the Facebook and Instagram profiles previously supplied by the owner and the published INONDA LTD YouTube channel @InondaLTD. TikTok uses the confirmed INONDA LTD profile @inonda26, identified by its company name and company-branded profile image. All four social links are present in every footer.
 
 Live referral validation prompted a small follow-up: regional property-management pages now preselect Management as well as their named area. An area-only referral keeps the default example disclosure visible.
+
+A returning-browser live mobile check found two legacy management-site issues: unversioned original CSS/JS and a fixed-width presentation video. The original asset links now carry the shared version and the controlled video is explicitly responsive. The Wasmer static runtime ignores the legacy settings/config.toml overrides and still returns max-age=86400 for HTML; refreshing a page retrieves its current deployment. The estimator host returns no-store.

@@ -65,4 +65,8 @@ Visitors review a request before opening a WhatsApp or email draft. Viber button
 
 Company footer social profiles are in tools/social-links.json. Facebook and Instagram use the owner’s previously supplied company URLs. TikTok uses the confirmed company profile @inonda26; YouTube uses @InondaLTD. Preserve these exact company channels. Keep the configuration synchronized across all three repositories. LinkedIn is excluded by the owner.
 
-Shared asset changes require incrementing VERSION in tools/inonda_network.py before regenerating. HTML now revalidates on refresh; versioned assets remain cached for performance.
+Shared asset changes require incrementing VERSION in tools/inonda_network.py before regenerating. Versioned assets remain cached for performance. See the hosting note below for the static HTML cache behaviour.
+
+### Current static hosting cache behaviour
+
+Wasmer’s Staticfile runtime currently ignores the legacy settings/config.toml overrides and sends Cache-Control: max-age=86400 for HTML. Refresh the page after a deployment; use a hard refresh if a browser retains an earlier page. Changing that TOML file alone does not change the live headers. The original management-site CSS/JS and shared assets now use versioned URLs to avoid stale layouts. The estimator uses its own no-store Python host.

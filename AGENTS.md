@@ -18,4 +18,4 @@
 
 - The owner explicitly requested social-media brand icons in every footer. Preserve the self-hosted facebook-brand.svg, instagram-brand.svg, tiktok-brand.svg and youtube-brand.svg assets and their attribution comments. The company-only photography rule does not exclude these requested platform brand symbols.
 
-- Increment the shared VERSION before changing cached shared assets, and regenerate all affected pages. Keep HTML revalidation and versioned static-asset caching so remote updates appear on refresh.
+- Increment the shared VERSION before changing cached shared assets, and regenerate all affected pages. Keep versioned static-asset URLs. The Staticfile host currently ignores legacy settings/config.toml overrides; verify actual response headers before claiming a cache change.

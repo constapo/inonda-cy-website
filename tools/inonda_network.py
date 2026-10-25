@@ -80,6 +80,16 @@ def enhance_html(text, site, page=''):
         return text
     match = re.search(r'<html\b[^>]*\blang=[\"\']([a-z]+)', text, re.I)
     lang = match.group(1) if match and match.group(1) in COPY else 'en'
+    if site == 'site':
+        # The original site's stylesheet/script URLs were unversioned, so an
+        # existing browser could retain older layout code across deployments.
+        text = re.sub(r'((?:href|src)=[\"\'][^\"\']*/assets/site\.(?:css|js))(?:\?[^\"\']*)?([\"\'])', lambda m: m.group(1) + '?v=' + VERSION + m.group(2), text)
+        def responsive_video(match):
+            attrs = match.group(1)
+            if 'style=' not in attrs:
+                attrs += ' style="display:block;width:100%;max-width:100%;height:auto"'
+            return attrs + '>'
+        text = re.sub(r'(<video\b(?=[^>]*\bcontrols)[^>]*)(>)', responsive_video, text)
     # Regeneration is idempotent; all original page text stays untouched.
     text = re.sub(r'<!-- INONDA NETWORK (?:ASSETS|BAR|SECTION|SOCIAL) START -->.*?<!-- INONDA NETWORK (?:ASSETS|BAR|SECTION|SOCIAL) END -->', '', text, flags=re.S)
     text = re.sub(r' data-inonda-site="(?:site|org|homes)"', '', text)
