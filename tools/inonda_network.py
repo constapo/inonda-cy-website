@@ -14,7 +14,7 @@ from urllib.parse import urlencode
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261025-1'
+VERSION = '20261025-2'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
 
 
@@ -29,6 +29,8 @@ def journey(page):
         'home-renovation': 'renovation', 'painting-plastering-gypsum': 'renovation',
         'flooring-tiling': 'renovation', 'preparing-a-rental-property-in-cyprus': 'cleaning,handyman',
     }.get(slug, '')
+    if slug.startswith('property-management-'):
+        services = 'management'
     location = next((name for key, name in [('nicosia','Nicosia'),('strovolos','Nicosia'),('limassol','Limassol'),('larnaca','Larnaca'),('ayia-napa','Famagusta district'),('protaras','Famagusta district')] if key in slug), '')
     return services, location
 
@@ -91,7 +93,7 @@ def enhance_html(text, site, page=''):
         text = text.replace('<section class="contact-section"', block + '<section class="contact-section"', 1)
     else:
         text = text.replace('</main>', block + '</main>', 1)
-    social_links = ''.join(f'<a href="{html.escape(SOCIAL[key], quote=True)}" target="_blank" rel="noopener noreferrer">{label} · INONDA LTD ↗</a>' for key, label in [('facebook', 'Facebook'), ('instagram', 'Instagram'), ('tiktok', 'TikTok'), ('youtube', 'YouTube')] if SOCIAL.get(key))
+    social_links = ''.join(f'<a href="{html.escape(SOCIAL[key], quote=True)}" target="_blank" rel="noopener noreferrer"><img class="inonda-social-icon" src="{assets}{key}-brand.svg?v={VERSION}" alt="" width="28" height="28">{label} · INONDA LTD ↗</a>' for key, label in [('facebook', 'Facebook'), ('instagram', 'Instagram'), ('tiktok', 'TikTok'), ('youtube', 'YouTube')] if SOCIAL.get(key))
     social = f'<!-- INONDA NETWORK SOCIAL START --><nav class="inonda-social-footer" aria-label="{html.escape(COPY[lang]["follow"])}" data-no-i18n><strong>{html.escape(COPY[lang]["follow"])}</strong>{social_links}</nav><!-- INONDA NETWORK SOCIAL END -->'
     footer_end = text.rfind('</footer>')
     if footer_end >= 0:
@@ -150,12 +152,13 @@ body[data-inonda-site=site] .hero .wrap{padding-top:calc(var(--nav-h,76px) + 114
 .inonda-network-contact-buttons a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid #9bbdd0;color:#023e8a;font:600 13px/1.4 Arial,sans-serif;text-decoration:none}
 .inonda-network-contact-buttons a:hover{background:#023e8a;color:#fff}
 .inonda-network-email{display:inline-block;margin-top:24px;color:#023e8a;text-decoration:underline;font:14px/1.6 Arial,sans-serif;overflow-wrap:anywhere}
-.inonda-social-footer{display:flex;align-items:center;flex-wrap:wrap;gap:16px 30px;padding:26px max(5.5%,22px);margin:0;border-top:1px solid #85a6ca60;color:inherit;font:13px/1.6 Arial,sans-serif}
+.inonda-social-footer{display:flex;align-items:center;flex-wrap:wrap;gap:16px 30px;padding:26px max(5.5%,22px) 100px;margin:0;border-top:1px solid #85a6ca60;color:inherit;font:13px/1.6 Arial,sans-serif}
 .inonda-social-footer strong{font-weight:600;margin-inline-end:auto}
-.inonda-social-footer a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;border-bottom:1px solid #85a6ca}
+.inonda-social-footer a{display:inline-flex;align-items:center;gap:9px;min-height:44px;color:inherit;text-decoration:none;border-bottom:1px solid #85a6ca}
+.inonda-social-icon{width:28px!important;height:28px!important;object-fit:contain;display:block;flex:none;background:#fff;border-radius:5px;padding:4px;filter:none!important;margin:0!important}
 .inonda-social-footer a:hover{text-decoration:underline}
 .inonda-social-footer a:focus-visible{outline:3px solid #43b9ef;outline-offset:3px}
-@media(max-width:700px){.inonda-social-footer{padding:22px;gap:10px 22px}.inonda-social-footer strong{width:100%;margin:0}}
+@media(max-width:700px){.inonda-social-footer{padding:22px 22px 110px;gap:10px 22px}.inonda-social-footer strong{width:100%;margin:0}}
 @media(max-width:700px){.inonda-network-people{grid-template-columns:1fr;gap:26px}}
 @media(max-width:1000px){.inonda-network-role{display:none}.inonda-network-bar a{padding:0 22px}.inonda-network-card{padding:20px}.inonda-network-section h3{font-size:22px}}
 @media(max-width:700px){.inonda-network-brand{display:none}.inonda-network-bar{padding:0;justify-content:stretch}.inonda-network-bar a{justify-content:center;flex:1;padding:0 7px;font-size:12px}.inonda-network-cards{grid-template-columns:1fr}.inonda-network-section{padding:44px 22px}.inonda-network-card-top{margin-bottom:20px}.inonda-network-section h2{font-size:33px}.inonda-network-heading>p:last-child{font-size:14px}.inonda-network-card{padding:22px}.inonda-network-section h3{font-size:25px}}

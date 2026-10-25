@@ -63,4 +63,6 @@ The same automated INONDA service and request guide is installed on all three we
 
 Visitors review a request before opening a WhatsApp or email draft. Viber buttons open the selected person’s chat; the visitor can copy their visible request. No message is sent automatically. Original communication icons are self-hosted; see BRAND-ASSETS.md.
 
-Company footer social profiles are in tools/social-links.json. Facebook and Instagram use the owner’s previously supplied company URLs. TikTok is supported by the generator and appears automatically when its exact company URL is supplied in that file; do not guess its handle. Keep the configuration synchronized across all three repositories. LinkedIn is excluded by the owner.
+Company footer social profiles are in tools/social-links.json. Facebook and Instagram use the owner’s previously supplied company URLs. TikTok uses the confirmed company profile @inonda26; YouTube uses @InondaLTD. Preserve these exact company channels. Keep the configuration synchronized across all three repositories. LinkedIn is excluded by the owner.
+
+Shared asset changes require incrementing VERSION in tools/inonda_network.py before regenerating. HTML now revalidates on refresh; versioned assets remain cached for performance.

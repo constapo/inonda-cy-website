@@ -14,4 +14,8 @@
 - The owner explicitly requested original WhatsApp and Viber brand icons. Local original files are whatsapp-official.svg and viber-official.svg; provenance is in BRAND-ASSETS.md. This is an explicit exception to the company-only media rule for communication-channel icons. Do not replace brand symbols with letters or recolour them.
 - The same six-language guided chatbot runs on all three websites from tools/inonda_chat.js, tools/inonda_chat.css, tools/chat-copy.json and tools/chat-ui.json. It is an automated local service guide, not a generative AI or a human. Requests open WhatsApp/email drafts only on a visitor’s explicit click; no automatic sending, booking or quote confirmation.
 
-- Footer social profiles use tools/social-links.json. Preserve the owner-supplied Facebook and Instagram company URLs. TikTok is pending an exact owner-supplied company URL and must not point to a guessed or generic profile. LinkedIn remains excluded.
+- Footer social profiles use tools/social-links.json. Preserve the owner-supplied Facebook and Instagram company URLs. TikTok is the confirmed company profile https://www.tiktok.com/@inonda26; YouTube is https://www.youtube.com/@InondaLTD. Do not substitute guessed or generic profiles. LinkedIn remains excluded.
+
+- The owner explicitly requested social-media brand icons in every footer. Preserve the self-hosted facebook-brand.svg, instagram-brand.svg, tiktok-brand.svg and youtube-brand.svg assets and their attribution comments. The company-only photography rule does not exclude these requested platform brand symbols.
+
+- Increment the shared VERSION before changing cached shared assets, and regenerate all affected pages. Keep HTML revalidation and versioned static-asset caching so remote updates appear on refresh.
