@@ -37,3 +37,30 @@ python3 build/check_content.py && python3 build/gen.py
 ## Publishing
 
 Push to `main`; Wasmer deploys automatically.
+
+
+## Connected INONDA websites
+
+All public language pages now include shared navigation and a three-website chooser.
+
+- https://www.inonda.site: property management and owner support.
+- https://www.inonda.org: maintenance, repairs and renovation scope.
+- https://www.inonda.homes: configurable planning estimates, including 19% VAT.
+
+The visitor’s language is preserved. Relevant service pages link to selected calculator services; regional pages can preselect their named area. No personal details, visitor notes or saved estimates are synchronized between domains. Specialist work still requires an assessment.
+
+To update shared wording, edit tools/network-copy.json in all three repositories, keep tools/inonda_network.py synchronized, then run:
+
+```bash
+python tools/inonda_network.py org
+```
+
+Commit the tools, versioned CSS/JS and changed HTML pages together. The inonda.org build generator also applies the component automatically. Keep each site’s canonical URLs and existing content.
+
+## Shared chatbot and contact icons
+
+The same automated INONDA service and request guide is installed on all three websites. Source: tools/inonda_chat.js, tools/inonda_chat.css, tools/chat-copy.json and tools/chat-ui.json. Keep these copies synchronized alongside the network generator. It supports six languages, service combinations, referrals and a guided request draft. On inonda.homes it can explain the actual current budget. Visitor messages stay in page memory; no AI service or shared conversation database is configured.
+
+Visitors review a request before opening a WhatsApp or email draft. Viber buttons open the selected person’s chat; the visitor can copy their visible request. No message is sent automatically. Original communication icons are self-hosted; see BRAND-ASSETS.md.
+
+Company footer social profiles are in tools/social-links.json. Facebook and Instagram use the owner’s previously supplied company URLs. TikTok is supported by the generator and appears automatically when its exact company URL is supplied in that file; do not guess its handle. Keep the configuration synchronized across all three repositories. LinkedIn is excluded by the owner.

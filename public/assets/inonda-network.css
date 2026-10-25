@@ -1,0 +1,49 @@
+/* INONDA LTD: shared navigation and journeys, scoped to avoid site theme collisions. */
+body[data-inonda-site]{padding-top:44px}
+.inonda-network-bar{box-sizing:border-box;position:fixed;inset:0 0 auto;z-index:120;height:44px;display:flex;align-items:stretch;justify-content:center;gap:0;padding:0 3%;background:#023e8a;color:#fff;font:12px/1.2 Arial,sans-serif;border-bottom:1px solid #6196c3;direction:inherit}
+.inonda-network-brand{display:flex;align-items:center;margin-inline-end:auto;font-size:11px;letter-spacing:.08em;white-space:nowrap}
+.inonda-network-bar a{box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:0 20px;color:#fff;text-decoration:none;min-width:0;border-inline-start:1px solid #4777ac}
+.inonda-network-domain{font-weight:700;white-space:nowrap;unicode-bidi:isolate}
+.inonda-network-role{font-size:11px;font-weight:400}
+.inonda-network-bar a[aria-current]{background:#0077b6;box-shadow:inset 0 -3px #a6ddf6}
+.inonda-network-bar a:hover{background:#005e9f}
+.inonda-network-bar a:focus-visible,.inonda-network-section a:focus-visible{outline:3px solid #55c8ff;outline-offset:-4px}
+body[data-inonda-site=site]>header{top:56px}
+body[data-inonda-site=org]>header.site{top:44px}
+body[data-inonda-site=site] .mobile-panel{top:calc(var(--nav-h,76px) + 68px)}
+body[data-inonda-site=org] .mobile-panel{top:calc(var(--nav-h,76px) + 44px)}
+body[data-inonda-site=org] .hero{padding-top:calc(var(--nav-h,76px) + 104px)}
+body[data-inonda-site=site] .hero .wrap{padding-top:calc(var(--nav-h,76px) + 114px)}
+.inonda-network-section{box-sizing:border-box;position:relative;clear:both;padding:70px max(5.5%,22px);background:#f3f8fb;color:#102f49;font-family:Arial,sans-serif;text-align:start;border-top:1px solid #d5e3eb;border-bottom:1px solid #d5e3eb;scroll-margin-top:160px}
+.inonda-network-section *{box-sizing:border-box}
+.inonda-network-heading{max-width:950px;margin:0 0 32px}
+.inonda-network-section .inonda-network-eyebrow{color:#0077b6;font-size:11px;letter-spacing:.07em;line-height:1.6;font-weight:700;margin:0 0 18px}
+.inonda-network-section h2{font:400 clamp(30px,3.4vw,52px)/1.12 Arial,sans-serif;letter-spacing:-.03em;margin:0 0 22px;color:#023e8a;max-width:none}
+.inonda-network-heading>p:last-child{font-size:16px;line-height:1.7;margin:0;max-width:860px;color:#425e70}
+.inonda-network-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1500px}
+.inonda-network-card{display:flex;flex-direction:column;min-width:0;border:1px solid #ccdde7;padding:24px;background:#fff;border-radius:0}
+.inonda-network-card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:30px;font-size:12px;color:#0077b6;min-height:25px}
+.inonda-network-current{background:#e4f3fb;color:#023e8a;padding:5px 8px;font-size:10px;line-height:1.5}
+.inonda-network-section h3{font:400 25px/1.25 Arial,sans-serif;margin:0 0 16px;letter-spacing:-.02em;color:#102f49}
+.inonda-network-card>p{font:14px/1.7 Arial,sans-serif;color:#526d7d;margin:0 0 24px;max-width:none}
+.inonda-network-card>a{display:block;margin-top:auto;padding:15px 0 0;border-top:1px solid #d5e3eb;font:600 13px/1.6 Arial,sans-serif;color:#023e8a;text-decoration:none;overflow-wrap:anywhere}
+.inonda-network-card>a:hover{color:#0077b6;text-decoration:underline}
+.inonda-network-section>.inonda-network-note{font:12px/1.7 Arial,sans-serif;color:#526d7d;margin:24px 0 0;max-width:1000px}
+.inonda-network-contact{border-top:1px solid #c8dbe6;margin-top:34px;padding-top:30px}
+.inonda-network-people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:950px}
+.inonda-network-person h4{font:600 16px/1.4 Arial,sans-serif;margin:0 0 5px;color:#023e8a}
+.inonda-network-person>.inonda-network-phone{display:inline-block;font:400 23px/1.6 Arial,sans-serif;color:#102f49;text-decoration:none;unicode-bidi:isolate}
+.inonda-network-contact-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.inonda-network-contact-buttons a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid #9bbdd0;color:#023e8a;font:600 13px/1.4 Arial,sans-serif;text-decoration:none}
+.inonda-network-contact-buttons a:hover{background:#023e8a;color:#fff}
+.inonda-network-email{display:inline-block;margin-top:24px;color:#023e8a;text-decoration:underline;font:14px/1.6 Arial,sans-serif;overflow-wrap:anywhere}
+.inonda-social-footer{display:flex;align-items:center;flex-wrap:wrap;gap:16px 30px;padding:26px max(5.5%,22px);margin:0;border-top:1px solid #85a6ca60;color:inherit;font:13px/1.6 Arial,sans-serif}
+.inonda-social-footer strong{font-weight:600;margin-inline-end:auto}
+.inonda-social-footer a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;border-bottom:1px solid #85a6ca}
+.inonda-social-footer a:hover{text-decoration:underline}
+.inonda-social-footer a:focus-visible{outline:3px solid #43b9ef;outline-offset:3px}
+@media(max-width:700px){.inonda-social-footer{padding:22px;gap:10px 22px}.inonda-social-footer strong{width:100%;margin:0}}
+@media(max-width:700px){.inonda-network-people{grid-template-columns:1fr;gap:26px}}
+@media(max-width:1000px){.inonda-network-role{display:none}.inonda-network-bar a{padding:0 22px}.inonda-network-card{padding:20px}.inonda-network-section h3{font-size:22px}}
+@media(max-width:700px){.inonda-network-brand{display:none}.inonda-network-bar{padding:0;justify-content:stretch}.inonda-network-bar a{justify-content:center;flex:1;padding:0 7px;font-size:12px}.inonda-network-cards{grid-template-columns:1fr}.inonda-network-section{padding:44px 22px}.inonda-network-card-top{margin-bottom:20px}.inonda-network-section h2{font-size:33px}.inonda-network-heading>p:last-child{font-size:14px}.inonda-network-card{padding:22px}.inonda-network-section h3{font-size:25px}}
+@media print{.inonda-network-bar,.inonda-network-section{display:none!important}body[data-inonda-site]{padding-top:0}}

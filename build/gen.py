@@ -12,6 +12,8 @@ Video:   put hero.mp4 (and optionally hero-sm.mp4 for phones) in public/assets/v
 import html, importlib.util, json, os, re, sys, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
+from inonda_network import enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
 PUB = os.path.join(ROOT, "public")
 SRC_IMG = os.path.join(ROOT, "build", "source-images")
 BASE = "https://www.inonda.org"
@@ -701,6 +703,8 @@ def llms():
 
 # ---------------------------------------------------------------- build
 def write(rel, text):
+    if rel.endswith('.html'):
+        text = enhance_html(text, 'org', rel)
     p = os.path.join(PUB, rel)
     os.makedirs(os.path.dirname(p), exist_ok=True)
     with open(p, "w", encoding="utf-8") as f:
@@ -709,6 +713,10 @@ def write(rel, text):
 ALL = {}
 
 def main():
+    write('assets/inonda-network.css', NETWORK_CSS)
+    write('assets/inonda-network.js', network_javascript())
+    write('assets/inonda-chat.css', open(os.path.join(ROOT, 'tools', 'inonda_chat.css'), encoding='utf-8').read())
+    write('assets/inonda-chat.js', chat_javascript())
     prepare_images()
     only = [a for a in sys.argv[1:] if a in LANGS]
     for l in LANGS:
@@ -756,3 +764,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

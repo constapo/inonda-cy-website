@@ -1,0 +1,34 @@
+.inonda-chat-toggle{box-sizing:border-box;position:fixed;right:20px;bottom:155px;z-index:130;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;min-height:52px;border:1px solid #8cabc3;background:#fff;color:#023e8a;box-shadow:0 4px 20px #023e8a20;font:600 13px/1.35 Arial,sans-serif;cursor:pointer;max-width:240px}
+.inonda-chat-toggle img{object-fit:contain;flex:none;width:36px;height:29px}
+body[data-inonda-site=homes] .inonda-chat-toggle{bottom:25px;right:25px}
+.inonda-chat-panel{box-sizing:border-box;position:fixed;inset:auto 18px 20px auto;margin:0;padding:0;border:1px solid #9db8cb;box-shadow:0 10px 65px #023e8a40;z-index:250;width:410px;max-width:calc(100% - 36px);height:min(650px,calc(100svh - 80px));max-height:calc(100svh - 80px);color:#102f49;background:#fff;font:14px/1.55 Arial,sans-serif;border-radius:0;text-align:start}
+.inonda-chat-panel[open]{display:flex;flex-direction:column}
+.inonda-chat-panel:not([open]){display:none}
+.inonda-chat-panel *{box-sizing:border-box;font-family:Arial,sans-serif}
+.inonda-chat-head{display:flex;gap:12px;align-items:start;justify-content:space-between;padding:20px;background:#023e8a;color:#fff;flex:none}
+.inonda-chat-head h2{font:400 25px/1.2 Arial,sans-serif;letter-spacing:-.025em;margin:0 0 6px;color:#fff}
+.inonda-chat-head p{font:12px/1.5 Arial,sans-serif;margin:0;color:#dfedf8}
+.inonda-chat-close{color:#fff;background:transparent;border:1px solid #98b5d3;font:12px/1.4 Arial,sans-serif;padding:8px;min-height:36px;cursor:pointer}
+.inonda-chat-log{padding:18px;overflow:auto;flex:1;min-height:130px;overscroll-behavior:contain}
+.inonda-chat-message{background:#eef6fb;border:1px solid #d6e6ef;padding:14px;margin:0 0 13px;overflow-wrap:anywhere}
+.inonda-chat-message small{display:block;font-size:10px;line-height:1.5;font-weight:700;color:#0077b6;margin-bottom:6px}
+.inonda-chat-message p{font:13px/1.65 Arial,sans-serif;margin:0;color:#183e57;max-width:none}
+.inonda-chat-visitor{background:#fff;border-color:#cad6e0;margin-inline-start:30px}
+.inonda-chat-visitor p{white-space:pre-wrap}
+.inonda-chat-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+.inonda-chat-actions a,.inonda-chat-actions button,.inonda-chat-quick button{display:inline-flex;align-items:center;justify-content:start;gap:8px;text-align:start;font:600 12px/1.5 Arial,sans-serif;min-height:42px;padding:9px 11px;border:1px solid #9bbdd0;background:#fff;color:#023e8a;text-decoration:none;cursor:pointer;overflow-wrap:anywhere;max-width:100%}
+.inonda-chat-actions a:hover,.inonda-chat-actions button:hover,.inonda-chat-quick button:hover{background:#e1f2fc}
+.inonda-chat-quick{display:flex;gap:7px;flex-wrap:wrap;max-height:145px;overflow:auto;padding:12px 16px;border-top:1px solid #d9e5ed;flex:none}
+.inonda-chat-quick button{font-size:11px;min-height:36px;padding:7px 9px}
+.inonda-chat-form{display:flex;gap:8px;padding:0 16px;flex:none;margin:0;background:white;border:0;box-shadow:none}
+.inonda-chat-form input{font:14px/1.4 Arial,sans-serif;border:1px solid #a4bdcc;color:#102f49;background:#fff;min-width:0;width:100%;height:46px;margin:0;padding:10px;border-radius:0}
+.inonda-chat-send{font:600 13px/1.4 Arial,sans-serif;background:#023e8a;color:#fff;border:0;padding:10px 14px;cursor:pointer;flex:none}
+.inonda-chat-privacy{font:10px/1.55 Arial,sans-serif;margin:0;padding:11px 16px;color:#5c7180;background:#fff;flex:none;max-width:none}
+.inonda-chat-message .inonda-chat-draft-note{font-size:11px;margin-top:12px;color:#526d7d}
+.inonda-chat-request{font:12px/1.7 Arial,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;border:1px solid #ccdce7;padding:12px;margin:12px 0 0;user-select:text}
+.inonda-chat-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.inonda-channel-icon{display:inline-block;flex:none;object-fit:contain;width:24px!important;height:24px!important;vertical-align:middle;max-width:none!important;margin:0!important;filter:none!important}
+.inonda-chat-panel button:focus-visible,.inonda-chat-panel a:focus-visible,.inonda-chat-toggle:focus-visible{outline:3px solid #43b9ef;outline-offset:2px}
+html[dir=rtl] .inonda-chat-panel{left:18px;right:auto}html[dir=rtl] .inonda-chat-toggle{left:20px;right:auto}
+@media(max-width:760px){.inonda-chat-toggle{font-size:11px;bottom:160px;right:15px;max-width:190px}.inonda-chat-panel{right:12px;bottom:12px;max-width:calc(100% - 24px);width:410px;height:calc(100svh - 68px);max-height:calc(100svh - 68px)}.inonda-chat-head{padding:15px}.inonda-chat-head h2{font-size:21px}.inonda-chat-log{padding:13px}.inonda-chat-message{padding:12px}.inonda-chat-form input{font-size:16px}.inonda-chat-quick{max-height:125px;padding:10px 13px}.inonda-chat-privacy{font-size:9px;padding:9px 13px}.inonda-chat-form{padding:0 13px}body[data-inonda-site=homes] .inonda-chat-toggle{bottom:0;right:0;left:auto;width:82px;height:86px;min-height:86px;max-width:82px;padding:8px 5px;flex-direction:column;justify-content:center;gap:4px;border:0;border-left:1px solid #d5dfe4;box-shadow:none;font-size:10px;text-align:center}body[data-inonda-site=homes] .inonda-chat-toggle span{max-width:72px}body[data-inonda-site=homes] .inonda-chat-panel{bottom:103px;height:calc(100svh - 160px);max-height:calc(100svh - 160px)}html[dir=rtl] body[data-inonda-site=homes] .inonda-chat-toggle{left:0;right:auto;border-left:0;border-right:1px solid #d5dfe4}html[dir=rtl] .inonda-chat-panel{left:12px;right:auto}}
+@media print{.inonda-chat-panel,.inonda-chat-toggle{display:none!important}}

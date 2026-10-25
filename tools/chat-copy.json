@@ -1,0 +1,572 @@
+{
+  "el": {
+    "faq": {
+      "start": {
+        "text": "Ξεκινήστε με τύπο ακινήτου, τοποθεσία και εμβαδόν. Επιλέξτε υπηρεσίες και ρυθμίστε ποσότητες, τιμές και συχνότητα. Η εκτίμηση ενημερώνεται άμεσα με 19% ΦΠΑ. Μπορώ να βοηθήσω με υπηρεσίες, προϋπολογισμό, αποθήκευση και επικοινωνία. Για ειδικές ανάγκες μιλήστε με την INONDA.",
+        "label": "Ξεκινήστε την εκτίμησή σας",
+        "action": "property"
+      },
+      "network": {
+        "text": "Και οι τρεις ιστότοποι ανήκουν στην INONDA LTD: το inonda.site παρουσιάζει τη διαχείριση ακινήτων, το inonda.org τις επισκευές και τις ανακαινίσεις και το inonda.homes σας βοηθά να διαμορφώσετε προϋπολογισμό. Ακολουθήστε τους συνδέσμους στη γλώσσα σας και επικοινωνήστε με την ίδια ομάδα INONDA για επιθεώρηση και γραπτή προσφορά.",
+        "label": "Δείτε τους ιστοτόπους INONDA",
+        "action": "network"
+      },
+      "contact": {
+        "text": "Μιλήστε με την Irina στο +357 94 091 616 ή τον Constantin στο +357 94 091 613. Και οι δύο γραμμές έχουν WhatsApp, Viber και κλήση. Email: inonda2026@outlook.com. Η ομάδα επιβεβαιώνει την επιθεώρηση, το αντικείμενο και τη γραπτή προσφορά. Ο οδηγός δεν πραγματοποιεί κρατήσεις.",
+        "label": "Επιλέξτε επαφή",
+        "action": "contact"
+      },
+      "vat": {
+        "text": "Όλες οι τιμές υπηρεσιών, ελάχιστες χρεώσεις, μετακινήσεις και εύρη εκτίμησης περιλαμβάνουν 19% ΦΠΑ. Η ανάλυση εμφανίζει ξεχωριστά τον ΦΠΑ που ήδη περιλαμβάνεται. Δεν προστίθεται ξανά στο τέλος.",
+        "label": "Δείτε την ανάλυση",
+        "action": "estimate"
+      },
+      "warranty": {
+        "text": "Η INONDA LTD είναι εγγεγραμμένη στην Κύπρο με αρ. HE490415 και εξυπηρετεί όλη την Κύπρο. Ο ιστότοπος της εταιρείας αναφέρει γραπτή εγγύηση εργασιών τουλάχιστον 6 μηνών για την εργασία. Ζητήστε επιβεβαίωση των όρων στη γραπτή προσφορά σας.",
+        "label": "Επιλέξτε επαφή",
+        "action": "contact"
+      },
+      "area": {
+        "text": "Η INONDA βρίσκεται στη διεύθυνση 29 Charalampou Mouskou, 2014 Strovolos, Λευκωσία και προσφέρει υπηρεσίες ακινήτων σε όλη την Κύπρο. Επιλέξτε τοποθεσία στον εκτιμητή και επικοινωνήστε για διαθεσιμότητα και μετακίνηση.",
+        "label": "Ορισμός τοποθεσίας",
+        "action": "property"
+      },
+      "budget": {
+        "text": "Το ακίνητό σας: κατοικία · Λευκωσία · 100 m². Το τρέχον σχέδιο είναι 345 € – 525 € εφάπαξ (κεντρική εκτίμηση 433,95 €). Όλα τα ποσά περιλαμβάνουν 19% ΦΠΑ. Το εύρος βασίζεται στις επιλογές και παραδοχές σας. Η INONDA πρέπει να αξιολογήσει το ακίνητο και να συμφωνηθεί γραπτή προσφορά.",
+        "label": "Προβολή της εκτίμησής μου",
+        "action": "estimate"
+      },
+      "property": {
+        "text": "Επιλέξτε Κατοικία για διαμέρισμα, βίλα ή σπίτι και Επαγγελματικό για γραφείο, κατάστημα ή κοινόχρηστο χώρο. Οι εμφανιζόμενες τιμές και τα ελάχιστα αντιστοιχούν στον επιλεγμένο τύπο και περιλαμβάνουν 19% ΦΠΑ.",
+        "label": "Επιλογή τύπου ακινήτου",
+        "action": "property"
+      },
+      "cleaning": {
+        "text": "Επιλέξτε τακτικό, βαθύ καθαρισμό ή καθαρισμό εισόδου/αποχώρησης. Ορίστε εσωτερικό εμβαδόν και συχνότητα. Προβλέπονται συνήθης εργασία και βασικά αναλώσιμα. Ειδικός εξοπλισμός, επικίνδυνα υλικά και απομάκρυνση αποβλήτων συμφωνούνται χωριστά.",
+        "label": "Δείτε τον καθαρισμό",
+        "action": "services"
+      },
+      "renovation": {
+        "text": "Η ανακαίνιση προσφέρει αισθητική ανανέωση, μερική ή πλήρη ανακαίνιση τελειωμάτων για επιλεγμένο εμβαδόν. Περιλαμβάνει επιλεγμένη εργασία και βασικά τελειώματα. Δομικά έργα, άδειες, εξαρτήματα και μεγάλα υδραυλικά/ηλεκτρολογικά απαιτούν ξεχωριστή αξιολόγηση.",
+        "label": "Δείτε την ανακαίνιση",
+        "action": "services"
+      },
+      "management": {
+        "text": "Η διαχείριση καλύπτει μηνιαίο συντονισμό υπηρεσιών και αναφορές ανά μονάδα. Δεν περιλαμβάνει λογαριασμούς τρίτων ή είσπραξη ενοικίων. Συζητήστε με την INONDA τη συμφωνία διαχείρισης που χρειάζεστε.",
+        "label": "Δείτε τη διαχείριση",
+        "action": "services"
+      },
+      "landscaping": {
+        "text": "Η κηποτεχνία καλύπτει τακτική περιποίηση στο εξωτερικό εμβαδόν που εισάγετε, εφάπαξ ή επαναλαμβανόμενα. Κατασκευές κήπου, ψηλά δέντρα, ειδικός εξοπλισμός και απομάκρυνση αποβλήτων συμφωνούνται χωριστά.",
+        "label": "Δείτε την κηποτεχνία",
+        "action": "services"
+      },
+      "maintenance": {
+        "text": "Η συντήρηση προβλέπει προληπτική επιθεώρηση και οι μικροεπισκευές ωριαία εργασία. Δεν περιλαμβάνονται ανταλλακτικά, επισκευές συντήρησης ή εξειδικευμένα επαγγέλματα. Συζητήστε υδραυλικά και ηλεκτρολογικά με την ομάδα για τον κατάλληλο αδειούχο επαγγελματία.",
+        "label": "Δείτε τη φροντίδα ακινήτου",
+        "action": "services"
+      },
+      "save": {
+        "text": "Αποθηκεύστε έως τρία σενάρια στον φυλλομετρητή για σύγκριση. Η λήψη σχεδίου περιλαμβάνει υπηρεσίες, ποσότητες, τιμές, ΦΠΑ και εξαιρέσεις. Μπορείτε επίσης να εκτυπώσετε ή να αποθηκεύσετε PDF και να μοιραστείτε το σχέδιο με την INONDA.",
+        "label": "Πάρτε το σχέδιό σας μαζί",
+        "action": "estimate"
+      },
+      "frequency": {
+        "text": "Οι εφάπαξ εργασίες και τα συνεχή μηνιαία κόστη εμφανίζονται ξεχωριστά. Οι εβδομαδιαίες επισκέψεις υπολογίζονται κατά μέσο όρο ως 52 ÷ 12 τον μήνα. Ρυθμίστε τη συχνότητα για καθαρισμό, μικροεπισκευές και κηποτεχνία· η διαχείριση είναι μηνιαία.",
+        "label": "Ρύθμιση επισκέψεων",
+        "action": "services"
+      }
+    },
+    "services": {
+      "maintenance": "Συντήρηση",
+      "renovation": "Ανακαίνιση",
+      "cleaning": "Καθαρισμός",
+      "handyman": "Μικροεπισκευές",
+      "landscaping": "Κηποτεχνία",
+      "management": "Διαχείριση"
+    },
+    "locations": {
+      "Nicosia": "Λευκωσία",
+      "Limassol": "Λεμεσός",
+      "Larnaca": "Λάρνακα",
+      "Paphos": "Πάφος",
+      "Famagusta district": "Επαρχία Αμμοχώστου",
+      "Other location in Cyprus": "Άλλη περιοχή στην Κύπρο"
+    }
+  },
+  "en": {
+    "faq": {
+      "start": {
+        "text": "Start with your property type, location and size. Select the services you need, then adjust the quantities, rates and frequency. Your estimate updates instantly, including 19% VAT. I can help with services, scope, budgets, saved plans and contacting the team. For anything specific to your property, speak with INONDA.",
+        "label": "Start my estimate",
+        "action": "property"
+      },
+      "network": {
+        "text": "All three websites belong to INONDA LTD: inonda.site explains property management, inonda.org covers repairs and renovation services, and inonda.homes helps you plan a budget. Use our website links to continue in your chosen language, then contact the same INONDA team for an inspection and written offer.",
+        "label": "Explore INONDA websites",
+        "action": "network"
+      },
+      "contact": {
+        "text": "Talk through your plan with Irina on +357 94 091 616 or Constantin on +357 94 091 613. Both contact lines have WhatsApp, Viber and call buttons. You can also email inonda2026@outlook.com. Our team confirms the scope, site assessment and written quote; this guide cannot make a booking.",
+        "label": "Choose your contact",
+        "action": "contact"
+      },
+      "vat": {
+        "text": "All displayed service rates, minimum charges, travel allowances and estimate ranges include 19% VAT. The breakdown shows the included VAT separately. It is not added again at the end.",
+        "label": "See my breakdown",
+        "action": "estimate"
+      },
+      "warranty": {
+        "text": "INONDA LTD is registered in Cyprus as HE490415 and provides services across Cyprus. The company website states a written workmanship warranty of at least 6 months on labour. Ask the team to confirm the warranty terms in your written offer.",
+        "label": "Choose your contact",
+        "action": "contact"
+      },
+      "area": {
+        "text": "INONDA is based at 29 Charalampou Mouskou, 2014 Strovolos, Nicosia, and offers property services across Cyprus. Select your location in the estimator. Contact the team to confirm availability and travel for your property.",
+        "label": "Set my location",
+        "action": "property"
+      },
+      "budget": {
+        "text": "For your residential property in Nicosia (100 m²), your current plan is €345 – €525 one-off (central allowance €433.95). All figures include 19% VAT. The range reflects your selected scope and assumptions; INONDA must assess the property and agree a written quote.",
+        "label": "View my estimate",
+        "action": "estimate"
+      },
+      "property": {
+        "text": "Choose Residential for an apartment, villa or house, or Commercial for an office, shop or shared facility. The estimator shows the applicable rates and minimums for your selected property type, with 19% VAT included.",
+        "label": "Choose my property type",
+        "action": "property"
+      },
+      "cleaning": {
+        "text": "Choose routine, deep or move-in / move-out cleaning. Set the indoor area and choose a one-off visit or ongoing frequency. Routine labour and basic consumables are assumed; specialist machinery, hazardous materials and waste removal need separate agreement.",
+        "label": "Explore cleaning",
+        "action": "services"
+      },
+      "renovation": {
+        "text": "Renovation lets you explore a cosmetic refresh, partial refurbishment or full finish refurbishment for a selected area. The allowance covers the selected labour and basic finishes. Structural work, permits, fixtures and major plumbing or electrical works need a separate assessment.",
+        "label": "Explore renovation",
+        "action": "services"
+      },
+      "management": {
+        "text": "The management allowance covers monthly service coordination and reporting per managed unit. Third-party bills and rent collection are excluded from this estimator. Contact INONDA to discuss the management arrangement you need.",
+        "label": "Explore management",
+        "action": "services"
+      },
+      "landscaping": {
+        "text": "Landscaping covers a routine garden tidy for the outdoor area you enter. You can set one-off or recurring visits. Landscape construction, tall trees, specialist machinery and waste removal need separate agreement.",
+        "label": "Explore landscaping",
+        "action": "services"
+      },
+      "maintenance": {
+        "text": "Maintenance provides a preventive inspection allowance; handyman provides an hourly labour allowance for small jobs. Parts, repairs and specialist trades are excluded from those allowances. Plumbing and electrical work should be discussed with the team so the right professional can assess it.",
+        "label": "Explore property care",
+        "action": "services"
+      },
+      "save": {
+        "text": "Save up to three scenarios in your browser to compare plans. “Download my plan” includes your selected services, quantities, rates, VAT and exclusions. You can also print or save as PDF, then share your plan with INONDA when you contact the team.",
+        "label": "Take my plan with me",
+        "action": "estimate"
+      },
+      "frequency": {
+        "text": "One-off work and ongoing monthly costs are shown separately. Weekly visits average 52 ÷ 12 visits per month. You can change the visit frequency for cleaning, handyman and landscaping; management is monthly.",
+        "label": "Adjust my visits",
+        "action": "services"
+      }
+    },
+    "services": {
+      "maintenance": "Maintenance",
+      "renovation": "Renovation",
+      "cleaning": "Cleaning",
+      "handyman": "Handyman",
+      "landscaping": "Landscaping",
+      "management": "Management"
+    },
+    "locations": {
+      "Nicosia": "Nicosia",
+      "Limassol": "Limassol",
+      "Larnaca": "Larnaca",
+      "Paphos": "Paphos",
+      "Famagusta district": "Famagusta district",
+      "Other location in Cyprus": "Other location in Cyprus"
+    }
+  },
+  "ru": {
+    "faq": {
+      "start": {
+        "text": "Начните с типа объекта, места и площади. Выберите услуги, объёмы, цены и частоту. Расчёт обновляется сразу с НДС 19%. Я помогу с услугами, бюджетом, сохранением и контактами. Особенности объекта обсудите с INONDA.",
+        "label": "Начать мой расчёт",
+        "action": "property"
+      },
+      "network": {
+        "text": "Все три сайта принадлежат INONDA LTD: inonda.site рассказывает об управлении недвижимостью, inonda.org — о ремонте и обновлении, а inonda.homes помогает спланировать бюджет. Переходите по ссылкам на выбранном языке и свяжитесь с той же командой INONDA для осмотра и письменного предложения.",
+        "label": "Открыть сайты INONDA",
+        "action": "network"
+      },
+      "contact": {
+        "text": "Обсудите план с Irina: +357 94 091 616 или Constantin: +357 94 091 613. Для обоих доступны WhatsApp, Viber и звонки. Email: inonda2026@outlook.com. Команда согласует осмотр, объём и письменное предложение. Помощник не оформляет запись.",
+        "label": "Выбрать контакт",
+        "action": "contact"
+      },
+      "vat": {
+        "text": "Все тарифы, минимальные суммы, проезд и диапазоны включают НДС 19%. В детализации отдельно показан уже включённый НДС. Повторно он не добавляется.",
+        "label": "Посмотреть детализацию",
+        "action": "estimate"
+      },
+      "warranty": {
+        "text": "INONDA LTD зарегистрирована на Кипре под № HE490415 и работает по всему Кипру. На сайте компании указана письменная гарантия на работы не менее 6 месяцев. Уточните условия гарантии в письменном предложении.",
+        "label": "Выбрать контакт",
+        "action": "contact"
+      },
+      "area": {
+        "text": "INONDA находится по адресу 29 Charalampou Mouskou, 2014 Strovolos, Никосия и оказывает услуги по всему Кипру. Выберите расположение в калькуляторе и уточните у команды доступность и проезд.",
+        "label": "Указать расположение",
+        "action": "property"
+      },
+      "budget": {
+        "text": "Ваш объект: жилой · Никосия · 100 м². Текущий план: 345 € – 525 € разово (расчётная сумма 433,95 €). НДС 19% включён. Диапазон основан на выбранных работах и допущениях. Нужны осмотр INONDA и согласованное письменное предложение.",
+        "label": "Посмотреть мой расчёт",
+        "action": "estimate"
+      },
+      "property": {
+        "text": "Выберите жилой объект для квартиры, виллы или дома, коммерческий — для офиса, магазина или общего пространства. Цены и минимумы соответствуют выбранному типу и включают НДС 19%.",
+        "label": "Выбрать тип объекта",
+        "action": "property"
+      },
+      "cleaning": {
+        "text": "Выберите регулярную, генеральную уборку или уборку при въезде/выезде. Задайте площадь и частоту. Учтены обычный труд и базовые расходники; спецтехника, опасные материалы и вывоз отходов согласуются отдельно.",
+        "label": "Изучить уборку",
+        "action": "services"
+      },
+      "renovation": {
+        "text": "Ремонт позволяет выбрать косметическое, частичное или полное обновление отделки. Учтены выбранная работа и базовые отделочные материалы. Конструкции, разрешения, оборудование и крупные инженерные работы требуют отдельной оценки.",
+        "label": "Изучить ремонт",
+        "action": "services"
+      },
+      "management": {
+        "text": "Управление включает ежемесячную координацию и отчётность по объекту. Счета третьих лиц и сбор аренды исключены. Обсудите нужную схему с INONDA.",
+        "label": "Изучить управление",
+        "action": "services"
+      },
+      "landscaping": {
+        "text": "Уход за садом включает обычную уборку выбранной площади разово или регулярно. Строительство, высокие деревья, спецтехника и вывоз отходов согласуются отдельно.",
+        "label": "Изучить уход за садом",
+        "action": "services"
+      },
+      "maintenance": {
+        "text": "Обслуживание — это профилактический осмотр, мелкий ремонт — почасовой труд мастера. Детали и специальные работы не включены. Сантехнику и электрику обсудите с командой для осмотра нужным специалистом.",
+        "label": "Изучить уход за объектом",
+        "action": "services"
+      },
+      "save": {
+        "text": "Сохраните до трёх вариантов в браузере. Скачанный план включает услуги, объёмы, цены, НДС и исключения. Можно распечатать или сохранить PDF и передать INONDA.",
+        "label": "Сохранить мой план",
+        "action": "estimate"
+      },
+      "frequency": {
+        "text": "Разовые и месячные расходы показаны отдельно. Еженедельные визиты в среднем равны 52 ÷ 12 в месяц. Частоту можно менять для уборки, мелкого ремонта и сада; управление ежемесячное.",
+        "label": "Настроить визиты",
+        "action": "services"
+      }
+    },
+    "services": {
+      "maintenance": "Обслуживание",
+      "renovation": "Ремонт",
+      "cleaning": "Уборка",
+      "handyman": "Мелкий ремонт",
+      "landscaping": "Уход за садом",
+      "management": "Управление"
+    },
+    "locations": {
+      "Nicosia": "Никосия",
+      "Limassol": "Лимасол",
+      "Larnaca": "Ларнака",
+      "Paphos": "Пафос",
+      "Famagusta district": "Район Фамагусты",
+      "Other location in Cyprus": "Другое место на Кипре"
+    }
+  },
+  "uk": {
+    "faq": {
+      "start": {
+        "text": "Почніть із типу об’єкта, місця та площі. Оберіть послуги, обсяги, ціни й частоту. Розрахунок оновлюється одразу з ПДВ 19%. Я допоможу з послугами, бюджетом, збереженням і контактами. Особливості об’єкта обговоріть з INONDA.",
+        "label": "Почати мій розрахунок",
+        "action": "property"
+      },
+      "network": {
+        "text": "Усі три сайти належать INONDA LTD: inonda.site розповідає про управління нерухомістю, inonda.org — про ремонт та оновлення, а inonda.homes допомагає спланувати бюджет. Переходьте за посиланнями обраною мовою та звертайтеся до тієї ж команди INONDA для огляду й письмової пропозиції.",
+        "label": "Відкрити сайти INONDA",
+        "action": "network"
+      },
+      "contact": {
+        "text": "Обговоріть план з Irina: +357 94 091 616 або Constantin: +357 94 091 613. Для обох доступні WhatsApp, Viber і дзвінки. Email: inonda2026@outlook.com. Команда узгодить огляд, обсяг і письмову пропозицію. Помічник не оформлює запис.",
+        "label": "Обрати контакт",
+        "action": "contact"
+      },
+      "vat": {
+        "text": "Усі тарифи, мінімальні суми, проїзд і діапазони включають ПДВ 19%. У деталізації окремо показано вже включений ПДВ. Повторно він не додається.",
+        "label": "Переглянути деталізацію",
+        "action": "estimate"
+      },
+      "warranty": {
+        "text": "INONDA LTD зареєстрована на Кіпрі за № HE490415 і працює по всьому Кіпру. На сайті компанії зазначено письмову гарантію на роботи щонайменше 6 місяців. Уточніть умови гарантії в письмовій пропозиції.",
+        "label": "Обрати контакт",
+        "action": "contact"
+      },
+      "area": {
+        "text": "INONDA розташована за адресою 29 Charalampou Mouskou, 2014 Strovolos, Нікосія та надає послуги по всьому Кіпру. Оберіть місце в калькуляторі й уточніть доступність та проїзд.",
+        "label": "Вказати розташування",
+        "action": "property"
+      },
+      "budget": {
+        "text": "Ваш об’єкт: житловий · Нікосія · 100 м². Поточний план: 345 € – 525 € разово (розрахункова сума 433,95 €). ПДВ 19% включено. Діапазон базується на обраних роботах і припущеннях. Потрібні огляд INONDA та узгоджена письмова пропозиція.",
+        "label": "Переглянути мій розрахунок",
+        "action": "estimate"
+      },
+      "property": {
+        "text": "Оберіть житловий об’єкт для квартири, вілли або будинку, комерційний — для офісу, магазину чи спільного простору. Ціни й мінімуми відповідають типу та включають ПДВ 19%.",
+        "label": "Обрати тип об’єкта",
+        "action": "property"
+      },
+      "cleaning": {
+        "text": "Оберіть регулярне, генеральне прибирання або прибирання при заселенні/виїзді. Задайте площу й частоту. Враховано звичайну працю та базові витратні матеріали; спецтехніка, небезпечні матеріали й вивезення відходів узгоджуються окремо.",
+        "label": "Переглянути прибирання",
+        "action": "services"
+      },
+      "renovation": {
+        "text": "Ремонт дозволяє обрати косметичне, часткове або повне оновлення оздоблення. Враховано обрану роботу й базові матеріали. Конструкції, дозволи, обладнання та великі інженерні роботи потребують окремої оцінки.",
+        "label": "Переглянути ремонт",
+        "action": "services"
+      },
+      "management": {
+        "text": "Управління включає щомісячну координацію та звітність за об’єктом. Рахунки третіх осіб і збір оренди виключено. Обговоріть потрібну схему з INONDA.",
+        "label": "Переглянути управління",
+        "action": "services"
+      },
+      "landscaping": {
+        "text": "Догляд за садом включає звичайне прибирання обраної площі разово або регулярно. Будівництво, високі дерева, спецтехніка й вивезення відходів узгоджуються окремо.",
+        "label": "Переглянути догляд за садом",
+        "action": "services"
+      },
+      "maintenance": {
+        "text": "Обслуговування — це профілактичний огляд, дрібний ремонт — погодинна праця майстра. Деталі та спеціальні роботи не включено. Сантехніку й електрику обговоріть із командою для огляду потрібним фахівцем.",
+        "label": "Переглянути догляд за об’єктом",
+        "action": "services"
+      },
+      "save": {
+        "text": "Збережіть до трьох варіантів у браузері. Завантажений план містить послуги, обсяги, ціни, ПДВ і винятки. Можна роздрукувати або зберегти PDF та передати INONDA.",
+        "label": "Зберегти мій план",
+        "action": "estimate"
+      },
+      "frequency": {
+        "text": "Разові й місячні витрати показано окремо. Щотижневі візити в середньому дорівнюють 52 ÷ 12 на місяць. Частоту можна змінювати для прибирання, дрібного ремонту й саду; управління щомісячне.",
+        "label": "Налаштувати візити",
+        "action": "services"
+      }
+    },
+    "services": {
+      "maintenance": "Обслуговування",
+      "renovation": "Ремонт",
+      "cleaning": "Прибирання",
+      "handyman": "Дрібний ремонт",
+      "landscaping": "Догляд за садом",
+      "management": "Управління"
+    },
+    "locations": {
+      "Nicosia": "Нікосія",
+      "Limassol": "Лімасол",
+      "Larnaca": "Ларнака",
+      "Paphos": "Пафос",
+      "Famagusta district": "Район Фамагусти",
+      "Other location in Cyprus": "Інше місце на Кіпрі"
+    }
+  },
+  "he": {
+    "faq": {
+      "start": {
+        "text": "התחילו בסוג הנכס, המיקום והשטח. בחרו שירותים והתאימו כמויות, תעריפים ותדירות. ההערכה מתעדכנת מיד עם מע״מ 19%. אוכל לעזור בשירותים, תקציב, שמירה ויצירת קשר. לצרכים מיוחדים פנו ל-INONDA.",
+        "label": "התחלת ההערכה שלי",
+        "action": "property"
+      },
+      "network": {
+        "text": "כל שלושת האתרים שייכים ל־INONDA LTD: באתר inonda.site תמצאו מידע על ניהול נכסים, באתר inonda.org על תיקונים ושיפוצים, ובאתר inonda.homes תוכלו לתכנן תקציב. המשיכו דרך הקישורים בשפה שבחרתם ופנו לאותו צוות INONDA לתיאום בדיקת הנכס והצעה בכתב.",
+        "label": "לאתרי INONDA",
+        "action": "network"
+      },
+      "contact": {
+        "text": "דברו על התוכנית עם Irina במספר +357 94 091 616 או Constantin במספר +357 94 091 613. לשניהם כפתורי WhatsApp, Viber ושיחה. דוא״ל: inonda2026@outlook.com. הצוות מאשר את הבדיקה, ההיקף וההצעה הכתובה. המדריך אינו מבצע הזמנות.",
+        "label": "בחירת איש קשר",
+        "action": "contact"
+      },
+      "vat": {
+        "text": "כל התעריפים, חיובי המינימום, הנסיעות וטווחי ההערכה כוללים מע״מ 19%. הפירוט מציג בנפרד את המע״מ שכבר כלול. הוא אינו מתווסף שוב בסוף.",
+        "label": "הצגת הפירוט שלי",
+        "action": "estimate"
+      },
+      "warranty": {
+        "text": "INONDA LTD רשומה בקפריסין במספר HE490415 ופועלת בכל קפריסין. באתר החברה מצוינת אחריות עבודה כתובה של לפחות 6 חודשים. בקשו אישור לתנאי האחריות בהצעה הכתובה.",
+        "label": "בחירת איש קשר",
+        "action": "contact"
+      },
+      "area": {
+        "text": "INONDA ממוקמת ב-29 Charalampou Mouskou, 2014 Strovolos, ניקוסיה, ומציעה שירותים בכל קפריסין. בחרו מיקום במחשבון ופנו לצוות לאישור זמינות ועלות נסיעה.",
+        "label": "הגדרת המיקום שלי",
+        "action": "property"
+      },
+      "budget": {
+        "text": "הנכס שלכם: מגורים · ניקוסיה · 100 מ״ר. התוכנית הנוכחית: 345 € – 525 € חד פעמי (אומדן מרכזי 433.95 €). כל הסכומים כוללים מע״מ 19%. הטווח מבוסס על ההיקף וההנחות שבחרתם. נדרשים בדיקת INONDA והצעה כתובה מוסכמת.",
+        "label": "הצגת ההערכה שלי",
+        "action": "estimate"
+      },
+      "property": {
+        "text": "בחרו מגורים לדירה, וילה או בית, ומסחרי למשרד, חנות או שטח משותף. התעריפים והמינימום מתאימים לסוג הנבחר וכוללים מע״מ 19%.",
+        "label": "בחירת סוג הנכס שלי",
+        "action": "property"
+      },
+      "cleaning": {
+        "text": "בחרו ניקיון שוטף, יסודי או לפני כניסה/לאחר עזיבה. הגדירו שטח ותדירות. כלולים עבודה רגילה וחומרים בסיסיים. ציוד מיוחד, חומרים מסוכנים ופינוי פסולת דורשים הסכמה נפרדת.",
+        "label": "בדיקת שירותי ניקיון",
+        "action": "services"
+      },
+      "renovation": {
+        "text": "השיפוץ מאפשר רענון קוסמטי, שיפוץ חלקי או חידוש גמרים מלא לשטח נבחר. כלולים העבודה והגמרים הבסיסיים שנבחרו. מבנה, היתרים, אביזרים ועבודות אינסטלציה וחשמל גדולות דורשים בדיקה נפרדת.",
+        "label": "בדיקת אפשרויות שיפוץ",
+        "action": "services"
+      },
+      "management": {
+        "text": "הניהול כולל תיאום שירותים ודיווח חודשי לכל יחידה. חשבונות צד שלישי וגביית שכירות אינם כלולים. פנו ל-INONDA לדיון בהסדר הניהול המתאים.",
+        "label": "בדיקת אפשרויות ניהול",
+        "action": "services"
+      },
+      "landscaping": {
+        "text": "הגינון כולל סידור שוטף של שטח החוץ שהזנתם, חד פעמי או קבוע. בניית גן, עצים גבוהים, ציוד מיוחד ופינוי פסולת דורשים הסכמה נפרדת.",
+        "label": "בדיקת שירותי גינון",
+        "action": "services"
+      },
+      "maintenance": {
+        "text": "תחזוקה היא אומדן לבדיקה מונעת, ותיקונים קטנים הם אומדן עבודה לפי שעה. חלקים ועבודות מומחים אינם כלולים. שוחחו עם הצוות על אינסטלציה וחשמל כדי להפנות לבעל המקצוע המתאים.",
+        "label": "בדיקת שירותי טיפול בנכס",
+        "action": "services"
+      },
+      "save": {
+        "text": "שמרו עד שלושה תרחישים בדפדפן להשוואה. התוכנית להורדה כוללת שירותים, כמויות, תעריפים, מע״מ והחרגות. אפשר גם להדפיס או לשמור PDF ולשתף עם INONDA.",
+        "label": "לקחת את התוכנית איתי",
+        "action": "estimate"
+      },
+      "frequency": {
+        "text": "עבודות חד פעמיות ועלויות חודשיות מוצגות בנפרד. ביקורים שבועיים מחושבים כ-52 ÷ 12 לחודש בממוצע. אפשר לשנות תדירות לניקיון, תיקונים וגינון; הניהול חודשי.",
+        "label": "התאמת הביקורים שלי",
+        "action": "services"
+      }
+    },
+    "services": {
+      "maintenance": "תחזוקה",
+      "renovation": "שיפוץ",
+      "cleaning": "ניקיון",
+      "handyman": "תיקונים קטנים",
+      "landscaping": "גינון",
+      "management": "ניהול"
+    },
+    "locations": {
+      "Nicosia": "ניקוסיה",
+      "Limassol": "לימסול",
+      "Larnaca": "לרנקה",
+      "Paphos": "פאפוס",
+      "Famagusta district": "מחוז פמגוסטה",
+      "Other location in Cyprus": "מקום אחר בקפריסין"
+    }
+  },
+  "ro": {
+    "faq": {
+      "start": {
+        "text": "Începe cu tipul proprietății, localitatea și suprafața. Alege servicii, cantități, tarife și frecvență. Estimarea se actualizează imediat cu TVA 19%. Pot ajuta cu servicii, buget, salvare și contact. Pentru detalii specifice discută cu INONDA.",
+        "label": "Începe estimarea mea",
+        "action": "property"
+      },
+      "network": {
+        "text": "Toate cele trei site-uri aparțin INONDA LTD: inonda.site prezintă administrarea proprietăților, inonda.org serviciile de reparații și renovare, iar inonda.homes te ajută să planifici bugetul. Folosește linkurile în limba aleasă, apoi contactează aceeași echipă INONDA pentru inspecție și ofertă scrisă.",
+        "label": "Descoperă site-urile INONDA",
+        "action": "network"
+      },
+      "contact": {
+        "text": "Discută planul cu Irina la +357 94 091 616 sau Constantin la +357 94 091 613. Ambele linii au WhatsApp, Viber și apel. Email: inonda2026@outlook.com. Echipa confirmă inspecția, lucrările și oferta scrisă. Ghidul nu face programări.",
+        "label": "Alege persoana de contact",
+        "action": "contact"
+      },
+      "vat": {
+        "text": "Toate tarifele, minimele, deplasările și intervalele includ TVA 19%. Detalierea arată separat TVA deja inclus. Nu se adaugă din nou la final.",
+        "label": "Vezi detalierea",
+        "action": "estimate"
+      },
+      "warranty": {
+        "text": "INONDA LTD este înregistrată în Cipru cu nr. HE490415 și oferă servicii în tot Ciprul. Site-ul companiei precizează o garanție scrisă de minimum 6 luni pentru manoperă. Cere confirmarea condițiilor în oferta scrisă.",
+        "label": "Alege persoana de contact",
+        "action": "contact"
+      },
+      "area": {
+        "text": "INONDA are sediul la 29 Charalampou Mouskou, 2014 Strovolos, Nicosia și oferă servicii în tot Ciprul. Alege localitatea în estimator și confirmă cu echipa disponibilitatea și deplasarea.",
+        "label": "Setează localitatea",
+        "action": "property"
+      },
+      "budget": {
+        "text": "Proprietatea ta: rezidențială · Nicosia · 100 m². Planul curent: 345 € – 525 € o singură dată (valoare centrală 433,95 €). Toate sumele includ TVA 19%. Intervalul reflectă lucrările și ipotezele selectate. Sunt necesare evaluarea INONDA și o ofertă scrisă agreată.",
+        "label": "Vezi estimarea mea",
+        "action": "estimate"
+      },
+      "property": {
+        "text": "Alege Rezidențial pentru apartament, vilă sau casă și Comercial pentru birou, magazin sau spațiu comun. Tarifele și minimele corespund tipului și includ TVA 19%.",
+        "label": "Alege tipul proprietății",
+        "action": "property"
+      },
+      "cleaning": {
+        "text": "Alege curățenie periodică, generală sau la mutare/eliberare. Setează suprafața și frecvența. Sunt incluse manopera obișnuită și consumabilele de bază; utilajele speciale, materialele periculoase și deșeurile se stabilesc separat.",
+        "label": "Explorează curățenia",
+        "action": "services"
+      },
+      "renovation": {
+        "text": "Renovarea permite reîmprospătare cosmetică, renovare parțială sau completă a finisajelor. Include manopera și finisajele de bază selectate. Structura, autorizațiile, dotările și instalațiile majore necesită evaluare separată.",
+        "label": "Explorează renovarea",
+        "action": "services"
+      },
+      "management": {
+        "text": "Administrarea include coordonare și raportare lunară per unitate. Facturile terților și colectarea chiriei sunt excluse. Discută cu INONDA aranjamentul potrivit.",
+        "label": "Explorează administrarea",
+        "action": "services"
+      },
+      "landscaping": {
+        "text": "Grădinăritul include îngrijire obișnuită pentru suprafața introdusă, o dată sau recurent. Construcțiile, arborii înalți, utilajele speciale și evacuarea deșeurilor se stabilesc separat.",
+        "label": "Explorează grădinăritul",
+        "action": "services"
+      },
+      "maintenance": {
+        "text": "Întreținerea reprezintă o inspecție preventivă, iar reparațiile mici sunt calculate pe oră. Piesele și lucrările specializate nu sunt incluse. Discută cu echipa despre instalații și electricitate pentru evaluarea de către specialistul potrivit.",
+        "label": "Explorează îngrijirea proprietății",
+        "action": "services"
+      },
+      "save": {
+        "text": "Salvează până la trei scenarii în browser. Planul descărcat include servicii, cantități, tarife, TVA și excluderi. Poți tipări sau salva PDF și trimite planul către INONDA.",
+        "label": "Ia planul cu tine",
+        "action": "estimate"
+      },
+      "frequency": {
+        "text": "Lucrările unice și costurile lunare sunt separate. Vizitele săptămânale sunt în medie 52 ÷ 12 pe lună. Poți schimba frecvența la curățenie, reparații mici și grădinărit; administrarea este lunară.",
+        "label": "Ajustează vizitele",
+        "action": "services"
+      }
+    },
+    "services": {
+      "maintenance": "Întreținere",
+      "renovation": "Renovare",
+      "cleaning": "Curățenie",
+      "handyman": "Reparații mici",
+      "landscaping": "Grădinărit",
+      "management": "Administrare"
+    },
+    "locations": {
+      "Nicosia": "Nicosia",
+      "Limassol": "Limassol",
+      "Larnaca": "Larnaca",
+      "Paphos": "Paphos",
+      "Famagusta district": "Districtul Famagusta",
+      "Other location in Cyprus": "Altă localitate din Cipru"
+    }
+  }
+}
