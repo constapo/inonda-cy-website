@@ -1,23 +1,26 @@
-# INONDA FUTURE — SEO preservation and international visibility checklist
+# INONDA design and SEO verification — 29 October 2026
 
-This redesign must not change any visible written content, the official INONDA logo, service prices, estimator calculations, or business claims.
+## Preserved
+Original visible content, company logo and media files, JavaScript, calculation rates and formulas, contact links and language routes are unchanged. No paid service or new external dependency was added.
 
-## Existing SEO verified in source
-- All three sites expose robots.txt and sitemap.xml with crawl permission.
-- inonda.site and inonda.org include canonical and multilingual hreflang tags in their English homepages, and their sitemaps include language alternates.
-- inonda.homes includes canonical, six language alternate links, and structured LocalBusiness data in its entry HTML.
+## Verified in GitHub source
+- Both static websites: all six language homepages have titles, descriptions, indexable robots metadata, self-referencing canonicals, seven language alternates including x-default, Open Graph metadata and parseable structured data.
+- Property-management sitemap: 120 unique URLs, each mapped to an existing repository page.
+- Renovation sitemap: 186 unique URLs, each mapped to an existing repository page.
+- All three robots.txt files allow crawling and identify their sitemap.
+- Estimator: company and free WebApplication structured data, search ownership tags, canonical and six language alternates are retained.
+- Estimator SEO update adds Open Graph and Twitter preview metadata using the existing title, description and original logo; allows large search image previews; adds reciprocal language alternates to all six sitemap entries.
+- CSS structural checks passed for all three stylesheets. Checked contrast pairs: white/ocean-blue 4.87:1, white/dark-navy 10.20:1, muted text/white 5.31:1, light-cyan/deep-navy 10.96:1.
 
-## Before release
-1. Validate canonical URLs and bidirectional hreflang across all published language pages; use the actual published URL for each translation.
-2. Confirm sitemap entries return 200 and match canonical URLs; verify the estimator's language query URLs are indexable and render language-specific content.
-3. Test structured data with the Schema.org validator and Google's Rich Results Test. Never invent reviews, awards, service areas or physical offices.
-4. Confirm title, description, OG and Twitter metadata per locale without rewriting visible page copy.
-5. Check mobile Core Web Vitals (LCP, CLS, INP), image dimensions, lazy loading and font loading after styling changes.
-6. Preserve inter-site navigation and language routing between .site, .org and .homes.
-7. Submit all three sitemaps to Google Search Console and Bing Webmaster Tools using authorized property access; verify indexing rather than assuming rankings.
-8. Track impressions, clicks, indexed pages and country/language breakdowns. Cyprus is the service location; international targeting addresses property owners and investors interested in Cyprus, not unsupported international service coverage.
+## Verification boundaries
+These are source checks, not live indexing or ranking results. Individual interior-page metadata has not been exhaustively audited. Chrome visual QA, live response headers, rendered language pages, Google structured-data validation and Wasmer deployment verification remain pending.
+The estimator changes language and canonical metadata in JavaScript; its server returns the same initial English HTML for language query URLs. Search-engine rendering and localized indexing need live verification. Social preview crawlers receive the existing default English metadata.
+No Search Console/Bing submission or performance measurement was performed. Existing ownership tags do not prove current account access or indexing.
+No ranking, traffic or AI citation improvement is guaranteed.
 
-## Release safeguards
-- Design changes remain on the design/inonda-future-2026 branch until validation.
-- Never merge automatically without checking generated pages, test suites and deployment preview.
-- Keep all logo files and written copy byte-for-byte unchanged.
+## Release checks
+1. Review desktop/mobile layouts in Chrome, including Greek and Hebrew RTL, forms, menu and estimator controls.
+2. Confirm content, logos and calculation code remain unchanged against main.
+3. Verify existing Wasmer account and free-plan deployment settings before release; deploy only through Wasmer.
+4. Verify public pages and assets after deployment, including sitemap responses and canonical/hreflang behavior.
+5. Use the authorized Google Search Console and Bing Webmaster Tools accounts to check sitemap ingestion, indexed pages and search performance.
