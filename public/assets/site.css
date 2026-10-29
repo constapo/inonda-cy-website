@@ -338,5 +338,5 @@ header,nav{backdrop-filter:saturate(1.2) blur(12px)}
 a,button{transition:color .2s ease,background-color .2s ease,box-shadow .2s ease,transform .2s ease}
 a:focus-visible,button:focus-visible{outline:3px solid #00a8cc;outline-offset:3px}
 :is(.card,.service-card,.feature-card,.tile){border-radius:var(--r-lg);box-shadow:0 14px 42px rgba(2,62,138,.07)}
-img{height:auto}
+/* Preserve original logo, image-gallery and contact-icon dimensions. */
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
