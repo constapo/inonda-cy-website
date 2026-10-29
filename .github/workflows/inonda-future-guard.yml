@@ -1,0 +1,52 @@
+name: INONDA Future safeguard checks
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  preserve-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Confirm redesign changes only CSS and documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --name-only origin/main...HEAD > /tmp/changed-files.txt
+          cat /tmp/changed-files.txt
+          if grep -Ev '^(public/assets/site\.css|dist/styles\.css|docs/INONDA_FUTURE_SEO\.md|\.github/workflows/inonda-future-guard\.yml)$' /tmp/changed-files.txt; then
+            echo 'Unexpected changes to website content or logic'; exit 1
+          fi
+      - name: Check CSS braces and mandatory reduced-motion handling
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          css_files=[p for p in (Path('public/assets/site.css'),Path('dist/styles.css')) if p.exists()]
+          assert css_files, 'No stylesheet found'
+          for p in css_files:
+              s=p.read_text(encoding='utf-8')
+              assert 'INONDA FUTURE' in s
+              assert 'prefers-reduced-motion' in s
+              depth=0
+              in_comment=False
+              in_quote=None
+              i=0
+              while i<len(s):
+                  c=s[i]
+                  if in_comment:
+                      if s[i:i+2]=='*/': in_comment=False; i+=2; continue
+                  elif in_quote:
+                      if c=='\\': i+=2; continue
+                      if c==in_quote: in_quote=None
+                  elif s[i:i+2]=='/*': in_comment=True; i+=2; continue
+                  elif c in ('"',"'"): in_quote=c
+                  elif c=='{': depth+=1
+                  elif c=='}':
+                      depth-=1
+                      assert depth>=0, f'Unbalanced CSS in {p}'
+                  i+=1
+              assert depth==0 and not in_comment and not in_quote, f'Incomplete CSS in {p}'
+              print(f'{p}: structural checks passed')
+          PY
