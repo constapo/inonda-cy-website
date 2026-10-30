@@ -24,3 +24,13 @@ No ranking, traffic or AI citation improvement is guaranteed.
 3. Verify existing Wasmer account and free-plan deployment settings before release; deploy only through Wasmer.
 4. Verify public pages and assets after deployment, including sitemap responses and canonical/hreflang behavior.
 5. Use the authorized Google Search Console and Bing Webmaster Tools accounts to check sitemap ingestion, indexed pages and search performance.
+
+## Release follow-up — 30 October 2026
+
+GitHub PR #1 was inspected against its recorded base/head. The blue design refresh preserves the original logo/media and application/calculation sources. Asset URLs now use release version 20261030-1, and the shared generator VERSION is synchronized across the three repositories. Only version parameters change in existing static page HTML.
+
+Desktop previews were inspected for all three sites at 1363px. Mobile homepage checks used a 390px iframe (375px content width); all six languages on each website reported scrollWidth equal to clientWidth. Hebrew retained RTL. The management mobile menu opened successfully. The management header breakpoint/quote layout and renovation hero-label contrast were corrected during QA. Estimator hero and inset company images loaded. Local preview copies did not include every unchanged repository media file.
+
+The estimator passed 36 JavaScript tests and 17 Python tests. The host robots check now validates index/follow semantics while accepting the added search-preview directives. The GitHub safeguard permits asset-version changes while comparing existing static HTML and estimator body content, and rejects unexpected changes to application logic or logo files.
+
+Wasmer deployment and live-domain verification are pending at this commit. No new service, paid subscription, DNS change or repository-visibility change is part of the release. Historical verification boundaries above remain applicable to indexing/rankings and interior-page visual coverage.

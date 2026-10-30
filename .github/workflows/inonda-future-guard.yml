@@ -10,15 +10,34 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Confirm redesign changes only CSS and documentation
-        shell: bash
+      - name: Preserve text, logo assets and application logic
         run: |
-          set -euo pipefail
-          git diff --name-only origin/main...HEAD > /tmp/changed-files.txt
-          cat /tmp/changed-files.txt
-          if grep -Ev '^(public/assets/site\.css|dist/styles\.css|docs/INONDA_FUTURE_SEO\.md|\.github/workflows/inonda-future-guard\.yml)$' /tmp/changed-files.txt; then
-            echo 'Unexpected changes to website content or logic'; exit 1
-          fi
+          python3 - <<'PYGUARD'
+          from pathlib import Path
+          import re, subprocess
+          changed = subprocess.check_output(['git', 'diff', '--name-only', 'origin/main...HEAD'], text=True).splitlines()
+          allowed = {'public/assets/site.css', 'dist/styles.css', 'dist/sitemap.xml',
+                     'docs/INONDA_FUTURE_SEO.md', '.github/workflows/inonda-future-guard.yml',
+                     'tools/inonda_network.py', 'tests/test_host.py'}
+          def previous(path):
+              return subprocess.check_output(['git', 'show', 'origin/main:' + path], text=True)
+          def normalize_versions(text):
+              return re.sub(r'(\.(?:css|js|svg)\?v=)[^"\'<> ]+', r'\1VERSION', text)
+          for path in changed:
+              if path.endswith('.html') and (path.startswith('public/') or path == 'dist/index.html'):
+                  old, new = previous(path), Path(path).read_text()
+                  if path.startswith('public/'):
+                      assert normalize_versions(old) == normalize_versions(new), 'HTML content changed: ' + path
+                  else:
+                      assert normalize_versions(old.split('</head>', 1)[1]) == normalize_versions(new.split('</head>', 1)[1]), 'Estimator body changed'
+              else:
+                  assert path in allowed, 'Unexpected change: ' + path
+          if 'tools/inonda_network.py' in changed:
+              old, new = previous('tools/inonda_network.py'), Path('tools/inonda_network.py').read_text()
+              normalize = lambda text: re.sub(r"^VERSION = '[^']+'", "VERSION = 'VERSION'", text, flags=re.M)
+              assert normalize(old) == normalize(new), 'Shared generator logic changed'
+          print('Written content, logo assets and application/calculation code preserved')
+          PYGUARD
       - name: Check CSS braces and mandatory reduced-motion handling
         run: |
           python3 - <<'PY'
@@ -50,3 +69,4 @@ jobs:
               assert depth==0 and not in_comment and not in_quote, f'Incomplete CSS in {p}'
               print(f'{p}: structural checks passed')
           PY
+

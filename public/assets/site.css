@@ -354,3 +354,7 @@ footer.site a:hover{color:#8fdce6}
 @media(hover:hover) and (pointer:fine){.person,.area{transition:border-color .2s ease,box-shadow .2s ease}.person:hover,.area:hover{border-color:#80bdd8}}
 @media(max-width:640px){.card:not(.guide),.person,.area{padding:24px 20px}.pillar .in{padding:26px 22px}.btn{min-height:48px}.chip{max-width:100%;overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero-media .slide:first-child{opacity:1}.ticker{white-space:normal}.ticker .track{display:flex;flex-wrap:wrap}.pillar:hover .ph,.card.guide:hover .gmedia img,a.card:hover,.btn:hover{transform:none}}
+
+
+/* Keep hero labels readable over company imagery. */
+.hero .eyebrow{color:#8fdce6}
