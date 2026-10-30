@@ -23,3 +23,5 @@
 - Free-search promotion: see SEARCH-SETUP.md. Preserve tools/inonda_seo.py and tools/search-config.json across builds. Public search ownership tokens are deliberately public and are not login credentials. The owner confirmed a service-area business visiting customers; do not invent a walk-in office, opening hours, ratings or accreditation.
 
 - Latest owner correction (25 October 2026): Facebook https://www.facebook.com/inondalimited and Instagram https://www.instagram.com/inondaltd replace all earlier profile URLs, including schema and listing drafts. Preserve the social brand icons.
+
+- Mandatory owner rule (30 October 2026): all three INONDA websites must display social media brand symbols in their original brand colours, never monochrome or recoloured to the INONDA palette. Preserve Facebook blue, Instagram gradient, TikTok black/cyan/red, YouTube red, WhatsApp green and Viber purple, including hover/focus states.
