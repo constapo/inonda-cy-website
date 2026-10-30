@@ -17,7 +17,7 @@ from inonda_seo import enhance_seo
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261030-brand-2'
+VERSION = '20261031-language-1'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
 
 
@@ -95,13 +95,21 @@ def enhance_html(text, site, page=''):
             return attrs + '>'
         text = re.sub(r'(<video\b(?=[^>]*\bcontrols)[^>]*)(>)', responsive_video, text)
     # Regeneration is idempotent; all original page text stays untouched.
-    text = re.sub(r'<!-- INONDA NETWORK (?:ASSETS|BAR|SECTION|SOCIAL) START -->.*?<!-- INONDA NETWORK (?:ASSETS|BAR|SECTION|SOCIAL) END -->', '', text, flags=re.S)
+    text = re.sub(r'<!-- INONDA NETWORK (?:ASSETS|BAR|SECTION|SOCIAL|LANGUAGE) START -->.*?<!-- INONDA NETWORK (?:ASSETS|BAR|SECTION|SOCIAL|LANGUAGE) END -->', '', text, flags=re.S)
     text = re.sub(r' data-inonda-site="(?:site|org|homes)"', '', text)
     text = re.sub(r'<body\b', f'<body data-inonda-site="{site}"', text, count=1)
     assets = './' if site == 'homes' else '/assets/'
     include = f'<!-- INONDA NETWORK ASSETS START --><link rel="stylesheet" href="{assets}inonda-network.css?v={VERSION}"><link rel="stylesheet" href="{assets}inonda-chat.css?v={VERSION}"><script defer src="{assets}inonda-network.js?v={VERSION}"></script><script defer src="{assets}inonda-chat.js?v={VERSION}"></script><!-- INONDA NETWORK ASSETS END -->'
     text = text.replace('</head>', include + '</head>', 1)
     text = re.sub(r'(<body\b[^>]*>)', lambda m: m.group(1) + '<!-- INONDA NETWORK BAR START -->' + bar(site, lang, page) + '<!-- INONDA NETWORK BAR END -->', text, count=1)
+    if site == 'site':
+        # Real links work without JavaScript and keep the equivalent page.
+        suffix = page.split('/', 1)[1].removesuffix('index.html')
+        label = {'el': 'Γλώσσα', 'en': 'Language', 'ru': 'Язык', 'uk': 'Мова', 'he': 'שפה', 'ro': 'Limbă'}[lang]
+        names = [('el', 'Ελληνικά'), ('en', 'English'), ('ru', 'Русский'), ('uk', 'Українська'), ('he', 'עברית'), ('ro', 'Română')]
+        links = ''.join(f'<a href="/{code}/{suffix}" data-golang="{code}" hreflang="{code}" lang="{code}" dir="auto"' + (' aria-current="true"' if code == lang else '') + f'>{name}</a>' for code, name in names)
+        language = f'<!-- INONDA NETWORK LANGUAGE START --><nav class="inonda-language-bar" aria-label="{label}"><span>{label}</span><div>{links}</div></nav><!-- INONDA NETWORK LANGUAGE END -->'
+        text = text.replace('<!-- INONDA NETWORK BAR END -->', '<!-- INONDA NETWORK BAR END -->' + language, 1)
     block = '<!-- INONDA NETWORK SECTION START -->' + section(site, lang, page) + '<!-- INONDA NETWORK SECTION END -->'
     if site == 'homes':
         text = text.replace('<section class="contact-section"', block + '<section class="contact-section"', 1)
@@ -128,6 +136,16 @@ def enhance_html(text, site, page=''):
 
 
 CSS = '''/* INONDA LTD: shared navigation and journeys, scoped to avoid site theme collisions. */
+.inonda-language-bar{position:relative;z-index:2;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:12px;padding:6px max(3%,12px);background:#edf5fb;color:#06213d;border-bottom:1px solid #b9cfdf;font:600 13px/1.4 Arial,sans-serif}
+.inonda-language-bar>div{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}
+.inonda-language-bar a{box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;color:#06213d;background:#fff;border:1px solid #a8c3d7;border-radius:4px;text-decoration:none}
+.inonda-language-bar a[aria-current]{color:#fff;background:#005f92;border-color:#005f92}
+.inonda-language-bar a:hover{border-color:#005f92;text-decoration:underline}
+.inonda-language-bar a:focus-visible{outline:3px solid #005f92;outline-offset:2px}
+@media(max-width:600px){.inonda-language-bar{display:block;text-align:center;padding:8px 12px}.inonda-language-bar>span{display:block;margin-bottom:5px}.inonda-language-bar>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.inonda-language-bar a{padding:8px 3px;font-size:12px}}
+body[data-inonda-site=site] .mobile-panel{visibility:hidden;position:absolute!important;top:auto!important;max-height:70dvh}
+body[data-inonda-site=site] .mobile-panel.open{visibility:visible}
+@media(max-width:760px){body[data-inonda-site=site]{padding-top:58px!important}}
 body[data-inonda-site]{padding-top:44px}
 .inonda-network-bar{box-sizing:border-box;position:fixed;inset:0 0 auto;z-index:120;height:44px;display:flex;align-items:stretch;justify-content:center;gap:0;padding:0 3%;background:#023e8a;color:#fff;font:12px/1.2 Arial,sans-serif;border-bottom:1px solid #6196c3;direction:inherit}
 .inonda-network-brand{display:flex;align-items:center;margin-inline-end:auto;font-size:11px;letter-spacing:.08em;white-space:nowrap}
@@ -204,7 +222,7 @@ function update(){
   ['site','org','homes'].forEach(function(key,i){var card=section.querySelectorAll('.inonda-network-card')[i];card.querySelector('h3').textContent=c[key+'Title'];card.querySelector('p').textContent=c[key+'Text'];card.querySelector('a').textContent=c[key+'Action']+' ↗';var badge=card.querySelector('.inonda-network-current');if(badge)badge.textContent=c.current;});
  }
  // Existing menu/footer links must follow the chosen language too; leave media URLs untouched.
- document.querySelectorAll('a[href]').forEach(function(a){if(!/^https:\\/\\/www\\.inonda\\.(site|org)\\/(el|en|ru|uk|he|ro)\\//.test(a.href))return;var u=new URL(a.href);u.pathname=u.pathname.replace(/^\\/(el|en|ru|uk|he|ro)\\//,'/'+lang+'/');a.href=u.href;});
+ if(site==='homes')document.querySelectorAll('a[href]').forEach(function(a){if(a.hasAttribute('data-golang')||a.hasAttribute('hreflang')||!/^https:\\/\\/www\\.inonda\\.(site|org)\\/(el|en|ru|uk|he|ro)\\//.test(a.href))return;var u=new URL(a.href);u.pathname=u.pathname.replace(/^\\/(el|en|ru|uk|he|ro)\\//,'/'+lang+'/');a.href=u.href;});
 }
 document.addEventListener('inonda:language',update);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',update);else update();
