@@ -16,6 +16,7 @@ Focused comparisons: header/logo, Greek headline, cutaway house crop, CTAs, serv
 - P2, first mobile iteration: logo/language/menu row clipped the menu. Fixed compact brand sizing, language-selector width and fixed button sizing. Post-fix menu stays inside the viewport at 320px and 390px; no horizontal overflow across all 24 viewport/language combinations.
 - P2, first comparison: hero hierarchy was smaller than the selected mock. Increased desktop headline and hero height, widened the editorial column and added service-category icons. Final combined capture preserves the selected white header, architectural blue hero, cutaway-house focal point, service navigation, white service columns and original social colours.
 - P2, interaction check: the transparent hero layout could intercept room hotspots. Set the layout to pass pointer events through while its copy and selector retain interaction. Re-loaded browser navigation from the bathroom hotspot reached the correct service page.
+- P2, live check: the floating chat toggle could overlap the service-panel link. Moved it beside the fixed phone controls at the lower edge, including mirrored RTL positioning; presentation release 2 refreshes cached styles.
 
 ## Required fidelity surfaces
 

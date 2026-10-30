@@ -1,7 +1,7 @@
 """Approved Living Blueprint presentation; existing content and routes are retained."""
 from html import escape as e
 
-VERSION = '20261031-living-1'
+VERSION = '20261031-living-2'
 COPY = {
  'el': ('Μία ομάδα για το ακίνητό σας. Λευκωσία και όλη η Κύπρος.', 'Ενδεικτική αρχιτεκτονική απεικόνιση · Εξερευνήστε τις υπηρεσίες', 'Δείτε τις υπηρεσίες', 'Επιλέξτε υπηρεσία'),
  'en': ('One team for your property. Nicosia and all of Cyprus.', 'Concept architectural illustration · Explore our services', 'Explore services', 'Choose a service'),

@@ -69,6 +69,6 @@ check(len(urls)==len(set(urls)),'Unique sitemap URLs')
 for url in urls:
     check((PUB/url.removeprefix(BASE)/'index.html').exists(),'Sitemap target '+url)
 check('Allow: /' in (PUB/'robots.txt').read_text(),'robots allows crawling')
-check('20261031-living-1' in (PUB/'el/index.html').read_text(),'versioned presentation')
+check('20261031-living-2' in (PUB/'el/index.html').read_text(),'versioned presentation')
 if errors:raise SystemExit('\n'.join(errors))
 print(f'PASS: {count} pages; sitemap, canonical/hreflang, JSON-LD, social links, all local links/assets/anchors and six-language direction checked.')
