@@ -13,11 +13,12 @@ from urllib.parse import urlencode
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from inonda_seo import enhance_seo
+from inonda_future import enhance_future
 
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261030-1'
+VERSION = '20261030-2'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
 
 
@@ -124,7 +125,7 @@ def enhance_html(text, site, page=''):
         icon = f'<img class="inonda-channel-icon" src="{assets}{brand}-official.svg?v={VERSION}" alt="" width="24" height="24">'
         return f'<a{attrs} data-inonda-brand="{brand}">{icon}{inner}</a>'
     text = re.sub(r'<a\b([^>]*\bhref=[\"\'](?:https://wa\.me/|viber://)[^>]*?)>(.*?)</a>', brand_link, text, flags=re.S)
-    return text
+    return enhance_future(text, site)
 
 
 CSS = '''/* INONDA LTD: shared navigation and journeys, scoped to avoid site theme collisions. */
