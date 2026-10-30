@@ -10,10 +10,12 @@ Photos:  drop JPG/PNG files named after an image key (hero, kitchen, bathroom, p
 Video:   put hero.mp4 (and optionally hero-sm.mp4 for phones) in public/assets/video/.
 """
 import html, importlib.util, json, os, re, sys, datetime
+from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 from inonda_network import enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
+from inonda_living import living_hero, living_assets
 PUB = os.path.join(ROOT, "public")
 SRC_IMG = os.path.join(ROOT, "build", "source-images")
 BASE = "https://www.inonda.org"
@@ -27,7 +29,7 @@ PEOPLE = [("Irina", PHONE1, PHONE1_TXT, "35794091616", ["ru", "el", "en"]),
 EMAIL = "inonda2026@outlook.com"
 REG = "HE 490415"
 ADDR = {"street": "29 Charalampou Mouskou", "locality": "Strovolos, Nicosia", "postal": "2014"}
-TODAY = datetime.date.today().isoformat()
+TODAY = datetime.datetime.now(ZoneInfo('Asia/Nicosia')).date().isoformat()
 GSC_TOKEN = "ADV3fYCmHBO56b8IEcEpqdFcPNTT8Wj4_rADsPaRq3M"  # Google Search Console (https://www.inonda.org/)
 
 GROUPS = ["maintenance", "repairs", "transformation"]
@@ -178,6 +180,13 @@ def head(T, page, title, desc, ld_extra=None, up="../", langs=None):
              "inLanguage": LANGS, "publisher": {"@id": BASE + "/#business"}}]
     if ld_extra:
         graph += ld_extra
+    graph.append({"@type": "WebPage", "@id": url(lang, page) + "#webpage", "url": url(lang, page),
+                  "name": title, "description": desc, "inLanguage": lang, "dateModified": TODAY,
+                  "isPartOf": {"@id": BASE + "/#website"}, "about": {"@id": BASE + "/#business"}})
+    if page == '':
+        graph.append({"@type": "ItemList", "@id": url(lang, '') + "#services", "name": T['ui']['nav']['services'],
+                      "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": T['svc'][s[0]]['name'],
+                                           "url": url(lang, s[0])} for i, s in enumerate(SERVICES)]})
     fonts = FONTS_HE if lang == "he" else FONTS
     return f'''<!DOCTYPE html>
 <html lang="{lang}" dir="{T["dir"]}">
@@ -200,7 +209,7 @@ def head(T, page, title, desc, ld_extra=None, up="../", langs=None):
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0B1530">
+<meta name="theme-color" content="#023E8A">
 <link rel="icon" href="{up}../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="{up}../assets/favicon.png">
 <link rel="apple-touch-icon" href="{up}../assets/apple-touch-icon.png">
@@ -228,7 +237,7 @@ def header(T, page, up, langs=None):
     return f'''<body class="{'home' if page == '' else 'inner'}">
 <a class="skip" href="#main">{e(u["skip"])}</a>
 <header class="site"><div class="wrap bar">
-<a class="brand" href="{home}"><img src="{up}../assets/logo-68.png" alt="Inonda LTD logo" width="38" height="30"><span>Inonda LTD<small>{e(u["tagline_short"])}</small></span></a>
+<a class="brand" href="{home}"><img src="{up}../assets/logo.png" alt="INONDA LTD" width="72" height="56"><span>INONDA LTD<small>{e(u["tagline_short"])}</small></span></a>
 <nav class="links" aria-label="{e(u["menu"])}">{links}</nav>
 <div class="nav-right">
 <select class="langsel" aria-label="Language">{opts}</select>
@@ -397,13 +406,10 @@ def page_home(T):
     ld = [faq_ld(H["faqs"])] + video_ld(T)
     out = [head(T, "", H["title"], H["desc"], ld, up="../" if False else ""), header(T, "", up)]
     chips = "".join(f'<span class="chip">{ic("check")}{e(c)}</span>' for c in H["chips"])
-    out.append(f'''<section class="hero">{hero_media("", H["hero_alt"])}
-<div class="wrap"><p class="eyebrow">{e(H["eyebrow"])}</p><h1>{e(H["h1"])}</h1><p class="lead">{e(H["lead"])}</p>{lang_note(T)}
-<div class="btns"><a class="btn btn-primary" href="contact/#quote">{e(u["cta_visit"])} {ic("arrow", "arrow")}</a><a class="btn btn-ghost" href="https://wa.me/{WA}" target="_blank" rel="noopener">{WA_SVG}{e(u["cta_wa"])}</a></div>
-<div class="chips">{chips}</div></div><span class="scroll-cue" aria-hidden="true"></span></section>''')
+    out.append(living_hero(T, ic, lang_note(T)))
+    out.append(f'<section class="living-intro"><div class="wrap"><p class="lead">{e(H["lead"])}</p><div class="chips">{chips}</div></div></section>')
     trades = "".join(f"<span>{e(t)}</span>" for t in H["ticker"])
     out.append(f'<div class="ticker" aria-hidden="true"><div class="track">{trades}{trades}</div></div>')
-    out.append(video_section(T))
     # pillars
     pills = []
     for i, g in enumerate(GROUPS):
@@ -411,7 +417,7 @@ def page_home(T):
         key = {"maintenance": "ac", "repairs": "plumbing", "transformation": "kitchen"}[g]
         bg = f'<div class="ph" style="background-image:url(../assets/img/{key}.webp)"></div>' if has_img(key) else f'<div class="art">{ic({"maintenance": "calendar", "repairs": "hammer", "transformation": "home"}[g])}</div>'
         lis = "".join(f'<li><a href="{s[0]}/">{e(T["svc"][s[0]]["name"])}</a></li>' for s in SERVICES if s[1] == g)
-        pills.append(f'<div class="pillar rv">{bg}<div class="in"><span class="num">0{i+1} / 03</span><h3>{e(G["name"])}</h3><p>{e(G["desc"])}</p><ul>{lis}</ul></div></div>')
+        pills.append(f'<div class="pillar rv">{bg}<div class="in"><div class="living-pillar-icon">{ic({"maintenance":"calendar","repairs":"home","transformation":"roller"}[g])}</div><span class="num">0{i+1} / 03</span><h3>{e(G["name"])}</h3><p>{e(G["desc"])}</p><ul>{lis}</ul></div></div>')
     out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(H["p_eyebrow"])}</p><h2>{e(H["p_title"])}</h2><p class="lead">{e(H["p_text"])}</p></div><div class="pillars">{"".join(pills)}</div></div></section>')
     # all services
     cards = "".join(svc_card(T, s[0], "") for s in SERVICES)
@@ -438,6 +444,7 @@ def page_home(T):
     if L:
         out.append(f'<section class="stone"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(L["ui"]["guides"])}</p><h2>{e(L["ui"]["guides_h1"])}</h2><p>{e(L["ui"]["guides_lead"])}</p></div>'
                    f'<div class="grid g3">{guide_cards(T, list(L["guides"])[:3], "")}</div><div class="btns" style="margin-top:26px"><a class="btn btn-line" href="guides/">{e(L["ui"]["all_guides"])}</a></div></div></section>')
+    out.append(video_section(T))
     out.append(cta_band(T))
     out.append(footer(T, ""))
     return "".join(out)
@@ -654,6 +661,7 @@ def root_index():
     return f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google-site-verification" content="{GSC_TOKEN}">
 <title>Inonda LTD | Maintenance, Repairs &amp; Renovation Contractor in Cyprus</title>
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="description" content="Inonda LTD — contractor for maintenance, repairs and home renovation in Nicosia and across Cyprus. Εργολάβος συντήρησης, επισκευών και ανακαινίσεων.">
 <link rel="canonical" href="{BASE}/">{alts}
 <meta property="og:title" content="Inonda LTD | Maintenance, Repairs &amp; Home Transformation in Cyprus"><meta property="og:image" content="{BASE}/assets/og-image.jpg"><meta property="og:url" content="{BASE}/">
@@ -705,6 +713,8 @@ def llms():
 def write(rel, text):
     if rel.endswith('.html'):
         text = enhance_html(text, 'org', rel)
+        if '<header' in text:
+            text = text.replace('</head>', living_assets(rel in [f'{lang}/index.html' for lang in LANGS]) + '</head>', 1)
     p = os.path.join(PUB, rel)
     os.makedirs(os.path.dirname(p), exist_ok=True)
     with open(p, "w", encoding="utf-8") as f:
