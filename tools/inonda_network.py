@@ -5,11 +5,12 @@ Run: python tools/inonda_network.py site|org|homes
 For inonda.org, build/gen.py also calls enhance_html on every generated page.
 """
 import html
+from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
 import sys
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from inonda_seo import enhance_seo
@@ -17,7 +18,7 @@ from inonda_seo import enhance_seo
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261031-language-1'
+VERSION = '20261031-language-2'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
 
 
@@ -78,6 +79,22 @@ def section(site, lang='en', page=''):
     return f'<section id="inonda-network" class="inonda-network-section" aria-labelledby="inonda-network-title" data-no-i18n><div class="inonda-network-heading"><p class="inonda-network-eyebrow">{html.escape(c["eyebrow"])}</p><h2 id="inonda-network-title">{html.escape(c["title"])}</h2><p>{html.escape(c["intro"])}</p></div><div class="inonda-network-cards">{"".join(cards)}</div><p class="inonda-network-note">{html.escape(c["note"])}</p>{contacts}</section>'
 
 
+def language_targets(text):
+    """Use published translations; unprovided locales fall back to their homepage."""
+    class Alternates(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.targets = {}
+        def handle_starttag(self, tag, attrs):
+            attrs = dict(attrs)
+            code = attrs.get('hreflang')
+            if tag == 'link' and attrs.get('rel') == 'alternate' and code in COPY:
+                self.targets[code] = urlsplit(attrs.get('href', '')).path
+    parser = Alternates()
+    parser.feed(text.split('</head>', 1)[0])
+    return parser.targets
+
+
 def enhance_html(text, site, page=''):
     text = enhance_seo(text, site, page)
     if '<main' not in text or '<header' not in text or 'http-equiv="refresh"' in text:
@@ -102,14 +119,21 @@ def enhance_html(text, site, page=''):
     include = f'<!-- INONDA NETWORK ASSETS START --><link rel="stylesheet" href="{assets}inonda-network.css?v={VERSION}"><link rel="stylesheet" href="{assets}inonda-chat.css?v={VERSION}"><script defer src="{assets}inonda-network.js?v={VERSION}"></script><script defer src="{assets}inonda-chat.js?v={VERSION}"></script><!-- INONDA NETWORK ASSETS END -->'
     text = text.replace('</head>', include + '</head>', 1)
     text = re.sub(r'(<body\b[^>]*>)', lambda m: m.group(1) + '<!-- INONDA NETWORK BAR START -->' + bar(site, lang, page) + '<!-- INONDA NETWORK BAR END -->', text, count=1)
-    if site == 'site':
-        # Real links work without JavaScript and keep the equivalent page.
-        suffix = page.split('/', 1)[1].removesuffix('index.html')
-        label = {'el': 'Γλώσσα', 'en': 'Language', 'ru': 'Язык', 'uk': 'Мова', 'he': 'שפה', 'ro': 'Limbă'}[lang]
-        names = [('el', 'Ελληνικά'), ('en', 'English'), ('ru', 'Русский'), ('uk', 'Українська'), ('he', 'עברית'), ('ro', 'Română')]
-        links = ''.join(f'<a href="/{code}/{suffix}" data-golang="{code}" hreflang="{code}" lang="{code}" dir="auto"' + (' aria-current="true"' if code == lang else '') + f'>{name}</a>' for code, name in names)
-        language = f'<!-- INONDA NETWORK LANGUAGE START --><nav class="inonda-language-bar" aria-label="{label}"><span>{label}</span><div>{links}</div></nav><!-- INONDA NETWORK LANGUAGE END -->'
-        text = text.replace('<!-- INONDA NETWORK BAR END -->', '<!-- INONDA NETWORK BAR END -->' + language, 1)
+    # The same accessible language row stays above every site's main header.
+    # Static sites use real equivalent-page URLs; the estimator changes in place.
+    label = {'el': 'Γλώσσα', 'en': 'Language', 'ru': 'Язык', 'uk': 'Мова', 'he': 'שפה', 'ro': 'Limbă'}[lang]
+    names = [('el', 'Ελληνικά'), ('en', 'English'), ('ru', 'Русский'), ('uk', 'Українська'), ('he', 'עברית'), ('ro', 'Română')]
+    links = []
+    translations = language_targets(text)
+    for code, name in names:
+        if site == 'homes':
+            target = '?lang=' + code
+        else:
+            target = translations.get(code, '/' + code + '/')
+        active = ' aria-current="true"' if code == lang else ''
+        links.append(f'<a href="{html.escape(target, quote=True)}" data-golang="{code}" hreflang="{code}" lang="{code}" dir="auto"{active}>{name}</a>')
+    language = f'<!-- INONDA NETWORK LANGUAGE START --><nav class="inonda-language-bar" aria-label="{label}" data-no-i18n><span>{label}</span><div>{"".join(links)}</div></nav><!-- INONDA NETWORK LANGUAGE END -->'
+    text = text.replace('<!-- INONDA NETWORK BAR END -->', '<!-- INONDA NETWORK BAR END -->' + language, 1)
     block = '<!-- INONDA NETWORK SECTION START -->' + section(site, lang, page) + '<!-- INONDA NETWORK SECTION END -->'
     if site == 'homes':
         text = text.replace('<section class="contact-section"', block + '<section class="contact-section"', 1)
@@ -132,6 +156,9 @@ def enhance_html(text, site, page=''):
         icon = f'<img class="inonda-channel-icon" src="{assets}{brand}-official.svg?v={VERSION}" alt="" width="24" height="24">'
         return f'<a{attrs} data-inonda-brand="{brand}">{icon}{inner}</a>'
     text = re.sub(r'<a\b([^>]*\bhref=[\"\'](?:https://wa\.me/|viber://)[^>]*?)>(.*?)</a>', brand_link, text, flags=re.S)
+    if site != 'org':
+        from inonda_future import enhance_future
+        return enhance_future(text, site)
     return text
 
 
@@ -143,10 +170,14 @@ CSS = '''/* INONDA LTD: shared navigation and journeys, scoped to avoid site the
 .inonda-language-bar a:hover{border-color:#005f92;text-decoration:underline}
 .inonda-language-bar a:focus-visible{outline:3px solid #005f92;outline-offset:2px}
 @media(max-width:600px){.inonda-language-bar{display:block;text-align:center;padding:8px 12px}.inonda-language-bar>span{display:block;margin-bottom:5px}.inonda-language-bar>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.inonda-language-bar a{padding:8px 3px;font-size:12px}}
-body[data-inonda-site=site] .mobile-panel{visibility:hidden;position:absolute!important;top:auto!important;max-height:70dvh}
-body[data-inonda-site=site] .mobile-panel.open{visibility:visible}
-@media(max-width:760px){body[data-inonda-site=site]{padding-top:58px!important}}
-body[data-inonda-site]{padding-top:44px}
+body[data-inonda-site] .mobile-panel{visibility:hidden;position:absolute!important;top:auto!important;max-height:70dvh}
+body[data-inonda-site] .mobile-panel.open{visibility:visible}
+body[data-inonda-site]{padding-top:44px!important}
+body[data-inonda-site] header{position:relative!important;inset:auto!important}
+body[data-inonda-site] header select.langsel,body[data-inonda-site] .mobile-langs,body[data-inonda-site=homes] .language-control{display:none!important}
+body[data-inonda-site=org] .page-hero{padding-top:48px}
+@media(max-width:760px){body[data-inonda-site]{padding-top:58px!important}.inonda-network-bar{height:58px!important}}
+@media print{.inonda-language-bar{display:none!important}}
 .inonda-network-bar{box-sizing:border-box;position:fixed;inset:0 0 auto;z-index:120;height:44px;display:flex;align-items:stretch;justify-content:center;gap:0;padding:0 3%;background:#023e8a;color:#fff;font:12px/1.2 Arial,sans-serif;border-bottom:1px solid #6196c3;direction:inherit}
 .inonda-network-brand{display:flex;align-items:center;margin-inline-end:auto;font-size:11px;letter-spacing:.08em;white-space:nowrap}
 .inonda-network-bar a{box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:0 20px;color:#fff;text-decoration:none;min-width:0;border-inline-start:1px solid #4777ac}
@@ -207,6 +238,18 @@ function esc(v){return String(v).replace(/[&<>"']/g,function(c){return {'&':'&am
 function update(){
  var lang=document.documentElement.lang, c=copy[lang]||copy.en, site=document.body.getAttribute('data-inonda-site');
  var bar=document.querySelector('.inonda-network-bar'); if(!bar)return;
+ var languageBar=document.querySelector('.inonda-language-bar');
+ if(languageBar){
+  var labels={el:'Γλώσσα',en:'Language',ru:'Язык',uk:'Мова',he:'שפה',ro:'Limbă'};
+  languageBar.setAttribute('aria-label',labels[lang]||labels.en);
+  languageBar.querySelector('span').textContent=labels[lang]||labels.en;
+  languageBar.querySelectorAll('[data-golang]').forEach(function(a){
+   var code=a.getAttribute('data-golang');
+   if(code===lang)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+   if(site==='homes'){var target=new URL(location.href);target.searchParams.set('lang',code);a.href=target.href;}
+  });
+ }
+
  document.querySelectorAll('.inonda-social-footer').forEach(function(nav){nav.setAttribute('aria-label',c.follow);nav.querySelector('strong').textContent=c.follow;});
  bar.setAttribute('aria-label',c.nav);
  var roles={site:c.management,org:c.services,homes:c.estimator};

@@ -1,5 +1,19 @@
 /* INONDA LTD: shared navigation and journeys, scoped to avoid site theme collisions. */
-body[data-inonda-site]{padding-top:44px}
+.inonda-language-bar{position:relative;z-index:2;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:12px;padding:6px max(3%,12px);background:#edf5fb;color:#06213d;border-bottom:1px solid #b9cfdf;font:600 13px/1.4 Arial,sans-serif}
+.inonda-language-bar>div{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}
+.inonda-language-bar a{box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;color:#06213d;background:#fff;border:1px solid #a8c3d7;border-radius:4px;text-decoration:none}
+.inonda-language-bar a[aria-current]{color:#fff;background:#005f92;border-color:#005f92}
+.inonda-language-bar a:hover{border-color:#005f92;text-decoration:underline}
+.inonda-language-bar a:focus-visible{outline:3px solid #005f92;outline-offset:2px}
+@media(max-width:600px){.inonda-language-bar{display:block;text-align:center;padding:8px 12px}.inonda-language-bar>span{display:block;margin-bottom:5px}.inonda-language-bar>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.inonda-language-bar a{padding:8px 3px;font-size:12px}}
+body[data-inonda-site] .mobile-panel{visibility:hidden;position:absolute!important;top:auto!important;max-height:70dvh}
+body[data-inonda-site] .mobile-panel.open{visibility:visible}
+body[data-inonda-site]{padding-top:44px!important}
+body[data-inonda-site] header{position:relative!important;inset:auto!important}
+body[data-inonda-site] header select.langsel,body[data-inonda-site] .mobile-langs,body[data-inonda-site=homes] .language-control{display:none!important}
+body[data-inonda-site=org] .page-hero{padding-top:48px}
+@media(max-width:760px){body[data-inonda-site]{padding-top:58px!important}.inonda-network-bar{height:58px!important}}
+@media print{.inonda-language-bar{display:none!important}}
 .inonda-network-bar{box-sizing:border-box;position:fixed;inset:0 0 auto;z-index:120;height:44px;display:flex;align-items:stretch;justify-content:center;gap:0;padding:0 3%;background:#023e8a;color:#fff;font:12px/1.2 Arial,sans-serif;border-bottom:1px solid #6196c3;direction:inherit}
 .inonda-network-brand{display:flex;align-items:center;margin-inline-end:auto;font-size:11px;letter-spacing:.08em;white-space:nowrap}
 .inonda-network-bar a{box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:0 20px;color:#fff;text-decoration:none;min-width:0;border-inline-start:1px solid #4777ac}
