@@ -214,8 +214,8 @@ html[dir="rtl"] .more svg,html[dir="rtl"] .arrow{transform:scaleX(-1)}
 .page-hero .lead{color:#E3E8F3;max-width:62ch}
 .page-hero.has-media .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
 .page-hero .media{box-shadow:0 30px 70px rgba(0,0,0,.35)}
-.crumbs{font-size:.88rem;color:#93A0BD;margin-bottom:18px}
-.crumbs a{color:#C8D1E6}
+.crumbs{font-size:.88rem;color:#ADB8D0;margin-bottom:18px}
+.crumbs a{color:#C8D1E6;text-decoration:underline}
 .crumbs span[aria-current]{color:var(--amber)}
 
 /* scope blocks */
@@ -328,3 +328,7 @@ html[dir="rtl"] .cookie{left:auto;right:18px}
 .video-sec .vframe{max-width:1080px;margin:0 auto}
 .vframe{border-radius:var(--r-lg);overflow:hidden;box-shadow:0 30px 70px rgba(11,21,48,.25);background:var(--navy);aspect-ratio:16/9}
 .vframe video{width:100%;height:100%;display:block;object-fit:cover}
+/* a11y: text version of the presentation video (WCAG 1.2.3 / 1.2.5) */
+.video-text{margin-top:14px;font-size:.95rem;line-height:1.6}.video-text summary{cursor:pointer;font-weight:600;text-decoration:underline}.video-text ol{margin:10px 0 0;padding-inline-start:1.4em}.video-text li{margin:0 0 6px}
+/* a11y: links in text are underlined (WCAG 1.4.1) */
+.cookie a,.prose a:not(.btn){text-decoration:underline}

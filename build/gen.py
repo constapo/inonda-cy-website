@@ -16,6 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 from inonda_network import enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
 from inonda_living import living_hero, living_assets
+import a11y_copy as A11Y
 PUB = os.path.join(ROOT, "public")
 SRC_IMG = os.path.join(ROOT, "build", "source-images")
 BASE = "https://www.inonda.org"
@@ -51,7 +52,7 @@ SERVICES = [
     ("outdoor-works", "transformation", "sun", "outdoor"),
 ]
 SVC = {s[0]: s for s in SERVICES}
-PAGES = ["", "services", "how-we-work", "service-areas", "about", "faq", "contact", "privacy-policy", "terms-of-service"]
+PAGES = ["", "services", "how-we-work", "service-areas", "about", "faq", "contact", "privacy-policy", "terms-of-service", "accessibility"]
 
 # ---------------------------------------------------------------- icons (24px stroke)
 I = {
@@ -266,7 +267,7 @@ def footer(T, up):
 {guides_link(T, up)}<a href="{up}how-we-work/">{e(u["nav"]["process"])}</a><a href="{up}service-areas/">{e(u["nav"]["areas"])}</a><a href="{up}about/">{e(u["nav"]["about"])}</a><a href="{up}faq/">{e(u["nav"]["faq"])}</a></div>
 </div>
 <div class="legal"><span>© {datetime.date.today().year} INONDA LTD. {e(u["rights"])}</span>
-<span><a href="{up}privacy-policy/">{e(u["privacy"])}</a> · <a href="{up}terms-of-service/">{e(u["terms"])}</a> · <a href="https://www.inonda.site/{T["lang"]}/" rel="noopener">{e(u["sister"])}</a></span></div>
+<span><a href="{up}privacy-policy/">{e(u["privacy"])}</a> · <a href="{up}terms-of-service/">{e(u["terms"])}</a> · <a href="{up}accessibility/">{e(A11Y.FOOTER_LABEL.get(T["lang"], "Accessibility"))}</a> · <a href="https://www.inonda.site/{T["lang"]}/" rel="noopener">{e(u["sister"])}</a></span></div>
 </div></footer>
 <div class="float-stack">
 <a class="float-btn wa" href="https://wa.me/{WA}" target="_blank" rel="noopener" aria-label="WhatsApp">{WA_SVG}</a>
@@ -392,7 +393,15 @@ def video_section(T):
     if not has_video("presentation.mp4"):
         return ""
     return ('<section class="video-sec"><div class="wrap"><div class="vframe rv"><video controls preload="none" playsinline poster="../assets/img/presentation-poster.jpg">'
-            '<source src="../assets/video/presentation.mp4" type="video/mp4"></video></div></div></section>')
+            '<source src="../assets/video/presentation.mp4" type="video/mp4">'
+            f'<track kind="captions" src="../assets/video/presentation.{T["lang"]}.vtt" srclang="{T["lang"]}" label="{A11Y.LANG_NAMES[T["lang"]]}" default>'
+            '</video></div>' + video_text(T["lang"]) + '</div></section>')
+
+def video_text(lang):
+    """Text version of the presentation video (WCAG 1.2.3 / 1.2.5): the video has no speech, so list its on-screen titles."""
+    items = "".join(f"<li>{e(t)}</li>" for t in A11Y.VIDEO_ITEMS[lang])
+    return (f'<details class="video-text"><summary>{e(A11Y.VIDEO_SUMMARY[lang])}</summary>'
+            f'<p>{e(A11Y.VIDEO_INTRO[lang])}</p><ol>{items}</ol></details>')
 
 def video_ld(T):
     if not has_video("presentation.mp4"):
@@ -576,6 +585,22 @@ def page_legal(T, key, slug):
     out.append(footer(T, up))
     return "".join(out)
 
+def page_accessibility(T):
+    """Accessibility statement (EAA, Cyprus Law 57(I)/2024; EN 301 549 / WCAG 2.1 AA)."""
+    u = T["ui"]; l = T["lang"]; t = A11Y.S[l]; up = "../"
+    out = [head(T, "accessibility", t["title"], t["desc"]), header(T, "accessibility", up)]
+    out.append(page_hero(T, [(u["nav"]["home"], up), (t["title"], "")], t["title"], t["lead"], buttons=False))
+    ph = A11Y.PHONES.format(**{"or": t["orw"]}).split(" " + t["orw"] + " ")
+    body = (f'<p class="eyebrow">{e(t["updated"])}</p><p>{e(t["intro"].format(domains=A11Y.DOMAINS["org"][l]))}</p>'
+            f'<h2>{e(t["h_std"])}</h2><p>{e(t["p_std"])}</p><h2>{e(t["h_status"])}</h2><p>{e(t["p_status"])}</p>'
+            f'<h2>{e(t["h_done"])}</h2><ul>' + "".join(f"<li>{e(x)}</li>" for x in t["done"]) + '</ul>'
+            f'<h2>{e(t["h_third"])}</h2><p>{e(t["p_third"])}</p><h2>{e(t["h_contact"])}</h2><p>{e(t["p_contact"])}</p>'
+            f'<ul><li>{e(t["email"])}: {A11Y.EMAIL}</li><li>{e(t["phone"])}: <span dir="ltr">{ph[0]}</span> {e(t["orw"])} <span dir="ltr">{ph[1]}</span></li></ul>'
+            f'<p>{e(t["p_contact2"])}</p><h2>{e(t["h_enf"])}</h2><p>{e(t["p_enf"])}</p><p>{e(t["prepared"])}</p>')
+    out.append(f'<section><div class="wrap prose">{body}</div></section>')
+    out.append(footer(T, up))
+    return "".join(out)
+
 # ---------------------------------------------------------------- local pages (areas + guides), el/en/ru/ro only
 LOCAL = {}
 
@@ -684,7 +709,7 @@ def sitemap():
     rows = []
     for p in PAGES + [s[0] for s in SERVICES]:
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{url(l, p)}"/>' for l in LANGS) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{url("en", p)}"/>'
-        pr = "1.0" if p == "" else ("0.9" if p in SVC or p == "services" else ("0.3" if p in ("privacy-policy", "terms-of-service") else "0.7"))
+        pr = "1.0" if p == "" else ("0.9" if p in SVC or p == "services" else ("0.3" if p in ("privacy-policy", "terms-of-service", "accessibility") else "0.7"))
         for l in LANGS:
             rows.append(f"<url><loc>{url(l, p)}</loc><lastmod>{TODAY}</lastmod><priority>{pr}</priority>{alts}</url>")
     extra = {}
@@ -756,7 +781,8 @@ def main():
         write(f"{l}/contact/index.html", page_contact(T))
         write(f"{l}/privacy-policy/index.html", page_legal(T, "privacy", "privacy-policy"))
         write(f"{l}/terms-of-service/index.html", page_legal(T, "terms", "terms-of-service"))
-        n += 8
+        write(f"{l}/accessibility/index.html", page_accessibility(T))
+        n += 9
         for s in SERVICES:
             write(f"{l}/{s[0]}/index.html", page_service(T, s[0])); n += 1
         if l in LOCAL:
