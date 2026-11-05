@@ -7,14 +7,21 @@ function update(){
  var bar=document.querySelector('.inonda-network-bar'); if(!bar)return;
  var languageBar=document.querySelector('.inonda-language-bar');
  if(languageBar){
-  var labels={el:'Γλώσσα',en:'Language',ru:'Язык',uk:'Мова',he:'שפה',ro:'Limbă'};
+  var labels={"el": "Γλώσσα", "en": "Language", "ru": "Язык", "uk": "Мова", "he": "שפה", "ro": "Limbă"}, ui={"el": ["EL", "Ελληνικά"], "en": ["EN", "English"], "ru": ["RU", "Русский"], "uk": ["UA", "Українська"], "he": ["HE", "עברית"], "ro": ["RO", "Română"]}, cur=ui[lang]||ui.en;
   languageBar.setAttribute('aria-label',labels[lang]||labels.en);
-  languageBar.querySelector('span').textContent=labels[lang]||labels.en;
+  var summary=languageBar.querySelector('summary');
   languageBar.querySelectorAll('[data-golang]').forEach(function(a){
    var code=a.getAttribute('data-golang');
-   if(code===lang)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+   if(code===lang){a.setAttribute('aria-current','true');var f=a.querySelector('img');if(summary&&f)summary.querySelector('img').src=f.src;}else a.removeAttribute('aria-current');
    if(site==='homes'){var target=new URL(location.href);target.searchParams.set('lang',code);a.href=target.href;}
   });
+  if(summary){summary.querySelector('.inonda-lang-code').textContent=cur[0];summary.querySelector('.inonda-lang-hidden').textContent=(labels[lang]||labels.en)+': '+cur[1];}
+  var details=languageBar.querySelector('details');
+  if(details&&!details.dataset.ready){details.dataset.ready='1';
+   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&details.open){details.open=false;summary.focus();}});
+   document.addEventListener('click',function(e){if(details.open&&!details.contains(e.target))details.open=false;});
+   details.addEventListener('click',function(e){if(e.target.closest('a[data-golang]'))details.open=false;});
+  }
  }
 
  document.querySelectorAll('.inonda-social-footer').forEach(function(nav){nav.setAttribute('aria-label',c.follow);nav.querySelector('strong').textContent=c.follow;});

@@ -18,8 +18,41 @@ from inonda_seo import enhance_seo
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261031-language-2'
+VERSION = '20261105-lang-4'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
+
+
+# Compact language switcher: flag + short code. Flags are decorative data: SVGs,
+# so no extra files are served (inonda.homes CSP allows img-src data:).
+LANG_UI = [('el', 'EL', 'Ελληνικά'), ('en', 'EN', 'English'), ('ru', 'RU', 'Русский'),
+           ('uk', 'UA', 'Українська'), ('he', 'HE', 'עברית'), ('ro', 'RO', 'Română')]
+LANG_LABEL = {'el': 'Γλώσσα', 'en': 'Language', 'ru': 'Язык', 'uk': 'Мова', 'he': 'שפה', 'ro': 'Limbă'}
+FLAGS = {
+    'el': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"><path fill="#0D5EAF" d="M0 0h27v18H0z"/><path stroke="#fff" stroke-width="2" d="M0 3h27M0 7h27M0 11h27M0 15h27"/><path fill="#0D5EAF" d="M0 0h10v10H0z"/><path stroke="#fff" stroke-width="2" d="M5 0v10M0 5h10"/></svg>',
+    'en': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="t"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30m0-30L0 30"/><path stroke="#C8102E" stroke-width="4" clip-path="url(#t)" d="M0 0l60 30m0-30L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#C8102E" stroke-width="6" d="M30 0v30M0 15h60"/></svg>',
+    'ru': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" preserveAspectRatio="xMidYMid slice"><path fill="#fff" d="M0 0h9v2H0z"/><path fill="#0039A6" d="M0 2h9v2H0z"/><path fill="#D52B1E" d="M0 4h9v2H0z"/></svg>',
+    'uk': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"><path fill="#0057B7" d="M0 0h3v1H0z"/><path fill="#FFD700" d="M0 1h3v1H0z"/></svg>',
+    'he': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 160" preserveAspectRatio="xMidYMid slice"><path fill="#fff" d="M0 0h220v160H0z"/><path fill="#0038B8" d="M0 15h220v25H0zm0 105h220v25H0z"/><path fill="none" stroke="#0038B8" stroke-width="6" d="M110 50l26 45H84zm0 60L84 65h52z"/></svg>',
+    'ro': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"><path fill="#002B7F" d="M0 0h1v2H0z"/><path fill="#FCD116" d="M1 0h1v2H1z"/><path fill="#CE1126" d="M2 0h1v2H2z"/></svg>',
+}
+
+
+def flag_img(code):
+    from urllib.parse import quote
+    return f'<img class="inonda-lang-flag" src="data:image/svg+xml,{quote(FLAGS[code], safe=" =:/")}" alt="" aria-hidden="true" width="21" height="14">'
+
+
+def language_switcher(site, lang, translations):
+    ui = {code: (short, name) for code, short, name in LANG_UI}
+    label = LANG_LABEL[lang]
+    items = []
+    for code, short, name in LANG_UI:
+        target = '?lang=' + code if site == 'homes' else translations.get(code, '/' + code + '/')
+        active = ' aria-current="true"' if code == lang else ''
+        items.append(f'<li><a href="{html.escape(target, quote=True)}" data-golang="{code}" hreflang="{code}" lang="{code}" dir="auto"{active}>{flag_img(code)}<span class="inonda-lang-code">{short}</span><span class="inonda-lang-name">{name}</span></a></li>')
+    short, name = ui[lang]
+    summary = f'<summary>{flag_img(lang)}<span class="inonda-lang-code">{short}</span><span class="inonda-lang-hidden">{html.escape(label)}: {name}</span></summary>'
+    return f'<!-- INONDA NETWORK LANGUAGE START --><nav class="inonda-language-bar" aria-label="{label}" data-no-i18n translate="no"><details>{summary}<ul>{"".join(items)}</ul></details></nav><!-- INONDA NETWORK LANGUAGE END -->'
 
 
 def journey(page):
@@ -119,20 +152,9 @@ def enhance_html(text, site, page=''):
     include = f'<!-- INONDA NETWORK ASSETS START --><link rel="stylesheet" href="{assets}inonda-network.css?v={VERSION}"><link rel="stylesheet" href="{assets}inonda-chat.css?v={VERSION}"><script defer src="{assets}inonda-network.js?v={VERSION}"></script><script defer src="{assets}inonda-chat.js?v={VERSION}"></script><!-- INONDA NETWORK ASSETS END -->'
     text = text.replace('</head>', include + '</head>', 1)
     text = re.sub(r'(<body\b[^>]*>)', lambda m: m.group(1) + '<!-- INONDA NETWORK BAR START -->' + bar(site, lang, page) + '<!-- INONDA NETWORK BAR END -->', text, count=1)
-    # The same accessible language row stays above every site's main header.
+    # Compact flag + code switcher at the end of the shared top bar (no extra row).
     # Static sites use real equivalent-page URLs; the estimator changes in place.
-    label = {'el': 'Γλώσσα', 'en': 'Language', 'ru': 'Язык', 'uk': 'Мова', 'he': 'שפה', 'ro': 'Limbă'}[lang]
-    names = [('el', 'Ελληνικά'), ('en', 'English'), ('ru', 'Русский'), ('uk', 'Українська'), ('he', 'עברית'), ('ro', 'Română')]
-    links = []
-    translations = language_targets(text)
-    for code, name in names:
-        if site == 'homes':
-            target = '?lang=' + code
-        else:
-            target = translations.get(code, '/' + code + '/')
-        active = ' aria-current="true"' if code == lang else ''
-        links.append(f'<a href="{html.escape(target, quote=True)}" data-golang="{code}" hreflang="{code}" lang="{code}" dir="auto"{active}>{name}</a>')
-    language = f'<!-- INONDA NETWORK LANGUAGE START --><nav class="inonda-language-bar" aria-label="{label}" data-no-i18n><span>{label}</span><div>{"".join(links)}</div></nav><!-- INONDA NETWORK LANGUAGE END -->'
+    language = language_switcher(site, lang, language_targets(text))
     text = text.replace('<!-- INONDA NETWORK BAR END -->', '<!-- INONDA NETWORK BAR END -->' + language, 1)
     block = '<!-- INONDA NETWORK SECTION START -->' + section(site, lang, page) + '<!-- INONDA NETWORK SECTION END -->'
     if site == 'homes':
@@ -163,13 +185,35 @@ def enhance_html(text, site, page=''):
 
 
 CSS = '''/* INONDA LTD: shared navigation and journeys, scoped to avoid site theme collisions. */
-.inonda-language-bar{position:relative;z-index:2;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:12px;padding:6px max(3%,12px);background:#edf5fb;color:#06213d;border-bottom:1px solid #b9cfdf;font:600 13px/1.4 Arial,sans-serif}
-.inonda-language-bar>div{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}
-.inonda-language-bar a{box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;color:#06213d;background:#fff;border:1px solid #a8c3d7;border-radius:4px;text-decoration:none}
-.inonda-language-bar a[aria-current]{color:#fff;background:#005f92;border-color:#005f92}
-.inonda-language-bar a:hover{border-color:#005f92;text-decoration:underline}
-.inonda-language-bar a:focus-visible{outline:3px solid #005f92;outline-offset:2px}
-@media(max-width:600px){.inonda-language-bar{display:block;text-align:center;padding:8px 12px}.inonda-language-bar>span{display:block;margin-bottom:5px}.inonda-language-bar>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.inonda-language-bar a{padding:8px 3px;font-size:12px}}
+.inonda-language-bar{position:fixed;top:0;inset-inline-end:0;z-index:121;height:44px;display:flex;align-items:stretch;font:600 12px/1.2 Arial,sans-serif;color:#fff}
+.inonda-language-bar details,.inonda-language-bar details[open]{position:relative;display:flex;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+.inonda-language-bar details>summary{box-sizing:border-box;margin:0;font:inherit;display:flex;align-items:center;gap:8px;height:100%;padding:0 18px;list-style:none;cursor:pointer;color:#fff;border-inline-start:1px solid #4777ac;letter-spacing:.04em;user-select:none}
+.inonda-language-bar summary::-webkit-details-marker{display:none}
+.inonda-language-bar details summary::after,.inonda-language-bar details[open] summary::after{position:static;inset:auto;display:block;background:none;border-radius:0;font-size:0;line-height:0;color:inherit;content:"";width:6px;height:6px;margin-top:-3px;border:solid currentColor;border-width:0 1.5px 1.5px 0;transform:rotate(45deg);transition:transform .15s}
+.inonda-language-bar details[open] summary::after{transform:rotate(-135deg)!important;margin-top:3px}
+.inonda-language-bar:has(details[open]){z-index:260}
+.inonda-language-bar summary:hover{background:#005e9f}
+.inonda-language-bar summary:focus-visible{outline:3px solid #55c8ff;outline-offset:-4px}
+.inonda-lang-flag{display:block;flex:none;width:21px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(16,47,73,.18)}
+.inonda-lang-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.inonda-language-bar ul{position:absolute;top:calc(100% + 6px);inset-inline-end:8px;min-width:210px;margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #ccdde7;border-radius:6px;box-shadow:0 8px 24px rgba(2,62,138,.14);animation:inonda-lang-in .15s ease-out}
+.inonda-language-bar li{margin:0}
+.inonda-language-bar a{box-sizing:border-box;display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border-radius:4px;color:#023e8a;text-decoration:none;font:400 14px/1.3 Arial,sans-serif}
+.inonda-language-bar a .inonda-lang-code{font-weight:700;min-width:2.1em;letter-spacing:.04em}
+.inonda-language-bar a .inonda-lang-name{color:#425e70}
+.inonda-language-bar a:hover{background:#eef5fa}
+.inonda-language-bar a:hover .inonda-lang-name{text-decoration:underline}
+.inonda-language-bar a[aria-current]{background:#e4f3fb;box-shadow:inset 3px 0 #0077b6}
+[dir=rtl] .inonda-language-bar a[aria-current]{box-shadow:inset -3px 0 #0077b6}
+.inonda-language-bar a:focus-visible{outline:3px solid #0077b6;outline-offset:-2px}
+@keyframes inonda-lang-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.inonda-language-bar ul{animation:none}.inonda-language-bar summary::after{transition:none}}
+.inonda-network-bar{padding-inline-end:calc(3% + 96px)!important}
+@media(max-width:760px){.inonda-language-bar{height:58px}}
+@media(max-width:700px){.inonda-network-bar{padding-inline-end:78px!important}.inonda-language-bar details>summary{padding:0 12px;gap:6px;width:78px;justify-content:center}}
+/* inonda.org uses a light top bar: same switcher, navy text */
+body[data-inonda-site=org] .inonda-language-bar details>summary{color:#023e8a;border-color:#c6e2f2}
+body[data-inonda-site=org] .inonda-language-bar details>summary:hover{background:#d4eeff}
 body[data-inonda-site] .mobile-panel{visibility:hidden;position:absolute!important;top:auto!important;max-height:70dvh}
 body[data-inonda-site] .mobile-panel.open{visibility:visible}
 body[data-inonda-site]{padding-top:44px!important}
@@ -195,7 +239,7 @@ body[data-inonda-site=site] .hero .wrap{padding-top:calc(var(--nav-h,76px) + 114
 .inonda-network-section{box-sizing:border-box;position:relative;clear:both;padding:70px max(5.5%,22px);background:#f3f8fb;color:#102f49;font-family:Arial,sans-serif;text-align:start;border-top:1px solid #d5e3eb;border-bottom:1px solid #d5e3eb;scroll-margin-top:160px}
 .inonda-network-section *{box-sizing:border-box}
 .inonda-network-heading{max-width:950px;margin:0 0 32px}
-.inonda-network-section .inonda-network-eyebrow{color:#0077b6;font-size:11px;letter-spacing:.07em;line-height:1.6;font-weight:700;margin:0 0 18px}
+.inonda-network-section .inonda-network-eyebrow{color:#006aa3;font-size:11px;letter-spacing:.07em;line-height:1.6;font-weight:700;margin:0 0 18px}
 .inonda-network-section h2{font:400 clamp(30px,3.4vw,52px)/1.12 Arial,sans-serif;letter-spacing:-.03em;margin:0 0 22px;color:#023e8a;max-width:none}
 .inonda-network-heading>p:last-child{font-size:16px;line-height:1.7;margin:0;max-width:860px;color:#425e70}
 .inonda-network-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1500px}
@@ -240,14 +284,21 @@ function update(){
  var bar=document.querySelector('.inonda-network-bar'); if(!bar)return;
  var languageBar=document.querySelector('.inonda-language-bar');
  if(languageBar){
-  var labels={el:'Γλώσσα',en:'Language',ru:'Язык',uk:'Мова',he:'שפה',ro:'Limbă'};
+  var labels=LANG_LABEL_DATA, ui=LANG_UI_DATA, cur=ui[lang]||ui.en;
   languageBar.setAttribute('aria-label',labels[lang]||labels.en);
-  languageBar.querySelector('span').textContent=labels[lang]||labels.en;
+  var summary=languageBar.querySelector('summary');
   languageBar.querySelectorAll('[data-golang]').forEach(function(a){
    var code=a.getAttribute('data-golang');
-   if(code===lang)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+   if(code===lang){a.setAttribute('aria-current','true');var f=a.querySelector('img');if(summary&&f)summary.querySelector('img').src=f.src;}else a.removeAttribute('aria-current');
    if(site==='homes'){var target=new URL(location.href);target.searchParams.set('lang',code);a.href=target.href;}
   });
+  if(summary){summary.querySelector('.inonda-lang-code').textContent=cur[0];summary.querySelector('.inonda-lang-hidden').textContent=(labels[lang]||labels.en)+': '+cur[1];}
+  var details=languageBar.querySelector('details');
+  if(details&&!details.dataset.ready){details.dataset.ready='1';
+   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&details.open){details.open=false;summary.focus();}});
+   document.addEventListener('click',function(e){if(details.open&&!details.contains(e.target))details.open=false;});
+   details.addEventListener('click',function(e){if(e.target.closest('a[data-golang]'))details.open=false;});
+  }
  }
 
  document.querySelectorAll('.inonda-social-footer').forEach(function(nav){nav.setAttribute('aria-label',c.follow);nav.querySelector('strong').textContent=c.follow;});
@@ -270,7 +321,7 @@ function update(){
 document.addEventListener('inonda:language',update);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',update);else update();
 })();
-'''.replace('COPY_DATA', json.dumps(COPY, ensure_ascii=False))
+'''.replace('COPY_DATA', json.dumps(COPY, ensure_ascii=False)).replace('LANG_LABEL_DATA', json.dumps(LANG_LABEL, ensure_ascii=False)).replace('LANG_UI_DATA', json.dumps({c: [short, name] for c, short, name in LANG_UI}, ensure_ascii=False))
 
 
 def update_site(site):
