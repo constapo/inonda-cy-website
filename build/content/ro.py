@@ -381,7 +381,7 @@ T = {
 },
 "services": {
   "title": "Servicii: întreținere, reparații și renovări în Cipru | Inonda LTD",
-  "desc": "Toate serviciile Inonda LTD: planuri de întreținere, aer condiționat, hidroizolații, instalații sanitare, electrice, meșter, reparații urgente, bucătării, băi, pardoseli, zugrăveli, ferestre și lucrări exterioare.",
+  "desc": "Toate serviciile Inonda LTD: planuri de întreținere, aer condiționat, hidroizolații, instalații sanitare, electrice, bucătării, băi, pardoseli, zugrăveli, ferestre și lucrări exterioare.",
   "h1": "Serviciile noastre",
   "lead": "Paisprezece servicii detaliate, în trei grupe. Alegeți ce vă trebuie sau descrieți-ne problema și formăm echipa potrivită.",
 },

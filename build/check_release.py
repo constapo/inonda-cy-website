@@ -36,7 +36,9 @@ for p,soup in pages.items():
     check(bool(soup.title and soup.title.string),f'{rel}: title')
     check(bool(soup.select_one('meta[name=description]')['content']),f'{rel}: description')
     check(soup.select_one('link[rel=canonical]')['href']==expected,f'{rel}: canonical')
-    check('noindex' not in soup.select_one('meta[name=robots]')['content'],f'{rel}: indexable')
+    contract_only=rel.split('/')[1] in ('contract-repairs','emergency-repairs') if rel.count('/')>1 else False
+    if contract_only: count-=1
+    check(('noindex' in soup.select_one('meta[name=robots]')['content'])==contract_only,f'{rel}: indexable')
     alternates=soup.select('link[hreflang]')
     check(any(x['hreflang']=='x-default' for x in alternates),f'{rel}: x-default')
     for a in alternates:
@@ -64,7 +66,7 @@ for p,soup in pages.items():
 
 sitemap=ET.parse(PUB/'sitemap.xml')
 urls=[node.text for node in sitemap.findall('{*}url/{*}loc')]
-check(len(urls)==count==186,'186 canonical sitemap URLs')
+check(len(urls)==count==174,'174 canonical sitemap URLs')
 check(len(urls)==len(set(urls)),'Unique sitemap URLs')
 for url in urls:
     check((PUB/url.removeprefix(BASE)/'index.html').exists(),'Sitemap target '+url)

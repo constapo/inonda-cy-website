@@ -381,7 +381,7 @@ T = {
 },
 "services": {
   "title": "Services: Maintenance, Repairs & Renovation in Cyprus | Inonda LTD",
-  "desc": "All Inonda LTD services: maintenance plans, AC, waterproofing, plumbing, electrical, contract repairs, urgent repairs, kitchens, bathrooms, flooring, painting, windows and outdoor works.",
+  "desc": "All Inonda LTD services: maintenance plans, AC, waterproofing, plumbing, electrical, kitchens, bathrooms, flooring, painting, windows and outdoor works.",
   "h1": "Our services",
   "lead": "Fourteen detailed services in three groups. Pick what you need, or tell us the problem and we'll put the right team together.",
 },

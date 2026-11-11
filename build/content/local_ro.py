@@ -12,7 +12,7 @@ L = {
 "nicosia": {
   "name": "Nicosia", "img": "renovation",
   "title": "Antreprenor în Nicosia: reparații, întreținere și renovări | Inonda LTD",
-  "desc": "Instalatori, electricieni, tehnicieni de aer condiționat și echipă de renovări în Nicosia. Urgențe pentru clienții cu contract de mentenanță, evaluare, ofertă scrisă. Tel. +357 94 091 616.",
+  "desc": "Instalatori, electricieni, tehnicieni de aer condiționat și echipă de renovări în Nicosia. Evaluare, ofertă scrisă. Tel. +357 94 091 616.",
   "h1": "Antreprenor în Nicosia pentru reparații, întreținere și renovări",
   "lead": "Baza noastră. Servicii zilnice în tot orașul și suburbiile Nicosiei, cu cea mai rapidă intervenție la urgențe.",
   "intro": ["Nicosia are cele mai calde veri și cele mai reci ierni din Cipru. Aparatele de aer condiționat și pompele de căldură funcționează aproape tot anul, acoperișurile plate primesc toată forța soarelui, iar multe blocuri din anii '80 și '90 au nevoie de cablaj nou, țevi noi și izolație mai bună.",

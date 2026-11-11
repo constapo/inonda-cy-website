@@ -172,6 +172,8 @@ def ver(name):
     with open(os.path.join(PUB, "assets", name), "rb") as f:
         return hashlib.md5(f.read()).hexdigest()[:8]
 
+NOINDEX = {"contract-repairs", "emergency-repairs"}  # contract-only services: kept for customers, not offered to search
+
 def head(T, page, title, desc, ld_extra=None, up="../", langs=None):
     lang = T["lang"]; langs = langs or LANGS
     alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{url(l, page)}">' for l in langs)
@@ -197,7 +199,7 @@ def head(T, page, title, desc, ld_extra=None, up="../", langs=None):
 <meta name="google-site-verification" content="{GSC_TOKEN}">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="{"noindex, follow" if page in NOINDEX else "index, follow, max-image-preview:large, max-snippet:-1"}">
 <link rel="canonical" href="{url(lang, page)}">
 {alts}
 <meta property="og:type" content="website">
@@ -708,7 +710,7 @@ def page_404():
 
 def sitemap():
     rows = []
-    for p in PAGES + [s[0] for s in SERVICES]:
+    for p in PAGES + [s[0] for s in SERVICES if s[0] not in NOINDEX]:
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{url(l, p)}"/>' for l in LANGS) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{url("en", p)}"/>'
         pr = "1.0" if p == "" else ("0.9" if p in SVC or p == "services" else ("0.3" if p in ("privacy-policy", "terms-of-service", "accessibility") else "0.7"))
         for l in LANGS:
@@ -728,7 +730,7 @@ def llms():
     T = ALL["en"]
     lines = ["# Inonda LTD (inonda.org)", "", "> " + T["ui"]["org_desc"], "",
              f"Registered company {REG}, {ADDR['street']}, {ADDR['postal']} {ADDR['locality']}, Cyprus. Email {EMAIL}.",
-             f"Irina, Director: {PHONE1_TXT} (WhatsApp, Viber), Russian, Greek, English. Constantin, Secretary / Handyman / Foreman: {PHONE2_TXT}, Romanian, Greek, English.",
+             f"Irina, Director: {PHONE1_TXT} (WhatsApp, Viber), Russian, Greek, English. Constantin, Secretary / Technician / Foreman: {PHONE2_TXT}, Romanian, Greek, English.",
              "We answer and quote in Greek, English, Russian and Romanian (website also in Ukrainian and Hebrew). Property management services: https://www.inonda.site/", "", "## Services"]
     for s in SERVICES:
         lines.append(f"- [{T['svc'][s[0]]['name']}]({url('en', s[0])}): {T['svc'][s[0]]['short']}")
