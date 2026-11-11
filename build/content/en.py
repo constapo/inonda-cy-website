@@ -163,7 +163,7 @@ T = {
   "title": "Small repairs under maintenance contract | Inonda LTD",
   "desc": "Maintenance-contract customers only. In Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
   "h1": "Small repairs for maintenance-contract customers",
-  "lead": "Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract.",
+  "lead": "Small repairs, urgent repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract.",
   "intro": "Small repairs are part of our maintenance plans: we group them into your scheduled visits.",
   "scope": [
     ("Doors, windows & locks", ["Sticking or sagging doors adjusted or planed", "Lock, handle and cylinder replacement", "Window handles, hinges and fly screens", "Roller shutters and straps"]),
@@ -179,10 +179,10 @@ T = {
   ],
 },
 "emergency-repairs": {
-  "name": "Urgent repairs", "short": "Burst pipes, leaks into neighbours, power failures, broken locks and storm damage, made safe fast.",
-  "title": "Urgent Repairs in Nicosia & Cyprus | Leaks, Power, Locks | Inonda LTD",
+  "name": "Urgent repairs under maintenance contract", "short": "Maintenance-contract customers only. Burst pipes, leaks into neighbours, power failures, broken locks and storm damage, made safe fast.",
+  "title": "Urgent repairs under maintenance contract | Inonda LTD",
   "desc": "Urgent call-outs are for customers with a maintenance contract. Urgent repairs in Nicosia and Cyprus: burst pipes, water leaking into a neighbour, power failures, broken locks, storm and roof damage. Call or WhatsApp us.",
-  "h1": "Urgent repairs, made safe fast",
+  "h1": "Urgent repairs under maintenance contract",
   "lead": "Urgent call-outs are for customers with a maintenance contract. Water pouring through the ceiling? No power? A door that won't lock? Call or WhatsApp us and we'll prioritise your job.",
   "intro": "First we make the property safe and stop the damage spreading. Then we give you a clear quote for the permanent repair.",
   "scope": [
@@ -373,7 +373,7 @@ T = {
   "a_text": "Based in Strovolos, we cover all of Nicosia district daily, plus Larnaca, Limassol and the Famagusta area for scheduled works and larger projects.",
   "q_title": "Questions we hear every day",
   "faqs": [
-    ("Is the quote really free?", "Assessment and written quote are free and without obligation. For complex diagnostics we tell you any fee upfront. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
+    ("Is the quote really free?", "Assessment and written quote are free and without obligation. For complex diagnostics we tell you any fee upfront. We assess, quote and take on only jobs of more than one day of work. Small repairs, urgent repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
     ("Do you do small jobs?", "Only for customers with a maintenance contract. Otherwise we take on jobs of more than one day of work."),
     ("Who will actually do the work?", "Our own team and licensed partner technicians who work to our standards, under our supervision and our warranty."),
     ("Which languages do you work in?", "We answer, quote and work in Greek, English, Russian and Romanian. The website is also available in Ukrainian and Hebrew."),
@@ -453,7 +453,7 @@ T = {
   "h1": "Frequently asked questions", "lead": "Quick answers about quotes, work, payments and warranty. Can't find yours? Just ask us on WhatsApp.",
   "groups": [
     ("Quotes & prices", [
-      ("Is the quote free?", "Assessment and written quote are free and without obligation. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
+      ("Is the quote free?", "Assessment and written quote are free and without obligation. We assess, quote and take on only jobs of more than one day of work. Small repairs, urgent repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
       ("Can you quote from photos?", "For simple jobs, often yes. For renovations and leaks we need to visit and measure."),
       ("Do your prices include materials?", "The quote states clearly what's included: labour, materials, disposal and VAT."),
       ("Is there a minimum charge?", "Small repairs are carried out only under a maintenance contract, on the terms of your plan."),

@@ -12,7 +12,7 @@ L = {
 "nicosia": {
   "name": "Nicosia", "img": "renovation",
   "title": "Contractor in Nicosia: Repairs, Maintenance & Renovation | Inonda LTD",
-  "desc": "Plumbers, electricians, AC technicians and renovation team in Nicosia. Same-day response for urgent repairs, assessment and written quotes. Call +357 94 091 616.",
+  "desc": "Plumbers, electricians, AC technicians and renovation team in Nicosia. Urgent repairs for maintenance-contract customers, assessment and written quotes. Call +357 94 091 616.",
   "h1": "Contractor in Nicosia for repairs, maintenance & renovation",
   "lead": "Our home base. Daily service across Nicosia city and its suburbs, with the fastest response for urgent repairs.",
   "intro": ["Nicosia has the hottest summers and the coldest winters in Cyprus. That means air conditioners and heat pumps run hard almost all year, flat roofs take the full force of the sun, and older apartment buildings from the 1980s and 1990s often need new wiring, new pipes and better insulation.",
@@ -72,7 +72,7 @@ L = {
   "hoods": ["Ayia Napa", "Protaras", "Paralimni", "Kapparis", "Pernera", "Deryneia", "Sotira", "Liopetri"],
   "notes": ["Book a pre-season check in March–April: AC service, water heater, leaks and damp.", "Outdoor areas and pergolas suffer most from sun and salt; plan touch-ups yearly.", "After winter closure, ventilate and check for mould before guests arrive."],
   "faqs": [("Can you prepare my villa before the season?", "Yes. We service ACs and water heaters, check plumbing and electrics, treat damp and send you a photo report."),
-           ("Do you work in the Famagusta area in summer?", "Yes, by scheduled visits; urgent repairs are arranged as quickly as possible.")],
+           ("Do you work in the Famagusta area in summer?", "Yes, by scheduled visits; urgent repairs only for customers with a maintenance contract.")],
 },
 },
 "guides": {

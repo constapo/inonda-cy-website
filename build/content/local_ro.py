@@ -12,7 +12,7 @@ L = {
 "nicosia": {
   "name": "Nicosia", "img": "renovation",
   "title": "Antreprenor în Nicosia: reparații, întreținere și renovări | Inonda LTD",
-  "desc": "Instalatori, electricieni, tehnicieni de aer condiționat și echipă de renovări în Nicosia. Urgențe în aceeași zi, evaluare, ofertă scrisă. Tel. +357 94 091 616.",
+  "desc": "Instalatori, electricieni, tehnicieni de aer condiționat și echipă de renovări în Nicosia. Urgențe pentru clienții cu contract de mentenanță, evaluare, ofertă scrisă. Tel. +357 94 091 616.",
   "h1": "Antreprenor în Nicosia pentru reparații, întreținere și renovări",
   "lead": "Baza noastră. Servicii zilnice în tot orașul și suburbiile Nicosiei, cu cea mai rapidă intervenție la urgențe.",
   "intro": ["Nicosia are cele mai calde veri și cele mai reci ierni din Cipru. Aparatele de aer condiționat și pompele de căldură funcționează aproape tot anul, acoperișurile plate primesc toată forța soarelui, iar multe blocuri din anii '80 și '90 au nevoie de cablaj nou, țevi noi și izolație mai bună.",
@@ -72,7 +72,7 @@ L = {
   "hoods": ["Ayia Napa", "Protaras", "Paralimni", "Kapparis", "Pernera", "Deryneia", "Sotira", "Liopetri"],
   "notes": ["Programați o verificare în martie–aprilie: aer condiționat, boiler, scurgeri și umezeală.", "Spațiile exterioare și pergolele suferă cel mai mult din cauza soarelui și a sării; planificați retușuri anuale.", "După închiderea de iarnă, aerisiți și verificați mucegaiul înainte de sosirea oaspeților."],
   "faqs": [("Puteți pregăti vila mea înainte de sezon?", "Da. Facem revizia aerului condiționat și a boilerelor, verificăm instalațiile sanitare și electrice, tratăm umezeala și vă trimitem un raport foto."),
-           ("Lucrați în zona Famagusta vara?", "Da, prin vizite programate; urgențele le rezolvăm cât mai repede posibil.")],
+           ("Lucrați în zona Famagusta vara?", "Da, prin vizite programate; urgențele doar pentru clienții cu contract de mentenanță.")],
 },
 },
 "guides": {
