@@ -156,7 +156,7 @@ L = {
            ("Можете отремонтировать ванную в арендной квартире между жильцами?", "Да. Составляем плотный график под смену жильцов.")],
 },
 "preparing-a-rental-property-in-cyprus": {
-  "img": "maintenance", "mins": 5, "services": ["handyman-services", "painting-plastering-gypsum", "maintenance-plans"],
+  "img": "maintenance", "mins": 5, "services": ["contract-repairs", "painting-plastering-gypsum", "maintenance-plans"],
   "title": "Подготовка квартиры к сдаче на Кипре: чек-лист для арендодателя | Inonda LTD",
   "desc": "Чек-лист арендодателя на Кипре: ремонт, проверки безопасности, покраска и улучшения, которые снижают будущие расходы на обслуживание между жильцами.",
   "h1": "Подготовка недвижимости к сдаче на Кипре: чек-лист арендодателя",

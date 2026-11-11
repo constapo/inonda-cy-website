@@ -158,7 +158,7 @@ T = {
     ("Montați stații de încărcare EV?", "Da, inclusiv verificarea puterii disponibile și montarea unui circuit separat, protejat."),
   ],
 },
-"handyman-services": {
+"contract-repairs": {
   "name": "Reparații mici cu contract de mentenanță", "short": "Doar pentru clienții cu contract de mentenanță. Lista cu lucruri mărunte: uși, încuietori, rafturi, montaj mobilă, silicon, galerii de perdele, televizor pe perete și altele.",
   "title": "Reparații mici cu contract de mentenanță | Inonda LTD",
   "desc": "Doar pentru clienții cu contract de mentenanță. Meșter de încredere în Nicosia și Cipru: reparații uși și încuietori, montaj mobilă, rafturi, televizor pe perete, silicon, galerii de perdele, retușuri de tencuială și vopsea.",
@@ -401,7 +401,7 @@ T = {
   ],
   "p_title": "Promisiunile noastre", "p_text": "Se aplică fiecărei lucrări, mari sau mici.",
   "pay_title": "Plăți",
-  "pay": ["Lucrări mici: plata la final, prin transfer bancar, card sau numerar cu chitanță.", "Proiecte: avans pentru comanda materialelor, apoi plăți pe etape finalizate.", "Factură cu TVA pentru fiecare lucrare."],
+  "pay": ["Reparații pe contract: plata la final, prin transfer bancar, card sau numerar cu chitanță.", "Proiecte: avans pentru comanda materialelor, apoi plăți pe etape finalizate.", "Factură cu TVA pentru fiecare lucrare."],
   "faqs": [
     ("Ce se întâmplă dacă lucrarea se dovedește mai mare decât era estimat?", "Ne oprim, vă arătăm în fotografii ce am găsit și agreăm în scris orice modificare înainte de a continua."),
     ("Ce acoperă garanția?", "Defectele cauzate de manopera noastră. Dacă ceva făcut de noi cedează, revenim și reparăm gratuit."),
@@ -503,7 +503,7 @@ T = {
     ("Site-ul", ["Informațiile de pe inonda.org sunt generale și se pot schimba. Fotografiile pot fi ilustrative. Nimic de pe site nu reprezintă o ofertă fermă până nu confirmăm o ofertă scrisă."]),
     ("Oferte", ["Ofertele sunt scrise, detaliate și valabile pentru perioada precizată. Lucrarea începe doar după ce acceptați oferta. Lucrările suplimentare descoperite pe parcurs se ofertează și se agreează în scris înainte de execuție."]),
     ("Acces și program", ["Asigurați accesul, apa și curentul la orele stabilite. Programul se poate decala din cauza vremii, livrării materialelor sau a unor situații neprevăzute; vă anunțăm prompt."]),
-    ("Plăți", ["Lucrările mici se plătesc la final. Proiectele urmează planul de avans și plăți pe etape din ofertă. Materialele rămân proprietatea noastră până la plată."]),
+    ("Plăți", ["Reparațiile pe contract de mentenanță se plătesc la final. Proiectele urmează planul de avans și plăți pe etape din ofertă. Materialele rămân proprietatea noastră până la plată."]),
     ("Garanție", ["Oferim garanție scrisă pentru manopera noastră (minimum 6 luni, dacă oferta nu prevede altfel). Produsele au garanția producătorului. Garanția nu acoperă utilizarea greșită, uzura normală sau lucrările modificate de alții."]),
     ("Răspundere și lege", ["Suntem asigurați pentru lucrările pe care le executăm. Acești termeni sunt guvernați de legile Republicii Cipru, iar instanțele din Nicosia sunt competente."]),
   ],

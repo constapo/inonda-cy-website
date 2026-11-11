@@ -156,7 +156,7 @@ L = {
            ("Can you renovate a bathroom in a rental between tenants?", "Yes. We plan a tight schedule around the changeover.")],
 },
 "preparing-a-rental-property-in-cyprus": {
-  "img": "maintenance", "mins": 5, "services": ["handyman-services", "painting-plastering-gypsum", "maintenance-plans"],
+  "img": "maintenance", "mins": 5, "services": ["contract-repairs", "painting-plastering-gypsum", "maintenance-plans"],
   "title": "Preparing a Rental Property in Cyprus: Repairs Checklist for Landlords | Inonda LTD",
   "desc": "A landlord's checklist for getting a Cyprus rental ready between tenants: repairs, safety checks, painting and the upgrades that cut future maintenance.",
   "h1": "Preparing a rental property in Cyprus: a landlord's checklist",

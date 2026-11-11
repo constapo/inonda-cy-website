@@ -41,7 +41,7 @@ SERVICES = [
     ("roof-waterproofing-damp", "maintenance", "roof", "roof"),
     ("plumbing-services", "repairs", "drop", "plumbing"),
     ("electrical-services", "repairs", "bolt", "electrical"),
-    ("handyman-services", "repairs", "hammer", "handyman"),
+    ("contract-repairs", "repairs", "hammer", "handyman"),
     ("emergency-repairs", "repairs", "siren", "emergency"),
     ("kitchen-renovation", "transformation", "kitchen", "kitchen"),
     ("bathroom-renovation", "transformation", "bath", "bathroom"),
@@ -792,6 +792,11 @@ def main():
             write(f"{l}/guides/index.html", page_guides(T)); n += 1
             for g in LOCAL[l]["guides"]:
                 write(f"{l}/guides/{g}/index.html", page_guide(T, g)); n += 1
+    for l in (only or LANGS):  # old address of the small-repairs page keeps working
+        new = url(l, "contract-repairs")
+        p = os.path.join(PUB, l, "handyman-services", "index.html"); os.makedirs(os.path.dirname(p), exist_ok=True)
+        with open(p, "w", encoding="utf-8") as f:
+            f.write(f'<!DOCTYPE html><html lang="{l}"><head><meta charset="utf-8"><title>{e(ALL[l]["svc"]["contract-repairs"]["name"])}</title><meta name="robots" content="noindex"><link rel="canonical" href="{new}"><meta http-equiv="refresh" content="0; url={new}"></head><body><a href="{new}">{e(ALL[l]["svc"]["contract-repairs"]["name"])}</a></body></html>')
     write("index.html", root_index())
     write("404.html", page_404())
     write("sitemap.xml", sitemap())

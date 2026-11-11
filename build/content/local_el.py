@@ -156,7 +156,7 @@ L = {
            ("Ανακαινίζετε μπάνιο σε ενοικιαζόμενο ανάμεσα σε ενοικιαστές;", "Ναι. Σχεδιάζουμε σφιχτό χρονοδιάγραμμα γύρω από την αλλαγή ενοικιαστή.")],
 },
 "preparing-a-rental-property-in-cyprus": {
-  "img": "maintenance", "mins": 5, "services": ["handyman-services", "painting-plastering-gypsum", "maintenance-plans"],
+  "img": "maintenance", "mins": 5, "services": ["contract-repairs", "painting-plastering-gypsum", "maintenance-plans"],
   "title": "Προετοιμασία Ενοικιαζόμενου Ακινήτου στην Κύπρο: Λίστα για Ιδιοκτήτες | Inonda LTD",
   "desc": "Λίστα ελέγχου για ιδιοκτήτες στην Κύπρο: επισκευές, έλεγχοι ασφαλείας, βάψιμο και αναβαθμίσεις που μειώνουν τη μελλοντική συντήρηση ανάμεσα σε ενοικιαστές.",
   "h1": "Προετοιμασία ενοικιαζόμενου ακινήτου στην Κύπρο: λίστα για ιδιοκτήτες",

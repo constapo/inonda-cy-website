@@ -36,7 +36,7 @@ T = {
   "cta_eyebrow": "Written quote", "cta_title": "Tell us about your property",
   "cta_text": "Describe the job, add photos on WhatsApp, and we'll come back with next steps, usually the same working day.",
   "team": {"eyebrow": "Talk to us directly", "title": "Real people answer the phone", "text": "Call or message the person who speaks your language. Both lines take WhatsApp and Viber.",
-    "roles": ["Director", "Secretary · Handyman · Foreman"], "speaks": "Answers in",
+    "roles": ["Director", "Secretary · Technician · Foreman"], "speaks": "Answers in",
     "langs": {"ru": "Russian", "el": "Greek", "en": "English", "ro": "Romanian"}},
   "form": {
     "title": "Request a quote", "intro": "Takes one minute. Your request opens in WhatsApp, ready to send.",
@@ -158,7 +158,7 @@ T = {
     ("Do you install EV chargers?", "Yes, including checking your supply capacity and installing a dedicated protected circuit."),
   ],
 },
-"handyman-services": {
+"contract-repairs": {
   "name": "Small repairs under maintenance contract", "short": "Maintenance-contract customers only. The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
   "title": "Small repairs under maintenance contract | Inonda LTD",
   "desc": "Maintenance-contract customers only. Reliable handyman in Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
@@ -401,7 +401,7 @@ T = {
   ],
   "p_title": "Our promises", "p_text": "These apply to every job, large or small.",
   "pay_title": "Payments",
-  "pay": ["Small jobs: payment on completion, by bank transfer, card or cash with receipt.", "Projects: a deposit to order materials, then stage payments tied to completed phases.", "VAT invoices issued for every job."],
+  "pay": ["Contract repairs: payment on completion, by bank transfer, card or cash with receipt.", "Projects: a deposit to order materials, then stage payments tied to completed phases.", "VAT invoices issued for every job."],
   "faqs": [
     ("What if the job turns out bigger than expected?", "We stop, show you what we found with photos and agree any change in writing before continuing."),
     ("What does the warranty cover?", "Defects caused by our workmanship. If something we did fails, we come back and fix it at no cost."),
@@ -503,7 +503,7 @@ T = {
     ("This website", ["Information on inonda.org is general and may change. Photos may be illustrative. Nothing on the site is a binding offer until we confirm a written quote."]),
     ("Quotes", ["Quotes are written, itemised and valid for the period stated. Work starts only after you accept the quote. Additional work found during the job is quoted and agreed in writing before it's done."]),
     ("Access & schedule", ["You provide access, water and electricity at the agreed times. Schedules may move for weather, material delivery or unforeseen conditions; we inform you promptly."]),
-    ("Payments", ["Small jobs are paid on completion. Projects follow the deposit and stage-payment plan in the quote. Materials remain our property until paid for."]),
+    ("Payments", ["Repairs under a maintenance contract are paid on completion. Projects follow the deposit and stage-payment plan in the quote. Materials remain our property until paid for."]),
     ("Warranty", ["We provide a written warranty on our workmanship (minimum 6 months unless the quote states otherwise). Products carry their manufacturer's warranty. The warranty doesn't cover misuse, normal wear, or work altered by others."]),
     ("Liability & law", ["We are insured for the works we carry out. These terms are governed by the laws of the Republic of Cyprus and the courts of Nicosia have jurisdiction."]),
   ],

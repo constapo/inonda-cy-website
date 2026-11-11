@@ -156,7 +156,7 @@ L = {
            ("Puteți renova o baie într-o proprietate de închiriat între chiriași?", "Da. Planificăm un program strâns în jurul schimbării chiriașilor.")],
 },
 "preparing-a-rental-property-in-cyprus": {
-  "img": "maintenance", "mins": 5, "services": ["handyman-services", "painting-plastering-gypsum", "maintenance-plans"],
+  "img": "maintenance", "mins": 5, "services": ["contract-repairs", "painting-plastering-gypsum", "maintenance-plans"],
   "title": "Pregătirea unei proprietăți de închiriat în Cipru: listă pentru proprietari | Inonda LTD",
   "desc": "Lista proprietarului din Cipru: reparații, verificări de siguranță, zugrăveli și modernizări care reduc întreținerea viitoare între chiriași.",
   "h1": "Pregătirea unei proprietăți de închiriat în Cipru: lista proprietarului",
