@@ -12,7 +12,7 @@ L = {
 "nicosia": {
   "name": "Nicosia", "img": "renovation",
   "title": "Contractor in Nicosia: Repairs, Maintenance & Renovation | Inonda LTD",
-  "desc": "Plumbers, electricians, AC technicians and renovation team in Nicosia. Same-day response for urgent repairs, free assessment and written quotes. Call +357 94 091 616.",
+  "desc": "Plumbers, electricians, AC technicians and renovation team in Nicosia. Same-day response for urgent repairs, assessment and written quotes. Call +357 94 091 616.",
   "h1": "Contractor in Nicosia for repairs, maintenance & renovation",
   "lead": "Our home base. Daily service across Nicosia city and its suburbs, with the fastest response for urgent repairs.",
   "intro": ["Nicosia has the hottest summers and the coldest winters in Cyprus. That means air conditioners and heat pumps run hard almost all year, flat roofs take the full force of the sun, and older apartment buildings from the 1980s and 1990s often need new wiring, new pipes and better insulation.",
@@ -25,7 +25,7 @@ L = {
 "strovolos": {
   "name": "Strovolos & Lakatamia", "img": "handyman",
   "title": "Plumber, Electrician & Renovation in Strovolos and Lakatamia | Inonda LTD",
-  "desc": "Local contractor in Strovolos, Lakatamia, Latsia, Anthoupoli and Tseri: plumbing, electrical, AC, waterproofing, kitchens and bathrooms. Free quote.",
+  "desc": "Local contractor in Strovolos, Lakatamia, Latsia, Anthoupoli and Tseri: plumbing, electrical, AC, waterproofing, kitchens and bathrooms. Written quotes.",
   "h1": "Repairs & renovation in Strovolos, Lakatamia and Latsia",
   "lead": "Our office is in Strovolos, so this is where we are fastest. Houses, apartments and small businesses in the southern suburbs.",
   "intro": ["Strovolos, Lakatamia and Latsia are full of family houses with flat roofs, rooftop water tanks and solar heaters, plus apartment blocks of every age. The most common jobs we do here are roof waterproofing, solar water heater repairs, AC servicing and bathroom renovations.",

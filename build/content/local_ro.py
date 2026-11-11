@@ -12,7 +12,7 @@ L = {
 "nicosia": {
   "name": "Nicosia", "img": "renovation",
   "title": "Antreprenor în Nicosia: reparații, întreținere și renovări | Inonda LTD",
-  "desc": "Instalatori, electricieni, tehnicieni de aer condiționat și echipă de renovări în Nicosia. Urgențe în aceeași zi, evaluare gratuită, ofertă scrisă. Tel. +357 94 091 616.",
+  "desc": "Instalatori, electricieni, tehnicieni de aer condiționat și echipă de renovări în Nicosia. Urgențe în aceeași zi, evaluare, ofertă scrisă. Tel. +357 94 091 616.",
   "h1": "Antreprenor în Nicosia pentru reparații, întreținere și renovări",
   "lead": "Baza noastră. Servicii zilnice în tot orașul și suburbiile Nicosiei, cu cea mai rapidă intervenție la urgențe.",
   "intro": ["Nicosia are cele mai calde veri și cele mai reci ierni din Cipru. Aparatele de aer condiționat și pompele de căldură funcționează aproape tot anul, acoperișurile plate primesc toată forța soarelui, iar multe blocuri din anii '80 și '90 au nevoie de cablaj nou, țevi noi și izolație mai bună.",
@@ -25,7 +25,7 @@ L = {
 "strovolos": {
   "name": "Strovolos și Lakatamia", "img": "handyman",
   "title": "Instalator, electrician și renovări în Strovolos și Lakatamia | Inonda LTD",
-  "desc": "Antreprenor local în Strovolos, Lakatamia, Latsia, Anthoupoli și Tseri: instalații sanitare, electrice, aer condiționat, hidroizolații, bucătării și băi. Ofertă gratuită.",
+  "desc": "Antreprenor local în Strovolos, Lakatamia, Latsia, Anthoupoli și Tseri: instalații sanitare, electrice, aer condiționat, hidroizolații, bucătării și băi. Ofertă scrisă.",
   "h1": "Reparații și renovări în Strovolos, Lakatamia și Latsia",
   "lead": "Biroul nostru este în Strovolos, așa că aici suntem cei mai rapizi. Case, apartamente și firme mici din suburbiile sudice.",
   "intro": ["Strovolos, Lakatamia și Latsia au multe case familiale cu acoperiș plat, rezervoare și boilere solare, plus blocuri de toate vârstele. Cele mai frecvente lucrări aici sunt hidroizolarea acoperișurilor, reparația boilerelor solare, revizia aerului condiționat și renovarea băilor.",

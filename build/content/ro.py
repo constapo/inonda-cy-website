@@ -3,7 +3,7 @@ T = {
 "ui": {
   "skip": "Salt la conținut", "menu": "Meniu", "tagline_short": "Construim · Reparăm · Întreținem",
   "nav": {"home": "Acasă", "services": "Servicii", "process": "Cum lucrăm", "areas": "Zone", "about": "Despre noi", "faq": "Întrebări", "contact": "Contact"},
-  "cta_quote": "Ofertă gratuită", "cta_visit": "Programați o vizită", "cta_wa": "Scrieți-ne pe WhatsApp", "call": "Sunați-ne",
+  "cta_quote": "Cereți o ofertă", "cta_visit": "Programați o vizită", "cta_wa": "Scrieți-ne pe WhatsApp", "call": "Sunați-ne",
   "more": "Detalii", "company": "Companie", "cyprus": "Cipru", "reg_no": "Nr. înreg.", "rights": "Toate drepturile rezervate.",
   "privacy": "Politica de confidențialitate", "terms": "Termeni și condiții", "sister": "Administrare imobiliară: inonda.site",
   "org_desc": "Inonda LTD este un antreprenor din Cipru pentru întreținerea proprietăților, reparații și transformarea locuințelor: instalații sanitare, electrice, aer condiționat, hidroizolații, bucătării, băi și renovări complete în Nicosia și în tot Ciprul.",
@@ -13,7 +13,7 @@ T = {
   "by_appt": "Vizite la birou cu programare", "updated": "Ultima actualizare",
   "good_to_know": "Bine de știut în Cipru",
   "scope_title": "Ce include",
-  "aside_title": "Evaluare gratuită și ofertă scrisă",
+  "aside_title": "Evaluare și ofertă scrisă",
   "aside_text": "Trimiteți-ne câteva fotografii sau programați o vizită. Primiți o ofertă clară, detaliată, înainte de începerea oricărei lucrări.",
   "aside_small": "Fără obligații. Prețuri stabilite în scris.",
   "svc_faq_title": "Întrebări frecvente", "related": "Servicii asemănătoare", "faq_more": "Toate întrebările",
@@ -33,13 +33,13 @@ T = {
     ("Garanție pentru manoperă", "Fiecare lucrare are garanție scrisă pentru manoperă, de minimum 6 luni."),
     ("Curat și ordonat", "Pardoseli și mobilă protejate, moloz îndepărtat, șantier curat în fiecare zi."),
   ],
-  "cta_eyebrow": "Ofertă gratuită", "cta_title": "Spuneți-ne despre proprietatea dumneavoastră",
+  "cta_eyebrow": "Ofertă scrisă", "cta_title": "Spuneți-ne despre proprietatea dumneavoastră",
   "cta_text": "Descrieți lucrarea, trimiteți fotografii pe WhatsApp și vă răspundem cu pașii următori, de obicei în aceeași zi lucrătoare.",
   "team": {"eyebrow": "Vorbiți direct cu noi", "title": "La telefon răspund oameni reali", "text": "Sunați sau scrieți persoanei care vorbește limba dumneavoastră. Ambele linii au WhatsApp și Viber.",
     "roles": ["Director", "Secretariat · Meșter · Șef de echipă"], "speaks": "Răspunde în",
     "langs": {"ru": "rusă", "el": "greacă", "en": "engleză", "ro": "română"}},
   "form": {
-    "title": "Cereți o ofertă gratuită", "intro": "Durează un minut. Cererea se deschide în WhatsApp, gata de trimis.",
+    "title": "Cereți o ofertă", "intro": "Durează un minut. Cererea se deschide în WhatsApp, gata de trimis.",
     "name": "Numele dvs.", "phone": "Telefon", "email": "Email (opțional)", "service": "Serviciu", "other": "Altceva",
     "area": "Zona", "areas": ["Nicosia", "Larnaca", "Limassol", "Ayia Napa / Protaras / Paralimni", "Paphos", "Altă zonă"],
     "ptype": "Proprietate", "ptypes": ["Apartament", "Casă / vilă", "Birou / magazin", "Proprietate de închiriat", "Clădire / spații comune"],
@@ -341,7 +341,7 @@ T = {
 },
 "home": {
   "title": "Antreprenor pentru întreținere, reparații și renovări în Cipru | Inonda LTD",
-  "desc": "Inonda LTD: antreprenor în Nicosia și în tot Ciprul pentru întreținere, instalații sanitare și electrice, aer condiționat, hidroizolații, bucătării, băi și renovări complete. Ofertă scrisă gratuită.",
+  "desc": "Inonda LTD: antreprenor în Nicosia și în tot Ciprul pentru întreținere, instalații sanitare și electrice, aer condiționat, hidroizolații, bucătării, băi și renovări complete. Ofertă scrisă.",
   "eyebrow": "Antreprenor · Nicosia și tot Ciprul",
   "h1": "Întreținem, reparăm și transformăm locuința dumneavoastră",
   "lead": "Un singur antreprenor de încredere pentru tot ce are nevoie proprietatea: instalatori și electricieni autorizați, meșteri pricepuți la finisaje și o echipă de proiect pentru renovări complete.",
@@ -373,7 +373,7 @@ T = {
   "a_text": "De la sediul din Strovolos acoperim zilnic tot districtul Nicosia, plus Larnaca, Limassol și zona Famagusta pentru lucrări programate și proiecte mai mari.",
   "q_title": "Întrebări pe care le auzim zilnic",
   "faqs": [
-    ("Oferta este chiar gratuită?", "Da. Evaluarea și oferta scrisă sunt gratuite și fără obligații în zonele noastre obișnuite. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."),
+    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pentru lucrări estimate la 1.000 € sau mai mult. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."),
     ("Faceți și lucrări mici?", "Da. De la un robinet la o listă lungă de reparații mici. Se aplică un tarif minim pe vizită, așa că recomandăm gruparea lucrărilor."),
     ("Cine va face efectiv lucrarea?", "Echipa noastră și tehnicieni parteneri autorizați care lucrează după standardele noastre, sub supravegherea și garanția noastră."),
     ("În ce limbi lucrați?", "Răspundem, facem oferte și lucrăm în greacă, engleză, rusă și română."),
@@ -387,13 +387,13 @@ T = {
 },
 "process": {
   "title": "Cum lucrăm: ofertă, program, garanție | Inonda LTD Cipru",
-  "desc": "Cum lucrează Inonda LTD: evaluare gratuită, ofertă scrisă detaliată, program stabilit, tehnicieni autorizați, șantier curat, plăți în tranșe și garanție scrisă pentru manoperă.",
+  "desc": "Cum lucrează Inonda LTD: evaluare, ofertă scrisă detaliată, program stabilit, tehnicieni autorizați, șantier curat, plăți în tranșe și garanție scrisă pentru manoperă.",
   "h1": "Cum lucrăm",
   "lead": "Fără surprize. Un proces clar, înțelegeri scrise și informări regulate, fie că e o reparație de două ore sau o renovare de trei luni.",
   "d_title": "Pas cu pas",
   "detail": [
     ("Cererea dumneavoastră", "Spuneți-ne ce problemă aveți sau ce vreți să schimbați.", ["Telefon, WhatsApp, Viber, email sau formularul online", "Fotografiile și filmările ne ajută să trimitem echipa potrivită", "Răspundem în aceeași zi lucrătoare"]),
-    ("Evaluare", "Venim, inspectăm și măsurăm, sau evaluăm din fotografii lucrările simple.", ["Diagnosticarea cauzei, nu presupuneri", "Variante explicate pe înțeles", "Gratuit în zonele noastre obișnuite"]),
+    ("Evaluare", "Venim, inspectăm și măsurăm, sau evaluăm din fotografii lucrările simple.", ["Diagnosticarea cauzei, nu presupuneri", "Variante explicate pe înțeles", "Gratuit pentru lucrări estimate la 1.000 € sau mai mult"]),
     ("Ofertă scrisă", "Primiți o ofertă detaliată, în scris.", ["Lucrări, materiale, preț și termene", "Ce este inclus și ce nu", "Valabilă pentru o perioadă precizată"]),
     ("Execuție", "Lucrarea începe în ziua stabilită.", ["Tehnicieni autorizați pentru lucrările reglementate", "Pardoseli și mobilă protejate", "Informări foto la lucrările mai lungi", "Modificări doar cu acordul dumneavoastră scris"]),
     ("Predare", "Verificăm împreună lucrarea.", ["Verificare finală și listă de remedieri", "Predarea certificatelor și instrucțiunilor", "Curățenie și evacuarea molozului"]),
@@ -453,7 +453,7 @@ T = {
   "h1": "Întrebări frecvente", "lead": "Răspunsuri rapide despre oferte, lucrări, plăți și garanție. Nu găsiți întrebarea dumneavoastră? Întrebați-ne pe WhatsApp.",
   "groups": [
     ("Oferte și prețuri", [
-      ("Oferta este gratuită?", "Da, evaluarea și oferta scrisă sunt gratuite și fără obligații în zonele noastre obișnuite. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."),
+      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pentru lucrări estimate la 1.000 € sau mai mult. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."),
       ("Puteți face ofertă după fotografii?", "Pentru lucrări simple, adesea da. Pentru renovări și infiltrații trebuie să venim și să măsurăm."),
       ("Prețurile includ materialele?", "Oferta precizează clar ce include: manoperă, materiale, evacuarea molozului și TVA."),
       ("Există un tarif minim?", "Da, pentru reparațiile mici se aplică un tarif minim pe vizită. Gruparea lucrărilor e mai avantajoasă."),
@@ -477,8 +477,8 @@ T = {
   ],
 },
 "contact": {
-  "title": "Contact Inonda LTD | Ofertă gratuită pentru reparații și renovări în Cipru",
-  "desc": "Contactați Inonda LTD în Strovolos, Nicosia: +357 94 091 616, WhatsApp sau email inonda2026@outlook.com pentru o ofertă gratuită de întreținere, reparații sau renovare.",
+  "title": "Contact Inonda LTD | Ofertă pentru reparații și renovări în Cipru",
+  "desc": "Contactați Inonda LTD în Strovolos, Nicosia: +357 94 091 616, WhatsApp sau email inonda2026@outlook.com pentru o ofertă de întreținere, reparații sau renovare.",
   "h1": "Contact", "lead": "Spuneți-ne ce aveți nevoie. Răspundem în aceeași zi lucrătoare cu pașii următori sau o oră pentru vizită.",
   "w_call": "Telefon", "w_wa": "Scrieți-ne, trimiteți fotografii", "w_office": "Birou",
   "tips_title": "Pentru o ofertă mai rapidă și mai exactă",

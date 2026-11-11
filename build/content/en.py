@@ -3,7 +3,7 @@ T = {
 "ui": {
   "skip": "Skip to content", "menu": "Menu", "tagline_short": "Build · Repair · Maintain",
   "nav": {"home": "Home", "services": "Services", "process": "How we work", "areas": "Service areas", "about": "About", "faq": "FAQ", "contact": "Contact"},
-  "cta_quote": "Get a free quote", "cta_visit": "Book a site visit", "cta_wa": "WhatsApp us", "call": "Call us",
+  "cta_quote": "Get a quote", "cta_visit": "Book a site visit", "cta_wa": "WhatsApp us", "call": "Call us",
   "more": "See details", "company": "Company", "cyprus": "Cyprus", "reg_no": "Reg. no.", "rights": "All rights reserved.",
   "privacy": "Privacy Policy", "terms": "Terms of Service", "sister": "Property management: inonda.site",
   "org_desc": "Inonda LTD is a Cyprus contractor for property maintenance, repairs and home transformation: plumbing, electrical, air conditioning, waterproofing, kitchens, bathrooms and complete renovations in Nicosia and across Cyprus.",
@@ -13,7 +13,7 @@ T = {
   "by_appt": "Office visits by appointment", "updated": "Last updated",
   "good_to_know": "Good to know in Cyprus",
   "scope_title": "What's included",
-  "aside_title": "Free assessment & written quote",
+  "aside_title": "Assessment & written quote",
   "aside_text": "Send us a few photos or book a visit. You'll get a clear, itemised quote before any work starts.",
   "aside_small": "No obligation. Prices agreed in writing.",
   "svc_faq_title": "Common questions", "related": "Related services", "faq_more": "All questions",
@@ -33,13 +33,13 @@ T = {
     ("Workmanship warranty", "Every job is covered by a written warranty on labour, minimum 6 months."),
     ("Clean & tidy", "Floors and furniture protected, rubbish removed, the site left clean every day."),
   ],
-  "cta_eyebrow": "Free quote", "cta_title": "Tell us about your property",
+  "cta_eyebrow": "Written quote", "cta_title": "Tell us about your property",
   "cta_text": "Describe the job, add photos on WhatsApp, and we'll come back with next steps, usually the same working day.",
   "team": {"eyebrow": "Talk to us directly", "title": "Real people answer the phone", "text": "Call or message the person who speaks your language. Both lines take WhatsApp and Viber.",
     "roles": ["Director", "Secretary · Handyman · Foreman"], "speaks": "Answers in",
     "langs": {"ru": "Russian", "el": "Greek", "en": "English", "ro": "Romanian"}},
   "form": {
-    "title": "Request a free quote", "intro": "Takes one minute. Your request opens in WhatsApp, ready to send.",
+    "title": "Request a quote", "intro": "Takes one minute. Your request opens in WhatsApp, ready to send.",
     "name": "Your name", "phone": "Phone", "email": "Email (optional)", "service": "Service", "other": "Something else",
     "area": "Area", "areas": ["Nicosia", "Larnaca", "Limassol", "Ayia Napa / Protaras / Paralimni", "Paphos", "Other"],
     "ptype": "Property", "ptypes": ["Apartment", "House / villa", "Office / shop", "Rental property", "Building / common areas"],
@@ -341,7 +341,7 @@ T = {
 },
 "home": {
   "title": "Maintenance, Repairs & Home Renovation Contractor in Cyprus | Inonda LTD",
-  "desc": "Inonda LTD: contractor in Nicosia and across Cyprus for maintenance, plumbing, electrical, AC, waterproofing, kitchens, bathrooms and complete home renovation. Free written quotes.",
+  "desc": "Inonda LTD: contractor in Nicosia and across Cyprus for maintenance, plumbing, electrical, AC, waterproofing, kitchens, bathrooms and complete home renovation. Written quotes.",
   "eyebrow": "Contractor · Nicosia & all of Cyprus",
   "h1": "Maintain, repair and transform your home",
   "lead": "One trusted contractor for everything your property needs: licensed plumbers and electricians, skilled finishers and a project team for complete renovations.",
@@ -373,7 +373,7 @@ T = {
   "a_text": "Based in Strovolos, we cover all of Nicosia district daily, plus Larnaca, Limassol and the Famagusta area for scheduled works and larger projects.",
   "q_title": "Questions we hear every day",
   "faqs": [
-    ("Is the quote really free?", "Yes. Assessment and written quote are free and without obligation in our regular service areas. For complex diagnostics we tell you any fee upfront. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."),
+    ("Is the quote really free?", "Assessment and written quote are free and without obligation for jobs estimated at €1,000 or more. For complex diagnostics we tell you any fee upfront. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."),
     ("Do you do small jobs?", "Yes. From one tap to a long list of small repairs. A minimum visit charge applies, so we suggest grouping jobs."),
     ("Who will actually do the work?", "Our own team and licensed partner technicians who work to our standards, under our supervision and our warranty."),
     ("Which languages do you work in?", "We answer, quote and work in Greek, English, Russian and Romanian. The website is also available in Ukrainian and Hebrew."),
@@ -387,13 +387,13 @@ T = {
 },
 "process": {
   "title": "How We Work: Quotes, Schedule, Warranty | Inonda LTD Cyprus",
-  "desc": "How Inonda LTD works: free assessment, itemised written quote, agreed schedule, licensed technicians, clean site, stage payments and written workmanship warranty.",
+  "desc": "How Inonda LTD works: assessment, itemised written quote, agreed schedule, licensed technicians, clean site, stage payments and written workmanship warranty.",
   "h1": "How we work",
   "lead": "No surprises. A clear process, written agreements and regular updates, whether it's a two-hour repair or a three-month renovation.",
   "d_title": "Step by step",
   "detail": [
     ("Your request", "Tell us what's wrong or what you'd like to change.", ["Call, WhatsApp, Viber, email or the online form", "Photos and videos help us prepare the right team", "We reply the same working day"]),
-    ("Assessment", "We visit, inspect and measure, or assess from photos for simple jobs.", ["Root-cause diagnosis, not guesswork", "Options explained in plain language", "Free in our regular service areas"]),
+    ("Assessment", "We visit, inspect and measure, or assess from photos for simple jobs.", ["Root-cause diagnosis, not guesswork", "Options explained in plain language", "Free for jobs estimated at €1,000 or more"]),
     ("Written quote", "You receive an itemised quote in writing.", ["Scope, materials, price and timeline", "What's included and what isn't", "Valid for a stated period"]),
     ("Execution", "Work begins on the agreed date.", ["Licensed technicians for regulated work", "Floors and furniture protected", "Photo updates on longer jobs", "Changes only with your written approval"]),
     ("Handover", "We check the work together.", ["Final walkthrough and snag list", "Certificates and manuals handed over", "Site cleaned and rubbish removed"]),
@@ -453,7 +453,7 @@ T = {
   "h1": "Frequently asked questions", "lead": "Quick answers about quotes, work, payments and warranty. Can't find yours? Just ask us on WhatsApp.",
   "groups": [
     ("Quotes & prices", [
-      ("Is the quote free?", "Yes, assessment and written quote are free and without obligation in our regular service areas. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."),
+      ("Is the quote free?", "Assessment and written quote are free and without obligation for jobs estimated at €1,000 or more. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."),
       ("Can you quote from photos?", "For simple jobs, often yes. For renovations and leaks we need to visit and measure."),
       ("Do your prices include materials?", "The quote states clearly what's included: labour, materials, disposal and VAT."),
       ("Is there a minimum charge?", "Yes, a minimum visit charge applies to small repairs. Grouping jobs gives better value."),
@@ -477,8 +477,8 @@ T = {
   ],
 },
 "contact": {
-  "title": "Contact Inonda LTD | Free Quote for Repairs & Renovation in Cyprus",
-  "desc": "Contact Inonda LTD in Strovolos, Nicosia: call +357 94 091 616, WhatsApp or email inonda2026@outlook.com for a free quote on maintenance, repairs or renovation.",
+  "title": "Contact Inonda LTD | Quote for Repairs & Renovation in Cyprus",
+  "desc": "Contact Inonda LTD in Strovolos, Nicosia: call +357 94 091 616, WhatsApp or email inonda2026@outlook.com for a quote on maintenance, repairs or renovation.",
   "h1": "Contact us", "lead": "Tell us what you need. We reply the same working day with next steps or a time for a visit.",
   "w_call": "Call", "w_wa": "Message us, send photos", "w_office": "Office",
   "tips_title": "Get a faster, more accurate quote",
