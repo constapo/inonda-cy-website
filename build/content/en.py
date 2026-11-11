@@ -161,7 +161,7 @@ T = {
 "contract-repairs": {
   "name": "Small repairs under maintenance contract", "short": "Maintenance-contract customers only. The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
   "title": "Small repairs under maintenance contract | Inonda LTD",
-  "desc": "Maintenance-contract customers only. Reliable handyman in Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
+  "desc": "Maintenance-contract customers only. In Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
   "h1": "Small repairs for maintenance-contract customers",
   "lead": "Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract.",
   "intro": "Small repairs are part of our maintenance plans: we group them into your scheduled visits.",
@@ -381,7 +381,7 @@ T = {
 },
 "services": {
   "title": "Services: Maintenance, Repairs & Renovation in Cyprus | Inonda LTD",
-  "desc": "All Inonda LTD services: maintenance plans, AC, waterproofing, plumbing, electrical, handyman, urgent repairs, kitchens, bathrooms, flooring, painting, windows and outdoor works.",
+  "desc": "All Inonda LTD services: maintenance plans, AC, waterproofing, plumbing, electrical, contract repairs, urgent repairs, kitchens, bathrooms, flooring, painting, windows and outdoor works.",
   "h1": "Our services",
   "lead": "Fourteen detailed services in three groups. Pick what you need, or tell us the problem and we'll put the right team together.",
 },
