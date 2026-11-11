@@ -86,8 +86,8 @@ def outro_png(path):
     img.alpha_composite(lg, (int(W / 2 - lg.width / 2), int(150 - lg.height / 2)))
     def ctext(t, f, y, fill):
         d.text(((W - d.textlength(t, font=f)) / 2, y), t, font=f, fill=fill)
-    ctext("Ζητήστε δωρεάν προσφορά", font("Black", 76), 262, WHITE)
-    ctext("Request a free quote", font("SemiBold", 44), 362, AMBER)
+    ctext("Ζητήστε προσφορά", font("Black", 76), 262, WHITE)
+    ctext("Request a quote", font("SemiBold", 44), 362, AMBER)
     people = [("Irina", "Διευθύντρια · Director", "+357 94 091 616", "Русский · Ελληνικά · English"),
               ("Constantin", "Γραμματεία · Τεχνίτης · Εργοδηγός", "+357 94 091 613", "Română · Ελληνικά · English")]
     for i, (n, role, ph, langs) in enumerate(people):

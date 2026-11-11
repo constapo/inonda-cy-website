@@ -36,7 +36,7 @@ VIDEO_ITEMS = {
         '03/03 Home transformation: complete home renovation; new layouts; planning and itemised budget; kitchen renovation; modern living spaces; bathroom renovation; walk-in showers, full waterproofing; painting, plaster and gypsum; flooring and tiling; finishes that last; doors, windows and carpentry; made to measure; wardrobes and built-ins; outdoor works; pergolas, terraces and pool areas.',
         'How we work, in 5 steps: 1. Tell us what you need. 2. Site visit and assessment. 3. Written, itemised quote. 4. Work done right. 5. Handover and warranty.',
         'Built on clear promises: written quotes · licensed technicians · warranty · cleanliness.',
-        'Request a free quote: Irina, +357 94 091 616 (Russian, Greek, English); Constantin, +357 94 091 613 (Romanian, Greek, English). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Nicosia and all of Cyprus.',
+        'Request a quote: Irina, +357 94 091 616 (Russian, Greek, English); Constantin, +357 94 091 613 (Romanian, Greek, English). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Nicosia and all of Cyprus.',
     ],
     'el': [
         'Inonda LTD — Συντήρηση · Επισκευές · Ανακαίνιση.',
@@ -47,7 +47,7 @@ VIDEO_ITEMS = {
         '03/03 Ανακαίνιση: ολική ανακαίνιση· νέες διαρρυθμίσεις· σχεδιασμός και προϋπολογισμός· ανακαίνιση κουζίνας· σύγχρονοι χώροι· ανακαίνιση μπάνιου· ντουζιέρες δαπέδου, πλήρης στεγάνωση· βαφές και γυψοσανίδες· δάπεδα και πλακάκια· φινιρίσματα που κρατούν· κουφώματα και ξυλουργικά· κατά παραγγελία· ντουλάπες και εντοιχισμένα· εξωτερικοί χώροι· πέργκολες, βεράντες, πισίνα.',
         'Πώς δουλεύουμε, σε 5 βήματα: 1. Πείτε μας τι χρειάζεστε. 2. Αυτοψία και εκτίμηση. 3. Γραπτή, αναλυτική προσφορά. 4. Σωστή εκτέλεση. 5. Παράδοση και εγγύηση.',
         'Χτισμένη σε δεσμεύσεις: γραπτές προσφορές · αδειούχοι τεχνικοί · εγγύηση · καθαριότητα.',
-        'Ζητήστε δωρεάν προσφορά: Irina, +357 94 091 616 (ρωσικά, ελληνικά, αγγλικά)· Constantin, +357 94 091 613 (ρουμανικά, ελληνικά, αγγλικά). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Λευκωσία και όλη η Κύπρος.',
+        'Ζητήστε προσφορά: Irina, +357 94 091 616 (ρωσικά, ελληνικά, αγγλικά)· Constantin, +357 94 091 613 (ρουμανικά, ελληνικά, αγγλικά). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Λευκωσία και όλη η Κύπρος.',
     ],
     'ru': [
         'Inonda LTD — Обслуживание · Ремонт · Преображение.',
@@ -58,7 +58,7 @@ VIDEO_ITEMS = {
         '03/03 Преображение дома: капитальный ремонт дома; новые планировки; проектирование и подробная смета; ремонт кухни; современные пространства; ремонт ванной; душевые без поддона, полная гидроизоляция; покраска, штукатурка и гипсокартон; полы и плитка; долговечная отделка; двери, окна и столярные работы; на заказ; шкафы и встроенная мебель; работы на участке; перголы, террасы и зоны у бассейна.',
         'Как мы работаем, в 5 шагов: 1. Расскажите, что вам нужно. 2. Выезд и оценка. 3. Письменная подробная смета. 4. Качественное выполнение. 5. Сдача работ и гарантия.',
         'Построено на чётких обязательствах: письменные сметы · лицензированные специалисты · гарантия · чистота.',
-        'Запросите бесплатную смету: Irina, +357 94 091 616 (русский, греческий, английский); Constantin, +357 94 091 613 (румынский, греческий, английский). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Никосия и весь Кипр.',
+        'Запросите смету: Irina, +357 94 091 616 (русский, греческий, английский); Constantin, +357 94 091 613 (румынский, греческий, английский). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Никосия и весь Кипр.',
     ],
     'uk': [
         'Inonda LTD — Обслуговування · Ремонт · Перетворення.',
@@ -69,7 +69,7 @@ VIDEO_ITEMS = {
         '03/03 Перетворення дому: капітальний ремонт будинку; нові планування; проєктування та детальний кошторис; ремонт кухні; сучасні простори; ремонт ванної; душові без піддону, повна гідроізоляція; фарбування, штукатурка та гіпсокартон; підлоги та плитка; довговічне оздоблення; двері, вікна та столярні роботи; на замовлення; шафи та вбудовані меблі; роботи на ділянці; перголи, тераси та зони біля басейну.',
         'Як ми працюємо, у 5 кроків: 1. Розкажіть, що вам потрібно. 2. Виїзд та оцінка. 3. Письмовий детальний кошторис. 4. Якісне виконання. 5. Здача робіт і гарантія.',
         'Побудовано на чітких зобов’язаннях: письмові кошториси · ліцензовані фахівці · гарантія · чистота.',
-        'Замовте безкоштовний кошторис: Irina, +357 94 091 616 (російська, грецька, англійська); Constantin, +357 94 091 613 (румунська, грецька, англійська). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Нікосія та весь Кіпр.',
+        'Замовте кошторис: Irina, +357 94 091 616 (російська, грецька, англійська); Constantin, +357 94 091 613 (румунська, грецька, англійська). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Нікосія та весь Кіпр.',
     ],
     'he': [
         'Inonda LTD — תחזוקה · תיקונים · שיפוץ.',
@@ -80,7 +80,7 @@ VIDEO_ITEMS = {
         '03/03 שיפוץ הבית: שיפוץ מלא של הבית; חלוקות חדשות; תכנון ותקציב מפורט; שיפוץ מטבח; חללי מגורים מודרניים; שיפוץ חדר רחצה; מקלחונים בגובה הרצפה, איטום מלא; צבע, טיח וגבס; ריצוף ואריחים; גימורים שמחזיקים; דלתות, חלונות ונגרות; בהתאמה אישית; ארונות ונישות מובנות; עבודות חוץ; פרגולות, מרפסות ואזורי בריכה.',
         'איך אנחנו עובדים, ב-5 שלבים: 1. ספרו לנו מה אתם צריכים. 2. ביקור בשטח והערכה. 3. הצעת מחיר מפורטת בכתב. 4. ביצוע נכון. 5. מסירה ואחריות.',
         'בנויה על התחייבויות ברורות: הצעות מחיר בכתב · טכנאים מורשים · אחריות · ניקיון.',
-        'בקשו הצעת מחיר חינם: Irina, ⁦+357 94 091 616⁩ (רוסית, יוונית, אנגלית); Constantin, ⁦+357 94 091 613⁩ (רומנית, יוונית, אנגלית). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · ניקוסיה וכל קפריסין.',
+        'בקשו הצעת מחיר: Irina, ⁦+357 94 091 616⁩ (רוסית, יוונית, אנגלית); Constantin, ⁦+357 94 091 613⁩ (רומנית, יוונית, אנגלית). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · ניקוסיה וכל קפריסין.',
     ],
     'ro': [
         'Inonda LTD — Întreținere · Reparații · Transformare.',
@@ -91,7 +91,7 @@ VIDEO_ITEMS = {
         '03/03 Transformarea locuinței: renovare completă; compartimentări noi; proiectare și buget detaliat; renovare bucătărie; spații moderne; renovare baie; dușuri walk-in, hidroizolare completă; zugrăveli, tencuieli și gips-carton; pardoseli și faianță; finisaje durabile; uși, ferestre și tâmplărie; la comandă; dulapuri și mobilier încastrat; amenajări exterioare; pergole, terase și zone de piscină.',
         'Cum lucrăm, în 5 pași: 1. Spuneți-ne de ce aveți nevoie. 2. Vizită la fața locului și evaluare. 3. Ofertă scrisă, detaliată. 4. Lucrare făcută corect. 5. Predare și garanție.',
         'Construită pe angajamente clare: oferte scrise · tehnicieni autorizați · garanție · curățenie.',
-        'Cereți o ofertă gratuită: Irina, +357 94 091 616 (rusă, greacă, engleză); Constantin, +357 94 091 613 (română, greacă, engleză). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Nicosia și tot Ciprul.',
+        'Cereți o ofertă: Irina, +357 94 091 616 (rusă, greacă, engleză); Constantin, +357 94 091 613 (română, greacă, engleză). WhatsApp · Viber · inonda2026@outlook.com · www.inonda.org · Nicosia și tot Ciprul.',
     ],
 }
 
