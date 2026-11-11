@@ -373,7 +373,7 @@ T = {
   "a_text": "De la sediul din Strovolos acoperim zilnic tot districtul Nicosia, plus Larnaca, Limassol și zona Famagusta pentru lucrări programate și proiecte mai mari.",
   "q_title": "Întrebări pe care le auzim zilnic",
   "faqs": [
-    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pe o rază de 10 km de la biroul nostru din Strovolos. Pentru lucrări estimate la peste 1.000 €, oferta este inclusă în lucrare. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Pentru lucrări estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la lucrări de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
+    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
     ("Faceți și lucrări mici?", "Doar pentru clienții cu contract de mentenanță. În rest, preluăm lucrări care durează mai mult de o zi."),
     ("Cine va face efectiv lucrarea?", "Echipa noastră și tehnicieni parteneri autorizați care lucrează după standardele noastre, sub supravegherea și garanția noastră."),
     ("În ce limbi lucrați?", "Răspundem, facem oferte și lucrăm în greacă, engleză, rusă și română."),
@@ -393,7 +393,7 @@ T = {
   "d_title": "Pas cu pas",
   "detail": [
     ("Cererea dumneavoastră", "Spuneți-ne ce problemă aveți sau ce vreți să schimbați.", ["Telefon, WhatsApp, Viber, email sau formularul online", "Fotografiile și filmările ne ajută să trimitem echipa potrivită", "Răspundem în aceeași zi lucrătoare"]),
-    ("Evaluare", "Venim, inspectăm și măsurăm, sau evaluăm din fotografii lucrările simple.", ["Diagnosticarea cauzei, nu presupuneri", "Variante explicate pe înțeles", "Gratuit pe o rază de 10 km de la birou; inclusă în lucrare pentru lucrări de peste 1.000 €"]),
+    ("Evaluare", "Venim, inspectăm și măsurăm, sau evaluăm din fotografii lucrările simple.", ["Diagnosticarea cauzei, nu presupuneri", "Variante explicate pe înțeles", "Gratuit și fără obligații"]),
     ("Ofertă scrisă", "Primiți o ofertă detaliată, în scris.", ["Lucrări, materiale, preț și termene", "Ce este inclus și ce nu", "Valabilă pentru o perioadă precizată"]),
     ("Execuție", "Lucrarea începe în ziua stabilită.", ["Tehnicieni autorizați pentru lucrările reglementate", "Pardoseli și mobilă protejate", "Informări foto la lucrările mai lungi", "Modificări doar cu acordul dumneavoastră scris"]),
     ("Predare", "Verificăm împreună lucrarea.", ["Verificare finală și listă de remedieri", "Predarea certificatelor și instrucțiunilor", "Curățenie și evacuarea molozului"]),
@@ -453,7 +453,7 @@ T = {
   "h1": "Întrebări frecvente", "lead": "Răspunsuri rapide despre oferte, lucrări, plăți și garanție. Nu găsiți întrebarea dumneavoastră? Întrebați-ne pe WhatsApp.",
   "groups": [
     ("Oferte și prețuri", [
-      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pe o rază de 10 km de la biroul nostru din Strovolos. Pentru lucrări estimate la peste 1.000 €, oferta este inclusă în lucrare. Pentru lucrări estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la lucrări de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
+      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
       ("Puteți face ofertă după fotografii?", "Pentru lucrări simple, adesea da. Pentru renovări și infiltrații trebuie să venim și să măsurăm."),
       ("Prețurile includ materialele?", "Oferta precizează clar ce include: manoperă, materiale, evacuarea molozului și TVA."),
       ("Există un tarif minim?", "Reparațiile mici se execută doar în baza unui contract de mentenanță, în condițiile planului dumneavoastră."),
