@@ -21,7 +21,7 @@
     "contactTitle": "Book an inspection",
     "call": "Call",
     "follow": "Follow INONDA LTD",
-    "visitFee": "For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."
+    "visitFee": "For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away. Inside Strovolos, the quotation visit is free."
   },
   "el": {
     "nav": "Ιστότοποι INONDA",
@@ -45,7 +45,7 @@
     "contactTitle": "Κλείστε επιθεώρηση",
     "call": "Κλήση",
     "follow": "Ακολουθήστε την INONDA LTD",
-    "visitFee": "Για μικρές επισκευές εκτιμώμενου κόστους κάτω των €1.000, η επιτόπια επίσκεψη για προσφορά κοστίζει €50 για ακίνητα εκτός Στροβόλου και σε απόσταση έως 10 χλμ."
+    "visitFee": "Για μικρές επισκευές εκτιμώμενου κόστους κάτω των €1.000, η επιτόπια επίσκεψη για προσφορά κοστίζει €50 για ακίνητα εκτός Στροβόλου και σε απόσταση έως 10 χλμ. Εντός Στροβόλου, η επίσκεψη για προσφορά είναι δωρεάν."
   },
   "ru": {
     "nav": "Сайты INONDA",
@@ -69,7 +69,7 @@
     "contactTitle": "Заказать осмотр",
     "call": "Позвонить",
     "follow": "Подписывайтесь на INONDA LTD",
-    "visitFee": "Для мелкого ремонта оценочной стоимостью менее €1 000 выезд на объект для подготовки сметы стоит €50 для объектов за пределами Строволоса на расстоянии до 10 км."
+    "visitFee": "Для мелкого ремонта оценочной стоимостью менее €1 000 выезд на объект для подготовки сметы стоит €50 для объектов за пределами Строволоса на расстоянии до 10 км. В пределах Строволоса выезд для подготовки сметы бесплатный."
   },
   "uk": {
     "nav": "Сайти INONDA",
@@ -93,7 +93,7 @@
     "contactTitle": "Замовити огляд",
     "call": "Зателефонувати",
     "follow": "Стежте за INONDA LTD",
-    "visitFee": "Для дрібного ремонту орієнтовною вартістю менше ніж €1 000 виїзд на об’єкт для підготовки кошторису коштує €50 для об’єктів за межами Строволоса на відстані до 10 км."
+    "visitFee": "Для дрібного ремонту орієнтовною вартістю менше ніж €1 000 виїзд на об’єкт для підготовки кошторису коштує €50 для об’єктів за межами Строволоса на відстані до 10 км. У межах Строволоса виїзд для підготовки кошторису безкоштовний."
   },
   "he": {
     "nav": "אתרי INONDA",
@@ -117,7 +117,7 @@
     "contactTitle": "תיאום בדיקת נכס",
     "call": "התקשרו",
     "follow": "עקבו אחרי INONDA LTD",
-    "visitFee": "לתיקונים קטנים שעלותם המוערכת נמוכה מ-€1,000, ביקור בנכס לצורך הצעת מחיר עולה €50 לנכסים מחוץ לסטרובולוס ובמרחק של עד 10 ק״מ."
+    "visitFee": "לתיקונים קטנים שעלותם המוערכת נמוכה מ-€1,000, ביקור בנכס לצורך הצעת מחיר עולה €50 לנכסים מחוץ לסטרובולוס ובמרחק של עד 10 ק״מ. בתוך סטרובולוס, הביקור לצורך הצעת מחיר הוא חינם."
   },
   "ro": {
     "nav": "Site-urile INONDA",
@@ -141,6 +141,6 @@
     "contactTitle": "Programează o inspecție",
     "call": "Sună",
     "follow": "Urmărește INONDA LTD",
-    "visitFee": "Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."
+    "visitFee": "Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță. În Strovolos, vizita pentru ofertă este gratuită."
   }
 }

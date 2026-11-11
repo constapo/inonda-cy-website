@@ -373,7 +373,7 @@ T = {
   "a_text": "De la sediul din Strovolos acoperim zilnic tot districtul Nicosia, plus Larnaca, Limassol și zona Famagusta pentru lucrări programate și proiecte mai mari.",
   "q_title": "Întrebări pe care le auzim zilnic",
   "faqs": [
-    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pentru lucrări estimate la 1.000 € sau mai mult. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."),
+    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pentru lucrări estimate la 1.000 € sau mai mult. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță. În Strovolos, vizita pentru ofertă este gratuită."),
     ("Faceți și lucrări mici?", "Da. De la un robinet la o listă lungă de reparații mici. Se aplică un tarif minim pe vizită, așa că recomandăm gruparea lucrărilor."),
     ("Cine va face efectiv lucrarea?", "Echipa noastră și tehnicieni parteneri autorizați care lucrează după standardele noastre, sub supravegherea și garanția noastră."),
     ("În ce limbi lucrați?", "Răspundem, facem oferte și lucrăm în greacă, engleză, rusă și română."),
@@ -393,7 +393,7 @@ T = {
   "d_title": "Pas cu pas",
   "detail": [
     ("Cererea dumneavoastră", "Spuneți-ne ce problemă aveți sau ce vreți să schimbați.", ["Telefon, WhatsApp, Viber, email sau formularul online", "Fotografiile și filmările ne ajută să trimitem echipa potrivită", "Răspundem în aceeași zi lucrătoare"]),
-    ("Evaluare", "Venim, inspectăm și măsurăm, sau evaluăm din fotografii lucrările simple.", ["Diagnosticarea cauzei, nu presupuneri", "Variante explicate pe înțeles", "Gratuit pentru lucrări estimate la 1.000 € sau mai mult"]),
+    ("Evaluare", "Venim, inspectăm și măsurăm, sau evaluăm din fotografii lucrările simple.", ["Diagnosticarea cauzei, nu presupuneri", "Variante explicate pe înțeles", "Gratuit în Strovolos și pentru lucrări estimate la 1.000 € sau mai mult"]),
     ("Ofertă scrisă", "Primiți o ofertă detaliată, în scris.", ["Lucrări, materiale, preț și termene", "Ce este inclus și ce nu", "Valabilă pentru o perioadă precizată"]),
     ("Execuție", "Lucrarea începe în ziua stabilită.", ["Tehnicieni autorizați pentru lucrările reglementate", "Pardoseli și mobilă protejate", "Informări foto la lucrările mai lungi", "Modificări doar cu acordul dumneavoastră scris"]),
     ("Predare", "Verificăm împreună lucrarea.", ["Verificare finală și listă de remedieri", "Predarea certificatelor și instrucțiunilor", "Curățenie și evacuarea molozului"]),
@@ -453,7 +453,7 @@ T = {
   "h1": "Întrebări frecvente", "lead": "Răspunsuri rapide despre oferte, lucrări, plăți și garanție. Nu găsiți întrebarea dumneavoastră? Întrebați-ne pe WhatsApp.",
   "groups": [
     ("Oferte și prețuri", [
-      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pentru lucrări estimate la 1.000 € sau mai mult. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."),
+      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pentru lucrări estimate la 1.000 € sau mai mult. Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță. În Strovolos, vizita pentru ofertă este gratuită."),
       ("Puteți face ofertă după fotografii?", "Pentru lucrări simple, adesea da. Pentru renovări și infiltrații trebuie să venim și să măsurăm."),
       ("Prețurile includ materialele?", "Oferta precizează clar ce include: manoperă, materiale, evacuarea molozului și TVA."),
       ("Există un tarif minim?", "Da, pentru reparațiile mici se aplică un tarif minim pe vizită. Gruparea lucrărilor e mai avantajoasă."),
