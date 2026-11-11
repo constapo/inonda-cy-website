@@ -20,7 +20,8 @@
     "note": "The estimator is a planning tool, not a fixed quote. Specialist trades, fixtures and structural work require a separate assessment. Your saved estimates stay in your browser on inonda.homes.",
     "contactTitle": "Book an inspection",
     "call": "Call",
-    "follow": "Follow INONDA LTD"
+    "follow": "Follow INONDA LTD",
+    "visitFee": "For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."
   },
   "el": {
     "nav": "Ιστότοποι INONDA",
@@ -43,7 +44,8 @@
     "note": "Ο εκτιμητής είναι εργαλείο προγραμματισμού, όχι οριστική προσφορά. Εξειδικευμένες εργασίες, εξοπλισμός και δομικές παρεμβάσεις χρειάζονται ξεχωριστή αξιολόγηση. Οι αποθηκευμένες εκτιμήσεις παραμένουν στο πρόγραμμα περιήγησής σας στο inonda.homes.",
     "contactTitle": "Κλείστε επιθεώρηση",
     "call": "Κλήση",
-    "follow": "Ακολουθήστε την INONDA LTD"
+    "follow": "Ακολουθήστε την INONDA LTD",
+    "visitFee": "Για μικρές επισκευές εκτιμώμενου κόστους κάτω των €1.000, η επιτόπια επίσκεψη για προσφορά κοστίζει €50 για ακίνητα εκτός Στροβόλου και σε απόσταση έως 10 χλμ."
   },
   "ru": {
     "nav": "Сайты INONDA",
@@ -66,7 +68,8 @@
     "note": "Калькулятор помогает планировать и не является фиксированным предложением. Специализированные работы, оборудование и конструктивные изменения требуют отдельной оценки. Сохранённые расчёты остаются в вашем браузере на inonda.homes.",
     "contactTitle": "Заказать осмотр",
     "call": "Позвонить",
-    "follow": "Подписывайтесь на INONDA LTD"
+    "follow": "Подписывайтесь на INONDA LTD",
+    "visitFee": "Для мелкого ремонта оценочной стоимостью менее €1 000 выезд на объект для подготовки сметы стоит €50 для объектов за пределами Строволоса на расстоянии до 10 км."
   },
   "uk": {
     "nav": "Сайти INONDA",
@@ -89,7 +92,8 @@
     "note": "Калькулятор допомагає планувати й не є фіксованою пропозицією. Спеціалізовані роботи, обладнання та конструктивні зміни потребують окремої оцінки. Збережені розрахунки залишаються у вашому браузері на inonda.homes.",
     "contactTitle": "Замовити огляд",
     "call": "Зателефонувати",
-    "follow": "Стежте за INONDA LTD"
+    "follow": "Стежте за INONDA LTD",
+    "visitFee": "Для дрібного ремонту орієнтовною вартістю менше ніж €1 000 виїзд на об’єкт для підготовки кошторису коштує €50 для об’єктів за межами Строволоса на відстані до 10 км."
   },
   "he": {
     "nav": "אתרי INONDA",
@@ -112,7 +116,8 @@
     "note": "המחשבון הוא כלי לתכנון ואינו הצעת מחיר קבועה. עבודות מקצועיות מיוחדות, אביזרים ושינויים מבניים מחייבים בדיקה נפרדת. הערכות שנשמרו נשארות בדפדפן שלכם באתר inonda.homes.",
     "contactTitle": "תיאום בדיקת נכס",
     "call": "התקשרו",
-    "follow": "עקבו אחרי INONDA LTD"
+    "follow": "עקבו אחרי INONDA LTD",
+    "visitFee": "לתיקונים קטנים שעלותם המוערכת נמוכה מ-€1,000, ביקור בנכס לצורך הצעת מחיר עולה €50 לנכסים מחוץ לסטרובולוס ובמרחק של עד 10 ק״מ."
   },
   "ro": {
     "nav": "Site-urile INONDA",
@@ -135,6 +140,7 @@
     "note": "Estimatorul este un instrument de planificare, nu o ofertă fermă. Lucrările specializate, echipamentele și intervențiile structurale necesită o evaluare separată. Estimările salvate rămân în browserul tău pe inonda.homes.",
     "contactTitle": "Programează o inspecție",
     "call": "Sună",
-    "follow": "Urmărește INONDA LTD"
+    "follow": "Urmărește INONDA LTD",
+    "visitFee": "Pentru reparații mici estimate la mai puțin de 1.000 €, vizita la fața locului pentru ofertă costă 50 € pentru proprietățile din afara Strovolos, aflate la cel mult 10 km distanță."
   }
 }

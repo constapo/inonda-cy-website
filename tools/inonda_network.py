@@ -18,7 +18,7 @@ from inonda_seo import enhance_seo
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261105-lang-4'
+VERSION = '20261111-fee-1'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
 
 
@@ -108,7 +108,7 @@ def section(site, lang='en', page=''):
     people = []
     for name, number, display in [('Irina','35794091616','+357 94 091 616'),('Constantin','35794091613','+357 94 091 613')]:
         people.append(f'<article class="inonda-network-person"><h4>{name}</h4><a class="inonda-network-phone" href="tel:+{number}" dir="ltr">{display}</a><div class="inonda-network-contact-buttons"><a href="https://wa.me/{number}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp · {name} · {display}">WhatsApp</a><a href="viber://chat?number=%2B{number}" aria-label="Viber · {name} · {display}">Viber</a><a href="tel:+{number}" data-network-call>{html.escape(c["call"])}</a></div></article>')
-    contacts = f'<div class="inonda-network-contact"><h3 data-network-contact-title>{html.escape(c["contactTitle"])}</h3><div class="inonda-network-people">{"".join(people)}</div><a class="inonda-network-email" href="mailto:inonda2026@outlook.com">inonda2026@outlook.com</a></div>'
+    contacts = f'<div class="inonda-network-contact"><h3 data-network-contact-title>{html.escape(c["contactTitle"])}</h3><p class="inonda-network-fee" data-network-visit-fee>{html.escape(c["visitFee"])}</p><div class="inonda-network-people">{"".join(people)}</div><a class="inonda-network-email" href="mailto:inonda2026@outlook.com">inonda2026@outlook.com</a></div>'
     return f'<section id="inonda-network" class="inonda-network-section" aria-labelledby="inonda-network-title" data-no-i18n><div class="inonda-network-heading"><p class="inonda-network-eyebrow">{html.escape(c["eyebrow"])}</p><h2 id="inonda-network-title">{html.escape(c["title"])}</h2><p>{html.escape(c["intro"])}</p></div><div class="inonda-network-cards">{"".join(cards)}</div><p class="inonda-network-note">{html.escape(c["note"])}</p>{contacts}</section>'
 
 
@@ -252,6 +252,8 @@ body[data-inonda-site=site] .hero .wrap{padding-top:calc(var(--nav-h,76px) + 114
 .inonda-network-card>a:hover{color:#0077b6;text-decoration:underline}
 .inonda-network-section>.inonda-network-note{font:12px/1.7 Arial,sans-serif;color:#526d7d;margin:24px 0 0;max-width:1000px}
 .inonda-network-contact{border-top:1px solid #c8dbe6;margin-top:34px;padding-top:30px}
+.inonda-network-fee{font:14px/1.6 Arial,sans-serif;color:#102f49;background:#fff;border-left:3px solid #023e8a;margin:0 0 22px;padding:10px 14px;max-width:950px}
+html[dir=rtl] .inonda-network-fee{border-left:0;border-right:3px solid #023e8a}
 .inonda-network-people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:950px}
 .inonda-network-person h4{font:600 16px/1.4 Arial,sans-serif;margin:0 0 5px;color:#023e8a}
 .inonda-network-person>.inonda-network-phone{display:inline-block;font:400 23px/1.6 Arial,sans-serif;color:#102f49;text-decoration:none;unicode-bidi:isolate}
@@ -312,6 +314,7 @@ function update(){
   section.querySelector('.inonda-network-heading>p:last-child').textContent=c.intro;
   section.querySelector('.inonda-network-note').textContent=c.note;
   section.querySelector('[data-network-contact-title]').textContent=c.contactTitle;
+  var fee=section.querySelector('[data-network-visit-fee]');if(fee)fee.textContent=c.visitFee;
   section.querySelectorAll('[data-network-call]').forEach(function(a){a.textContent=c.call;});
   ['site','org','homes'].forEach(function(key,i){var card=section.querySelectorAll('.inonda-network-card')[i];card.querySelector('h3').textContent=c[key+'Title'];card.querySelector('p').textContent=c[key+'Text'];card.querySelector('a').textContent=c[key+'Action']+' ↗';var badge=card.querySelector('.inonda-network-current');if(badge)badge.textContent=c.current;});
  }

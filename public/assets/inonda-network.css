@@ -66,6 +66,8 @@ body[data-inonda-site=site] .hero .wrap{padding-top:calc(var(--nav-h,76px) + 114
 .inonda-network-card>a:hover{color:#0077b6;text-decoration:underline}
 .inonda-network-section>.inonda-network-note{font:12px/1.7 Arial,sans-serif;color:#526d7d;margin:24px 0 0;max-width:1000px}
 .inonda-network-contact{border-top:1px solid #c8dbe6;margin-top:34px;padding-top:30px}
+.inonda-network-fee{font:14px/1.6 Arial,sans-serif;color:#102f49;background:#fff;border-left:3px solid #023e8a;margin:0 0 22px;padding:10px 14px;max-width:950px}
+html[dir=rtl] .inonda-network-fee{border-left:0;border-right:3px solid #023e8a}
 .inonda-network-people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:950px}
 .inonda-network-person h4{font:600 16px/1.4 Arial,sans-serif;margin:0 0 5px;color:#023e8a}
 .inonda-network-person>.inonda-network-phone{display:inline-block;font:400 23px/1.6 Arial,sans-serif;color:#102f49;text-decoration:none;unicode-bidi:isolate}

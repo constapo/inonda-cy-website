@@ -373,7 +373,7 @@ T = {
   "a_text": "Based in Strovolos, we cover all of Nicosia district daily, plus Larnaca, Limassol and the Famagusta area for scheduled works and larger projects.",
   "q_title": "Questions we hear every day",
   "faqs": [
-    ("Is the quote really free?", "Yes. Assessment and written quote are free and without obligation in our regular service areas. For complex diagnostics we tell you any fee upfront."),
+    ("Is the quote really free?", "Yes. Assessment and written quote are free and without obligation in our regular service areas. For complex diagnostics we tell you any fee upfront. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."),
     ("Do you do small jobs?", "Yes. From one tap to a long list of small repairs. A minimum visit charge applies, so we suggest grouping jobs."),
     ("Who will actually do the work?", "Our own team and licensed partner technicians who work to our standards, under our supervision and our warranty."),
     ("Which languages do you work in?", "We answer, quote and work in Greek, English, Russian and Romanian. The website is also available in Ukrainian and Hebrew."),
@@ -453,7 +453,7 @@ T = {
   "h1": "Frequently asked questions", "lead": "Quick answers about quotes, work, payments and warranty. Can't find yours? Just ask us on WhatsApp.",
   "groups": [
     ("Quotes & prices", [
-      ("Is the quote free?", "Yes, assessment and written quote are free and without obligation in our regular service areas."),
+      ("Is the quote free?", "Yes, assessment and written quote are free and without obligation in our regular service areas. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away."),
       ("Can you quote from photos?", "For simple jobs, often yes. For renovations and leaks we need to visit and measure."),
       ("Do your prices include materials?", "The quote states clearly what's included: labour, materials, disposal and VAT."),
       ("Is there a minimum charge?", "Yes, a minimum visit charge applies to small repairs. Grouping jobs gives better value."),

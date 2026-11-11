@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
-from inonda_network import enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
+from inonda_network import COPY as NETWORK_COPY, enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
 from inonda_living import living_hero, living_assets
 import a11y_copy as A11Y
 PUB = os.path.join(ROOT, "public")
@@ -320,6 +320,7 @@ def quote_form(T, preselect=None, compact=False):
 <label class="f full">{e(f["email"])}<input name="Email" type="email" autocomplete="email"></label>
 <label class="f full">{e(f["msg"])}<textarea name="{e(f["msg"])}" placeholder="{e(f["msg_ph"])}" required></textarea></label>
 </div>
+<p class="fee-note">{e(NETWORK_COPY[T["lang"]]["visitFee"])}</p>
 <label class="consent"><input type="checkbox" name="Consent" required> <span>{e(f["consent"])}</span></label>
 <button class="btn btn-primary" type="submit">{WA_SVG}{e(f["submit"])}</button>
 <p class="form-status" role="status" aria-live="polite"></p>
@@ -472,7 +473,7 @@ def page_service(T, slug):
     notes = f'<div class="note rv" style="margin-top:28px"><h3>{e(u["good_to_know"])}</h3><ul class="ticks">{"".join(f"<li>{e(x)}</li>" for x in d["notes"])}</ul></div>'
     aside = f'''<aside class="sticky"><div class="cta-card"><h3>{e(u["aside_title"])}</h3><p>{e(u["aside_text"])}</p>
 <a class="btn btn-primary" href="#quote">{e(u["cta_quote"])}</a><a class="btn btn-ghost" href="https://wa.me/{WA}" target="_blank" rel="noopener">{WA_SVG}WhatsApp</a><a class="btn btn-ghost" href="tel:{PHONE1}">{ic("phone")}{PHONE1_TXT}</a>
-<p class="small">{e(u["aside_small"])}</p></div></aside>'''
+<p class="small">{e(u["aside_small"])}</p><p class="fee-note">{e(NETWORK_COPY[T["lang"]]["visitFee"])}</p></div></aside>'''
     out.append(f'<section><div class="wrap aside-grid"><div><div class="sec-head rv" style="margin-bottom:30px"><p class="eyebrow">{e(G["name"])}</p><h2>{e(u["scope_title"])}</h2><p>{e(d["intro"])}</p></div><div class="scope">{scope}</div>{notes}</div>{aside}</div></section>')
     out.append(f'<section class="dark tight"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(u["process_eyebrow"])}</p><h2>{e(u["process_title"])}</h2></div>{steps(T)}</div></section>')
     out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">FAQ</p><h2>{e(u["svc_faq_title"])}</h2></div>{faq_block(d["faqs"])}</div></section>')
