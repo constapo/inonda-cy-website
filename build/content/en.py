@@ -373,7 +373,7 @@ T = {
   "a_text": "Based in Strovolos, we cover all of Nicosia district daily, plus Larnaca, Limassol and the Famagusta area for scheduled works and larger projects.",
   "q_title": "Questions we hear every day",
   "faqs": [
-    ("Is the quote really free?", "Assessment and written quote are free and without obligation for jobs estimated at €1,000 or more. For complex diagnostics we tell you any fee upfront. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away. Inside Strovolos, the quotation visit is free."),
+    ("Is the quote really free?", "Assessment and written quote are free and without obligation for jobs estimated at more than €1,000. For complex diagnostics we tell you any fee upfront. For small repairs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km."),
     ("Do you do small jobs?", "Yes. From one tap to a long list of small repairs. A minimum visit charge applies, so we suggest grouping jobs."),
     ("Who will actually do the work?", "Our own team and licensed partner technicians who work to our standards, under our supervision and our warranty."),
     ("Which languages do you work in?", "We answer, quote and work in Greek, English, Russian and Romanian. The website is also available in Ukrainian and Hebrew."),
@@ -393,7 +393,7 @@ T = {
   "d_title": "Step by step",
   "detail": [
     ("Your request", "Tell us what's wrong or what you'd like to change.", ["Call, WhatsApp, Viber, email or the online form", "Photos and videos help us prepare the right team", "We reply the same working day"]),
-    ("Assessment", "We visit, inspect and measure, or assess from photos for simple jobs.", ["Root-cause diagnosis, not guesswork", "Options explained in plain language", "Free inside Strovolos and for jobs estimated at €1,000 or more"]),
+    ("Assessment", "We visit, inspect and measure, or assess from photos for simple jobs.", ["Root-cause diagnosis, not guesswork", "Options explained in plain language", "Free within 10 km of our office and for jobs estimated at more than €1,000"]),
     ("Written quote", "You receive an itemised quote in writing.", ["Scope, materials, price and timeline", "What's included and what isn't", "Valid for a stated period"]),
     ("Execution", "Work begins on the agreed date.", ["Licensed technicians for regulated work", "Floors and furniture protected", "Photo updates on longer jobs", "Changes only with your written approval"]),
     ("Handover", "We check the work together.", ["Final walkthrough and snag list", "Certificates and manuals handed over", "Site cleaned and rubbish removed"]),
@@ -453,7 +453,7 @@ T = {
   "h1": "Frequently asked questions", "lead": "Quick answers about quotes, work, payments and warranty. Can't find yours? Just ask us on WhatsApp.",
   "groups": [
     ("Quotes & prices", [
-      ("Is the quote free?", "Assessment and written quote are free and without obligation for jobs estimated at €1,000 or more. For small repairs estimated at less than €1,000, an on-site quotation visit costs €50 for properties outside Strovolos and up to 10 km away. Inside Strovolos, the quotation visit is free."),
+      ("Is the quote free?", "Assessment and written quote are free and without obligation for jobs estimated at more than €1,000. For small repairs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km."),
       ("Can you quote from photos?", "For simple jobs, often yes. For renovations and leaks we need to visit and measure."),
       ("Do your prices include materials?", "The quote states clearly what's included: labour, materials, disposal and VAT."),
       ("Is there a minimum charge?", "Yes, a minimum visit charge applies to small repairs. Grouping jobs gives better value."),
