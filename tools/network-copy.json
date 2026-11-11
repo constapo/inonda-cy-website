@@ -21,7 +21,7 @@
     "contactTitle": "Book an inspection",
     "call": "Call",
     "follow": "Follow INONDA LTD",
-    "visitFee": "For small repairs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km. In Limassol, Larnaca, Agia Napa and Paphos, quotation visits for small repairs up to €1,000 are charged; for work over €1,000, the quotation is included in the work. We assess, quote and take on only jobs of more than one day of work, whether repairs or any other work; jobs that take only a few minutes or hours are not quoted or undertaken."
+    "visitFee": "For jobs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km. In Limassol, Larnaca, Agia Napa and Paphos, quotation visits for jobs up to €1,000 are charged; for work over €1,000, the quotation is included in the work. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract."
   },
   "el": {
     "nav": "Ιστότοποι INONDA",
@@ -45,7 +45,7 @@
     "contactTitle": "Κλείστε επιθεώρηση",
     "call": "Κλήση",
     "follow": "Ακολουθήστε την INONDA LTD",
-    "visitFee": "Για μικρές επισκευές εκτιμώμενου κόστους έως €1.000, η επιτόπια επίσκεψη για προσφορά είναι δωρεάν σε απόσταση έως 10 χλμ. από το γραφείο μας στον Στρόβολο και κοστίζει €50 πέρα από τα 10 χλμ. Σε Λεμεσό, Λάρνακα, Αγία Νάπα και Πάφο, η επίσκεψη για προσφορά χρεώνεται για μικρές επισκευές έως €1.000· για εργασίες άνω των €1.000, η προσφορά περιλαμβάνεται στο έργο. Αναλαμβάνουμε αυτοψία, προσφορά και εκτέλεση μόνο για εργασίες διάρκειας άνω της μίας ημέρας, είτε επισκευές είτε άλλες εργασίες· εργασίες λίγων λεπτών ή ωρών δεν κοστολογούνται και δεν αναλαμβάνονται."
+    "visitFee": "Για εργασίες εκτιμώμενου κόστους έως €1.000, η επιτόπια επίσκεψη για προσφορά είναι δωρεάν σε απόσταση έως 10 χλμ. από το γραφείο μας στον Στρόβολο και κοστίζει €50 πέρα από τα 10 χλμ. Σε Λεμεσό, Λάρνακα, Αγία Νάπα και Πάφο, η επίσκεψη για προσφορά χρεώνεται για εργασίες έως €1.000· για εργασίες άνω των €1.000, η προσφορά περιλαμβάνεται στο έργο. Αναλαμβάνουμε αυτοψία, προσφορά και εκτέλεση μόνο για εργασίες διάρκειας άνω της μίας ημέρας. Μικροεπισκευές και εργασίες λίγων λεπτών ή ωρών εκτελούνται μόνο για πελάτες με συμβόλαιο συντήρησης."
   },
   "ru": {
     "nav": "Сайты INONDA",
@@ -69,7 +69,7 @@
     "contactTitle": "Заказать осмотр",
     "call": "Позвонить",
     "follow": "Подписывайтесь на INONDA LTD",
-    "visitFee": "Для мелкого ремонта оценочной стоимостью до €1 000 выезд на объект для подготовки сметы бесплатный в пределах 10 км от нашего офиса в Строволосе и стоит €50 за пределами 10 км. В Лимасоле, Ларнаке, Айя-Напе и Пафосе выезд для сметы на мелкий ремонт до €1 000 платный; для работ свыше €1 000 смета включена в стоимость работ. Мы выезжаем на осмотр, готовим смету и берём в работу только задачи продолжительностью более одного дня — ремонтные или любые другие; работы на несколько минут или часов мы не оцениваем и не выполняем."
+    "visitFee": "Для работ оценочной стоимостью до €1 000 выезд на объект для подготовки сметы бесплатный в пределах 10 км от нашего офиса в Строволосе и стоит €50 за пределами 10 км. В Лимасоле, Ларнаке, Айя-Напе и Пафосе выезд для сметы на работы до €1 000 платный; для работ свыше €1 000 смета включена в стоимость работ. Мы выезжаем на осмотр, готовим смету и берём в работу только задачи продолжительностью более одного дня. Мелкий ремонт и работы на несколько минут или часов выполняются только для клиентов с договором на обслуживание."
   },
   "uk": {
     "nav": "Сайти INONDA",
@@ -93,7 +93,7 @@
     "contactTitle": "Замовити огляд",
     "call": "Зателефонувати",
     "follow": "Стежте за INONDA LTD",
-    "visitFee": "Для дрібного ремонту орієнтовною вартістю до €1 000 виїзд на об’єкт для підготовки кошторису безкоштовний у межах 10 км від нашого офісу в Строволосі та коштує €50 за межами 10 км. У Лімасолі, Ларнаці, Айя-Напі та Пафосі виїзд для кошторису на дрібний ремонт до €1 000 платний; для робіт понад €1 000 кошторис входить у вартість робіт. Ми виїжджаємо на огляд, готуємо кошторис і беремо в роботу лише завдання тривалістю понад один день — ремонтні чи будь-які інші; роботи на кілька хвилин або годин ми не оцінюємо й не виконуємо."
+    "visitFee": "Для робіт орієнтовною вартістю до €1 000 виїзд на об’єкт для підготовки кошторису безкоштовний у межах 10 км від нашого офісу в Строволосі та коштує €50 за межами 10 км. У Лімасолі, Ларнаці, Айя-Напі та Пафосі виїзд для кошторису на роботи до €1 000 платний; для робіт понад €1 000 кошторис входить у вартість робіт. Ми виїжджаємо на огляд, готуємо кошторис і беремо в роботу лише завдання тривалістю понад один день. Дрібний ремонт і роботи на кілька хвилин або годин виконуються лише для клієнтів із договором на обслуговування."
   },
   "he": {
     "nav": "אתרי INONDA",
@@ -117,7 +117,7 @@
     "contactTitle": "תיאום בדיקת נכס",
     "call": "התקשרו",
     "follow": "עקבו אחרי INONDA LTD",
-    "visitFee": "לתיקונים קטנים שעלותם המוערכת עד €1,000, ביקור בנכס לצורך הצעת מחיר הוא חינם במרחק של עד 10 ק״מ ממשרדנו בסטרובולוס ועולה €50 מעבר ל-10 ק״מ. בלימסול, לרנקה, איה נאפה ופאפוס, ביקור להצעת מחיר לתיקונים קטנים עד €1,000 כרוך בתשלום; לעבודות מעל €1,000 הצעת המחיר כלולה בעבודה. אנו מבצעים בדיקה, הצעת מחיר וביצוע רק לעבודות שנמשכות יותר מיום אחד, בין אם תיקונים ובין אם עבודות אחרות; עבודות של כמה דקות או שעות אינן מתומחרות ואינן מתקבלות."
+    "visitFee": "לעבודות שעלותן המוערכת עד €1,000, ביקור בנכס לצורך הצעת מחיר הוא חינם במרחק של עד 10 ק״מ ממשרדנו בסטרובולוס ועולה €50 מעבר ל-10 ק״מ. בלימסול, לרנקה, איה נאפה ופאפוס, ביקור להצעת מחיר לעבודות עד €1,000 כרוך בתשלום; לעבודות מעל €1,000 הצעת המחיר כלולה בעבודה. אנו מבצעים בדיקה, הצעת מחיר וביצוע רק לעבודות שנמשכות יותר מיום אחד. תיקונים קטנים ועבודות של כמה דקות או שעות מבוצעים רק ללקוחות עם חוזה תחזוקה."
   },
   "ro": {
     "nav": "Site-urile INONDA",
@@ -141,6 +141,6 @@
     "contactTitle": "Programează o inspecție",
     "call": "Sună",
     "follow": "Urmărește INONDA LTD",
-    "visitFee": "Pentru reparații mici estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la reparații mici de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi, fie reparații, fie alte lucrări; lucrările de câteva minute sau ore nu se ofertează și nu se preiau."
+    "visitFee": "Pentru lucrări estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la lucrări de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."
   }
 }

@@ -162,9 +162,9 @@ T = {
   "name": "Meșter pentru reparații mici", "short": "Lista cu lucruri mărunte: uși, încuietori, rafturi, montaj mobilă, silicon, galerii de perdele, televizor pe perete și altele.",
   "title": "Meșter pentru reparații mici în Nicosia și Cipru | Inonda LTD",
   "desc": "Meșter de încredere în Nicosia și Cipru: reparații uși și încuietori, montaj mobilă, rafturi, televizor pe perete, silicon, galerii de perdele, retușuri de tencuială și vopsea.",
-  "h1": "Meșter pentru orice lucrare mică",
-  "lead": "Trimiteți-ne lista. Un meșter priceput, cu sculele și materialele potrivite, o rezolvă într-o singură vizită.",
-  "intro": "Ideal pentru proprietari, pentru apartamente de închiriat între chiriași și pentru birouri: grupăm lucrările mici într-o singură vizită, ca să plătiți timp folosit eficient.",
+  "h1": "Reparații mici pentru clienții cu contract de mentenanță",
+  "lead": "Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță.",
+  "intro": "Reparațiile mici fac parte din planurile noastre de mentenanță: le grupăm în vizitele programate.",
   "scope": [
     ("Uși, ferestre și încuietori", ["Reglarea sau rindeluirea ușilor care se blochează ori s-au lăsat", "Înlocuirea încuietorii, clanței și cilindrului", "Mânere de fereastră, balamale și plase de insecte", "Rulouri și chingi"]),
     ("Fixare și montaj", ["Televizor pe perete cu cabluri ascunse", "Rafturi, oglinzi, tablouri și galerii de perdele", "Reglarea ușilor de bucătărie și dulap", "Montaj mobilă"]),
@@ -173,7 +173,7 @@ T = {
   ],
   "notes": ["Proprietari: trimiteți-ne raportul de predare și ofertăm toată lista deodată.", "Fotografiile fiecărui punct pe WhatsApp ne permit să aducem piesele potrivite și să terminăm dintr-o vizită."],
   "faqs": [
-    ("Există un tarif minim?", "Da, se aplică un tarif minim pe vizită. De aceea recomandăm gruparea lucrărilor într-o singură vizită."),
+    ("Există un tarif minim?", "Reparațiile mici se execută doar în baza unui contract de mentenanță, în condițiile planului dumneavoastră."),
     ("Aduceți materiale?", "Aducem elementele de fixare și consumabilele obișnuite. Articolele specifice (mânere, baterii, încuietori) le putem procura noi sau dumneavoastră."),
     ("Puteți lucra când nu sunt acasă?", "Da, cu chei sau acces stabilit dinainte. Vă trimitem fotografii la final."),
   ],
@@ -373,8 +373,8 @@ T = {
   "a_text": "De la sediul din Strovolos acoperim zilnic tot districtul Nicosia, plus Larnaca, Limassol și zona Famagusta pentru lucrări programate și proiecte mai mari.",
   "q_title": "Întrebări pe care le auzim zilnic",
   "faqs": [
-    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pe o rază de 10 km de la biroul nostru din Strovolos. Pentru lucrări estimate la peste 1.000 €, oferta este inclusă în lucrare. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Pentru reparații mici estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la reparații mici de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi, fie reparații, fie alte lucrări; lucrările de câteva minute sau ore nu se ofertează și nu se preiau."),
-    ("Faceți și lucrări mici?", "Da. De la un robinet la o listă lungă de reparații mici. Se aplică un tarif minim pe vizită, așa că recomandăm gruparea lucrărilor."),
+    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pe o rază de 10 km de la biroul nostru din Strovolos. Pentru lucrări estimate la peste 1.000 €, oferta este inclusă în lucrare. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Pentru lucrări estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la lucrări de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
+    ("Faceți și lucrări mici?", "Doar pentru clienții cu contract de mentenanță. În rest, preluăm lucrări care durează mai mult de o zi."),
     ("Cine va face efectiv lucrarea?", "Echipa noastră și tehnicieni parteneri autorizați care lucrează după standardele noastre, sub supravegherea și garanția noastră."),
     ("În ce limbi lucrați?", "Răspundem, facem oferte și lucrăm în greacă, engleză, rusă și română."),
   ],
@@ -389,7 +389,7 @@ T = {
   "title": "Cum lucrăm: ofertă, program, garanție | Inonda LTD Cipru",
   "desc": "Cum lucrează Inonda LTD: evaluare, ofertă scrisă detaliată, program stabilit, tehnicieni autorizați, șantier curat, plăți în tranșe și garanție scrisă pentru manoperă.",
   "h1": "Cum lucrăm",
-  "lead": "Fără surprize. Un proces clar, înțelegeri scrise și informări regulate, fie că e o reparație de două ore sau o renovare de trei luni.",
+  "lead": "Fără surprize. Un proces clar, acorduri scrise și informări regulate, de la o reparație de câteva zile la o renovare de trei luni.",
   "d_title": "Pas cu pas",
   "detail": [
     ("Cererea dumneavoastră", "Spuneți-ne ce problemă aveți sau ce vreți să schimbați.", ["Telefon, WhatsApp, Viber, email sau formularul online", "Fotografiile și filmările ne ajută să trimitem echipa potrivită", "Răspundem în aceeași zi lucrătoare"]),
@@ -453,10 +453,10 @@ T = {
   "h1": "Întrebări frecvente", "lead": "Răspunsuri rapide despre oferte, lucrări, plăți și garanție. Nu găsiți întrebarea dumneavoastră? Întrebați-ne pe WhatsApp.",
   "groups": [
     ("Oferte și prețuri", [
-      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pe o rază de 10 km de la biroul nostru din Strovolos. Pentru lucrări estimate la peste 1.000 €, oferta este inclusă în lucrare. Pentru reparații mici estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la reparații mici de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi, fie reparații, fie alte lucrări; lucrările de câteva minute sau ore nu se ofertează și nu se preiau."),
+      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații pe o rază de 10 km de la biroul nostru din Strovolos. Pentru lucrări estimate la peste 1.000 €, oferta este inclusă în lucrare. Pentru lucrări estimate la cel mult 1.000 €, vizita la fața locului pentru ofertă este gratuită pe o rază de 10 km de la biroul nostru din Strovolos și costă 50 € dincolo de 10 km. În Limassol, Larnaca, Ayia Napa și Paphos, vizita pentru ofertă la lucrări de până la 1.000 € se taxează; pentru lucrări de peste 1.000 €, oferta este inclusă în lucrare. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
       ("Puteți face ofertă după fotografii?", "Pentru lucrări simple, adesea da. Pentru renovări și infiltrații trebuie să venim și să măsurăm."),
       ("Prețurile includ materialele?", "Oferta precizează clar ce include: manoperă, materiale, evacuarea molozului și TVA."),
-      ("Există un tarif minim?", "Da, pentru reparațiile mici se aplică un tarif minim pe vizită. Gruparea lucrărilor e mai avantajoasă."),
+      ("Există un tarif minim?", "Reparațiile mici se execută doar în baza unui contract de mentenanță, în condițiile planului dumneavoastră."),
     ]),
     ("Lucrările", [
       ("Tehnicienii dumneavoastră sunt autorizați?", "Lucrările reglementate (electrice, sanitare, lucrări cu agent frigorific la aerul condiționat) sunt făcute de profesioniști autorizați, cu certificate unde este necesar."),

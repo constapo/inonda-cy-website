@@ -16,7 +16,7 @@ L = {
   "h1": "Antreprenor în Nicosia pentru reparații, întreținere și renovări",
   "lead": "Baza noastră. Servicii zilnice în tot orașul și suburbiile Nicosiei, cu cea mai rapidă intervenție la urgențe.",
   "intro": ["Nicosia are cele mai calde veri și cele mai reci ierni din Cipru. Aparatele de aer condiționat și pompele de căldură funcționează aproape tot anul, acoperișurile plate primesc toată forța soarelui, iar multe blocuri din anii '80 și '90 au nevoie de cablaj nou, țevi noi și izolație mai bună.",
-            "Sediul nostru este în Strovolos, așa că tehnicienii noștri sunt în Nicosia în fiecare zi. Lucrările mici se grupează într-o singură vizită, iar urgențele, cum ar fi scurgerile sau căderile de curent, au prioritate."],
+            "Sediul nostru este în Strovolos, așa că tehnicienii noștri sunt în Nicosia în fiecare zi. Reparațiile mici se execută pentru clienții cu contract de mentenanță."],
   "hoods": ["Centrul Nicosiei", "Agios Antonios", "Kaimakli", "Pallouriotissa", "Agioi Omologites", "Acropolis", "Engomi", "Aglantzia", "Agios Dometios", "Makedonitissa"],
   "notes": ["Cu temperaturi de peste 40 °C vara, revizia aerului condiționat primăvara este esențială.", "Multe apartamente din centru au tablouri vechi, fără diferențial.", "Apa dură depune calcar în boilere și robinete; filtrele ajută."],
   "faqs": [("Cât de repede ajungeți în Nicosia?", "Pentru urgențe în Nicosia ne propunem să venim în aceeași zi, iar celelalte vizite le programăm în câteva zile lucrătoare."),
@@ -58,7 +58,7 @@ L = {
             "Preluăm lucrări în Limassol prin vizite programate și proiecte, cu un singur manager de proiect și rapoarte foto regulate, ideal dacă locuiți în străinătate."],
   "hoods": ["Centrul Limassol", "Germasogeia", "Agios Athanasios", "Mesa Geitonia", "Ypsonas", "Kato Polemidia", "Agios Tychonas", "Mouttagiaka"],
   "notes": ["Renovările proprietăților de închiriat se planifică în jurul schimbării chiriașilor.", "Blocurile înalte pot avea reguli privind orele de lucru și liftul; le verificăm înainte.", "Aerul sărat scurtează viața unităților exterioare fără revizie."],
-  "faqs": [("Preluați lucrări mici în Limassol?", "Grupăm lucrările mici în vizite programate; pentru o singură urgență vă spunem sincer când putem veni."),
+  "faqs": [("Preluați lucrări mici în Limassol?", "Doar pentru clienții cu contract de mentenanță. În rest, preluăm lucrări care durează mai mult de o zi."),
            ("Puteți renova apartamentul meu din Limassol cât sunt în străinătate?", "Da, cu rapoarte foto și aprobări pe WhatsApp sau email.")],
 },
 "ayia-napa-protaras": {

@@ -162,9 +162,9 @@ T = {
   "name": "Handyman & small repairs", "short": "The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
   "title": "Handyman Services in Nicosia & Cyprus | Small Repairs | Inonda LTD",
   "desc": "Reliable handyman in Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
-  "h1": "Handyman services for every small job",
-  "lead": "Send us your list. One skilled handyman, with the right tools and materials, clears it in a single visit.",
-  "intro": "Perfect for homeowners, landlords between tenants and offices: we group small jobs into one visit so you pay for time well used.",
+  "h1": "Small repairs for maintenance-contract customers",
+  "lead": "Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract.",
+  "intro": "Small repairs are part of our maintenance plans: we group them into your scheduled visits.",
   "scope": [
     ("Doors, windows & locks", ["Sticking or sagging doors adjusted or planed", "Lock, handle and cylinder replacement", "Window handles, hinges and fly screens", "Roller shutters and straps"]),
     ("Fixing & mounting", ["TV wall mounting with cables hidden", "Shelves, mirrors, pictures and curtain rails", "Kitchen and wardrobe door adjustment", "Furniture and flat-pack assembly"]),
@@ -173,7 +173,7 @@ T = {
   ],
   "notes": ["Landlords: send us the check-out report and we'll quote the whole list at once.", "Photos of each item on WhatsApp let us bring the right parts and finish in one trip."],
   "faqs": [
-    ("Is there a minimum charge?", "Yes, a minimum visit charge applies. That's why we recommend grouping jobs into one visit."),
+    ("Is there a minimum charge?", "Small repairs are carried out only under a maintenance contract, on the terms of your plan."),
     ("Do you bring materials?", "We bring standard fixings and consumables. Specific items (handles, taps, locks) can be supplied by us or by you."),
     ("Can you work while I'm not home?", "Yes, with keys or access arranged in advance. We send photos when finished."),
   ],
@@ -373,8 +373,8 @@ T = {
   "a_text": "Based in Strovolos, we cover all of Nicosia district daily, plus Larnaca, Limassol and the Famagusta area for scheduled works and larger projects.",
   "q_title": "Questions we hear every day",
   "faqs": [
-    ("Is the quote really free?", "Assessment and written quote are free and without obligation within 10 km of our office in Strovolos. For work estimated at more than €1,000, the quotation is included in the work. For complex diagnostics we tell you any fee upfront. For small repairs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km. In Limassol, Larnaca, Agia Napa and Paphos, quotation visits for small repairs up to €1,000 are charged; for work over €1,000, the quotation is included in the work. We assess, quote and take on only jobs of more than one day of work, whether repairs or any other work; jobs that take only a few minutes or hours are not quoted or undertaken."),
-    ("Do you do small jobs?", "Yes. From one tap to a long list of small repairs. A minimum visit charge applies, so we suggest grouping jobs."),
+    ("Is the quote really free?", "Assessment and written quote are free and without obligation within 10 km of our office in Strovolos. For work estimated at more than €1,000, the quotation is included in the work. For complex diagnostics we tell you any fee upfront. For jobs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km. In Limassol, Larnaca, Agia Napa and Paphos, quotation visits for jobs up to €1,000 are charged; for work over €1,000, the quotation is included in the work. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract."),
+    ("Do you do small jobs?", "Only for customers with a maintenance contract. Otherwise we take on jobs of more than one day of work."),
     ("Who will actually do the work?", "Our own team and licensed partner technicians who work to our standards, under our supervision and our warranty."),
     ("Which languages do you work in?", "We answer, quote and work in Greek, English, Russian and Romanian. The website is also available in Ukrainian and Hebrew."),
   ],
@@ -389,7 +389,7 @@ T = {
   "title": "How We Work: Quotes, Schedule, Warranty | Inonda LTD Cyprus",
   "desc": "How Inonda LTD works: assessment, itemised written quote, agreed schedule, licensed technicians, clean site, stage payments and written workmanship warranty.",
   "h1": "How we work",
-  "lead": "No surprises. A clear process, written agreements and regular updates, whether it's a two-hour repair or a three-month renovation.",
+  "lead": "No surprises. A clear process, written agreements and regular updates, from a repair of a few days to a three-month renovation.",
   "d_title": "Step by step",
   "detail": [
     ("Your request", "Tell us what's wrong or what you'd like to change.", ["Call, WhatsApp, Viber, email or the online form", "Photos and videos help us prepare the right team", "We reply the same working day"]),
@@ -453,10 +453,10 @@ T = {
   "h1": "Frequently asked questions", "lead": "Quick answers about quotes, work, payments and warranty. Can't find yours? Just ask us on WhatsApp.",
   "groups": [
     ("Quotes & prices", [
-      ("Is the quote free?", "Assessment and written quote are free and without obligation within 10 km of our office in Strovolos. For work estimated at more than €1,000, the quotation is included in the work. For small repairs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km. In Limassol, Larnaca, Agia Napa and Paphos, quotation visits for small repairs up to €1,000 are charged; for work over €1,000, the quotation is included in the work. We assess, quote and take on only jobs of more than one day of work, whether repairs or any other work; jobs that take only a few minutes or hours are not quoted or undertaken."),
+      ("Is the quote free?", "Assessment and written quote are free and without obligation within 10 km of our office in Strovolos. For work estimated at more than €1,000, the quotation is included in the work. For jobs estimated at up to €1,000, the on-site quotation visit is free within 10 km of our office in Strovolos and costs €50 beyond 10 km. In Limassol, Larnaca, Agia Napa and Paphos, quotation visits for jobs up to €1,000 are charged; for work over €1,000, the quotation is included in the work. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract."),
       ("Can you quote from photos?", "For simple jobs, often yes. For renovations and leaks we need to visit and measure."),
       ("Do your prices include materials?", "The quote states clearly what's included: labour, materials, disposal and VAT."),
-      ("Is there a minimum charge?", "Yes, a minimum visit charge applies to small repairs. Grouping jobs gives better value."),
+      ("Is there a minimum charge?", "Small repairs are carried out only under a maintenance contract, on the terms of your plan."),
     ]),
     ("The work", [
       ("Are your technicians licensed?", "Regulated work (electrical, plumbing, gas-related AC work) is done by licensed professionals, with certificates where required."),

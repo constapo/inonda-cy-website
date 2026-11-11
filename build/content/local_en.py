@@ -16,7 +16,7 @@ L = {
   "h1": "Contractor in Nicosia for repairs, maintenance & renovation",
   "lead": "Our home base. Daily service across Nicosia city and its suburbs, with the fastest response for urgent repairs.",
   "intro": ["Nicosia has the hottest summers and the coldest winters in Cyprus. That means air conditioners and heat pumps run hard almost all year, flat roofs take the full force of the sun, and older apartment buildings from the 1980s and 1990s often need new wiring, new pipes and better insulation.",
-            "Because we are based in Strovolos, our technicians are in Nicosia every day. Small repairs can often be grouped into one visit, and urgent jobs such as leaks or power failures get priority."],
+            "Because we are based in Strovolos, our technicians are in Nicosia every day. Small repairs are carried out for customers with a maintenance contract."],
   "hoods": ["Nicosia centre", "Agios Antonios", "Kaimakli", "Pallouriotissa", "Agioi Omologites", "Acropolis", "Engomi", "Aglantzia", "Agios Dometios", "Makedonitissa"],
   "notes": ["Summer temperatures above 40 °C make AC servicing in spring essential.", "Many central apartments have old electrical panels without RCD protection.", "Hard water causes limescale in water heaters and taps; filters help."],
   "faqs": [("How fast can you come in Nicosia?", "We aim to attend urgent jobs in Nicosia the same day, and schedule other visits within a few working days."),
@@ -58,7 +58,7 @@ L = {
             "We take on Limassol work as scheduled visits and projects, with one project manager and regular photo updates, which is ideal if you live abroad."],
   "hoods": ["Limassol centre", "Germasogeia", "Agios Athanasios", "Mesa Geitonia", "Ypsonas", "Kato Polemidia", "Agios Tychonas", "Mouttagiaka"],
   "notes": ["Rental refurbishments are planned around tenant changeovers.", "High-rise buildings may have rules on working hours and lift use; we check them first.", "Sea air shortens the life of outdoor AC units without servicing."],
-  "faqs": [("Do you take small jobs in Limassol?", "We group small jobs into scheduled visits; for single urgent repairs we tell you honestly when we can come."),
+  "faqs": [("Do you take small jobs in Limassol?", "Only for customers with a maintenance contract. Otherwise we take on jobs of more than one day of work."),
            ("Can you renovate my Limassol rental while I am abroad?", "Yes, with photo updates and approvals by WhatsApp or email.")],
 },
 "ayia-napa-protaras": {
