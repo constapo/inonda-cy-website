@@ -19,7 +19,7 @@ L = {
             "Sediul nostru este în Strovolos, așa că tehnicienii noștri sunt în Nicosia în fiecare zi. Reparațiile mici se execută pentru clienții cu contract de mentenanță."],
   "hoods": ["Centrul Nicosiei", "Agios Antonios", "Kaimakli", "Pallouriotissa", "Agioi Omologites", "Acropolis", "Engomi", "Aglantzia", "Agios Dometios", "Makedonitissa"],
   "notes": ["Cu temperaturi de peste 40 °C vara, revizia aerului condiționat primăvara este esențială.", "Multe apartamente din centru au tablouri vechi, fără diferențial.", "Apa dură depune calcar în boilere și robinete; filtrele ajută."],
-  "faqs": [("Cât de repede ajungeți în Nicosia?", "Pentru urgențe în Nicosia ne propunem să venim în aceeași zi, iar celelalte vizite le programăm în câteva zile lucrătoare."),
+  "faqs": [("Cât de repede ajungeți în Nicosia?", "Intervențiile urgente sunt pentru clienții cu contract de mentenanță. Pentru urgențe în Nicosia ne propunem să venim în aceeași zi, iar celelalte vizite le programăm în câteva zile lucrătoare."),
            ("Lucrați în blocuri vechi?", "Da. Recablarea, înlocuirea țevilor și renovarea apartamentelor vechi sunt o mare parte din munca noastră în Nicosia.")],
 },
 "strovolos": {

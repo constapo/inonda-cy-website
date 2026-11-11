@@ -19,7 +19,7 @@ L = {
             "Because we are based in Strovolos, our technicians are in Nicosia every day. Small repairs are carried out for customers with a maintenance contract."],
   "hoods": ["Nicosia centre", "Agios Antonios", "Kaimakli", "Pallouriotissa", "Agioi Omologites", "Acropolis", "Engomi", "Aglantzia", "Agios Dometios", "Makedonitissa"],
   "notes": ["Summer temperatures above 40 °C make AC servicing in spring essential.", "Many central apartments have old electrical panels without RCD protection.", "Hard water causes limescale in water heaters and taps; filters help."],
-  "faqs": [("How fast can you come in Nicosia?", "We aim to attend urgent jobs in Nicosia the same day, and schedule other visits within a few working days."),
+  "faqs": [("How fast can you come in Nicosia?", "Urgent call-outs are for customers with a maintenance contract. We aim to attend urgent jobs in Nicosia the same day, and schedule other visits within a few working days."),
            ("Do you work in older apartment buildings?", "Yes. Rewiring, re-piping and renovating older apartments is a large part of our work in Nicosia.")],
 },
 "strovolos": {

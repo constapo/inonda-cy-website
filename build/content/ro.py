@@ -159,9 +159,9 @@ T = {
   ],
 },
 "handyman-services": {
-  "name": "Meșter pentru reparații mici", "short": "Lista cu lucruri mărunte: uși, încuietori, rafturi, montaj mobilă, silicon, galerii de perdele, televizor pe perete și altele.",
-  "title": "Meșter pentru reparații mici în Nicosia și Cipru | Inonda LTD",
-  "desc": "Meșter de încredere în Nicosia și Cipru: reparații uși și încuietori, montaj mobilă, rafturi, televizor pe perete, silicon, galerii de perdele, retușuri de tencuială și vopsea.",
+  "name": "Reparații mici cu contract de mentenanță", "short": "Doar pentru clienții cu contract de mentenanță. Lista cu lucruri mărunte: uși, încuietori, rafturi, montaj mobilă, silicon, galerii de perdele, televizor pe perete și altele.",
+  "title": "Reparații mici cu contract de mentenanță | Inonda LTD",
+  "desc": "Doar pentru clienții cu contract de mentenanță. Meșter de încredere în Nicosia și Cipru: reparații uși și încuietori, montaj mobilă, rafturi, televizor pe perete, silicon, galerii de perdele, retușuri de tencuială și vopsea.",
   "h1": "Reparații mici pentru clienții cu contract de mentenanță",
   "lead": "Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță.",
   "intro": "Reparațiile mici fac parte din planurile noastre de mentenanță: le grupăm în vizitele programate.",
@@ -181,9 +181,9 @@ T = {
 "emergency-repairs": {
   "name": "Reparații urgente", "short": "Țevi sparte, inundații la vecini, căderi de curent, încuietori stricate și daune de furtună, puse rapid în siguranță.",
   "title": "Reparații urgente în Nicosia și Cipru | Scurgeri, curent, încuietori | Inonda LTD",
-  "desc": "Reparații urgente în Nicosia și Cipru: țevi sparte, apă care curge la vecinul de dedesubt, căderi de curent, încuietori stricate, daune la acoperiș după ploaie. Sunați sau scrieți pe WhatsApp.",
+  "desc": "Intervențiile urgente sunt pentru clienții cu contract de mentenanță. Reparații urgente în Nicosia și Cipru: țevi sparte, apă care curge la vecinul de dedesubt, căderi de curent, încuietori stricate, daune la acoperiș după ploaie. Sunați sau scrieți pe WhatsApp.",
   "h1": "Reparații urgente, rapid și în siguranță",
-  "lead": "Curge apa din tavan? Nu aveți curent? Ușa nu se încuie? Sunați sau scrieți-ne pe WhatsApp și vă tratăm cu prioritate.",
+  "lead": "Intervențiile urgente sunt pentru clienții cu contract de mentenanță. Curge apa din tavan? Nu aveți curent? Ușa nu se încuie? Sunați sau scrieți-ne pe WhatsApp și vă tratăm cu prioritate.",
   "intro": "Mai întâi punem proprietatea în siguranță și oprim extinderea daunelor. Apoi vă dăm o ofertă clară pentru reparația definitivă.",
   "scope": [
     ("Apă", ["Izolarea și repararea țevilor sparte sau care curg", "Infiltrații în apartamentul de dedesubt", "Rezervoare, WC-uri și boilere care dau pe dinafară", "Canalizări înfundate care refulează"]),
@@ -193,7 +193,7 @@ T = {
   ],
   "notes": ["Scurgere de apă? Închideți robinetul general și opriți curentul în zonele ude înainte să ajungem.", "Faceți fotografii și filmări ale daunelor pentru asigurator înainte de a muta ceva.", "Putem oferi un raport scris despre cauză și reparație pentru dosarul de asigurare."],
   "faqs": [
-    ("Cât de repede puteți veni?", "Tratăm urgențele cu prioritate și ne propunem să ajungem în aceeași zi în Nicosia. Timpul depinde de zonă și de ora apelului; vă spunem mereu sincer când ajungem."),
+    ("Cât de repede puteți veni?", "Intervențiile urgente sunt pentru clienții cu contract de mentenanță. Tratăm urgențele cu prioritate și ne propunem să ajungem în aceeași zi în Nicosia. Timpul depinde de zonă și de ora apelului; vă spunem mereu sincer când ajungem."),
     ("Costă mai mult intervențiile urgente?", "Apelurile urgente și cele în afara programului pot avea o taxă de deplasare. Vă anunțăm înainte să venim."),
     ("Mă ajutați cu dosarul de asigurare?", "Da, oferim fotografii și un raport scris despre cauză și lucrările efectuate."),
   ],

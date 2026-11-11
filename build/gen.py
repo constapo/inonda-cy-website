@@ -388,7 +388,7 @@ def hero_media(up, alt):
     return '<div class="hero-media">' + "".join(parts) + "</div>"
 
 # ---------------------------------------------------------------- presentation video (homepage)
-VIDEO_LEN = "PT3M16S"
+VIDEO_LEN = "PT3M3S"
 
 def video_section(T):
     if not has_video("presentation.mp4"):

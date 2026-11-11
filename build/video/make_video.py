@@ -125,9 +125,6 @@ clip("mk49023", 2, 4.5, "Επισκευές · Repairs", "Αδειούχοι υ�
 clip("coverr-dripping-faucet", 1, 4, "Επισκευές · Repairs", "Διαρροές, βουλώματα, θερμοσίφωνες", "Leaks, blockages, water heaters")
 clip("mk23491", 8, 5, "Επισκευές · Repairs", "Ηλεκτρολογικά", "Electrical works")
 clip("coverr-close-up-of-a-dual-power-outlet", 4, 4, "Επισκευές · Repairs", "Πρίζες, πίνακες, φωτισμός", "Sockets, panels, lighting")
-clip("coverr-a-handyman-at-work", 4, 4.5, "Επισκευές · Repairs", "Μικροεπισκευές", "Handyman & small repairs")
-clip("coverr-assembling-furniture", 2, 4, "Επισκευές · Repairs", "Συναρμολόγηση επίπλων", "Furniture assembly")
-clip("coverr-drilling-nails-into-wood", 4, 4, "Επισκευές · Repairs", "Στερέωση & τοποθέτηση", "Fixing & mounting")
 clip("mk47071", 5, 4.5, "Επισκευές · Repairs", "Επείγουσες επισκευές", "Urgent repairs, made safe fast")
 # Transformation
 card("coverr-interior-renovation", 2, 3.5, "03 / 03", "Ανακαίνιση", "Home transformation")

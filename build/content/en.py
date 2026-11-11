@@ -159,9 +159,9 @@ T = {
   ],
 },
 "handyman-services": {
-  "name": "Handyman & small repairs", "short": "The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
-  "title": "Handyman Services in Nicosia & Cyprus | Small Repairs | Inonda LTD",
-  "desc": "Reliable handyman in Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
+  "name": "Small repairs under maintenance contract", "short": "Maintenance-contract customers only. The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
+  "title": "Small repairs under maintenance contract | Inonda LTD",
+  "desc": "Maintenance-contract customers only. Reliable handyman in Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
   "h1": "Small repairs for maintenance-contract customers",
   "lead": "Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract.",
   "intro": "Small repairs are part of our maintenance plans: we group them into your scheduled visits.",
@@ -181,9 +181,9 @@ T = {
 "emergency-repairs": {
   "name": "Urgent repairs", "short": "Burst pipes, leaks into neighbours, power failures, broken locks and storm damage, made safe fast.",
   "title": "Urgent Repairs in Nicosia & Cyprus | Leaks, Power, Locks | Inonda LTD",
-  "desc": "Urgent repairs in Nicosia and Cyprus: burst pipes, water leaking into a neighbour, power failures, broken locks, storm and roof damage. Call or WhatsApp us.",
+  "desc": "Urgent call-outs are for customers with a maintenance contract. Urgent repairs in Nicosia and Cyprus: burst pipes, water leaking into a neighbour, power failures, broken locks, storm and roof damage. Call or WhatsApp us.",
   "h1": "Urgent repairs, made safe fast",
-  "lead": "Water pouring through the ceiling? No power? A door that won't lock? Call or WhatsApp us and we'll prioritise your job.",
+  "lead": "Urgent call-outs are for customers with a maintenance contract. Water pouring through the ceiling? No power? A door that won't lock? Call or WhatsApp us and we'll prioritise your job.",
   "intro": "First we make the property safe and stop the damage spreading. Then we give you a clear quote for the permanent repair.",
   "scope": [
     ("Water", ["Burst and leaking pipes isolated and repaired", "Leaks into the apartment below", "Overflowing tanks, WCs and water heaters", "Blocked drains backing up"]),
@@ -193,7 +193,7 @@ T = {
   ],
   "notes": ["Water leak? Close the main stopcock and switch off electricity to wet areas before we arrive.", "Take photos and videos of the damage for your insurer before anything is moved.", "We can provide a written report of cause and repair to support insurance claims."],
   "faqs": [
-    ("How fast can you come?", "We prioritise urgent jobs and aim to attend the same day in Nicosia. Response depends on location and time of call; we always give you an honest ETA."),
+    ("How fast can you come?", "Urgent call-outs are for customers with a maintenance contract. We prioritise urgent jobs and aim to attend the same day in Nicosia. Response depends on location and time of call; we always give you an honest ETA."),
     ("Do you charge more for urgent visits?", "Out-of-hours and urgent call-outs may carry a call-out fee. We tell you before we come."),
     ("Can you help with my insurance claim?", "Yes, we provide photos and a written report of the cause and the work carried out."),
   ],
