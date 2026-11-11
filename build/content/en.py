@@ -373,7 +373,7 @@ T = {
   "a_text": "Based in Strovolos, we cover all of Nicosia district daily, plus Larnaca, Limassol and the Famagusta area for scheduled works and larger projects.",
   "q_title": "Questions we hear every day",
   "faqs": [
-    ("Is the quote really free?", "Assessment and written quote are free and without obligation. For complex diagnostics we tell you any fee upfront. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract."),
+    ("Is the quote really free?", "Assessment and written quote are free and without obligation. For complex diagnostics we tell you any fee upfront. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
     ("Do you do small jobs?", "Only for customers with a maintenance contract. Otherwise we take on jobs of more than one day of work."),
     ("Who will actually do the work?", "Our own team and licensed partner technicians who work to our standards, under our supervision and our warranty."),
     ("Which languages do you work in?", "We answer, quote and work in Greek, English, Russian and Romanian. The website is also available in Ukrainian and Hebrew."),
@@ -453,7 +453,7 @@ T = {
   "h1": "Frequently asked questions", "lead": "Quick answers about quotes, work, payments and warranty. Can't find yours? Just ask us on WhatsApp.",
   "groups": [
     ("Quotes & prices", [
-      ("Is the quote free?", "Assessment and written quote are free and without obligation. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract."),
+      ("Is the quote free?", "Assessment and written quote are free and without obligation. We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
       ("Can you quote from photos?", "For simple jobs, often yes. For renovations and leaks we need to visit and measure."),
       ("Do your prices include materials?", "The quote states clearly what's included: labour, materials, disposal and VAT."),
       ("Is there a minimum charge?", "Small repairs are carried out only under a maintenance contract, on the terms of your plan."),

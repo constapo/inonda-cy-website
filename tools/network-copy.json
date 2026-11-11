@@ -21,7 +21,7 @@
     "contactTitle": "Book an inspection",
     "call": "Call",
     "follow": "Follow INONDA LTD",
-    "visitFee": "We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract."
+    "visitFee": "We assess, quote and take on only jobs of more than one day of work. Small repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."
   },
   "el": {
     "nav": "Ιστότοποι INONDA",
@@ -45,7 +45,7 @@
     "contactTitle": "Κλείστε επιθεώρηση",
     "call": "Κλήση",
     "follow": "Ακολουθήστε την INONDA LTD",
-    "visitFee": "Αναλαμβάνουμε αυτοψία, προσφορά και εκτέλεση μόνο για εργασίες διάρκειας άνω της μίας ημέρας. Μικροεπισκευές και εργασίες λίγων λεπτών ή ωρών εκτελούνται μόνο για πελάτες με συμβόλαιο συντήρησης."
+    "visitFee": "Αναλαμβάνουμε αυτοψία, προσφορά και εκτέλεση μόνο για εργασίες διάρκειας άνω της μίας ημέρας. Μικροεπισκευές και εργασίες λίγων λεπτών ή ωρών εκτελούνται μόνο για πελάτες με συμβόλαιο συντήρησης. Οι προσφορές στο πλαίσιο συμβολαίου συντήρησης είναι εντελώς δωρεάν."
   },
   "ru": {
     "nav": "Сайты INONDA",
@@ -69,7 +69,7 @@
     "contactTitle": "Заказать осмотр",
     "call": "Позвонить",
     "follow": "Подписывайтесь на INONDA LTD",
-    "visitFee": "Мы выезжаем на осмотр, готовим смету и берём в работу только задачи продолжительностью более одного дня. Мелкий ремонт и работы на несколько минут или часов выполняются только для клиентов с договором на обслуживание."
+    "visitFee": "Мы выезжаем на осмотр, готовим смету и берём в работу только задачи продолжительностью более одного дня. Мелкий ремонт и работы на несколько минут или часов выполняются только для клиентов с договором на обслуживание. Сметы по договору на обслуживание полностью бесплатны."
   },
   "uk": {
     "nav": "Сайти INONDA",
@@ -93,7 +93,7 @@
     "contactTitle": "Замовити огляд",
     "call": "Зателефонувати",
     "follow": "Стежте за INONDA LTD",
-    "visitFee": "Ми виїжджаємо на огляд, готуємо кошторис і беремо в роботу лише завдання тривалістю понад один день. Дрібний ремонт і роботи на кілька хвилин або годин виконуються лише для клієнтів із договором на обслуговування."
+    "visitFee": "Ми виїжджаємо на огляд, готуємо кошторис і беремо в роботу лише завдання тривалістю понад один день. Дрібний ремонт і роботи на кілька хвилин або годин виконуються лише для клієнтів із договором на обслуговування. Кошториси за договором на обслуговування повністю безкоштовні."
   },
   "he": {
     "nav": "אתרי INONDA",
@@ -117,7 +117,7 @@
     "contactTitle": "תיאום בדיקת נכס",
     "call": "התקשרו",
     "follow": "עקבו אחרי INONDA LTD",
-    "visitFee": "אנו מבצעים בדיקה, הצעת מחיר וביצוע רק לעבודות שנמשכות יותר מיום אחד. תיקונים קטנים ועבודות של כמה דקות או שעות מבוצעים רק ללקוחות עם חוזה תחזוקה."
+    "visitFee": "אנו מבצעים בדיקה, הצעת מחיר וביצוע רק לעבודות שנמשכות יותר מיום אחד. תיקונים קטנים ועבודות של כמה דקות או שעות מבוצעים רק ללקוחות עם חוזה תחזוקה. הצעות מחיר במסגרת חוזה תחזוקה הן חינם לחלוטין."
   },
   "ro": {
     "nav": "Site-urile INONDA",
@@ -141,6 +141,6 @@
     "contactTitle": "Programează o inspecție",
     "call": "Sună",
     "follow": "Urmărește INONDA LTD",
-    "visitFee": "Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."
+    "visitFee": "Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță. Ofertele în cadrul unui contract de mentenanță sunt complet gratuite."
   }
 }

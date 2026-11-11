@@ -373,7 +373,7 @@ T = {
   "a_text": "De la sediul din Strovolos acoperim zilnic tot districtul Nicosia, plus Larnaca, Limassol și zona Famagusta pentru lucrări programate și proiecte mai mari.",
   "q_title": "Întrebări pe care le auzim zilnic",
   "faqs": [
-    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
+    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță. Ofertele în cadrul unui contract de mentenanță sunt complet gratuite."),
     ("Faceți și lucrări mici?", "Doar pentru clienții cu contract de mentenanță. În rest, preluăm lucrări care durează mai mult de o zi."),
     ("Cine va face efectiv lucrarea?", "Echipa noastră și tehnicieni parteneri autorizați care lucrează după standardele noastre, sub supravegherea și garanția noastră."),
     ("În ce limbi lucrați?", "Răspundem, facem oferte și lucrăm în greacă, engleză, rusă și română."),
@@ -453,7 +453,7 @@ T = {
   "h1": "Întrebări frecvente", "lead": "Răspunsuri rapide despre oferte, lucrări, plăți și garanție. Nu găsiți întrebarea dumneavoastră? Întrebați-ne pe WhatsApp.",
   "groups": [
     ("Oferte și prețuri", [
-      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță."),
+      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță. Ofertele în cadrul unui contract de mentenanță sunt complet gratuite."),
       ("Puteți face ofertă după fotografii?", "Pentru lucrări simple, adesea da. Pentru renovări și infiltrații trebuie să venim și să măsurăm."),
       ("Prețurile includ materialele?", "Oferta precizează clar ce include: manoperă, materiale, evacuarea molozului și TVA."),
       ("Există un tarif minim?", "Reparațiile mici se execută doar în baza unui contract de mentenanță, în condițiile planului dumneavoastră."),
