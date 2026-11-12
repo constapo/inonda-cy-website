@@ -56,15 +56,18 @@ def language_switcher(site, lang, translations):
 
 
 def journey(page):
-    """Map only services actually covered by the estimator; no specialist quote claims."""
+    """Map inonda.org service pages to the matching one-off estimator jobs. Contract-only work
+    (maintenance plans, contract and emergency repairs, AC servicing) has no estimator job."""
     slug = str(page).split('/')[-2] if str(page).endswith('/index.html') else str(page).strip('/').split('/')[-1]
     services = {
         'property-management-services': 'management', 'property-owners': 'management',
         'property-inspections': 'maintenance', 'property-maintenance-repairs': 'maintenance,handyman',
-        'maintenance-plans': 'maintenance', 'contract-repairs': 'handyman', 'handyman-services': 'handyman',
-        'kitchen-renovation': 'renovation', 'bathroom-renovation': 'renovation',
-        'home-renovation': 'renovation', 'painting-plastering-gypsum': 'renovation',
-        'flooring-tiling': 'renovation', 'aluminium-works': 'aluminium',
+        'handyman-services': 'handyman',
+        'roof-waterproofing-damp': 'roofing', 'plumbing-services': 'plumbing', 'electrical-services': 'electrical',
+        'kitchen-renovation': 'kitchen', 'bathroom-renovation': 'bathroom',
+        'home-renovation': 'renovation', 'painting-plastering-gypsum': 'painting,gypsum',
+        'flooring-tiling': 'flooring', 'doors-windows-carpentry': 'doors', 'outdoor-works': 'outdoor',
+        'welding-metalwork': 'welding', 'aluminium-works': 'aluminium',
         'hpl-cladding': 'hpl', 'decorative-panels': 'decor', 'preparing-a-rental-property-in-cyprus': 'cleaning,handyman',
     }.get(slug, '')
     if slug.startswith('property-management-'):

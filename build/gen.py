@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
-from inonda_network import COPY as NETWORK_COPY, enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
+from inonda_network import destinations as network_destinations, journey as network_journey, COPY as NETWORK_COPY, enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
 from inonda_living import living_hero, living_assets
 import a11y_copy as A11Y
 PUB = os.path.join(ROOT, "public")
@@ -36,18 +36,18 @@ GSC_TOKEN = "ADV3fYCmHBO56b8IEcEpqdFcPNTT8Wj4_rADsPaRq3M"  # Google Search Conso
 GROUPS = ["maintenance", "repairs", "transformation"]
 # slug, group, icon, image key
 SERVICES = [
-    ("maintenance-plans", "maintenance", "calendar", "maintenance"),
+    ("maintenance-plans", "maintenance", "calendar", None),
     ("air-conditioning-services", "maintenance", "snow", "ac"),
-    ("roof-waterproofing-damp", "maintenance", "roof", "roof"),
+    ("roof-waterproofing-damp", "maintenance", "roof", None),
     ("plumbing-services", "repairs", "drop", "plumbing"),
     ("electrical-services", "repairs", "bolt", "electrical"),
-    ("contract-repairs", "repairs", "hammer", "handyman"),
-    ("emergency-repairs", "repairs", "siren", "emergency"),
+    ("contract-repairs", "repairs", "hammer", None),
+    ("emergency-repairs", "repairs", "siren", None),
     ("kitchen-renovation", "transformation", "kitchen", "kitchen"),
     ("bathroom-renovation", "transformation", "bath", "bathroom"),
     ("home-renovation", "transformation", "home", "renovation"),
     ("painting-plastering-gypsum", "transformation", "roller", "painting"),
-    ("flooring-tiling", "transformation", "tiles", "tiling"),
+    ("flooring-tiling", "transformation", "tiles", None),
     ("doors-windows-carpentry", "transformation", "door", "carpentry"),
     ("outdoor-works", "transformation", "sun", "outdoor"),
     ("aluminium-works", "transformation", "door", "aluminium"),
@@ -55,6 +55,8 @@ SERVICES = [
     ("decorative-panels", "transformation", "roller", "decor"),
 ]
 SVC = {s[0]: s for s in SERVICES}
+# Image key None: no company photo shows this exact service yet, so the drawn icon is used.
+# Owner rule (12 November 2026): a photo must show the service named beside it, or none at all.
 PAGES = ["", "services", "how-we-work", "service-areas", "about", "faq", "contact", "privacy-policy", "terms-of-service", "accessibility"]
 
 # ---------------------------------------------------------------- icons (24px stroke)
@@ -448,7 +450,7 @@ def page_home(T):
     why = "".join(f'<div class="card rv"><div class="ic">{ic(icn)}</div><h3>{e(h)}</h3><p>{e(p)}</p></div>' for icn, (h, p) in zip(["users", "euro", "clock", "camera", "shield", "pin"], H["why"]))
     out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(H["w_eyebrow"])}</p><h2>{e(H["w_title"])}</h2></div>{promises(T)}<div class="grid g3" style="margin-top:22px">{why}</div></div></section>')
     # maintenance feature
-    out.append(f'''<section class="stone"><div class="wrap split rev"><div class="media rv">{picture("maintenance", H["m_alt"], "../", icon="calendar")}</div>
+    out.append(f'''<section class="stone"><div class="wrap split rev"><div class="media rv">{picture(None, H["m_alt"], "../", icon="calendar")}</div>
 <div class="rv"><p class="eyebrow">{e(H["m_eyebrow"])}</p><h2>{e(H["m_title"])}</h2><p class="lead">{e(H["m_text"])}</p>
 <ul class="ticks">{"".join(f"<li>{e(x)}</li>" for x in H["m_list"])}</ul>
 <div class="btns"><a class="btn btn-dark" href="maintenance-plans/">{e(H["m_btn"])} {ic("arrow", "arrow")}</a></div></div></div></section>''')
@@ -476,8 +478,10 @@ def page_service(T, slug):
                          media=picture(s[3], d["name"], up + "../", eager=True, icon=s[2])))
     scope = "".join(f'<div class="card rv"><h3>{ic("check")}{e(h)}</h3><ul class="ticks">{"".join(f"<li>{e(x)}</li>" for x in items)}</ul></div>' for h, items in d["scope"])
     notes = f'<div class="note rv" style="margin-top:28px"><h3>{e(u["good_to_know"])}</h3><ul class="ticks">{"".join(f"<li>{e(x)}</li>" for x in d["notes"])}</ul></div>'
+    est = estimate_url(T["lang"], slug)
+    est_btn = f'<a class="btn btn-ghost" href="{e(est)}" data-inonda-destination="homes">{ic("euro")}{e(ESTIMATE[T["lang"]]["estimate"])}</a>' if est else ""
     aside = f'''<aside class="sticky"><div class="cta-card"><h3>{e(u["aside_title"])}</h3><p>{e(u["aside_text"])}</p>
-<a class="btn btn-primary" href="#quote">{e(u["cta_quote"])}</a><a class="btn btn-ghost" href="https://wa.me/{WA}" target="_blank" rel="noopener">{WA_SVG}WhatsApp</a><a class="btn btn-ghost" href="tel:{PHONE1}">{ic("phone")}{PHONE1_TXT}</a>
+<a class="btn btn-primary" href="#quote">{e(u["cta_quote"])}</a>{est_btn}<a class="btn btn-ghost" href="https://wa.me/{WA}" target="_blank" rel="noopener">{WA_SVG}WhatsApp</a><a class="btn btn-ghost" href="tel:{PHONE1}">{ic("phone")}{PHONE1_TXT}</a>
 <p class="small">{e(u["aside_small"])}</p><p class="fee-note">{e(NETWORK_COPY[T["lang"]]["visitFee"])}</p></div></aside>'''
     out.append(f'<section><div class="wrap aside-grid"><div><div class="sec-head rv" style="margin-bottom:30px"><p class="eyebrow">{e(G["name"])}</p><h2>{e(u["scope_title"])}</h2><p>{e(d["intro"])}</p></div><div class="scope">{scope}</div>{notes}</div>{aside}</div></section>')
     out.append(f'<section class="dark tight"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(u["process_eyebrow"])}</p><h2>{e(u["process_title"])}</h2></div>{steps(T)}</div></section>')
@@ -495,16 +499,61 @@ def page_service(T, slug):
     out.append(footer(T, up))
     return "".join(out)
 
+# Detailed services page and estimator links (owner request, 12 November 2026)
+ESTIMATE = {
+ "en": {"estimate": "Estimate the cost", "details": "Service details", "inspect": "Request an inspection", "jump": "Jump to",
+        "est_note": "Free budget planner on inonda.homes, with this job already selected. A price range, not a quotation.",
+        "inspect_note": "Contract work: priced after an inspection, then a written offer."},
+ "el": {"estimate": "Υπολογίστε το κόστος", "details": "Λεπτομέρειες υπηρεσίας", "inspect": "Ζητήστε αυτοψία", "jump": "Μετάβαση σε",
+        "est_note": "Δωρεάν υπολογιστής προϋπολογισμού στο inonda.homes, με την εργασία ήδη επιλεγμένη. Εύρος τιμής, όχι προσφορά.",
+        "inspect_note": "Εργασία με σύμβαση: η τιμή δίνεται μετά από αυτοψία, με γραπτή προσφορά."},
+ "ru": {"estimate": "Рассчитать стоимость", "details": "Подробнее об услуге", "inspect": "Заказать осмотр", "jump": "Перейти к",
+        "est_note": "Бесплатный планировщик бюджета на inonda.homes — работа уже выбрана. Диапазон цен, а не коммерческое предложение.",
+        "inspect_note": "Работы по договору: цена после осмотра, затем письменное предложение."},
+ "uk": {"estimate": "Розрахувати вартість", "details": "Докладніше про послугу", "inspect": "Замовити огляд", "jump": "Перейти до",
+        "est_note": "Безкоштовний планувальник бюджету на inonda.homes — роботу вже вибрано. Діапазон цін, а не комерційна пропозиція.",
+        "inspect_note": "Роботи за договором: ціна після огляду, потім письмова пропозиція."},
+ "he": {"estimate": "חשבו את העלות", "details": "פרטי השירות", "inspect": "בקשו ביקור בדיקה", "jump": "מעבר אל",
+        "est_note": "מתכנן תקציב חינמי באתר inonda.homes, עם העבודה כבר מסומנת. טווח מחירים, לא הצעת מחיר.",
+        "inspect_note": "עבודה בחוזה: המחיר נקבע לאחר בדיקה, ואז הצעה בכתב."},
+ "ro": {"estimate": "Estimează costul", "details": "Detalii serviciu", "inspect": "Solicită o inspecție", "jump": "Mergi la",
+        "est_note": "Planificator de buget gratuit pe inonda.homes, cu lucrarea deja selectată. Un interval de preț, nu o ofertă.",
+        "inspect_note": "Lucrări pe bază de contract: prețul se stabilește după inspecție, apoi ofertă scrisă."},
+}
+
+def estimate_url(lang, slug):
+    """inonda.homes planner with this service's jobs preselected, or None for contract-only work."""
+    page = slug + "/index.html"
+    return network_destinations(lang, page)["homes"] if network_journey(page)[0] else None
+
+def svc_detail(T, slug, up, flip):
+    s = SVC[slug]; d = T["svc"][slug]; X = ESTIMATE[T["lang"]]
+    points = [x for _, items in d["scope"] for x in items][:5]
+    est = estimate_url(T["lang"], slug)
+    if est:
+        act = f'<a class="btn btn-primary" href="{e(est)}" data-inonda-destination="homes">{ic("euro")}{e(X["estimate"])}</a>'
+        note = X["est_note"]
+    else:
+        act = f'<a class="btn btn-primary" href="#quote">{ic("doc")}{e(X["inspect"])}</a>'
+        note = X["inspect_note"]
+    return (f'<article class="split svc-detail{" rev" if flip else ""}" id="{slug}"><div class="media rv">{picture(s[3], d["name"], up + "../", icon=s[2])}</div>'
+            f'<div class="rv"><h3>{e(d["name"])}</h3><p class="lead">{e(d["short"])}</p><p>{e(d["intro"])}</p>'
+            f'<ul class="ticks">{"".join(f"<li>{e(x)}</li>" for x in points)}</ul>'
+            f'<div class="btns">{act}<a class="btn btn-line" href="{up}{slug}/">{e(X["details"])} {ic("arrow", "arrow")}</a></div>'
+            f'<p class="small svc-note">{e(note)}</p></div></article>')
+
 def page_services(T):
     u = T["ui"]; P = T["services"]; up = "../"
     trail = [(u["nav"]["home"], url(T["lang"], "")), (u["nav"]["services"], url(T["lang"], "services"))]
     ld = [crumbs_ld(T, trail), {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": T["svc"][s[0]]["name"], "url": url(T["lang"], s[0])} for i, s in enumerate(SERVICES)]}]
     out = [head(T, "services", P["title"], P["desc"], ld), header(T, "services", up)]
     out.append(page_hero(T, [(u["nav"]["home"], up), (u["nav"]["services"], "")], P["h1"], P["lead"]))
+    jump = "".join(f'<a class="chip" href="#{s[0]}">{e(T["svc"][s[0]]["name"])}</a>' for s in SERVICES)
+    out.append(f'<section class="tight svc-jump-wrap"><div class="wrap"><nav class="svc-jump" aria-label="{e(ESTIMATE[T["lang"]]["jump"])}">{jump}</nav></div></section>')
     for i, g in enumerate(GROUPS):
         G = T["groups"][g]
-        cards = "".join(svc_card(T, s[0], up, tag=False) for s in SERVICES if s[1] == g)
-        out.append(f'<section class="{"stone" if i % 2 else ""}" id="{g}"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">0{i+1} / 03</p><h2>{e(G["name"])}</h2><p class="lead">{e(G["desc"])}</p></div><div class="grid g3">{cards}</div></div></section>')
+        rows = "".join(svc_detail(T, s[0], up, n % 2 == 1) for n, s in enumerate(x for x in SERVICES if x[1] == g))
+        out.append(f'<section class="{"stone" if i % 2 else ""}" id="{g}"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">0{i+1} / 03</p><h2>{e(G["name"])}</h2><p class="lead">{e(G["desc"])}</p></div><div class="svc-details">{rows}</div></div></section>')
     out.append(f'<section class="tight"><div class="wrap">{promises(T)}</div></section>')
     out.append(cta_band(T)); out.append(footer(T, up))
     return "".join(out)
