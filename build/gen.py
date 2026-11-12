@@ -51,8 +51,8 @@ SERVICES = [
     ("doors-windows-carpentry", "transformation", "door", "carpentry"),
     ("outdoor-works", "transformation", "sun", "outdoor"),
     ("aluminium-works", "transformation", "door", "aluminium"),
-    ("hpl-cladding", "transformation", "home", "renovation"),
-    ("decorative-panels", "transformation", "roller", "painting"),
+    ("hpl-cladding", "transformation", "home", "hpl"),
+    ("decorative-panels", "transformation", "roller", "decor"),
 ]
 SVC = {s[0]: s for s in SERVICES}
 PAGES = ["", "services", "how-we-work", "service-areas", "about", "faq", "contact", "privacy-policy", "terms-of-service", "accessibility"]
