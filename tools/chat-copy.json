@@ -2,7 +2,7 @@
   "el": {
     "faq": {
       "start": {
-        "text": "Ξεκινήστε με τύπο ακινήτου, τοποθεσία και εμβαδόν. Επιλέξτε υπηρεσίες και ρυθμίστε ποσότητες, τιμές και συχνότητα. Η εκτίμηση ενημερώνεται άμεσα με 19% ΦΠΑ. Μπορώ να βοηθήσω με υπηρεσίες, προϋπολογισμό, αποθήκευση και επικοινωνία. Για ειδικές ανάγκες μιλήστε με την INONDA.",
+        "text": "Μπορώ να σας ενημερώσω για τις υπηρεσίες της INONDA, να σας βοηθήσω να υπολογίσετε τον προϋπολογισμό μιας εργασίας ή να ετοιμάσω ένα αίτημα για την ομάδα μας. Εργασίες όπως κουζίνες, μπάνια, δάπεδα, βαψίματα, γυψοσανίδες, υδραυλικά, ηλεκτρολογικά, στέγες, πόρτες, εξωτερικοί χώροι, αλουμίνια, HPL, διακοσμητικά πάνελ, συγκολλήσεις και ανακαινίσεις υπολογίζονται στο inonda.homes. Η συντήρηση, οι επισκευές με σύμβαση, ο καθαρισμός, η φροντίδα κήπου και η διαχείριση ακινήτων τιμολογούνται μετά από αυτοψία.",
         "label": "Ξεκινήστε την εκτίμησή σας",
         "action": "property"
       },
@@ -42,27 +42,27 @@
         "action": "property"
       },
       "cleaning": {
-        "text": "Επιλέξτε τακτικό, βαθύ καθαρισμό ή καθαρισμό εισόδου/αποχώρησης. Ορίστε εσωτερικό εμβαδόν και συχνότητα. Προβλέπονται συνήθης εργασία και βασικά αναλώσιμα. Ειδικός εξοπλισμός, επικίνδυνα υλικά και απομάκρυνση αποβλήτων συμφωνούνται χωριστά.",
+        "text": "Ο καθαρισμός παρέχεται στο πλαίσιο σύμβασης συντήρησης ή διαχείρισης και συμφωνείται μετά από αυτοψία. Πείτε μας για το ακίνητο και θα σας προτείνουμε ένα πρόγραμμα.",
         "label": "Δείτε τον καθαρισμό",
         "action": "services"
       },
       "renovation": {
-        "text": "Η ανακαίνιση προσφέρει αισθητική ανανέωση, μερική ή πλήρη ανακαίνιση τελειωμάτων για επιλεγμένο εμβαδόν. Περιλαμβάνει επιλεγμένη εργασία και βασικά τελειώματα. Δομικά έργα, άδειες, εξαρτήματα και μεγάλα υδραυλικά/ηλεκτρολογικά απαιτούν ξεχωριστή αξιολόγηση.",
+        "text": "Ανακαινίζουμε κουζίνες, μπάνια και ολόκληρα σπίτια, και αναλαμβάνουμε βαψίματα, γυψοσανίδες, δάπεδα και πλακάκια, πόρτες, αλουμίνια, επενδύσεις HPL και διακοσμητικά πάνελ. Ο υπολογιστής στο inonda.homes δίνει εύρος τιμής με υλικά, τοποθέτηση και ΦΠΑ 19%. Η INONDA το επιβεβαιώνει με γραπτή προσφορά μετά από αυτοψία.",
         "label": "Δείτε την ανακαίνιση",
         "action": "services"
       },
       "management": {
-        "text": "Η διαχείριση καλύπτει μηνιαίο συντονισμό υπηρεσιών και αναφορές ανά μονάδα. Δεν περιλαμβάνει λογαριασμούς τρίτων ή είσπραξη ενοικίων. Συζητήστε με την INONDA τη συμφωνία διαχείρισης που χρειάζεστε.",
+        "text": "Η διαχείριση ακινήτων για ιδιοκτήτες στην Κύπρο παρουσιάζεται στο inonda.site. Συμφωνείται με σύμβαση μετά από συζήτηση με την ομάδα, γι' αυτό δεν υπολογίζεται στον διαδικτυακό υπολογιστή.",
         "label": "Δείτε τη διαχείριση",
         "action": "services"
       },
       "landscaping": {
-        "text": "Η κηποτεχνία καλύπτει τακτική περιποίηση στο εξωτερικό εμβαδόν που εισάγετε, εφάπαξ ή επαναλαμβανόμενα. Κατασκευές κήπου, ψηλά δέντρα, ειδικός εξοπλισμός και απομάκρυνση αποβλήτων συμφωνούνται χωριστά.",
+        "text": "Η φροντίδα κήπου παρέχεται στο πλαίσιο σύμβασης συντήρησης και συμφωνείται μετά από αυτοψία. Για μεμονωμένες εργασίες εξωτερικών χώρων, όπως πλακόστρωση, πέργκολες και βεράντες, χρησιμοποιήστε τον υπολογιστή στο inonda.homes.",
         "label": "Δείτε την κηποτεχνία",
         "action": "services"
       },
       "maintenance": {
-        "text": "Η συντήρηση προβλέπει προληπτική επιθεώρηση και οι μικροεπισκευές ωριαία εργασία. Δεν περιλαμβάνονται ανταλλακτικά, επισκευές συντήρησης ή εξειδικευμένα επαγγέλματα. Συζητήστε υδραυλικά και ηλεκτρολογικά με την ομάδα για τον κατάλληλο αδειούχο επαγγελματία.",
+        "text": "Τα προγράμματα συντήρησης και οι επισκευές με σύμβαση ή επείγουσες συμφωνούνται μετά από αυτοψία, με γραπτή προσφορά, γι' αυτό δεν υπολογίζονται στον διαδικτυακό υπολογιστή. Οι υδραυλικές και ηλεκτρολογικές εργασίες υπολογίζονται στον υπολογιστή και η ομάδα τις επιβεβαιώνει επί τόπου.",
         "label": "Δείτε τη φροντίδα ακινήτου",
         "action": "services"
       },
@@ -97,7 +97,7 @@
   "en": {
     "faq": {
       "start": {
-        "text": "Start with your property type, location and size. Select the services you need, then adjust the quantities, rates and frequency. Your estimate updates instantly, including 19% VAT. I can help with services, scope, budgets, saved plans and contacting the team. For anything specific to your property, speak with INONDA.",
+        "text": "I can tell you about INONDA services, help you plan a budget for a one-off job, or prepare a request for our team. One-off jobs such as kitchens, bathrooms, flooring, painting, gypsum, plumbing, electrical, roofing, doors, outdoor works, aluminium, HPL, decorative panels, welding and renovation can be estimated on inonda.homes. Maintenance, contract repairs, cleaning, garden care and property management are priced after an inspection.",
         "label": "Start my estimate",
         "action": "property"
       },
@@ -137,27 +137,27 @@
         "action": "property"
       },
       "cleaning": {
-        "text": "Choose routine, deep or move-in / move-out cleaning. Set the indoor area and choose a one-off visit or ongoing frequency. Routine labour and basic consumables are assumed; specialist machinery, hazardous materials and waste removal need separate agreement.",
+        "text": "Cleaning is provided within a maintenance or management contract and is agreed after an inspection. Tell us about the property and we will propose a plan.",
         "label": "Explore cleaning",
         "action": "services"
       },
       "renovation": {
-        "text": "Renovation lets you explore a cosmetic refresh, partial refurbishment or full finish refurbishment for a selected area. The allowance covers the selected labour and basic finishes. Structural work, permits, fixtures and major plumbing or electrical works need a separate assessment.",
+        "text": "We renovate kitchens, bathrooms and whole homes, and handle painting, gypsum board, flooring and tiling, doors, aluminium, HPL cladding and decorative panels. The planner on inonda.homes gives a price range with materials, installation and 19% VAT included. INONDA confirms it with a written offer after an inspection.",
         "label": "Explore renovation",
         "action": "services"
       },
       "management": {
-        "text": "The management allowance covers monthly service coordination and reporting per managed unit. Third-party bills and rent collection are excluded from this estimator. Contact INONDA to discuss the management arrangement you need.",
+        "text": "Property management for owners in Cyprus is described on inonda.site. It is arranged by contract after a conversation with the team, so it is not priced in the online planner.",
         "label": "Explore management",
         "action": "services"
       },
       "landscaping": {
-        "text": "Landscaping covers a routine garden tidy for the outdoor area you enter. You can set one-off or recurring visits. Landscape construction, tall trees, specialist machinery and waste removal need separate agreement.",
+        "text": "Garden care is provided within a maintenance contract and is agreed after an inspection. For one-off outdoor works such as paving, pergolas and terraces, use the planner on inonda.homes.",
         "label": "Explore landscaping",
         "action": "services"
       },
       "maintenance": {
-        "text": "Maintenance provides a preventive inspection allowance; handyman provides an hourly labour allowance for small jobs. Parts, repairs and specialist trades are excluded from those allowances. Plumbing and electrical work should be discussed with the team so the right professional can assess it.",
+        "text": "Maintenance plans and contract or urgent repairs are agreed with you after an inspection, with a written offer, so they are not priced in the online planner. Plumbing and electrical jobs can be estimated in the planner, and the team confirms them on site.",
         "label": "Explore property care",
         "action": "services"
       },
@@ -192,7 +192,7 @@
   "ru": {
     "faq": {
       "start": {
-        "text": "Начните с типа объекта, места и площади. Выберите услуги, объёмы, цены и частоту. Расчёт обновляется сразу с НДС 19%. Я помогу с услугами, бюджетом, сохранением и контактами. Особенности объекта обсудите с INONDA.",
+        "text": "Я расскажу об услугах INONDA, помогу рассчитать бюджет разовой работы или подготовить заявку для нашей команды. Разовые работы — кухни, ванные, полы, покраска, гипсокартон, сантехника, электрика, кровля, двери, работы во дворе, алюминий, HPL, декоративные панели, сварка и ремонт — можно рассчитать на inonda.homes. Обслуживание, ремонт по договору, уборка, уход за садом и управление недвижимостью оцениваются после осмотра.",
         "label": "Начать мой расчёт",
         "action": "property"
       },
@@ -232,27 +232,27 @@
         "action": "property"
       },
       "cleaning": {
-        "text": "Выберите регулярную, генеральную уборку или уборку при въезде/выезде. Задайте площадь и частоту. Учтены обычный труд и базовые расходники; спецтехника, опасные материалы и вывоз отходов согласуются отдельно.",
+        "text": "Уборка выполняется в рамках договора обслуживания или управления и согласуется после осмотра. Расскажите о недвижимости, и мы предложим план.",
         "label": "Изучить уборку",
         "action": "services"
       },
       "renovation": {
-        "text": "Ремонт позволяет выбрать косметическое, частичное или полное обновление отделки. Учтены выбранная работа и базовые отделочные материалы. Конструкции, разрешения, оборудование и крупные инженерные работы требуют отдельной оценки.",
+        "text": "Мы ремонтируем кухни, ванные и дома целиком, выполняем покраску, гипсокартон, полы и плитку, двери, алюминий, облицовку HPL и декоративные панели. Планировщик на inonda.homes показывает диапазон цен с материалами, монтажом и НДС 19%. INONDA подтверждает его письменным предложением после осмотра.",
         "label": "Изучить ремонт",
         "action": "services"
       },
       "management": {
-        "text": "Управление включает ежемесячную координацию и отчётность по объекту. Счета третьих лиц и сбор аренды исключены. Обсудите нужную схему с INONDA.",
+        "text": "Управление недвижимостью для владельцев на Кипре описано на inonda.site. Оно оформляется договором после разговора с командой, поэтому онлайн-планировщик его не рассчитывает.",
         "label": "Изучить управление",
         "action": "services"
       },
       "landscaping": {
-        "text": "Уход за садом включает обычную уборку выбранной площади разово или регулярно. Строительство, высокие деревья, спецтехника и вывоз отходов согласуются отдельно.",
+        "text": "Уход за садом выполняется в рамках договора обслуживания и согласуется после осмотра. Для разовых работ во дворе — мощение, перголы, террасы — используйте планировщик на inonda.homes.",
         "label": "Изучить уход за садом",
         "action": "services"
       },
       "maintenance": {
-        "text": "Обслуживание — это профилактический осмотр, мелкий ремонт — почасовой труд мастера. Детали и специальные работы не включены. Сантехнику и электрику обсудите с командой для осмотра нужным специалистом.",
+        "text": "Планы обслуживания, ремонт по договору и срочный ремонт согласуются после осмотра с письменным предложением, поэтому онлайн-планировщик их не рассчитывает. Сантехнику и электрику можно рассчитать в планировщике, а команда подтвердит их на месте.",
         "label": "Изучить уход за объектом",
         "action": "services"
       },
@@ -287,7 +287,7 @@
   "uk": {
     "faq": {
       "start": {
-        "text": "Почніть із типу об’єкта, місця та площі. Оберіть послуги, обсяги, ціни й частоту. Розрахунок оновлюється одразу з ПДВ 19%. Я допоможу з послугами, бюджетом, збереженням і контактами. Особливості об’єкта обговоріть з INONDA.",
+        "text": "Я розповім про послуги INONDA, допоможу розрахувати бюджет разової роботи або підготувати заявку для нашої команди. Разові роботи — кухні, ванні, підлога, фарбування, гіпсокартон, сантехніка, електрика, покрівля, двері, роботи у дворі, алюміній, HPL, декоративні панелі, зварювання та ремонт — можна розрахувати на inonda.homes. Обслуговування, ремонт за договором, прибирання, догляд за садом і управління нерухомістю оцінюються після огляду.",
         "label": "Почати мій розрахунок",
         "action": "property"
       },
@@ -327,27 +327,27 @@
         "action": "property"
       },
       "cleaning": {
-        "text": "Оберіть регулярне, генеральне прибирання або прибирання при заселенні/виїзді. Задайте площу й частоту. Враховано звичайну працю та базові витратні матеріали; спецтехніка, небезпечні матеріали й вивезення відходів узгоджуються окремо.",
+        "text": "Прибирання виконується в межах договору обслуговування або управління й погоджується після огляду. Розкажіть про нерухомість, і ми запропонуємо план.",
         "label": "Переглянути прибирання",
         "action": "services"
       },
       "renovation": {
-        "text": "Ремонт дозволяє обрати косметичне, часткове або повне оновлення оздоблення. Враховано обрану роботу й базові матеріали. Конструкції, дозволи, обладнання та великі інженерні роботи потребують окремої оцінки.",
+        "text": "Ми ремонтуємо кухні, ванні та будинки повністю, виконуємо фарбування, гіпсокартон, підлогу й плитку, двері, алюміній, облицювання HPL і декоративні панелі. Планувальник на inonda.homes показує діапазон цін із матеріалами, монтажем і ПДВ 19%. INONDA підтверджує його письмовою пропозицією після огляду.",
         "label": "Переглянути ремонт",
         "action": "services"
       },
       "management": {
-        "text": "Управління включає щомісячну координацію та звітність за об’єктом. Рахунки третіх осіб і збір оренди виключено. Обговоріть потрібну схему з INONDA.",
+        "text": "Управління нерухомістю для власників на Кіпрі описано на inonda.site. Воно оформлюється договором після розмови з командою, тому онлайн-планувальник його не розраховує.",
         "label": "Переглянути управління",
         "action": "services"
       },
       "landscaping": {
-        "text": "Догляд за садом включає звичайне прибирання обраної площі разово або регулярно. Будівництво, високі дерева, спецтехніка й вивезення відходів узгоджуються окремо.",
+        "text": "Догляд за садом виконується в межах договору обслуговування й погоджується після огляду. Для разових робіт у дворі — мощення, перголи, тераси — скористайтеся планувальником на inonda.homes.",
         "label": "Переглянути догляд за садом",
         "action": "services"
       },
       "maintenance": {
-        "text": "Обслуговування — це профілактичний огляд, дрібний ремонт — погодинна праця майстра. Деталі та спеціальні роботи не включено. Сантехніку й електрику обговоріть із командою для огляду потрібним фахівцем.",
+        "text": "Плани обслуговування, ремонт за договором і термінові ремонти погоджуються після огляду з письмовою пропозицією, тому онлайн-планувальник їх не розраховує. Сантехніку та електрику можна розрахувати в планувальнику, а команда підтвердить їх на місці.",
         "label": "Переглянути догляд за об’єктом",
         "action": "services"
       },
@@ -382,7 +382,7 @@
   "he": {
     "faq": {
       "start": {
-        "text": "התחילו בסוג הנכס, המיקום והשטח. בחרו שירותים והתאימו כמויות, תעריפים ותדירות. ההערכה מתעדכנת מיד עם מע״מ 19%. אוכל לעזור בשירותים, תקציב, שמירה ויצירת קשר. לצרכים מיוחדים פנו ל-INONDA.",
+        "text": "אוכל לספר על השירותים של INONDA, לעזור לתכנן תקציב לעבודה חד-פעמית או להכין פנייה לצוות שלנו. עבודות חד-פעמיות כמו מטבחים, חדרי רחצה, ריצוף, צביעה, גבס, אינסטלציה, חשמל, גגות, דלתות, עבודות חוץ, אלומיניום, HPL, פאנלים דקורטיביים, ריתוך ושיפוצים ניתן להעריך באתר inonda.homes. תחזוקה, תיקונים בחוזה, ניקיון, טיפול בגינה וניהול נכסים מתומחרים לאחר בדיקה.",
         "label": "התחלת ההערכה שלי",
         "action": "property"
       },
@@ -422,27 +422,27 @@
         "action": "property"
       },
       "cleaning": {
-        "text": "בחרו ניקיון שוטף, יסודי או לפני כניסה/לאחר עזיבה. הגדירו שטח ותדירות. כלולים עבודה רגילה וחומרים בסיסיים. ציוד מיוחד, חומרים מסוכנים ופינוי פסולת דורשים הסכמה נפרדת.",
+        "text": "ניקיון ניתן במסגרת חוזה תחזוקה או ניהול ונקבע לאחר בדיקה. ספרו לנו על הנכס ונציע תוכנית.",
         "label": "בדיקת שירותי ניקיון",
         "action": "services"
       },
       "renovation": {
-        "text": "השיפוץ מאפשר רענון קוסמטי, שיפוץ חלקי או חידוש גמרים מלא לשטח נבחר. כלולים העבודה והגמרים הבסיסיים שנבחרו. מבנה, היתרים, אביזרים ועבודות אינסטלציה וחשמל גדולות דורשים בדיקה נפרדת.",
+        "text": "אנחנו משפצים מטבחים, חדרי רחצה ובתים שלמים, ומבצעים צביעה, גבס, ריצוף ואריחים, דלתות, אלומיניום, חיפוי HPL ופאנלים דקורטיביים. המתכנן באתר inonda.homes מציג טווח מחירים הכולל חומרים, התקנה ומע״מ 19%. INONDA מאשרת אותו בהצעה בכתב לאחר בדיקה.",
         "label": "בדיקת אפשרויות שיפוץ",
         "action": "services"
       },
       "management": {
-        "text": "הניהול כולל תיאום שירותים ודיווח חודשי לכל יחידה. חשבונות צד שלישי וגביית שכירות אינם כלולים. פנו ל-INONDA לדיון בהסדר הניהול המתאים.",
+        "text": "ניהול נכסים לבעלי נכסים בקפריסין מתואר באתר inonda.site. הוא נקבע בחוזה לאחר שיחה עם הצוות, ולכן אינו מתומחר במתכנן המקוון.",
         "label": "בדיקת אפשרויות ניהול",
         "action": "services"
       },
       "landscaping": {
-        "text": "הגינון כולל סידור שוטף של שטח החוץ שהזנתם, חד פעמי או קבוע. בניית גן, עצים גבוהים, ציוד מיוחד ופינוי פסולת דורשים הסכמה נפרדת.",
+        "text": "טיפול בגינה ניתן במסגרת חוזה תחזוקה ונקבע לאחר בדיקה. לעבודות חוץ חד-פעמיות, כמו ריצוף, פרגולות ומרפסות, השתמשו במתכנן באתר inonda.homes.",
         "label": "בדיקת שירותי גינון",
         "action": "services"
       },
       "maintenance": {
-        "text": "תחזוקה היא אומדן לבדיקה מונעת, ותיקונים קטנים הם אומדן עבודה לפי שעה. חלקים ועבודות מומחים אינם כלולים. שוחחו עם הצוות על אינסטלציה וחשמל כדי להפנות לבעל המקצוע המתאים.",
+        "text": "תוכניות תחזוקה ותיקונים בחוזה או דחופים מוסכמים לאחר בדיקה, עם הצעה בכתב, ולכן אינם מתומחרים במתכנן המקוון. עבודות אינסטלציה וחשמל ניתן להעריך במתכנן, והצוות מאשר אותן באתר.",
         "label": "בדיקת שירותי טיפול בנכס",
         "action": "services"
       },
@@ -477,7 +477,7 @@
   "ro": {
     "faq": {
       "start": {
-        "text": "Începe cu tipul proprietății, localitatea și suprafața. Alege servicii, cantități, tarife și frecvență. Estimarea se actualizează imediat cu TVA 19%. Pot ajuta cu servicii, buget, salvare și contact. Pentru detalii specifice discută cu INONDA.",
+        "text": "Vă pot prezenta serviciile INONDA, vă pot ajuta să planificați bugetul unei lucrări punctuale sau să pregătiți o cerere pentru echipa noastră. Lucrările punctuale precum bucătării, băi, pardoseli, zugrăveli, gips-carton, instalații sanitare, electrice, acoperișuri, uși, amenajări exterioare, aluminiu, HPL, panouri decorative, sudură și renovări pot fi estimate pe inonda.homes. Întreținerea, reparațiile pe bază de contract, curățenia, îngrijirea grădinii și administrarea proprietăților se evaluează după o inspecție.",
         "label": "Începe estimarea mea",
         "action": "property"
       },
@@ -517,27 +517,27 @@
         "action": "property"
       },
       "cleaning": {
-        "text": "Alege curățenie periodică, generală sau la mutare/eliberare. Setează suprafața și frecvența. Sunt incluse manopera obișnuită și consumabilele de bază; utilajele speciale, materialele periculoase și deșeurile se stabilesc separat.",
+        "text": "Curățenia se oferă în cadrul unui contract de întreținere sau administrare și se stabilește după o inspecție. Spuneți-ne despre proprietate și vă propunem un plan.",
         "label": "Explorează curățenia",
         "action": "services"
       },
       "renovation": {
-        "text": "Renovarea permite reîmprospătare cosmetică, renovare parțială sau completă a finisajelor. Include manopera și finisajele de bază selectate. Structura, autorizațiile, dotările și instalațiile majore necesită evaluare separată.",
+        "text": "Renovăm bucătării, băi și case întregi și realizăm zugrăveli, gips-carton, pardoseli și faianță, uși, aluminiu, placări HPL și panouri decorative. Planificatorul de pe inonda.homes oferă un interval de preț cu materiale, montaj și TVA 19% incluse. INONDA îl confirmă printr-o ofertă scrisă după inspecție.",
         "label": "Explorează renovarea",
         "action": "services"
       },
       "management": {
-        "text": "Administrarea include coordonare și raportare lunară per unitate. Facturile terților și colectarea chiriei sunt excluse. Discută cu INONDA aranjamentul potrivit.",
+        "text": "Administrarea proprietăților pentru proprietarii din Cipru este prezentată pe inonda.site. Se stabilește prin contract după o discuție cu echipa, deci nu este calculată în planificatorul online.",
         "label": "Explorează administrarea",
         "action": "services"
       },
       "landscaping": {
-        "text": "Grădinăritul include îngrijire obișnuită pentru suprafața introdusă, o dată sau recurent. Construcțiile, arborii înalți, utilajele speciale și evacuarea deșeurilor se stabilesc separat.",
+        "text": "Îngrijirea grădinii se oferă în cadrul unui contract de întreținere și se stabilește după o inspecție. Pentru lucrări exterioare punctuale, precum pavaje, pergole și terase, folosiți planificatorul de pe inonda.homes.",
         "label": "Explorează grădinăritul",
         "action": "services"
       },
       "maintenance": {
-        "text": "Întreținerea reprezintă o inspecție preventivă, iar reparațiile mici sunt calculate pe oră. Piesele și lucrările specializate nu sunt incluse. Discută cu echipa despre instalații și electricitate pentru evaluarea de către specialistul potrivit.",
+        "text": "Planurile de întreținere și reparațiile pe bază de contract sau urgente se stabilesc după o inspecție, cu ofertă scrisă, deci nu sunt calculate în planificatorul online. Lucrările sanitare și electrice pot fi estimate în planificator, iar echipa le confirmă la fața locului.",
         "label": "Explorează îngrijirea proprietății",
         "action": "services"
       },

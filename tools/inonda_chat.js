@@ -86,7 +86,27 @@ function summary(){const text=requestText(request,lang),row=bubble(u()[19]);row.
  row.append(actions,el('p','inonda-chat-draft-note',u()[38]));choices([[u()[26],begin],[u()[7],()=>openEstimate(request.serviceId==='other'?[]:[request.serviceId])],[u()[8],contacts]]);scrollLog();
 }
 function ask(text){const question=text.trim();if(!question)return;if(stage){receive(question);return;}bubble(question,true);answer(classify(question),question);input.value='';}
-function update(){lang=Object.hasOwn(UI,document.documentElement.lang)?document.documentElement.lang:'en';toggle.querySelector('span').textContent=u()[0];title.textContent=u()[1];subtitle.textContent=u()[2];close.textContent=u()[3];inputLabel.textContent=u()[9];input.placeholder=u()[9];send.textContent=u()[10];privacy.textContent=u()[11];panel.dir=lang==='he'?'rtl':'ltr';if(stage)promptStage();else homeChoices();}
-toggle.addEventListener('click',()=>{if(panel.open){panel.close();return;}panel.show();toggle.setAttribute('aria-expanded','true');if(!started){bubble(u()[4]);started=true;}if(stage)promptStage();else homeChoices();input.focus();});
+function update(){lang=Object.hasOwn(UI,document.documentElement.lang)?document.documentElement.lang:'en';toggle.querySelector('span').textContent=u()[0];title.textContent=u()[1];subtitle.textContent=u()[2];close.textContent=u()[3];inputLabel.textContent=u()[9];input.placeholder=u()[9];send.textContent=u()[10];privacy.textContent=u()[11];panel.dir=lang==='he'?'rtl':'ltr';if(!teaser.hidden)fillTeaser();if(stage)promptStage();else homeChoices();}
+function greetChoices(){choices([...Object.entries(d().services).map(([id,label])=>[label,()=>{bubble(label,true);answer(id==='handyman'?'maintenance':id,id);}]),[u()[7],()=>openEstimate()],[u()[8],contacts]]);}
+function openPanel(focus=true){hideTeaser(true);panel.show();toggle.setAttribute('aria-expanded','true');if(!started){bubble(u()[39]);started=true;if(!stage){greetChoices();if(focus)input.focus();return;}}if(stage)promptStage();else homeChoices();if(focus)input.focus();}
+toggle.addEventListener('click',()=>{if(panel.open){panel.close();return;}openPanel();});
+/* Proactive greeting: a small card asks visitors how we can help. Shown once, after a short pause or some
+   scrolling; never covers the open chat, never steals focus, and "Not now" hides it for three days. */
+const GREET_KEY='inonda-chat-greeted',GREET_DAYS=3;
+const teaser=el('aside','inonda-chat-teaser');teaser.id='inonda-chat-teaser';teaser.dataset.noI18n='';teaser.hidden=true;teaser.setAttribute('aria-labelledby','inonda-chat-teaser-text');
+const teaserText=el('p','inonda-chat-teaser-text');teaserText.id='inonda-chat-teaser-text';teaserText.setAttribute('aria-live','polite');
+const teaserChips=el('div','inonda-chat-teaser-chips'),teaserFoot=el('div','inonda-chat-teaser-foot');
+const teaserOpen=el('button','inonda-chat-teaser-open'),teaserLater=el('button','inonda-chat-teaser-later');teaserOpen.type=teaserLater.type='button';
+teaserFoot.append(teaserOpen,teaserLater);teaser.append(teaserText,teaserChips,teaserFoot);document.body.append(teaser);
+function greeted(){try{const t=Number(localStorage.getItem(GREET_KEY));return t&&Date.now()-t<GREET_DAYS*864e5;}catch(e){return false;}}
+function remember(){try{localStorage.setItem(GREET_KEY,String(Date.now()));}catch(e){}}
+function fillTeaser(){teaserText.textContent=u()[39];teaserOpen.textContent=u()[41];teaserLater.textContent=u()[40];teaser.dir=lang==='he'?'rtl':'ltr';teaserChips.replaceChildren();
+ Object.entries(d().services).filter(([id])=>['renovation','maintenance','handyman','management'].includes(id)).forEach(([id,label])=>button(teaserChips,label,()=>{openPanel(false);bubble(label,true);answer(id==='handyman'?'maintenance':id,id);}));
+ button(teaserChips,u()[7],()=>{hideTeaser(true);openEstimate();});button(teaserChips,u()[8],()=>{openPanel(false);contacts();});}
+function showTeaser(){if(greeted()||panel.open||started||!teaser.hidden)return;fillTeaser();teaser.hidden=false;requestAnimationFrame(()=>teaser.classList.add('inonda-chat-teaser-in'));remember();}
+function hideTeaser(){teaser.classList.remove('inonda-chat-teaser-in');teaser.hidden=true;}
+teaserOpen.addEventListener('click',()=>openPanel());teaserLater.addEventListener('click',()=>{hideTeaser();remember();toggle.focus();});
+teaser.addEventListener('keydown',event=>{if(event.key==='Escape'){hideTeaser();toggle.focus();}});
+if(!greeted()){const timer=setTimeout(showTeaser,7000);const onScroll=()=>{const max=document.documentElement.scrollHeight-innerHeight;if(max>0&&scrollY/max>.35){removeEventListener('scroll',onScroll);clearTimeout(timer);showTeaser();}};addEventListener('scroll',onScroll,{passive:true});}
 close.addEventListener('click',()=>panel.close());panel.addEventListener('close',()=>{toggle.setAttribute('aria-expanded','false');toggle.focus();});panel.addEventListener('keydown',event=>{if(event.key==='Escape')panel.close();});form.addEventListener('submit',event=>{event.preventDefault();ask(input.value);});document.addEventListener('inonda:language',update);update();
 })();
