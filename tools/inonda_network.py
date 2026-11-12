@@ -64,7 +64,8 @@ def journey(page):
         'maintenance-plans': 'maintenance', 'contract-repairs': 'handyman', 'handyman-services': 'handyman',
         'kitchen-renovation': 'renovation', 'bathroom-renovation': 'renovation',
         'home-renovation': 'renovation', 'painting-plastering-gypsum': 'renovation',
-        'flooring-tiling': 'renovation', 'preparing-a-rental-property-in-cyprus': 'cleaning,handyman',
+        'flooring-tiling': 'renovation', 'aluminium-works': 'aluminium',
+        'hpl-cladding': 'hpl', 'decorative-panels': 'decor', 'preparing-a-rental-property-in-cyprus': 'cleaning,handyman',
     }.get(slug, '')
     if slug.startswith('property-management-'):
         services = 'management'
