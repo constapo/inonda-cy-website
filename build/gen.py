@@ -50,7 +50,7 @@ SERVICES = [
     ("flooring-tiling", "transformation", "tiles", "tiling"),
     ("doors-windows-carpentry", "transformation", "door", "carpentry"),
     ("outdoor-works", "transformation", "sun", "outdoor"),
-    ("aluminium-works", "transformation", "door", "carpentry"),
+    ("aluminium-works", "transformation", "door", "aluminium"),
     ("hpl-cladding", "transformation", "home", "renovation"),
     ("decorative-panels", "transformation", "roller", "painting"),
 ]
