@@ -1,0 +1,30 @@
+name: Gortex code intelligence (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    name: Index repository with Gortex
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Install Gortex from official installer
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL https://get.gortex.dev -o /tmp/install-gortex.sh
+          sh /tmp/install-gortex.sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Verify Gortex version
+        run: "$HOME/.local/bin/gortex version"
+
+      - name: Analyze repository (runner only; no files committed)
+        run: "$HOME/.local/bin/gortex init --analyze"
