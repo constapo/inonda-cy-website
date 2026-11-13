@@ -18,7 +18,7 @@ from inonda_seo import enhance_seo
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261112-greet-1'
+VERSION = '20261113-names-1'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
 
 
@@ -132,6 +132,33 @@ def language_targets(text):
     return parser.targets
 
 
+TEAM_NAMES = ('Irina', 'Constantin')
+_NAME_RE = re.compile(r'\b(' + '|'.join(TEAM_NAMES) + r')\b')
+_NAME_OPEN = '<span translate="no" class="notranslate inonda-name">'
+
+
+def protect_names(text):
+    """Keep team names exact when a browser machine-translates the page
+    (Chrome otherwise turns "Constantin" into "Constantine"). Only visible text
+    is wrapped; tags, attributes, scripts and styles are untouched. Idempotent."""
+    parts = re.split(r'(<[^>]+>)', text)
+    skip = None
+    for i, part in enumerate(parts):
+        if part.startswith('<'):
+            tag = part[1:].split(None, 1)[0].lower().rstrip('>') if len(part) > 1 else ''
+            if skip and tag == '/' + skip:
+                skip = None
+            elif tag in ('script', 'style', 'title', 'textarea', 'option') and not part.endswith('/>'):
+                skip = tag
+            continue
+        if skip or not part or not _NAME_RE.search(part):
+            continue
+        if i >= 1 and 'inonda-name' in parts[i - 1]:
+            continue
+        parts[i] = _NAME_RE.sub(lambda m: _NAME_OPEN + m.group(1) + '</span>', part)
+    return ''.join(parts)
+
+
 def enhance_html(text, site, page=''):
     text = enhance_seo(text, site, page)
     if '<main' not in text or '<header' not in text or 'http-equiv="refresh"' in text:
@@ -184,8 +211,8 @@ def enhance_html(text, site, page=''):
     text = re.sub(r'<a\b([^>]*\bhref=[\"\'](?:https://wa\.me/|viber://)[^>]*?)>(.*?)</a>', brand_link, text, flags=re.S)
     if site != 'org':
         from inonda_future import enhance_future
-        return enhance_future(text, site)
-    return text
+        return protect_names(enhance_future(text, site))
+    return protect_names(text)
 
 
 CSS = '''/* INONDA LTD: shared navigation and journeys, scoped to avoid site theme collisions. */
