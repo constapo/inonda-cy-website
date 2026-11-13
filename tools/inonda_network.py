@@ -18,7 +18,7 @@ from inonda_seo import enhance_seo
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads(Path(__file__).with_name('network-copy.json').read_text(encoding='utf-8'))
 SOCIAL = json.loads(Path(__file__).with_name('social-links.json').read_text(encoding='utf-8'))
-VERSION = '20261113-names-1'
+VERSION = '20261113-names-2'
 HOSTS = {'site': 'https://www.inonda.site', 'org': 'https://www.inonda.org', 'homes': 'https://www.inonda.homes'}
 
 
@@ -133,14 +133,21 @@ def language_targets(text):
 
 
 TEAM_NAMES = ('Irina', 'Constantin')
-_NAME_RE = re.compile(r'\b(' + '|'.join(TEAM_NAMES) + r')\b')
-_NAME_OPEN = '<span translate="no" class="notranslate inonda-name">'
+# Owner decision (13 November 2026): the team names are adapted only in Greek and Russian.
+LOCAL_NAMES = {'el': {'Irina': 'Ειρήνη', 'Constantin': 'Κωνσταντίν'},
+               'ru': {'Irina': 'Ирина', 'Constantin': 'Константин'}}
+_NAME_RE = re.compile(r'\b(' + '|'.join(TEAM_NAMES) + r')\b|(' + '|'.join(n for m in LOCAL_NAMES.values() for n in m.values()) + r')')
+_ANY_TO_KEY = {n: k for m in LOCAL_NAMES.values() for k, n in m.items()}
 
 
-def protect_names(text):
-    """Keep team names exact when a browser machine-translates the page
-    (Chrome otherwise turns "Constantin" into "Constantine"). Only visible text
-    is wrapped; tags, attributes, scripts and styles are untouched. Idempotent."""
+def protect_names(text, lang='en'):
+    """Keep team names exact when a browser machine-translates the page (Chrome otherwise
+    turns "Constantin" into "Constantine") and show the Greek or Russian form on those pages.
+    Only visible text changes; tags, attributes, scripts and styles are untouched. Idempotent."""
+    local = LOCAL_NAMES.get(lang, {})
+    def shown(m):
+        key = m.group(1) or _ANY_TO_KEY[m.group(2)]
+        return key, local.get(key, key)
     parts = re.split(r'(<[^>]+>)', text)
     skip = None
     for i, part in enumerate(parts):
@@ -151,11 +158,16 @@ def protect_names(text):
             elif tag in ('script', 'style', 'title', 'textarea', 'option') and not part.endswith('/>'):
                 skip = tag
             continue
-        if skip or not part or not _NAME_RE.search(part):
+        if not part or not _NAME_RE.search(part) or skip in ('script', 'style', 'textarea'):
             continue
-        if i >= 1 and 'inonda-name' in parts[i - 1]:
+        if skip or (i >= 1 and 'inonda-name' in parts[i - 1]):
+            # inside <option>/<title> or an existing name span: adapt the text only
+            parts[i] = _NAME_RE.sub(lambda m: shown(m)[1], part)
+            if i >= 1 and 'inonda-name' in parts[i - 1] and 'data-name=' not in parts[i - 1]:
+                key = shown(_NAME_RE.search(part))[0]
+                parts[i - 1] = parts[i - 1][:-1] + f' data-name="{key}">'
             continue
-        parts[i] = _NAME_RE.sub(lambda m: _NAME_OPEN + m.group(1) + '</span>', part)
+        parts[i] = _NAME_RE.sub(lambda m: f'<span translate="no" class="notranslate inonda-name" data-name="{shown(m)[0]}">{shown(m)[1]}</span>', part)
     return ''.join(parts)
 
 
@@ -211,8 +223,8 @@ def enhance_html(text, site, page=''):
     text = re.sub(r'<a\b([^>]*\bhref=[\"\'](?:https://wa\.me/|viber://)[^>]*?)>(.*?)</a>', brand_link, text, flags=re.S)
     if site != 'org':
         from inonda_future import enhance_future
-        return protect_names(enhance_future(text, site))
-    return protect_names(text)
+        return protect_names(enhance_future(text, site), lang)
+    return protect_names(text, lang)
 
 
 CSS = '''/* INONDA LTD: shared navigation and journeys, scoped to avoid site theme collisions. */
@@ -352,10 +364,13 @@ function update(){
  // Existing menu/footer links must follow the chosen language too; leave media URLs untouched.
  if(site==='homes')document.querySelectorAll('a[href]').forEach(function(a){if(a.hasAttribute('data-golang')||a.hasAttribute('hreflang')||!/^https:\\/\\/www\\.inonda\\.(site|org)\\/(el|en|ru|uk|he|ro)\\//.test(a.href))return;var u=new URL(a.href);u.pathname=u.pathname.replace(/^\\/(el|en|ru|uk|he|ro)\\//,'/'+lang+'/');a.href=u.href;});
 }
+// Team names: Greek and Russian forms only on those languages; Latin elsewhere.
+var NAMES=NAMES_DATA;function teamNames(){var m=NAMES[document.documentElement.lang]||{};document.querySelectorAll('.inonda-name').forEach(function(s){var k=s.getAttribute('data-name');if(!k)return;s.textContent=m[k]||k;});}
+document.addEventListener('inonda:language',teamNames);if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',teamNames);else teamNames();
 document.addEventListener('inonda:language',update);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',update);else update();
 })();
-'''.replace('COPY_DATA', json.dumps(COPY, ensure_ascii=False)).replace('LANG_LABEL_DATA', json.dumps(LANG_LABEL, ensure_ascii=False)).replace('LANG_UI_DATA', json.dumps({c: [short, name] for c, short, name in LANG_UI}, ensure_ascii=False))
+'''.replace('NAMES_DATA', json.dumps(LOCAL_NAMES, ensure_ascii=False)).replace('COPY_DATA', json.dumps(COPY, ensure_ascii=False)).replace('LANG_LABEL_DATA', json.dumps(LANG_LABEL, ensure_ascii=False)).replace('LANG_UI_DATA', json.dumps({c: [short, name] for c, short, name in LANG_UI}, ensure_ascii=False))
 
 
 def update_site(site):

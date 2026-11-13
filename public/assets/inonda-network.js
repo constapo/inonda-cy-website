@@ -42,6 +42,9 @@ function update(){
  // Existing menu/footer links must follow the chosen language too; leave media URLs untouched.
  if(site==='homes')document.querySelectorAll('a[href]').forEach(function(a){if(a.hasAttribute('data-golang')||a.hasAttribute('hreflang')||!/^https:\/\/www\.inonda\.(site|org)\/(el|en|ru|uk|he|ro)\//.test(a.href))return;var u=new URL(a.href);u.pathname=u.pathname.replace(/^\/(el|en|ru|uk|he|ro)\//,'/'+lang+'/');a.href=u.href;});
 }
+// Team names: Greek and Russian forms only on those languages; Latin elsewhere.
+var NAMES={"el": {"Irina": "Ειρήνη", "Constantin": "Κωνσταντίν"}, "ru": {"Irina": "Ирина", "Constantin": "Константин"}};function teamNames(){var m=NAMES[document.documentElement.lang]||{};document.querySelectorAll('.inonda-name').forEach(function(s){var k=s.getAttribute('data-name');if(!k)return;s.textContent=m[k]||k;});}
+document.addEventListener('inonda:language',teamNames);if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',teamNames);else teamNames();
 document.addEventListener('inonda:language',update);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',update);else update();
 })();
