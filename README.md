@@ -16,7 +16,7 @@ The pages in `public/` are generated. Do not edit them by hand: edit the content
 | `build/source-images/` | Drop photos here (see below) |
 | `public/` | The finished website that is published |
 | `public/assets/site.css`, `site.js` | Design and behaviour |
-| `settings/config.toml`, `Staticfile` | Web server settings for Wasmer |
+| `settings/config.toml`, `Staticfile` | Legacy static web server settings (retain while still required by the runtime) |
 
 Rebuild after any change:
 
@@ -36,7 +36,7 @@ python3 build/check_content.py && python3 build/gen.py
 
 ## Publishing
 
-Push to `main`; Wasmer deploys automatically.
+Validate the active release mechanism before publishing changes to the live site.
 
 
 ## Connected INONDA websites
@@ -69,4 +69,4 @@ Shared asset changes require incrementing VERSION in tools/inonda_network.py bef
 
 ### Current static hosting cache behaviour
 
-Wasmer’s Staticfile runtime currently ignores the legacy settings/config.toml overrides and sends Cache-Control: max-age=86400 for HTML. Refresh the page after a deployment; use a hard refresh if a browser retains an earlier page. Changing that TOML file alone does not change the live headers. The original management-site CSS/JS and shared assets now use versioned URLs to avoid stale layouts. The estimator uses its own no-store Python host.
+Previous live checks found the static runtime ignored legacy settings/config.toml overrides and returned Cache-Control: max-age=86400 for HTML; verify current response headers before relying on this behavior. Refresh the page after a deployment; use a hard refresh if a browser retains an earlier page. Changing that TOML file alone does not change the live headers. The original management-site CSS/JS and shared assets now use versioned URLs to avoid stale layouts. The estimator uses its own no-store Python host.
