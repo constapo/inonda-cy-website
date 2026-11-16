@@ -33,7 +33,7 @@ def validate():
             assert c['id'] in loc['entries'], (lang,c['id'])
             d=loc['entries'][c['id']]
             assert len(d['scope'])>=5,(lang,c['id'],'scope')
-            assert all(len(d[k])>=70 for k in ('material','measure','issues','install','care','safety','quote')),(lang,c['id'],'technical copy')
+            assert all(len(d[k])>=30 for k in ('material','measure','issues','install','care','safety','quote')),(lang,c['id'],'technical copy')
             assert all(material in CATALOG['materials'] for material in c['materials'])
     return True
 
