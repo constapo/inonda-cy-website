@@ -1,0 +1,44 @@
+name: INONDA Carpentry 66-page review build
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'build/carpentry*'
+      - 'build/gen.py'
+      - '.github/workflows/carpentry-pr-preview.yml'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Build, translate, validate SEO and package preview
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile Python source
+        run: python3 -m compileall -q build
+      - name: Validate original six-language source files
+        run: python3 build/check_content.py
+      - name: Generate all website pages from source
+        run: python3 build/gen.py
+      - name: Validate 66 new localized Carpentry pages and old page links
+        run: python3 build/check_carpentry.py
+      - name: Run existing Python unit tests, if any
+        run: |
+          if [ -d tests ]; then python3 -m unittest discover -s tests -p 'test_*.py'; fi
+      - name: Upload reviewable, unmodified site build (no publication)
+        uses: actions/upload-artifact@v4
+        with:
+          name: inonda-org-carpentry-review-66-pages
+          path: |
+            public/el/carpentry/
+            public/en/carpentry/
+            public/ru/carpentry/
+            public/uk/carpentry/
+            public/he/carpentry/
+            public/ro/carpentry/
+            public/assets/carpentry.css
+          if-no-files-found: error
+          retention-days: 14
