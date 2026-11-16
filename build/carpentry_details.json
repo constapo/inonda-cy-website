@@ -1,0 +1,1372 @@
+{
+  "languages": {
+    "en": {
+      "ui": {
+        "title": "Carpentry & Custom Woodwork in Cyprus",
+        "short": "Carpentry & Custom Woodwork",
+        "intro": "Tailored joinery, repair and installation for homes, rental properties and commercial premises across Cyprus. Each project is measured and assessed before a written offer is agreed; the available scope depends on feasibility and the site conditions.",
+        "browse": "Explore our ten carpentry specialties",
+        "materialsTitle": "Materials, fittings and finishes",
+        "materialsIntro": "The right product depends on location and use: solid timber offers a natural grain, engineered boards can provide dimensional consistency, plywood combines layered strength, and moisture-resistant boards require appropriate specified conditions. Confirm coatings, fittings and substrate compatibility for each project. Veneers, stains, lacquers and paints require suitable preparation and maintenance.",
+        "scope": "What we can make, fit or restore",
+        "measurement": "Planning and measurements",
+        "materials": "Materials and design choices",
+        "issues": "Typical problems and assessment",
+        "installation": "Preparation and installation",
+        "care": "Finishing and aftercare",
+        "safety": "Safety and feasibility",
+        "quote": "Tailored written quotation",
+        "quoteNote": "Price on Request — Custom Quotation. Bespoke carpentry has no universal price list. Dimensions, design, material grade, fittings, fabrication, finishing, site access and installation scope are assessed together. The final written offer follows measurements and an inspection where needed; work starts only after approval.",
+        "process": "How your project proceeds",
+        "steps": [
+          "Describe the work and intended use.",
+          "Send approximate dimensions and reference photographs or drawings.",
+          "Discuss materials, finish and hardware preferences.",
+          "Arrange an inspection and confirm actual site measurements where needed.",
+          "Agree scope, materials, fittings and installation details.",
+          "Receive a tailored written quotation.",
+          "Approve the written scope before work begins.",
+          "Complete the agreed work, installation and handover."
+        ],
+        "details": "Detailed carpentry services",
+        "serviceTitle": "Specialist carpenter services",
+        "estimator": "Build a Custom Carpentry Request",
+        "estimatorNote": "Opens the corresponding Carpentry & Custom Woodwork area of the INONDA estimator. Bespoke work requires a personal quotation; the planner does not give an instant fixed price.",
+        "quoteButton": "Request a Custom Carpentry Quote",
+        "contact": "Book an Inspection",
+        "related": "Related INONDA services",
+        "faq": "Common questions",
+        "questions": [
+          "What work is included in this category?",
+          "What materials and finish should I consider?",
+          "Which dimensions and details should I send?",
+          "Can existing woodwork be repaired or modified?"
+        ],
+        "requestDetails": "For an accurate proposal send the location, project description, approximate dimensions in cm, quantities, desired timber or board type, finish, fittings and photographs or reference drawings. We will confirm what needs an on-site inspection.",
+        "repairRule": "Small or urgent repair callouts remain subject to the company's existing maintenance-contract conditions. Do not assume an unrestricted one-off emergency repair service.",
+        "compliance": "Structural, fire-rated, security-rated and regulated work is subject to appropriate specifications, safety checks and any applicable approvals. No certification or performance guarantee is implied without verification.",
+        "workTypes": "Typical scope: new fabrication, suitable replacement, repair, adjustment and restoration according to project requirements.",
+        "source": "View our complete bespoke carpentry catalogue",
+        "return": "Back to all carpentry services",
+        "more": "Explore service details",
+        "materialLabel": "Available material options",
+        "notFixed": "No fixed public price list",
+        "scopeFoot": "Feasibility, procurement, installation and suitability are confirmed in the individual written offer.",
+        "siteTitle": "Site-specific planning",
+        "requestPhotos": "Please share photographs and accurate measurements where available. Do not send sensitive personal information in public links."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "Made-to-measure interior and exterior timber door leaves",
+            "Single, double, hinged, sliding and suitable pocket-door layouts",
+            "Door frames, architraves, thresholds, stops and trims",
+            "Panelled, flush and suitable glazed timber door designs",
+            "Replacement hinges, locks, latches, handles and adjustment",
+            "Partial frame repairs, refinishing and restoration"
+          ],
+          "material": "Choose solid timber, engineered constructions or an appropriate veneered or board-based design according to expected use and exposure. Finish, grain, panel construction, glazing and hardware influence the appearance, stability and maintenance.",
+          "measure": "Record clear structural opening width and height, wall thickness, handing and swing direction, floor clearance and existing frame condition. Note adjacent cabinets, architraves and accessible routes before agreeing a bespoke size.",
+          "issues": "Look for a rubbing or sagging leaf, uneven gaps, swollen lower edges, cracked frames, noisy hinges and unreliable latches. A targeted adjustment or component repair may be more appropriate than complete replacement.",
+          "install": "Inspect wall fixing points, thresholds, hinge capacity and surrounding finishes. Confirm lockset specification and installation clearances before cutting or fitting; protect floors and check smooth operation at handover.",
+          "care": "Clean with suitable non-abrasive methods; inspect exposed edges, hinges, screws and protective finishes periodically. Exterior doors need finish maintenance according to weather and manufacturer instructions.",
+          "safety": "Fire- or security-rated performance is not implied for ordinary joinery. A rated assembly must use verified products, tested components and compatible installation specifications.",
+          "quote": "Provide opening dimensions, photos of both faces and the frame, preferred swing and design, quantity, finish and any existing lock or hardware model."
+        },
+        "timberWindows": {
+          "scope": [
+            "Custom timber window frames and casement components",
+            "Traditional wooden shutters, louvres and hinges",
+            "Replacement sash components and localised timber repairs",
+            "Weather-seal, latch, catch and opening-hardware adjustments",
+            "Refinishing, protective coatings and weatherproofing assessment",
+            "Restoration of suitable existing wooden frames"
+          ],
+          "material": "Select timber and external coating systems according to weather exposure, coastal conditions, glazing arrangement and maintenance capacity. Moisture movement and coating compatibility must be considered before fabrication or repair.",
+          "measure": "Provide aperture measurements, sash configuration, depth, glazing specification, opening direction, sill and drainage details. Inspect the frame from inside and outside for moisture and concealed damage.",
+          "issues": "Rot at joints, sticking sashes, peeling paint, failed seals, loose shutter hinges and water staining require diagnosis. Where deterioration is extensive, replacement may be safer and more durable than patch repair.",
+          "install": "Check drainage, flashing, movement gaps, sealing interfaces and fixings. Weather resistance, ventilation and wind-load suitability depend on the entire installed assembly rather than appearance alone.",
+          "care": "Maintain drainage outlets, inspect sealant and coatings, and repair early water ingress. Coastal exposure can increase maintenance needs for timber coatings and metal fittings.",
+          "safety": "Do not promise thermal, acoustic, wind or security ratings without documented product and glazing evidence. Elevated or structural openings may require specialist installation and permissions.",
+          "quote": "Share inside/outside photographs, rough opening size, number of shutters or sashes, glazing needs, damage location and preferred finish."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "Made-to-measure base, wall and tall kitchen units",
+            "Utility-room cabinets, sink bases and pantry storage",
+            "Replacement doors, drawer fronts, hinges and drawer runners",
+            "Pull-out units, corner storage and suitable soft-close mechanisms",
+            "Appliance housings and accessible service compartments",
+            "Refurbishment and adaptation of existing cabinetry"
+          ],
+          "material": "Compare melamine-faced panels, plywood, moisture-resistant MDF and solid timber according to moisture risk, desired finish, edge durability and weight. Choose drawer slides and hinges for the actual load and frequency of use.",
+          "measure": "Provide room dimensions, ceiling height, cabinet runs, appliance models, plumbing and electrical locations, door-opening clearances and skirting or uneven-wall details. Appliance ventilation and service access must remain possible.",
+          "issues": "Common problems include water-damaged sink bases, delaminated edges, sagging shelves, distorted doors, damaged hinges and failing drawer runners. Inspect the carcass before recommending new fronts or replacement units.",
+          "install": "Coordinate with plumbing, electrical and countertop installation where required. Secure wall units to appropriate structural substrates, maintain appliance clearances and check alignment and edge protection.",
+          "care": "Wipe spills promptly, protect vulnerable board edges from standing water and clean hardware according to its specification. Adjust hinges when movement causes door misalignment.",
+          "safety": "Heavy suspended units need appropriate wall assessment and fixing. Electrical, gas or plumbing changes are separate regulated trades and must not be presented as carpentry-only work.",
+          "quote": "Provide a layout sketch, linear lengths, cabinet heights, appliance specifications, chosen fronts, worktop coordination and photographs."
+        },
+        "wardrobes": {
+          "scope": [
+            "Built-in and freestanding made-to-measure wardrobes",
+            "Hinged-door, sliding-door and walk-in arrangements",
+            "Hanging rails, drawers, shelves and accessory compartments",
+            "Under-stair, linen and awkward-space storage",
+            "Wardrobe door replacement and interior reconfiguration",
+            "Repairs to tracks, hinges, runners and damaged panels"
+          ],
+          "material": "Choose melamine, MDF, plywood or suitable solid timber based on finish, budget, structural support and humidity. Sliding-track quality, door weight and accessible cleaning clearances affect long-term use.",
+          "measure": "Record wall-to-wall width, ceiling height, depth and room access. Identify skirting, sockets, air-conditioning routes, uneven floors, door swing and ventilation requirements before fabrication.",
+          "issues": "Dragging sliders, uneven doors, bowed shelves, damaged tracks, poor airflow and musty interiors may indicate hardware faults, overloaded storage or moisture conditions.",
+          "install": "Confirm anchoring points and clear assembly routes through corridors and stairs. Allow for wall and floor deviations rather than assuming perfect right angles.",
+          "care": "Keep tracks free from dust, avoid excessive shelf loading and ventilate storage zones. Inspect hinges and runners and address wall moisture before enclosing it with cabinetry.",
+          "safety": "Tall or freestanding units may require anti-tip fixing, especially where children use the space. Never conceal active dampness or building services without inspection.",
+          "quote": "Send a room sketch, dimensions, door configuration, number of drawers and hanging zones, photos of obstructions and preferred finish."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "Custom bookcases, shelves and library walls",
+            "Built-in desks and home-office work surfaces",
+            "Television, media and display units",
+            "Alcove storage, reception counters and office cabinetry",
+            "Window seats and multifunctional storage furniture",
+            "Repair or modification of fitted furniture"
+          ],
+          "material": "Material thickness, edge treatment, surface finish and fixing method must suit the expected load and span. Plywood, MDF, solid timber and veneer differ in appearance, stiffness and finishing requirements.",
+          "measure": "Specify overall available width, height and depth, load estimates, screen or equipment dimensions, socket locations, cable routes and access for assembly. Measure walls at more than one level.",
+          "issues": "Bowed shelves, weak brackets, loose joints, damaged edges and unstable furniture require assessment of load transfer and substrate. Simply replacing a decorative finish may not solve a structural issue.",
+          "install": "Check the supporting wall type and select suitable anchors and brackets. Plan for safe cable routing, heat dissipation from electronics, corner clearance and reachable maintenance panels.",
+          "care": "Follow finish-specific cleaning guidance, distribute heavy loads over supported spans and inspect wall fixings periodically. Avoid trapping heat or moisture inside closed media compartments.",
+          "safety": "Wall-mounted heavy furniture and shelves require documented assessment of substrate and fixing suitability; loads cannot be guaranteed from dimensions alone.",
+          "quote": "Provide intended load and items to be stored, dimensioned sketches, reference styles, wall material if known, socket positions and photos."
+        },
+        "panelling": {
+          "scope": [
+            "Real-timber feature walls and slat arrangements",
+            "Wainscoting, battens and decorative mouldings",
+            "Skirting boards, architraves and trim repairs",
+            "Timber lining and suitable concealed-access panels",
+            "Veneered and appropriately finished wood panels",
+            "Restoration and replacement of damaged decorative profiles"
+          ],
+          "material": "Use suitable solid timber, veneer, plywood or MDF based on substrate, expected humidity, impact risk and finish. True timber products differ from the site's separate PVC, WPC and HPL panel services.",
+          "measure": "Measure wall width and height, corners, openings, sockets and lighting locations. Check substrate flatness, dampness and existing paint or plaster adhesion before setting panel layout.",
+          "issues": "Loose boards, visible gaps, swollen edges, mould, cracking and uneven joints may reflect moisture or unsuitable fastening. Treat moisture sources before enclosing a wall.",
+          "install": "Plan battens and expansion gaps, verify fixing positions and coordinate electrical access. Panels must not cover inspection points or introduce unsafe clearances around heat sources.",
+          "care": "Dust or wipe according to the chosen finish and avoid persistent moisture. Refinish exposed timber if wear or sunlight degrades the coating.",
+          "safety": "Confirm fire-performance requirements for the occupancy and placement; do not claim acoustic or fire ratings without tested assemblies. Never conceal damp walls without remediation.",
+          "quote": "Send wall photos, full dimensions, outlet and doorway positions, reference patterns, desired wood tone and any known moisture issues."
+        },
+        "stairs": {
+          "scope": [
+            "Timber treads, risers and stair cladding",
+            "Repairs to squeaking or worn stair components",
+            "Custom timber handrails and newel posts",
+            "Timber balustrade components and decorative profiles",
+            "Refinishing and replacing suitable nonstructural woodwork",
+            "Inspection-led replacement of damaged stair sections"
+          ],
+          "material": "Choose suitable hardwood, engineered timber and compatible finishes with wear, grip, structural support and maintenance in mind. Visible surface upgrades are different from building a new load-bearing staircase.",
+          "measure": "Document tread depth, riser height, flight width, landings, headroom, balustrade height and fixing interfaces. Precise structural measurements and any existing defects need professional assessment.",
+          "issues": "Loose steps, cracked treads, squeaks, worn nosings and moving rails can pose a fall hazard. A cosmetic finish cannot resolve inadequate structure or fastening.",
+          "install": "Coordinate any work affecting stair geometry, guarding, anchors and building access. Temporary protection and safe continued access must be agreed before removal or refinishing.",
+          "care": "Keep treads clean and dry, renew compatible finishes as needed and inspect fixings and rail rigidity. Worn or slippery surfaces should be addressed promptly.",
+          "safety": "Stairs, handrails and balustrades are safety-critical. Applicable Cyprus requirements, guard dimensions, loading and approvals must be verified by competent professionals before structural work.",
+          "quote": "Supply photos of the complete flight and defects, tread/riser measurements, intended finish and whether a structural change is proposed."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "Timber decking and terrace finishes",
+            "Pergolas, garden screens and suitable shade structures",
+            "Wooden gates, fencing and privacy panels",
+            "Garden benches, storage and planters",
+            "Repair or restoration of weather-exposed timber",
+            "Special outdoor timber details and partitions"
+          ],
+          "material": "Choose treated timber, durable hardwood, thermally modified wood or suitable composite materials with exposure and manufacturer instructions in mind. Exterior coatings and corrosion-resistant fixings are important in coastal Cyprus.",
+          "measure": "Provide plan dimensions, ground levels, site photographs, drainage routes, exposure to wind and sun, nearby boundaries and intended use. Confirm whether structures need foundations or planning review.",
+          "issues": "Warped boards, splinters, fading finishes, loose fixings, rot and poor drainage are frequent exterior concerns. Inspect substructure and anchoring before replacing only the top boards.",
+          "install": "Plan ground clearance, ventilation, drainage slopes, foundations and anchoring appropriate to loading and wind. Contact with standing water should be avoided where product specifications require it.",
+          "care": "Inspect and maintain surface finishes and hardware at intervals appropriate to local exposure, especially sun and salt. Clear debris and drainage gaps to reduce water retention.",
+          "safety": "Structural pergolas, elevated decks, boundary changes and wind-exposed constructions may require engineering checks or permits. No maintenance-free service life is implied.",
+          "quote": "Send overall footprint, height, exposure, ground photos, preferred material, proposed use, boundary details and any existing drawings."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "Door hinge and alignment adjustments",
+            "Cabinet hinge, drawer-slide and handle repairs",
+            "Wardrobe track, shelf and panel repairs",
+            "Replacement of locally damaged timber components",
+            "Furniture stabilisation and minor alteration",
+            "Inspection-led restoration of suitable existing joinery"
+          ],
+          "material": "Assess whether existing wood, board or hardware can be retained. Match replacement material, thickness, finish and fixing pattern where practical; damaged substrates sometimes prevent a durable patch.",
+          "measure": "Provide photographs of the fault, affected item dimensions, existing material, hinge or fitting type and site access. A close-up and a wider context photo both help diagnosis.",
+          "issues": "Loose hinges, swollen panel edges, stuck drawers, cracked joints, sagging shelves and deteriorating finishes have different causes. Diagnose moisture or structural weakness before replacing visible parts.",
+          "install": "Choose between adjustment, targeted replacement, reinforcement and full renewal based on condition. Confirm access and any necessary removal and reassembly.",
+          "care": "Keep sliding tracks clean, avoid excessive loads and treat new leaks or damp conditions promptly. Correct use and maintenance extend the life of repaired components.",
+          "safety": "Minor and urgent repair visits remain subject to existing maintenance-contract conditions. Do not advertise instant emergency callouts or fixed repair prices; complex or safety-critical defects need assessment.",
+          "quote": "Send close-up and full-item photos, fault history, material, approximate dimensions, location and whether the work is covered by an existing maintenance contract."
+        },
+        "otherCustom": {
+          "scope": [
+            "One-off furniture and unusual fitted structures",
+            "Custom partitions, display pieces and joinery",
+            "Adaptations to existing furniture and built-in items",
+            "Storage designed for irregular architectural spaces",
+            "Combined projects spanning multiple carpentry types",
+            "Feasibility assessment for nonstandard timber concepts"
+          ],
+          "material": "Materials and finish must be chosen against intended function, required strength, environmental exposure and budget. Prototype details or samples may be needed before final fabrication is agreed.",
+          "measure": "Provide sketches with width, height, depth and relevant clearances, intended use, expected loads and photographs. Where concepts are exploratory, record assumptions and any dimensions still unconfirmed.",
+          "issues": "Nonstandard projects often involve conflicting clearances, weak existing substrates, inaccessible fixings or unsuitable materials. Review practical assembly, use and long-term service before committing to a design.",
+          "install": "Assess transport, site access, assembly sequence, anchoring, interaction with services and the consequences of later maintenance. Coordinate specialist trades if the concept extends beyond carpentry.",
+          "care": "Provide finish- and material-specific care requirements at handover once the project scope is agreed. Avoid unsupported claims about longevity or maintenance needs.",
+          "safety": "Feasibility is assessed case by case. We do not guarantee every concept can be built; structural, fire, accessibility and regulatory requirements take priority.",
+          "quote": "Describe the intended function, dimensions, desired appearance, material preferences, rough drawings or sample references and the site where the work would be installed."
+        }
+      }
+    },
+    "el": {
+      "ui": {
+        "title": "Ξυλουργικές Εργασίες & Κατασκευές κατά Παραγγελία στην Κύπρο",
+        "short": "Ξυλουργικές Εργασίες & Ειδικές Κατασκευές",
+        "intro": "Προσαρμοσμένη ξυλουργική, επισκευές και τοποθέτηση σε κατοικίες, μισθωμένα και επαγγελματικά ακίνητα σε όλη την Κύπρο. Κάθε έργο αξιολογείται και μετριέται πριν συμφωνηθεί γραπτή προσφορά, ανάλογα με την εφικτότητα.",
+        "browse": "Εξερευνήστε τις δέκα ειδικότητες",
+        "materialsTitle": "Υλικά, εξαρτήματα και φινιρίσματα",
+        "materialsIntro": "Η επιλογή εξαρτάται από χρήση και περιβάλλον: το μασίφ προσφέρει φυσικά νερά, οι σύνθετες ξυλόπλακες σταθερότητα, το κόντρα πλακέ στρωματική αντοχή και οι ανθυγρές πλάκες απαιτούν σωστές συνθήκες. Επιβεβαιώνουμε συμβατότητα βαφών, στηρίξεων και υποστρωμάτων.",
+        "scope": "Τι κατασκευάζουμε, τοποθετούμε ή αποκαθιστούμε",
+        "measurement": "Μετρήσεις και προγραμματισμός",
+        "materials": "Επιλογή υλικών και σχεδίασης",
+        "issues": "Συνήθη προβλήματα και αξιολόγηση",
+        "installation": "Προετοιμασία και τοποθέτηση",
+        "care": "Φινίρισμα και συντήρηση",
+        "safety": "Ασφάλεια και εφικτότητα",
+        "quote": "Εξατομικευμένη γραπτή προσφορά",
+        "quoteNote": "Τιμή κατόπιν αιτήματος — ειδική προσφορά. Δεν υπάρχει ενιαίος τιμοκατάλογος για ειδικές ξυλουργικές κατασκευές. Διαστάσεις, σχέδιο, υλικά, εξαρτήματα, κατασκευή, φινίρισμα και τοποθέτηση αξιολογούνται μαζί. Η γραπτή προσφορά ακολουθεί μετρήσεις και αυτοψία όπου απαιτείται. Έναρξη μόνο μετά από έγκριση.",
+        "process": "Πώς προχωρά το έργο σας",
+        "steps": [
+          "Περιγράψτε την εργασία και τη χρήση της.",
+          "Στείλτε ενδεικτικές διαστάσεις και φωτογραφίες ή σχέδια.",
+          "Συζητήστε υλικά, φινίρισμα και εξαρτήματα.",
+          "Κανονίστε αυτοψία και οριστικές μετρήσεις όπου χρειάζεται.",
+          "Επιβεβαιώστε αντικείμενο, υλικά και απαιτήσεις τοποθέτησης.",
+          "Λάβετε εξατομικευμένη γραπτή προσφορά.",
+          "Εγκρίνετε γραπτώς το αντικείμενο πριν τις εργασίες.",
+          "Ολοκλήρωση, εγκατάσταση και παράδοση της συμφωνημένης εργασίας."
+        ],
+        "details": "Αναλυτικές ξυλουργικές υπηρεσίες",
+        "serviceTitle": "Εξειδικευμένες ξυλουργικές εργασίες",
+        "estimator": "Δημιουργήστε Αίτημα Ειδικής Ξυλουργικής",
+        "estimatorNote": "Ανοίγει τη σχετική ενότητα του εκτιμητή INONDA. Οι ειδικές ξυλουργικές εργασίες χρειάζονται προσωπική προσφορά· δεν υπολογίζεται αυτόματα σταθερή τιμή.",
+        "quoteButton": "Ζητήστε προσφορά ξυλουργικών",
+        "contact": "Κλείστε αυτοψία",
+        "related": "Σχετικές υπηρεσίες INONDA",
+        "faq": "Συχνές ερωτήσεις",
+        "questions": [
+          "Ποιες εργασίες περιλαμβάνει αυτή η κατηγορία;",
+          "Ποια υλικά και φινιρίσματα είναι κατάλληλα;",
+          "Ποιες μετρήσεις πρέπει να στείλω;",
+          "Μπορεί να επισκευαστεί ή να τροποποιηθεί υπάρχουσα κατασκευή;"
+        ],
+        "requestDetails": "Για σωστή πρόταση στείλτε περιοχή, περιγραφή, διαστάσεις σε εκ., ποσότητες, επιθυμητό ξύλο ή πλάκα, φινίρισμα, εξαρτήματα και φωτογραφίες ή σχέδια. Επιβεβαιώνουμε αν απαιτείται αυτοψία.",
+        "repairRule": "Μικρές ή επείγουσες επισκευές υπόκεινται στους υφιστάμενους όρους συμβολαίων συντήρησης. Δεν παρέχεται ανεπιφύλακτη ανεξάρτητη υπηρεσία επείγουσας επισκευής.",
+        "compliance": "Φέρουσες, πυράντοχες, ασφαλείας και ρυθμιζόμενες εργασίες απαιτούν κατάλληλες προδιαγραφές, ελέγχους και τυχόν εγκρίσεις. Καμία πιστοποίηση δεν θεωρείται δεδομένη.",
+        "workTypes": "Ενδεικτικά: νέα κατασκευή, κατάλληλη αντικατάσταση, επισκευή, ρύθμιση και αποκατάσταση βάσει έργου.",
+        "source": "Δείτε όλες τις ειδικές κατασκευές",
+        "return": "Πίσω στις ξυλουργικές υπηρεσίες",
+        "more": "Δείτε λεπτομέρειες",
+        "materialLabel": "Διαθέσιμες επιλογές υλικών",
+        "notFixed": "Χωρίς δημόσιο σταθερό τιμοκατάλογο",
+        "scopeFoot": "Εφικτότητα, προμήθεια και κατάλληλη εγκατάσταση επιβεβαιώνονται σε εξατομικευμένη προσφορά.",
+        "siteTitle": "Προσαρμογή στον χώρο",
+        "requestPhotos": "Στείλτε φωτογραφίες και κατάλληλες μετρήσεις. Μην κοινοποιείτε ευαίσθητα προσωπικά δεδομένα σε δημόσιους συνδέσμους."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "Εσωτερικές και εξωτερικές ξύλινες πόρτες",
+            "Μονόφυλλες, δίφυλλες, ανοιγόμενες και κατάλληλες συρόμενες λύσεις",
+            "Κάσες, περβάζια, κατωκάσια και διακοσμητικά πλαίσια",
+            "Πόρτες ταμπλαδωτές, ίσιες ή κατάλληλα υαλωμένες",
+            "Μεντεσέδες, κλειδαριές, πόμολα και ρυθμίσεις",
+            "Μερική επισκευή, αντικατάσταση και επαναβαφή"
+          ],
+          "material": "Το μασίφ ξύλο, η σύνθετη ξυλεία, ο καπλαμάς και οι κατάλληλες ξυλόπλακες διαφέρουν σε εμφάνιση, σταθερότητα και συντήρηση. Εξετάζουμε φινίρισμα, κατασκευή φύλλου, υάλωση και εξαρτήματα.",
+          "measure": "Καταγράψτε καθαρό πλάτος και ύψος ανοίγματος, πάχος τοίχου, φορά ανοίγματος, κενό δαπέδου και κατάσταση κάσας. Ελέγχονται τα διπλανά έπιπλα και τα περιθώρια ασφαλούς διέλευσης.",
+          "issues": "Πόρτες που τρίβονται ή κρεμούν, ανομοιόμορφα κενά, φουσκωμένα άκρα, ραγισμένες κάσες, τριγμοί και ελαττωματικές κλειδαριές χρειάζονται διάγνωση. Δεν απαιτείται πάντοτε πλήρης αντικατάσταση.",
+          "install": "Ελέγχουμε σημεία στερέωσης, κατώφλι, μεντεσέδες, συμβατότητα κλειδαριάς και τελειώματα. Η τελική δοκιμή πρέπει να επιβεβαιώνει εύκολη και ασφαλή λειτουργία.",
+          "care": "Καθαρισμός με κατάλληλα ήπια προϊόντα και τακτικός έλεγχος ακμών, μεντεσέδων, βιδών και φινιρίσματος. Οι εξωτερικές πόρτες απαιτούν συντήρηση ανάλογα με την έκθεση.",
+          "safety": "Πυράντοχη ή αντιδιαρρηκτική πιστοποίηση δεν θεωρείται δεδομένη. Απαιτούνται επαληθευμένα προϊόντα και συμβατή εγκατάσταση όπου προβλέπονται συγκεκριμένες επιδόσεις.",
+          "quote": "Στείλτε διαστάσεις ανοίγματος, φωτογραφίες και των δύο όψεων, φορά ανοίγματος, προτιμώμενο σχέδιο, ποσότητα, φινίρισμα και στοιχεία κλειδαριάς."
+        },
+        "timberWindows": {
+          "scope": [
+            "Ξύλινα πλαίσια παραθύρων και ανοιγόμενα φύλλα",
+            "Παραδοσιακά παντζούρια και περσίδες",
+            "Επισκευή πλαισίων, φύλλων και ξύλινων τμημάτων",
+            "Ρύθμιση μεντεσέδων, κλείστρων και στεγανοποίησης",
+            "Αποκατάσταση επιφανειών και προστατευτικών επιστρώσεων",
+            "Αντικατάσταση κατάλληλων φθαρμένων στοιχείων"
+          ],
+          "material": "Η επιλογή ξύλου και εξωτερικής βαφής εξαρτάται από βροχή, ήλιο, παράκτια έκθεση και απαιτήσεις συντήρησης. Η μεταβολή διαστάσεων λόγω υγρασίας πρέπει να ληφθεί υπόψη.",
+          "measure": "Χρειάζονται μετρήσεις ανοίγματος, διαμόρφωση φύλλων, βάθος, τύπος υάλωσης, φορά ανοίγματος, ποδιά και απορροή νερού. Επιθεωρούμε το πλαίσιο εσωτερικά και εξωτερικά.",
+          "issues": "Σήψη στις ενώσεις, κολλημένα φύλλα, ξεφλουδισμένη βαφή, φθαρμένα λάστιχα, χαλαροί μεντεσέδες και υγρασία απαιτούν αξιολόγηση. Η εκτεταμένη βλάβη ενδέχεται να απαιτεί αντικατάσταση.",
+          "install": "Ελέγχουμε απορροή, στεγανώσεις, αρμούς διαστολής, στερεώσεις και αερισμό. Η απόδοση εξαρτάται από το συνολικό σύστημα παραθύρου.",
+          "care": "Τακτικός καθαρισμός απορροών, επιθεώρηση στεγανωτικών και συντήρηση της προστατευτικής βαφής, ιδιαίτερα κοντά στη θάλασσα.",
+          "safety": "Δεν υποσχόμαστε θερμική, ακουστική, ανεμοπίεσης ή ασφαλείας απόδοση χωρίς τεκμηρίωση προϊόντων και υάλωσης. Δύσκολες θέσεις απαιτούν κατάλληλο συνεργείο.",
+          "quote": "Στείλτε φωτογραφίες μέσα και έξω, περίπου διαστάσεις, αριθμό φύλλων ή παντζουριών, ανάγκες υάλωσης, σημείο φθοράς και επιθυμητό φινίρισμα."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "Ντουλάπια βάσης, τοίχου και ψηλές μονάδες κουζίνας",
+            "Αποθήκευση βοηθητικών χώρων και ντουλάπια νεροχύτη",
+            "Πόρτες, μετώπες συρταριών και μηχανισμοί",
+            "Ανασυρόμενα ράφια και γωνιακές λύσεις",
+            "Περιβλήματα συσκευών με κατάλληλο αερισμό",
+            "Ανανέωση και αλλαγές σε υπάρχοντα ντουλάπια"
+          ],
+          "material": "Μελαμίνη, κόντρα πλακέ, ανθυγρό MDF και μασίφ ξύλο επιλέγονται ανάλογα με υγρασία, φινίρισμα, αντοχή ακμών και βάρος. Τα εξαρτήματα πρέπει να αντέχουν την προβλεπόμενη χρήση.",
+          "measure": "Στείλτε διαστάσεις χώρου, ύψος οροφής, μήκη πάγκων, μοντέλα συσκευών, θέσεις νερού και ρεύματος, περιθώρια θυρών και μη ευθύγραμμους τοίχους.",
+          "issues": "Φουσκωμένα ντουλάπια νεροχύτη, ξεκολλημένες ακμές, στραβές πόρτες, φθαρμένοι μεντεσέδες και οδηγοί συρταριών απαιτούν έλεγχο σκελετού πριν από μερική επισκευή.",
+          "install": "Συντονίζουμε εργασίες με υδραυλικούς, ηλεκτρολόγους και πάγκους όπου απαιτείται. Τα κρεμαστά ντουλάπια στερεώνονται στο κατάλληλο υπόστρωμα και διατηρείται πρόσβαση στις συσκευές.",
+          "care": "Σκουπίζετε αμέσως νερά και υγρά, προστατεύετε ακμές και καθαρίζετε τους μηχανισμούς σύμφωνα με τις προδιαγραφές τους. Ρυθμίζετε πόρτες όταν εμφανίζεται απόκλιση.",
+          "safety": "Τα βαριά κρεμαστά ντουλάπια απαιτούν έλεγχο τοίχου και στερεώσεων. Μεταβολές σε ρεύμα, αέριο ή υδραυλικά αποτελούν χωριστές ειδικότητες.",
+          "quote": "Στείλτε κάτοψη ή σκίτσο, συνολικά μήκη, διαστάσεις συσκευών, επιθυμητές όψεις, ανάγκες πάγκου και φωτογραφίες."
+        },
+        "wardrobes": {
+          "scope": [
+            "Εντοιχισμένες και ελεύθερες ντουλάπες στα μέτρα σας",
+            "Ανοιγόμενα και συρόμενα φύλλα",
+            "Συστήματα walk-in και χώροι κρεμάσματος",
+            "Συρτάρια, ράφια και οργανωτές",
+            "Αποθήκευση κάτω από σκάλες και σε εσοχές",
+            "Αλλαγή εξαρτημάτων, εσωτερικής διαρρύθμισης και θυρών"
+          ],
+          "material": "Μελαμίνη, MDF, κόντρα πλακέ ή κατάλληλο μασίφ επιλέγονται ανάλογα με φινίρισμα, στήριξη και υγρασία. Το βάρος θυρών και η ποιότητα των οδηγών επηρεάζουν την αντοχή.",
+          "measure": "Μετρήστε πλάτος από τοίχο σε τοίχο, ύψος, βάθος και πρόσβαση στον χώρο. Σημειώστε σοβατεπί, πρίζες, κλιματισμό, ανισόπεδα δάπεδα και ανάγκες αερισμού.",
+          "issues": "Συρόμενα που σκαλώνουν, ασύμμετρες πόρτες, λυγισμένα ράφια και υγρασία στο εσωτερικό μπορεί να οφείλονται σε μηχανισμό, φορτίο ή πρόβλημα τοίχου.",
+          "install": "Επιθεωρούμε σημεία αγκύρωσης και διαδρομή μεταφοράς και συναρμολόγησης. Προβλέπουμε αποκλίσεις τοίχων και δαπέδων αντί να θεωρούμε τις γωνίες τέλειες.",
+          "care": "Καθαρίζετε οδηγούς, αποφεύγετε υπερφόρτωση και αερίζετε τον χώρο. Ελέγχετε μεντεσέδες και αντιμετωπίζετε υγρασία πριν κλειστεί πίσω από ντουλάπα.",
+          "safety": "Ψηλές και ελεύθερες κατασκευές ενδέχεται να απαιτούν αντι-ανατρεπτική στερέωση. Δεν καλύπτουμε ενεργή υγρασία ή δίκτυα χωρίς έλεγχο.",
+          "quote": "Στείλτε σκίτσο χώρου, διαστάσεις, τύπο θυρών, αριθμό συρταριών, ζώνες κρεμάσματος και φωτογραφίες εμποδίων."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "Βιβλιοθήκες, ράφια και ειδικές συνθέσεις",
+            "Εντοιχισμένα γραφεία και θέσεις εργασίας",
+            "Έπιπλα τηλεόρασης και προβολής",
+            "Έπιπλα υποδοχής και επαγγελματικοί αποθηκευτικοί χώροι",
+            "Εσοχές, καθίσματα παραθύρων και πολυχρηστικές κατασκευές",
+            "Επισκευή και τροποποίηση εντοιχισμένων επίπλων"
+          ],
+          "material": "Το πάχος υλικού, οι ακμές, το φινίρισμα και οι στερεώσεις επιλέγονται σύμφωνα με φορτίο και άνοιγμα. Κόντρα πλακέ, MDF, καπλαμάς και μασίφ έχουν διαφορετική ακαμψία.",
+          "measure": "Δώστε πλάτος, ύψος, βάθος, προβλεπόμενο φορτίο, διαστάσεις συσκευών, πρίζες και διαδρομές καλωδίων. Μετρήστε τον τοίχο σε περισσότερα σημεία.",
+          "issues": "Ράφια που λυγίζουν, χαλαρά στηρίγματα, ασθενείς συνδέσεις ή ασταθή έπιπλα χρειάζονται έλεγχο κατανομής φορτίου και υποστρώματος.",
+          "install": "Ελέγχουμε τύπο τοίχου, επιλέγουμε κατάλληλα αγκύρια και προβλέπουμε καλωδίωση, αερισμό ηλεκτρονικών και προσβασιμότητα για συντήρηση.",
+          "care": "Μοιράζετε τα φορτία σε στηριζόμενα ανοίγματα, καθαρίζετε ανάλογα με το φινίρισμα και ελέγχετε περιοδικά τη στερέωση.",
+          "safety": "Βαριά κρεμαστά έπιπλα απαιτούν τεχνική αξιολόγηση τοίχου και αγκυρώσεων. Δεν εγγυόμαστε φορτίο μόνο από τις εξωτερικές διαστάσεις.",
+          "quote": "Στείλτε είδη αντικειμένων και βάρη, σκίτσο με διαστάσεις, φωτογραφίες τοίχου, πρίζες και σχέδια αναφοράς."
+        },
+        "panelling": {
+          "scope": [
+            "Ξύλινες διακοσμητικές επενδύσεις και πηχάκια",
+            "Φάσες, ταμπλαδωτές επενδύσεις και wainscoting",
+            "Σοβατεπί, κάσες και διακοσμητικές κορνίζες",
+            "Ξύλινες επενδύσεις με κατάλληλες θυρίδες πρόσβασης",
+            "Πάνελ καπλαμά και κατάλληλα επεξεργασμένο ξύλο",
+            "Αποκατάσταση φθαρμένων ξύλινων προφίλ"
+          ],
+          "material": "Μασίφ, καπλαμάς, MDF και κόντρα πλακέ διαφέρουν ως προς υγρασία, αντοχή και φινίρισμα. Οι πραγματικές ξύλινες κατασκευές δεν συγχέονται με PVC, WPC ή HPL.",
+          "measure": "Μετρήστε πλάτος και ύψος τοίχων, γωνίες, πόρτες, πρίζες και φωτισμό. Ελέγξτε επιπεδότητα, υγρασία και πρόσφυση παλαιών επιχρισμάτων.",
+          "issues": "Χαλαρά πάνελ, κενά, διογκωμένες ακμές, μούχλα και ρωγμές ενδέχεται να οφείλονται σε υγρασία ή λανθασμένη στερέωση. Πρώτα αντιμετωπίζεται η αιτία.",
+          "install": "Προβλέπουμε κατάλληλα υποστηρίγματα, αρμούς μετακίνησης, ασφαλείς στερεώσεις και προσπέλαση ηλεκτρολογικών σημείων. Δεν καλύπτουμε θυρίδες ελέγχου.",
+          "care": "Ξεσκονίζετε και καθαρίζετε σύμφωνα με το φινίρισμα· αποφεύγετε παρατεταμένη υγρασία και ανανεώνετε επιστρώσεις όταν φθαρούν.",
+          "safety": "Οι απαιτήσεις πυραντίστασης και ακουστικής χρειάζονται ειδικά ελεγμένα συστήματα. Δεν κρύβουμε υγρούς τοίχους χωρίς αποκατάσταση.",
+          "quote": "Στείλτε φωτογραφίες τοίχων, διαστάσεις, θέσεις πριζών, δείγματα σχεδίου, χρώμα ξύλου και γνωστά προβλήματα υγρασίας."
+        },
+        "stairs": {
+          "scope": [
+            "Ξύλινα πατήματα, ρίχτια και επενδύσεις σκαλοπατιών",
+            "Αποκατάσταση τριγμών και φθορών",
+            "Κουπαστές, ορθοστάτες και διακοσμητικά προφίλ",
+            "Στοιχεία ξύλινων κιγκλιδωμάτων",
+            "Τρίψιμο, φινίρισμα και αντικατάσταση κατάλληλων τμημάτων",
+            "Επιθεώρηση προβληματικών συνδέσεων"
+          ],
+          "material": "Σκληρή ή σύνθετη ξυλεία και κατάλληλο αντιολισθητικό φινίρισμα επιλέγονται για χρήση, αντοχή και σταθερότητα. Διαχωρίζουμε την διακοσμητική επένδυση από τον φέροντα σκελετό.",
+          "measure": "Καταγράψτε βάθος πατήματος, ύψος ριχτιού, πλάτος κλίμακας, πλατύσκαλα, ελεύθερο ύψος, κάγκελα και σημεία στερέωσης. Δομικά ζητήματα απαιτούν ειδικό.",
+          "issues": "Χαλαρά πατήματα, σπασίματα, τριγμοί, γυαλισμένα ολισθηρά άκρα και ασταθείς κουπαστές μπορεί να προκαλέσουν πτώση. Η απλή βαφή δεν λύνει δομικό πρόβλημα.",
+          "install": "Προγραμματίζουμε πρόσβαση, προσωρινή προστασία και εργασίες που επηρεάζουν γεωμετρία, στηρίξεις και κιγκλιδώματα μόνο με κατάλληλη τεχνική αξιολόγηση.",
+          "care": "Διατηρείτε σκαλοπάτια καθαρά και στεγνά, ελέγχετε στερεώσεις και ανανεώνετε εγκεκριμένα φινιρίσματα όταν χρειάζεται.",
+          "safety": "Σκάλες και κιγκλιδώματα είναι στοιχεία ασφάλειας. Οι απαιτήσεις στην Κύπρο, φορτία, διαστάσεις και τυχόν εγκρίσεις επιβεβαιώνονται από αρμόδιους επαγγελματίες.",
+          "quote": "Στείλτε φωτογραφίες ολόκληρης σκάλας, λεπτομέρειες φθορών, διαστάσεις πατημάτων, επιθυμητό φινίρισμα και αν προτείνεται δομική αλλαγή."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "Ξύλινα deck και εξωτερικές βεράντες",
+            "Πέργκολες, σκίαστρα και διαχωριστικά κήπου",
+            "Ξύλινες πύλες, περιφράξεις και πάνελ ιδιωτικότητας",
+            "Πάγκοι, αποθηκευτικά και ζαρντινιέρες",
+            "Επισκευή φθαρμένων εξωτερικών ξύλων",
+            "Ειδικές κατασκευές υπαίθριων χώρων"
+          ],
+          "material": "Εμποτισμένη ξυλεία, σκληρά είδη, θερμικά επεξεργασμένο ξύλο ή κατάλληλα σύνθετα υλικά επιλέγονται με βάση ήλιο, υγρασία και συντήρηση. Σημαντικές οι αντιδιαβρωτικές βίδες.",
+          "measure": "Δώστε μήκος, πλάτος, ύψη, κλίσεις εδάφους, απορροές, έκθεση σε άνεμο και ήλιο, όρια οικοπέδου και χρήση. Εξετάζονται θεμέλια και τυχόν άδειες.",
+          "issues": "Στρέβλωση σανίδων, ακίδες, ξεθωριασμένες βαφές, χαλαρές βίδες, σήψη και κακή απορροή χρειάζονται έλεγχο και του υποστρώματος.",
+          "install": "Προβλέπουμε εξαερισμό, απόσταση από υγρά εδάφη, απορροή, κατάλληλες βάσεις και αγκυρώσεις για ανεμοπίεση και χρήση.",
+          "care": "Συντηρείτε επιστρώσεις και εξαρτήματα ανάλογα με ήλιο και αλάτι, καθαρίζετε φύλλα και ανοίγματα αποστράγγισης.",
+          "safety": "Πέργκολες, υπερυψωμένα deck, όρια και ανεμοεκτεθειμένα στοιχεία ίσως χρειάζονται μηχανικό ή άδεια. Δεν υποσχόμαστε μηδενική συντήρηση.",
+          "quote": "Στείλτε κάτοψη, ύψη, φωτογραφίες εδάφους, έκθεση, προτιμώμενο υλικό, χρήση και τυχόν σχέδια."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "Ρυθμίσεις πορτών και μεντεσέδων",
+            "Επισκευές πορτών ντουλαπιών και μηχανισμών συρταριών",
+            "Επισκευές οδηγών ντουλάπας και ραφιών",
+            "Μερική αντικατάσταση φθαρμένου ξύλου",
+            "Σταθεροποίηση επίπλων και μικρές τροποποιήσεις",
+            "Αποκατάσταση κατάλληλων υπαρχουσών κατασκευών"
+          ],
+          "material": "Ελέγχουμε τη δυνατότητα διατήρησης υφιστάμενου ξύλου, πλακών και εξαρτημάτων. Το υλικό αντικατάστασης πρέπει να ταιριάζει σε πάχος, στερέωση και φινίρισμα.",
+          "measure": "Χρειαζόμαστε κοντινές και γενικές φωτογραφίες, διαστάσεις αντικειμένου, υλικό, τύπο μεντεσέ και πρόσβαση. Περιγράψτε πότε εμφανίστηκε η βλάβη.",
+          "issues": "Χαλαροί μεντεσέδες, διογκωμένες ακμές, κολλημένα συρτάρια, ραγισμένες ενώσεις και στραβωμένα ράφια έχουν διαφορετικές αιτίες. Ελέγχουμε πρώτα υγρασία και στήριξη.",
+          "install": "Επιλέγουμε ρύθμιση, αντικατάσταση εξαρτήματος, ενίσχυση ή πλήρη ανακατασκευή με βάση την κατάσταση και τις δυνατότητες πρόσβασης.",
+          "care": "Καθαρίζετε οδηγούς, αποφεύγετε υπερφόρτωση και αντιμετωπίζετε αμέσως νέες διαρροές ή υγρασία.",
+          "safety": "Μικρές και επείγουσες επισκέψεις ακολουθούν τους υπάρχοντες όρους συμβολαίου συντήρησης. Δεν διαφημίζονται άμεσες ανεξάρτητες κλήσεις ή σταθερές τιμές.",
+          "quote": "Στείλτε κοντινή και γενική φωτογραφία, ιστορικό βλάβης, υλικό, διαστάσεις, τοποθεσία και αν υπάρχει συμβόλαιο συντήρησης."
+        },
+        "otherCustom": {
+          "scope": [
+            "Μοναδικά έπιπλα και ειδικές κατασκευές",
+            "Διαχωριστικά, εκθεσιακές κατασκευές και ειδική ξυλουργική",
+            "Προσαρμογές υπαρχόντων επίπλων",
+            "Αποθήκευση για ασυνήθιστους αρχιτεκτονικούς χώρους",
+            "Συνδυαστικά έργα πολλών ξυλουργικών κατηγοριών",
+            "Μελέτη εφικτότητας για πρωτότυπες ιδέες"
+          ],
+          "material": "Υλικό και φινίρισμα καθορίζονται από χρήση, αντοχή, υγρασία και οικονομικό προϋπολογισμό. Μπορεί να χρειαστούν δείγματα ή πρωτότυπα πριν από την οριστική συμφωνία.",
+          "measure": "Στείλτε σκίτσα με πλάτος, ύψος και βάθος, απαραίτητα κενά, χρήση, αναμενόμενα φορτία και φωτογραφίες. Σημειώστε ποιες διαστάσεις είναι ακόμη αβέβαιες.",
+          "issues": "Στα ειδικά έργα συχνά υπάρχουν περιορισμένα περιθώρια, ανεπαρκείς βάσεις, δυσκολίες στερέωσης ή ακατάλληλα υλικά. Εξετάζουμε λειτουργία και συντήρηση πριν την κατασκευή.",
+          "install": "Ελέγχουμε μεταφορά, πρόσβαση, σειρά συναρμολόγησης, αγκύρωση, δίκτυα και μελλοντική συντήρηση. Εξειδικευμένα συνεργεία συμμετέχουν όταν χρειάζεται.",
+          "care": "Οι οδηγίες συντήρησης δίνονται σύμφωνα με τα συμφωνημένα υλικά και φινιρίσματα. Δεν διατυπώνονται ατεκμηρίωτες υποσχέσεις διάρκειας ζωής.",
+          "safety": "Η εφικτότητα εξετάζεται ανά έργο. Δεν εγγυόμαστε ότι κάθε ιδέα μπορεί να κατασκευαστεί· απαιτήσεις ασφάλειας και αδειοδότησης προηγούνται.",
+          "quote": "Περιγράψτε χρήση, διαστάσεις, επιθυμητή εμφάνιση, υλικά, ενδεικτικά σχέδια και χώρο εγκατάστασης."
+        }
+      }
+    },
+    "ru": {
+      "ui": {
+        "title": "Столярные работы и изделия на заказ на Кипре",
+        "short": "Столярные работы и изделия на заказ",
+        "intro": "Изготовление, ремонт и установка деревянных конструкций для домов, арендной недвижимости и коммерческих помещений по всему Кипру. Каждый проект оценивается индивидуально до письменного предложения; доступность услуг зависит от технической возможности.",
+        "browse": "Десять направлений столярных работ",
+        "materialsTitle": "Материалы, фурнитура и отделка",
+        "materialsIntro": "Материал выбирают по назначению и условиям: массив отличается естественной фактурой, инженерные панели — стабильностью, фанера — многослойной прочностью. Влагостойкие плиты должны применяться в подходящих условиях, а лаки, краски и крепёж — быть совместимыми с основанием.",
+        "scope": "Что можно изготовить, установить или восстановить",
+        "measurement": "Замеры и проектирование",
+        "materials": "Выбор материалов и дизайна",
+        "issues": "Типичные неисправности",
+        "installation": "Подготовка и монтаж",
+        "care": "Отделка и уход",
+        "safety": "Безопасность и возможность реализации",
+        "quote": "Индивидуальное письменное предложение",
+        "quoteNote": "Цена по запросу — индивидуальное предложение. Для столярных изделий на заказ нет универсального прейскуранта. Размеры, дизайн, материал, фурнитура, изготовление, отделка и монтаж оцениваются вместе. После замеров и при необходимости осмотра предоставляется письменная цена; работа начинается после согласования.",
+        "process": "Этапы вашего проекта",
+        "steps": [
+          "Опишите работу и её назначение.",
+          "Пришлите приблизительные размеры и фотографии или чертежи.",
+          "Обсудите дерево, отделку и фурнитуру.",
+          "Согласуйте осмотр и точные замеры, если они нужны.",
+          "Подтвердите объём работ, материалы и монтаж.",
+          "Получите индивидуальное письменное предложение.",
+          "Утвердите объём и цену до начала работ.",
+          "Изготовление, установка, проверка и передача результата."
+        ],
+        "details": "Подробные столярные услуги",
+        "serviceTitle": "Направления работы",
+        "estimator": "Создать запрос на столярные работы",
+        "estimatorNote": "Открывает соответствующий раздел калькулятора INONDA. Для изделий на заказ необходима индивидуальная цена, моментальной окончательной стоимости нет.",
+        "quoteButton": "Запросить цену на столярные работы",
+        "contact": "Заказать осмотр",
+        "related": "Связанные услуги INONDA",
+        "faq": "Частые вопросы",
+        "questions": [
+          "Какие работы входят в эту категорию?",
+          "Какой материал и отделку выбрать?",
+          "Какие размеры и сведения нужно прислать?",
+          "Можно ли отремонтировать или переделать существующую конструкцию?"
+        ],
+        "requestDetails": "Для оценки укажите район, назначение, размеры в сантиметрах, количество, желаемые материалы, отделку, фурнитуру и приложите фото или чертёж. Мы уточним необходимость визита.",
+        "repairRule": "Мелкие и срочные ремонты выполняются согласно условиям действующего договора обслуживания; независимый срочный выезд не гарантируется.",
+        "compliance": "Несущие, противопожарные, охранные и регулируемые элементы требуют подтверждённых характеристик, проверок и разрешений. Сертификация не подразумевается автоматически.",
+        "workTypes": "Возможны изготовление, замена, ремонт, регулировка и реставрация в зависимости от задачи.",
+        "source": "Все услуги индивидуальной столярки",
+        "return": "Все столярные услуги",
+        "more": "Подробнее",
+        "materialLabel": "Варианты материалов",
+        "notFixed": "Нет фиксированных публичных цен",
+        "scopeFoot": "Техническая возможность и условия поставки и монтажа подтверждаются письменным предложением.",
+        "siteTitle": "Планирование по месту работ",
+        "requestPhotos": "Пришлите фотографии и доступные размеры. Не размещайте личные данные в публичных ссылках."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "Межкомнатные и наружные деревянные двери",
+            "Одинарные, двойные, распашные и подходящие раздвижные конструкции",
+            "Коробки, наличники, пороги и декоративные детали",
+            "Филенчатые, гладкие и частично остеклённые двери",
+            "Петли, замки, ручки и регулировка",
+            "Замена, ремонт и обновление покрытий"
+          ],
+          "material": "Массив, инженерная древесина, шпон и подходящие плиты отличаются рисунком, устойчивостью и уходом. Покрытие, стекло и фурнитуру подбирают под назначение двери.",
+          "measure": "Укажите чистые размеры проёма, толщину стены, сторону открывания, зазор над полом и состояние коробки. Проверьте соседнюю мебель и свободный проход.",
+          "issues": "Задевание пола, провисание, разбухшие торцы, треснувшие коробки и неисправные защёлки требуют диагностики. Иногда достаточно регулировки вместо замены.",
+          "install": "Проверяем крепление коробки, порог, петли, замок и отделку вокруг проёма. После монтажа проверяем плавность и безопасность работы.",
+          "care": "Регулярно осматривайте петли, торцы, винты и покрытие; очищайте средствами, совместимыми с выбранной отделкой. Наружные двери требуют ухода с учётом погоды.",
+          "safety": "Пожарные и охранные характеристики нельзя заявлять без подтверждённой комплектации и инструкций по установке.",
+          "quote": "Пришлите размеры проёма, фото обеих сторон и коробки, направление открывания, дизайн, количество и пожелания к замку."
+        },
+        "timberWindows": {
+          "scope": [
+            "Деревянные рамы и створки окон",
+            "Традиционные ставни и жалюзийные створки",
+            "Замена и локальный ремонт деревянных элементов",
+            "Петли, запоры, уплотнения и регулировка",
+            "Реставрация покрытий и защита от осадков",
+            "Восстановление пригодных старых рам"
+          ],
+          "material": "Порода дерева и наружная отделка должны подходить для солнца, дождя и морского воздуха. Учитывают сезонные изменения размеров древесины из-за влажности.",
+          "measure": "Нужны ширина и высота проёма, количество створок, глубина рамы, стеклопакет, направление открывания, отлив и водоотвод. Осмотр снаружи обязателен при повреждениях.",
+          "issues": "Гниль в соединениях, заедающие створки, облупившаяся краска, изношенные уплотнения и следы влаги требуют оценки; сильное разрушение может исключить локальный ремонт.",
+          "install": "Проверяем водоотвод, герметизацию, монтажные зазоры, крепления и вентиляцию. Работоспособность зависит от всего окна, а не одной детали.",
+          "care": "Очищайте дренаж, проверяйте герметики и обновляйте защитное покрытие, особенно в прибрежных районах.",
+          "safety": "Не обещайте показатели тепла, шума, ветровой нагрузки или безопасности без документации на рамы и стекло.",
+          "quote": "Пришлите фото изнутри и снаружи, размеры, число створок, сведения о стекле, повреждениях и отделке."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "Нижние, настенные и высокие кухонные шкафы",
+            "Хозяйственные шкафы и мебель под мойку",
+            "Фасады, ящики, петли и направляющие",
+            "Выдвижные системы и решения для углов",
+            "Корпуса для техники с необходимой вентиляцией",
+            "Обновление существующей мебели"
+          ],
+          "material": "Меламин, фанеру, влагостойкий МДФ и массив выбирают с учётом воды, нагрузки и отделки. Фурнитура должна подходить для веса и частоты использования.",
+          "measure": "Пришлите план помещения, высоту потолка, длину кухонного ряда, размеры техники, точки воды и электрики, места открывания дверей и особенности стен.",
+          "issues": "Разбухание тумбы под мойкой, отслоение кромки, перекос фасадов, износ петель и роликов требуют проверки корпуса до замены деталей.",
+          "install": "Согласуем работу с сантехником и электриком, если требуется. Навесные шкафы крепятся к подходящему основанию; доступ к технике и вентиляция сохраняются.",
+          "care": "Сразу убирайте воду, защищайте кромки и обслуживайте механизмы по инструкции. При появлении перекоса регулируйте петли.",
+          "safety": "Тяжёлые шкафы требуют проверки стены и анкеров. Изменения газа, электрики и трубопроводов поручают соответствующим специалистам.",
+          "quote": "Нужны эскиз, размеры, модели техники, желаемые фасады, сведения о столешнице и фотографии."
+        },
+        "wardrobes": {
+          "scope": [
+            "Встроенные и отдельно стоящие шкафы по размеру",
+            "Распашные и раздвижные фасады",
+            "Гардеробные и штанги для одежды",
+            "Полки, ящики и органайзеры",
+            "Хранение под лестницей и в нишах",
+            "Ремонт дверей, дорожек и внутренней планировки"
+          ],
+          "material": "Меламин, МДФ, фанера и массив различаются по стойкости к влаге и возможностям отделки. Важны вес дверей и качество направляющих.",
+          "measure": "Измерьте ширину между стенами, высоту, глубину и доступ для сборки; отметьте плинтусы, розетки, уклон пола и потребность в вентиляции.",
+          "issues": "Заедающие двери, прогнутые полки, повреждённые направляющие и сырость в шкафу могут быть связаны с фурнитурой, перегрузкой или стеной.",
+          "install": "Проверяем точки крепления и возможность доставки крупных деталей. Неровности пола и стен учитываются при проектировании.",
+          "care": "Очищайте дорожки, не перегружайте полки и обеспечивайте вентиляцию; проблемы влажности устраните до установки.",
+          "safety": "Высокие шкафы иногда требуют крепления от опрокидывания. Нельзя закрывать активную сырость и инженерные коммуникации без обследования.",
+          "quote": "Пришлите эскиз комнаты, размеры, тип дверей, число ящиков и зон хранения, фото препятствий и предпочтения по отделке."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "Книжные шкафы, библиотеки и настенные полки",
+            "Встроенные столы и рабочие зоны",
+            "Тумбы для телевизоров и витрины",
+            "Стойки приёма и офисная мебель",
+            "Мебель в нишах и под окнами",
+            "Ремонт и переделка встроенных элементов"
+          ],
+          "material": "Толщина плиты, кромки, покрытие и крепления зависят от пролёта и нагрузки. Фанера, массив, МДФ и шпон обладают разной жёсткостью и внешним видом.",
+          "measure": "Укажите ширину, высоту, глубину, предполагаемый вес предметов, размеры техники, розетки и кабели. Замерьте стену на нескольких уровнях.",
+          "issues": "Прогиб полок, ослабшие кронштейны и шаткость мебели требуют проверки нагрузки и материала стены, а не только декоративной отделки.",
+          "install": "Крепёж подбирают к основанию; сохраняют доступ к кабелям, отвод тепла от техники и возможность обслуживания.",
+          "care": "Распределяйте тяжёлые предметы по опорам, чистите поверхность по типу покрытия, проверяйте крепёж.",
+          "safety": "Тяжёлые навесные конструкции требуют оценки основания и правильных анкеров; допустимую нагрузку нельзя определить только по размеру полки.",
+          "quote": "Пришлите информацию о нагрузках, размеры, фото стены, расположение розеток и образцы дизайна."
+        },
+        "panelling": {
+          "scope": [
+            "Реечные деревянные акцентные стены",
+            "Декоративные панели и вайнскотинг",
+            "Плинтусы, наличники и деревянные профили",
+            "Облицовка со съёмными техническими люками",
+            "Шпонированные и окрашенные поверхности",
+            "Реставрация повреждённой отделки"
+          ],
+          "material": "Массив, шпон, фанеру и МДФ выбирают по влажности, ударным нагрузкам и отделке. Настоящее дерево отличается от услуг по облицовке ПВХ, ДПК и HPL.",
+          "measure": "Замерьте стены, углы, двери, розетки и освещение. До установки проверяют влажность, ровность поверхности и прочность старого покрытия.",
+          "issues": "Отходящие панели, щели, разбухшие края, плесень и трещины могут указывать на сырость или неправильную фиксацию. Причину устраняют до облицовки.",
+          "install": "Предусматриваем компенсационные зазоры, надёжные крепления и доступ к проводке и ревизионным отверстиям.",
+          "care": "Очищайте поверхность в соответствии с лаком или краской, избегайте постоянной сырости и вовремя обновляйте защитный слой.",
+          "safety": "Пожарные и акустические показатели требуют испытанной системы. Нельзя закрывать влажную стену без устранения проблемы.",
+          "quote": "Нужны фото и размеры стен, расположение розеток, рисунок, оттенок дерева и информация о влажности."
+        },
+        "stairs": {
+          "scope": [
+            "Деревянные ступени, подступёнки и облицовка",
+            "Ремонт скрипа и изношенных элементов",
+            "Поручни, опорные столбы и декор",
+            "Детали деревянных балюстрад",
+            "Шлифовка и восстановление покрытий",
+            "Замена подходящих повреждённых деталей"
+          ],
+          "material": "Твёрдые породы и инженерную древесину, а также нескользкие покрытия выбирают с учётом нагрузки, износа и ухода. Облицовка отличается от несущей конструкции.",
+          "measure": "Нужны глубина ступеней, высота подступёнков, ширина марша, площадки, высота ограждений и места крепления. Конструктивные вопросы требуют специалиста.",
+          "issues": "Шаткие ступени, трещины, скрип, скользкие кромки и подвижные перила представляют риск падения; покраска не устраняет неисправную опору.",
+          "install": "Изменения геометрии, ограждений и опор требуют оценки; безопасность доступа во время работ планируется заранее.",
+          "care": "Держите ступени чистыми и сухими, проверяйте крепления, обновляйте подходящие покрытия и устраняйте скольжение.",
+          "safety": "Лестницы и ограждения критичны для безопасности; нагрузки, размеры и разрешения проверяют по применимым требованиям Кипра.",
+          "quote": "Пришлите фото всей лестницы, крупные планы дефектов, размеры ступеней, покрытие и сведения о планируемой переделке."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "Деревянные настилы и террасы",
+            "Перголы, экраны и садовые сооружения",
+            "Ворота, заборы и ограждения для приватности",
+            "Скамьи, ящики и кашпо",
+            "Ремонт обветренной древесины",
+            "Изделия для открытых пространств"
+          ],
+          "material": "Обработанное дерево, твёрдые породы, термодревесина и композиты выбирают для солнца, влаги и местного обслуживания. Нужен устойчивый к коррозии крепёж.",
+          "measure": "Укажите длину, ширину, высоту, отметки грунта, водоотвод, ветер, солнце, границы участка и назначение; некоторые проекты требуют фундамента или разрешения.",
+          "issues": "Коробление досок, занозы, выгорание покрытия, гниль и слабые крепления требуют проверки подконструкции, а не только верхнего слоя.",
+          "install": "Планируем вентиляцию, отступ от мокрого грунта, уклон, подходящие основания и крепления с учётом ветра и веса.",
+          "care": "Проверяйте покрытие и металлические детали после солнца и солёного воздуха; очищайте зазоры от мусора и воды.",
+          "safety": "Высокие настилы, перголы и конструкции у границ могут требовать инженера и разрешений. Нулевая потребность в уходе не гарантируется.",
+          "quote": "Пришлите размеры площадки, фото земли, условия ветра, предпочтения по дереву, назначение и планы."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "Регулировка дверей и петель",
+            "Ремонт фасадов и направляющих ящиков",
+            "Исправление дорожек шкафов и полок",
+            "Замена повреждённых участков дерева",
+            "Укрепление мебели и небольшие переделки",
+            "Реставрация пригодных старых изделий"
+          ],
+          "material": "Проверяем, можно ли сохранить существующий материал и фурнитуру. Замена должна соответствовать толщине, креплению и покрытию, если это технически возможно.",
+          "measure": "Нужны крупные и общие фото дефекта, размеры, материал, тип петли и доступ к изделию. Укажите историю поломки.",
+          "issues": "Ослабшие петли, разбухшие торцы, заклинившие ящики и треснувшие соединения имеют разные причины. Проверяем влагу и конструкцию до замены видимой детали.",
+          "install": "Выбираем регулировку, замену механизма, усиление или полную переделку с учётом состояния и доступа.",
+          "care": "Держите направляющие чистыми, избегайте перегрузки, устраняйте новые протечки и сырость.",
+          "safety": "Мелкие и срочные выезды регулируются существующими условиями договора обслуживания. Не обещайте отдельные экстренные выезды или фиксированные цены.",
+          "quote": "Пришлите фото крупным и общим планом, размеры, материал, описание проблемы, адрес района и наличие договора обслуживания."
+        },
+        "otherCustom": {
+          "scope": [
+            "Нестандартная мебель и уникальные конструкции",
+            "Перегородки, витрины и специальная столярка",
+            "Переделка существующей мебели",
+            "Хранение в сложных архитектурных нишах",
+            "Комбинированные столярные проекты",
+            "Оценка возможности реализации необычной идеи"
+          ],
+          "material": "Материал, отделку и способ крепления выбирают по назначению, прочности, влажности и бюджету. Иногда нужен образец или прототип.",
+          "measure": "Приложите чертежи с шириной, высотой и глубиной, требуемые зазоры, использование, нагрузку и фотографии. Отметьте ещё не подтверждённые размеры.",
+          "issues": "В особых проектах часто ограничены проходы, слабые основания или несовместимые материалы. Сначала проверяем сборку, работу и ремонтопригодность.",
+          "install": "Оцениваем доставку, доступ, порядок сборки, анкеровку и взаимодействие с коммуникациями; при необходимости подключают профильных мастеров.",
+          "care": "Рекомендации по уходу зависят от окончательно выбранных материалов; неподтверждённые обещания долговечности недопустимы.",
+          "safety": "Реализуемость оценивается индивидуально. Не каждый замысел возможен, требования безопасности и разрешений имеют приоритет.",
+          "quote": "Опишите назначение, размеры, желаемый вид, материалы, эскизы и место установки."
+        }
+      }
+    },
+    "uk": {
+      "ui": {
+        "title": "Столярні роботи та вироби на замовлення на Кіпрі",
+        "short": "Столярні роботи й спеціальні конструкції",
+        "intro": "Індивідуальне виготовлення, ремонт і встановлення дерев’яних виробів для житла, орендованих та комерційних об’єктів на Кіпрі. Кожну роботу оцінюють і вимірюють до письмової пропозиції; виконання залежить від технічної можливості.",
+        "browse": "Десять напрямів столярних робіт",
+        "materialsTitle": "Матеріали, фурнітура й оздоблення",
+        "materialsIntro": "Матеріали обирають за призначенням: масив має природну текстуру, інженерні плити — стабільність, фанера — багатошарову міцність. Вологостійкі панелі застосовують лише у відповідних умовах, а лаки, фарби та кріплення мають бути сумісними з основою.",
+        "scope": "Що можна виготовити, змонтувати або відновити",
+        "measurement": "Заміри та планування",
+        "materials": "Вибір матеріалів і дизайну",
+        "issues": "Типові проблеми й оцінювання",
+        "installation": "Підготовка та монтаж",
+        "care": "Оздоблення й догляд",
+        "safety": "Безпека та можливість виконання",
+        "quote": "Індивідуальна письмова пропозиція",
+        "quoteNote": "Ціна за запитом — індивідуальна пропозиція. Для столярних виробів на замовлення немає універсального прайсу. Розміри, дизайн, матеріал, фурнітура, виготовлення, оздоблення й монтаж оцінюють разом. Після замірів та за потреби огляду надається письмова ціна; роботи починаються лише після погодження.",
+        "process": "Етапи вашого проєкту",
+        "steps": [
+          "Опишіть роботу та її призначення.",
+          "Надішліть приблизні розміри й фотографії або креслення.",
+          "Обговоріть дерево, оздоблення й фурнітуру.",
+          "Погодьте огляд і точні заміри за потреби.",
+          "Уточніть обсяг, матеріали й монтаж.",
+          "Отримайте індивідуальну письмову пропозицію.",
+          "Погодьте обсяг і ціну до початку робіт.",
+          "Виготовлення, встановлення, перевірка й передача результату."
+        ],
+        "details": "Докладні столярні послуги",
+        "serviceTitle": "Напрями робіт",
+        "estimator": "Створити запит на столярні роботи",
+        "estimatorNote": "Відкриває відповідний розділ оцінювача INONDA. Для виробів на замовлення потрібна індивідуальна пропозиція, автоматичної остаточної ціни немає.",
+        "quoteButton": "Запросити пропозицію на столярні роботи",
+        "contact": "Замовити огляд",
+        "related": "Пов’язані послуги INONDA",
+        "faq": "Поширені запитання",
+        "questions": [
+          "Які роботи входять до цієї категорії?",
+          "Який матеріал і покриття обрати?",
+          "Які розміри та дані слід надіслати?",
+          "Чи можна відремонтувати або змінити наявний виріб?"
+        ],
+        "requestDetails": "Для оцінки вкажіть район, призначення, розміри в сантиметрах, кількість, бажані матеріали, покриття, фурнітуру й надішліть фото або креслення. Ми уточнимо потребу в огляді.",
+        "repairRule": "Дрібні й термінові ремонти здійснюються за чинними умовами договору обслуговування; окремий аварійний виїзд не гарантується.",
+        "compliance": "Несучі, протипожежні, охоронні та регульовані елементи потребують підтверджених характеристик, перевірок і дозволів. Сертифікація не мається на увазі автоматично.",
+        "workTypes": "Можливі виготовлення, заміна, ремонт, регулювання й реставрація залежно від потреби.",
+        "source": "Усі послуги спеціальної столярки",
+        "return": "Усі столярні послуги",
+        "more": "Докладніше",
+        "materialLabel": "Варіанти матеріалів",
+        "notFixed": "Без фіксованих публічних цін",
+        "scopeFoot": "Технічна можливість і умови постачання та монтажу підтверджуються письмовою пропозицією.",
+        "siteTitle": "Планування для конкретного об’єкта",
+        "requestPhotos": "Надішліть фото й наявні заміри. Не розміщуйте персональні дані у відкритих посиланнях."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "Міжкімнатні й зовнішні дерев’яні двері",
+            "Одинарні, подвійні, розпашні та відповідні розсувні конструкції",
+            "Коробки, лиштви, пороги й декоративні деталі",
+            "Фільончасті, гладкі й частково засклені двері",
+            "Петлі, замки, ручки та регулювання",
+            "Часткова заміна, ремонт і відновлення покриття"
+          ],
+          "material": "Масив, інженерна деревина, шпон і придатні плити різняться виглядом, стабільністю й обслуговуванням. Покриття, скло й фурнітура мають відповідати призначенню.",
+          "measure": "Вкажіть ширину та висоту отвору, товщину стіни, напрямок відкривання, зазор над підлогою й стан коробки. Врахуйте сусідні меблі та вільний прохід.",
+          "issues": "Тертя об підлогу, провисання, набряклі краї, тріщини коробки й несправні замки вимагають діагностики. Іноді достатньо регулювання.",
+          "install": "Перевіряємо кріплення коробки, поріг, петлі, замок і прилегле оздоблення. Після монтажу перевіряємо плавність та безпечність руху.",
+          "care": "Періодично оглядайте петлі, торці, гвинти й покриття; користуйтеся сумісними засобами очищення. Зовнішні двері потребують захисту від погоди.",
+          "safety": "Пожежні або охоронні характеристики не можна заявляти без підтверджених компонентів і правил монтажу.",
+          "quote": "Надішліть розміри отвору, фото обох боків та коробки, напрямок відкривання, ескіз, кількість і дані замка."
+        },
+        "timberWindows": {
+          "scope": [
+            "Дерев’яні віконні рами та стулки",
+            "Традиційні віконниці й жалюзійні стулки",
+            "Заміна та локальний ремонт дерева",
+            "Петлі, засувки, ущільнення та регулювання",
+            "Реставрація покриття та захист від дощу",
+            "Відновлення придатних старих рам"
+          ],
+          "material": "Порода дерева і зовнішнє покриття мають відповідати сонцю, дощу та морському повітрю. Зміни розмірів від вологості слід враховувати при виготовленні.",
+          "measure": "Потрібні ширина й висота отвору, кількість стулок, глибина рами, склопакет, напрямок відкривання, підвіконня й водовідведення.",
+          "issues": "Гниття з’єднань, заїдання стулок, пошкоджена фарба, ущільнювачі та сліди вологи потребують оцінювання. Значні пошкодження можуть вимагати заміни.",
+          "install": "Перевіряємо водовідведення, герметизацію, монтажні зазори, кріплення та вентиляцію. Властивості залежать від усього встановленого вікна.",
+          "care": "Очищуйте дренаж, перевіряйте ущільнювачі та вчасно поновлюйте захисний шар, особливо біля моря.",
+          "safety": "Теплові, акустичні, вітрові та охоронні показники потребують підтверджених даних виробника й скління.",
+          "quote": "Надішліть фото зсередини й зовні, приблизні розміри, кількість стулок, потреби у склінні, місця дефектів і бажане покриття."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "Нижні, настінні й високі кухонні шафи",
+            "Господарські тумби та шафи під мийку",
+            "Фасади, шухляди, петлі та напрямні",
+            "Висувні механізми й кутові рішення",
+            "Корпуси для техніки з вентиляцією",
+            "Оновлення та зміни наявних меблів"
+          ],
+          "material": "Меламін, фанеру, вологостійкий МДФ і масив обирають за впливом води, вагою та оздобленням. Фурнітура має бути придатною для передбачених навантажень.",
+          "measure": "Надайте план приміщення, висоту стелі, довжину кухонного ряду, розміри техніки, розміщення води й електрики, простір для дверцят і нерівності стін.",
+          "issues": "Набряклі тумби під мийкою, відшаровані крайки, перекошені фасади та зношені напрямні вимагають огляду каркаса до часткового ремонту.",
+          "install": "Узгоджуємо роботу із сантехніком чи електриком за потреби. Навісні шафи кріпляться до відповідної основи, а вентиляція й сервісний доступ залишаються.",
+          "care": "Швидко витирайте пролиту воду, бережіть крайки та доглядайте механізми за рекомендаціями. Регулюйте петлі при зміщенні дверцят.",
+          "safety": "Важкі шафи потребують перевірки стіни й анкерів. Газ, електрика та труби обслуговуються відповідними фахівцями.",
+          "quote": "Надішліть ескіз, розміри, моделі техніки, бажані фасади, вимоги до стільниці та фото."
+        },
+        "wardrobes": {
+          "scope": [
+            "Вбудовані й окремі шафи за розмірами",
+            "Розпашні та розсувні дверцята",
+            "Гардеробні й перекладини для одягу",
+            "Шухляди, полиці й органайзери",
+            "Зберігання під сходами та в нішах",
+            "Заміна фурнітури й перепланування внутрішнього простору"
+          ],
+          "material": "Меламін, МДФ, фанера й масив відрізняються стійкістю до вологи та оздобленням. Вага дверей і якість напрямних важливі для довговічності.",
+          "measure": "Виміряйте ширину між стінами, висоту, глибину й доступ для складання. Позначте плінтуси, розетки, нерівності підлоги й вентиляцію.",
+          "issues": "Заїдання розсувних дверей, прогин полиць, зношені напрямні та сирість усередині можуть свідчити про проблему фурнітури, навантажень або стіни.",
+          "install": "Перевіряємо місця кріплення та можливість занесення великих деталей. Проєкт враховує реальні відхилення стін і підлоги.",
+          "care": "Очищуйте напрямні, не перевантажуйте полиці, провітрюйте шафу й усувайте вологу до монтажу.",
+          "safety": "Високі шафи можуть потребувати захисту від перекидання. Активну вологу й інженерні мережі не можна закривати без перевірки.",
+          "quote": "Надішліть ескіз кімнати, розміри, тип дверей, кількість шухляд і зон для одягу та фото перешкод."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "Книжкові шафи та настінні полиці",
+            "Вбудовані столи й робочі місця",
+            "Тумби для телевізорів і вітрини",
+            "Стійки прийому й офісні меблі",
+            "Меблі в нішах та під вікнами",
+            "Ремонт і переобладнання вбудованих елементів"
+          ],
+          "material": "Товщина плит, крайки, покриття й кріплення залежать від прольоту та навантаження. Фанера, масив, МДФ і шпон відрізняються жорсткістю й виглядом.",
+          "measure": "Вкажіть ширину, висоту, глибину, вагу предметів, розміри обладнання, розетки й кабелі. Вимірюйте стіну на кількох рівнях.",
+          "issues": "Прогин полиць, ослаблені кронштейни та хиткі меблі вимагають перевірки навантаження й основи, а не лише нового декору.",
+          "install": "Кріплення підбираємо за типом стіни; зберігаємо доступ до кабелів, вентиляцію техніки й можливість обслуговування.",
+          "care": "Рівномірно розподіляйте важкі предмети, очищуйте покриття відповідно до матеріалу й перевіряйте кріплення.",
+          "safety": "Важкі підвісні конструкції потребують оцінки стіни та анкерів; допустиму вагу неможливо визначити лише за розміром полиці.",
+          "quote": "Надішліть дані про вагу предметів, розміри, фото стіни, положення розеток і зразки дизайну."
+        },
+        "panelling": {
+          "scope": [
+            "Дерев’яні рейкові акцентні стіни",
+            "Декоративні панелі та вагонка",
+            "Плінтуси, лиштви й профілі",
+            "Облицювання з доступом до технічних люків",
+            "Шпоновані та пофарбовані елементи",
+            "Реставрація пошкодженого дерев’яного оздоблення"
+          ],
+          "material": "Масив, шпон, фанеру й МДФ добирають за вологістю, міцністю та покриттям. Натуральне дерево відрізняється від послуг із ПВХ, ДПК і HPL.",
+          "measure": "Заміряйте стіни, кути, двері, розетки й освітлення. Перед роботою перевіряйте вологість, рівність і міцність старого шару.",
+          "issues": "Відставання панелей, щілини, набряклі краї, цвіль та тріщини можуть спричинити волога або погане кріплення. Причину усувають до облицювання.",
+          "install": "Плануємо компенсаційні проміжки, належні кріплення й доступ до електрики та ревізійних отворів.",
+          "care": "Очищуйте за типом фарби чи лаку, уникайте тривалої вологи й вчасно поновлюйте захисний шар.",
+          "safety": "Пожежні чи акустичні показники можливі лише для випробуваної системи. Не закривайте вологі стіни без усунення проблеми.",
+          "quote": "Надішліть фото й розміри стін, розетки, бажаний малюнок, колір дерева та дані про вологість."
+        },
+        "stairs": {
+          "scope": [
+            "Дерев’яні проступи, підсхідці й облицювання",
+            "Ремонт скрипу та зношених частин",
+            "Поручні, опорні стовпи й декор",
+            "Елементи дерев’яних балюстрад",
+            "Шліфування та відновлення покриття",
+            "Заміна відповідних пошкоджених деталей"
+          ],
+          "material": "Тверді породи, інженерна деревина й неслизькі покриття добираються за зносом, навантаженням і доглядом. Декоративне облицювання відрізняється від несучої конструкції.",
+          "measure": "Потрібні глибина проступів, висота підсхідців, ширина маршу, майданчики, висота огорож і місця кріплення. Конструктивні зміни оцінює фахівець.",
+          "issues": "Хиткі сходинки, тріщини, скрип, слизькі краї та рухливі перила загрожують падінням; фарбування не вирішує проблему опори.",
+          "install": "Роботи, що впливають на геометрію, огорожі та основи, вимагають перевірки; безпечний прохід планується заздалегідь.",
+          "care": "Тримайте сходи чистими й сухими, перевіряйте кріплення та поновлюйте придатне покриття.",
+          "safety": "Сходи й огорожі є критичними для безпеки; навантаження, розміри та дозволи перевіряють за чинними вимогами Кіпру.",
+          "quote": "Надішліть фото всього маршу, крупні плани дефектів, розміри сходинок, бажане покриття й наміри щодо конструкції."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "Дерев’яні настили й тераси",
+            "Перголи, екрани та садові споруди",
+            "Ворота, паркани й приватні огорожі",
+            "Лавки, ящики та кашпо",
+            "Ремонт деревини після впливу погоди",
+            "Вироби для відкритих просторів"
+          ],
+          "material": "Оброблену деревину, тверді породи, термодеревину й композити добирають для сонця, вологи та догляду. Потрібні корозійностійкі кріплення.",
+          "measure": "Вкажіть довжину, ширину, висоту, рівень землі, дренаж, вплив вітру й сонця, межі ділянки та призначення. Можуть знадобитися фундамент і дозволи.",
+          "issues": "Викривлені дошки, скалки, вигорілі покриття, гниття та ослаблені кріплення вимагають перевірки основи, а не тільки верхніх дощок.",
+          "install": "Передбачаємо вентиляцію, відстань від вологого ґрунту, відведення води й належні опори з урахуванням вітру та ваги.",
+          "care": "Оглядайте покриття й метал після впливу сонця та солоного повітря, прибирайте сміття з дренажних проміжків.",
+          "safety": "Підняті настили, перголи та споруди біля меж ділянки можуть вимагати інженера чи дозволів; відсутність обслуговування не гарантується.",
+          "quote": "Надішліть розміри ділянки, фото землі, умови вітру, бажаний матеріал, призначення та плани."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "Регулювання дверей і петель",
+            "Ремонт фасадів та напрямних шухляд",
+            "Ремонт шафних напрямних і полиць",
+            "Заміна пошкоджених частин деревини",
+            "Зміцнення меблів і невеликі зміни",
+            "Реставрація придатних старих виробів"
+          ],
+          "material": "Перевіряємо можливість збереження наявного матеріалу та фурнітури. Заміна має відповідати товщині, кріпленню й оздобленню, якщо це можливо.",
+          "measure": "Потрібні крупні й загальні фото, розміри, матеріал, тип петлі та доступ. Опишіть історію поломки.",
+          "issues": "Ослаблені петлі, набряклі краї, заклинені шухляди й тріснуті з’єднання мають різні причини. Спочатку перевіряємо вологу та опори.",
+          "install": "Обираємо регулювання, заміну механізму, посилення чи повну переробку з урахуванням стану й доступу.",
+          "care": "Очищуйте напрямні, уникайте перевантажень, усувайте нові протікання й сирість.",
+          "safety": "Дрібні та термінові виїзди підпадають під чинні умови договору обслуговування. Не обіцяємо окремі аварійні виїзди або фіксовані ціни.",
+          "quote": "Надішліть фото крупним і загальним планом, розміри, матеріал, опис проблеми, район і дані про договір."
+        },
+        "otherCustom": {
+          "scope": [
+            "Нестандартні меблі й унікальні конструкції",
+            "Перегородки, вітрини та спеціальна столярка",
+            "Переробка наявних меблів",
+            "Зберігання у складних архітектурних нішах",
+            "Комбіновані столярні проєкти",
+            "Оцінка незвичайних задумів"
+          ],
+          "material": "Матеріал, покриття й кріплення добираються за призначенням, міцністю, вологістю та бюджетом. Іноді потрібен зразок або прототип.",
+          "measure": "Надайте креслення з шириною, висотою, глибиною, проміжками, навантаженнями й фото. Позначте непідтверджені розміри.",
+          "issues": "У складних проєктах може бракувати місця, міцних основ або відповідних матеріалів. Спочатку перевіряємо складання, використання й ремонт.",
+          "install": "Оцінюємо перевезення, доступ, послідовність складання, анкери й інженерні мережі; за потреби залучаємо фахівців.",
+          "care": "Догляд визначається остаточно погодженими матеріалами; непідтверджені обіцянки довговічності недопустимі.",
+          "safety": "Реалізованість оцінюють індивідуально. Не кожен задум можливий; безпека та дозволи мають пріоритет.",
+          "quote": "Опишіть призначення, розміри, зовнішній вигляд, матеріали, ескізи й місце встановлення."
+        }
+      }
+    },
+    "he": {
+      "ui": {
+        "title": "נגרות ועבודות עץ בהתאמה אישית בקפריסין",
+        "short": "נגרות ועבודות עץ לפי מידה",
+        "intro": "נגרות מותאמת, תיקונים והתקנה לבתים, נכסים מושכרים ועסקים ברחבי קפריסין. כל פרויקט נמדד ונבדק לפני הצעת מחיר כתובה, בכפוף להיתכנות ולתנאי האתר.",
+        "browse": "עשרה תחומי נגרות מפורטים",
+        "materialsTitle": "חומרים, פרזול וגימור",
+        "materialsIntro": "בחירת חומר תלויה בשימוש ובסביבה: עץ מלא מעניק מרקם טבעי, לוחות מהונדסים יכולים לספק יציבות, ודיקט מורכב משכבות חוזק. לוחות עמידי לחות דורשים תנאי שימוש מתאימים; יש לוודא התאמה של צבעים, לכות, עוגנים ותשתית.",
+        "scope": "מה ניתן לייצר, להתקין או לשקם",
+        "measurement": "תכנון ומדידות",
+        "materials": "בחירת חומרים ועיצוב",
+        "issues": "תקלות נפוצות ואבחון",
+        "installation": "הכנה והתקנה",
+        "care": "גמר ותחזוקה",
+        "safety": "בטיחות והיתכנות",
+        "quote": "הצעת מחיר אישית בכתב",
+        "quoteNote": "מחיר לפי בקשה — הצעה מותאמת אישית. אין מחירון אחיד לעבודות נגרות לפי מידה. מידות, עיצוב, חומר, פרזול, ייצור, גמר והתקנה נבחנים יחד. הצעה כתובה ניתנת לאחר מדידות וביקור לפי הצורך; העבודה מתחילה רק לאחר אישור.",
+        "process": "שלבי הפרויקט",
+        "steps": [
+          "תארו את העבודה ואת מטרתה.",
+          "שלחו מידות משוערות, תמונות או שרטוטים.",
+          "דונו בחומרים, בגמר ובפרזול.",
+          "תאמו ביקור ומדידות מדויקות לפי הצורך.",
+          "אשרו את היקף העבודה, החומרים ופרטי ההתקנה.",
+          "קבלו הצעת מחיר אישית בכתב.",
+          "אשרו את ההצעה לפני תחילת עבודה.",
+          "ייצור, התקנה, בדיקה ומסירת העבודה שסוכמה."
+        ],
+        "details": "שירותי נגרות מפורטים",
+        "serviceTitle": "תחומי התמחות בנגרות",
+        "estimator": "בניית בקשה לנגרות מותאמת",
+        "estimatorNote": "פותח את אזור הנגרות המתאים במעריך INONDA. עבודה לפי מידה מחייבת הצעת מחיר אישית ואינה מקבלת מחיר סופי אוטומטי.",
+        "quoteButton": "בקשת הצעת מחיר לנגרות",
+        "contact": "תיאום ביקור",
+        "related": "שירותים קשורים של INONDA",
+        "faq": "שאלות נפוצות",
+        "questions": [
+          "אילו עבודות כלולות בקטגוריה זו?",
+          "באילו חומרים וגימורים כדאי לבחור?",
+          "אילו מידות ופרטים צריך לשלוח?",
+          "האם ניתן לתקן או לשנות פריט קיים?"
+        ],
+        "requestDetails": "לצורך הצעה מסרו אזור, תיאור, מידות בסנטימטרים, כמויות, סוג עץ או לוח, גמר, פרזול ותמונות או שרטוטים. נעדכן אם נדרש ביקור במקום.",
+        "repairRule": "תיקונים קטנים או דחופים כפופים לתנאי חוזה התחזוקה הקיים. אין להניח שקיים שירות חירום חד-פעמי בלתי מוגבל.",
+        "compliance": "עבודה מבנית, מדורגת אש או ביטחון ועבודה מוסדרת מחייבת מפרט, בדיקות ואישורים מתאימים. אין להסיק קיומו של אישור ללא אימות.",
+        "workTypes": "סוגי עבודה אפשריים: ייצור חדש, החלפה מתאימה, תיקון, כיוונון ושיקום בהתאם לפרויקט.",
+        "source": "כל שירותי הנגרות המותאמת",
+        "return": "חזרה לכל עבודות הנגרות",
+        "more": "פרטי השירות",
+        "materialLabel": "אפשרויות חומר",
+        "notFixed": "אין מחירון פומבי קבוע",
+        "scopeFoot": "התאמה, אספקה והתקנה יאושרו במסגרת ההצעה האישית בכתב.",
+        "siteTitle": "תכנון בהתאם למקום",
+        "requestPhotos": "שלחו תמונות ומידות זמינות. אין לשתף מידע אישי רגיש בקישורים ציבוריים."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "דלתות עץ פנים וחוץ לפי מידה",
+            "דלתות יחיד, כפולות, ציר והזזה מתאימה",
+            "משקופים, ספים, הלבשות ופרטי גמר",
+            "דלתות חלקות, מעוטרות או עם זיגוג מתאים",
+            "צירים, מנעולים, ידיות וכיוונון",
+            "תיקון, החלפה ושיקום ציפוי"
+          ],
+          "material": "עץ מלא, עץ מהונדס, פורניר ולוחות מתאימים שונים במראה, ביציבות ובתחזוקה. הגמר, הזכוכית והפרזול נבחרים לפי הייעוד והחשיפה.",
+          "measure": "יש למדוד רוחב וגובה פתח, עובי קיר, כיוון פתיחה, מרווח מהרצפה ומצב המשקוף. חשוב לציין ריהוט סמוך ומרחב מעבר.",
+          "issues": "דלת ששוקעת, מתחככת, מתנפחת מלחות או אינה ננעלת דורשת בדיקה. לעיתים כיוון צירים או החלפת רכיב עדיפים על החלפה מלאה.",
+          "install": "נבדוק נקודות עיגון, סף, צירים, מנעול וגמר הקיר. בתום ההתקנה יש לוודא פתיחה וסגירה חלקות ובטוחות.",
+          "care": "נקו בחומר המתאים לגמר, בדקו צירים וברגים וחדשו שכבת הגנה בהתאם לחשיפה, במיוחד בדלתות חוץ.",
+          "safety": "אין לייחס דירוג אש או ביטחון ללא מכלול מאושר, רכיבים מתאימים והוראות התקנה מאומתות.",
+          "quote": "שלחו מידות פתח, תמונות משני הצדדים ומהמשקוף, כיוון פתיחה, דגם רצוי, כמות וסוג מנעול."
+        },
+        "timberWindows": {
+          "scope": [
+            "מסגרות וחלונות עץ בהתאמה",
+            "תריסי עץ וכנפיים מסורתיות",
+            "החלפת חלקי מסגרת פגומים",
+            "צירים, סוגרים, אטמים וכיוונון",
+            "חידוש צבע וציפויי הגנה חיצוניים",
+            "שיקום מסגרות עץ קיימות במצב מתאים"
+          ],
+          "material": "בחירת עץ וציפוי חיצוני תלויה בשמש, בגשם ובאוויר מלוח. יש להביא בחשבון שינויי מידות בשל לחות.",
+          "measure": "יש למסור מידות פתח, מספר כנפיים, עומק מסגרת, סוג זיגוג, כיוון פתיחה, אדן וניקוז. נבדוק סימני נזק מבפנים ומבחוץ.",
+          "issues": "ריקבון בחיבורים, כנפיים תקועות, צבע מתקלף, אטמים בלויים וסימני רטיבות מחייבים אבחון; נזק רב עשוי לחייב החלפה.",
+          "install": "נבדוק ניקוז, איטום, מרווחי תנועה, עיגון ואוורור. הביצועים תלויים במכלול החלון וההתקנה.",
+          "care": "נקו פתחי ניקוז, בדקו חומרי איטום וחדשו ציפויי הגנה באופן סדיר, במיוחד באזור החוף.",
+          "safety": "אין להבטיח דירוג תרמי, אקוסטי, עומס רוח או ביטחון ללא מפרט חלון וזיגוג מאומת.",
+          "quote": "שלחו תמונות פנים וחוץ, מידות, מספר כנפיים או תריסים, צורך בזיגוג, אזור הנזק והגמר המבוקש."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "ארונות מטבח תחתונים, עליונים וגבוהים",
+            "ארונות שירות וארונות מתחת לכיור",
+            "דלתות, חזיתות מגירות, צירים ומסילות",
+            "מגירות נשלפות ופתרונות לפינות",
+            "בתי מכשירים עם אוורור נדרש",
+            "שיפוץ והתאמה של ארונות קיימים"
+          ],
+          "material": "מלמין, דיקט, MDF עמיד לחות ועץ מלא נבחרים לפי סיכון לרטיבות, משקל וגמר. יש להתאים פרזול לעומס ולתדירות השימוש.",
+          "measure": "יש לשלוח תכנית חדר, גובה תקרה, אורך קירות הארונות, מידות מכשירים, חיבורי מים וחשמל ומרווחי פתיחת דלתות.",
+          "issues": "ארון כיור נפוח, קצוות מתקלפים, דלתות עקומות או מסילות שחוקות מחייבים בדיקת גוף הארון לפני החלפת החזית בלבד.",
+          "install": "נתאם עם אינסטלציה וחשמל לפי הצורך. ארונות תלויים מחוברים לתשתית מתאימה ויש לשמור גישה ואוורור למכשירים.",
+          "care": "נגבו מים מיד, שמרו על קצוות הלוחות ותחזקו צירים ומסילות לפי הנחיות היצרן.",
+          "safety": "ארונות כבדים דורשים בדיקת קיר ועוגנים. שינויי גז, חשמל וצנרת מתבצעים בידי בעלי מקצוע מתאימים.",
+          "quote": "שלחו תכנית או סקיצה, מידות, דגמי מכשירים, חזיתות מבוקשות, פרטי משטח עבודה ותמונות."
+        },
+        "wardrobes": {
+          "scope": [
+            "ארונות קיר וארונות עצמאיים לפי מידה",
+            "דלתות ציר והזזה",
+            "חדרי ארונות ומוטות תלייה",
+            "מדפים, מגירות ומחלקים",
+            "אחסון מתחת למדרגות ובנישות",
+            "החלפת מסילות ושינוי חלוקה פנימית"
+          ],
+          "material": "מלמין, MDF, דיקט ועץ מלא שונים בעמידות ללחות ובאפשרויות הגמר. משקל הדלתות ואיכות המסילות משפיעים על תפקוד ממושך.",
+          "measure": "מדדו רוחב בין קירות, גובה, עומק ודרך גישה להרכבה. סמנו פנלים, שקעים, רצפה לא ישרה וצורך באוורור.",
+          "issues": "דלתות שנתקעות, מדפים ששוקעים, מסילות בלויות וריח לחות עלולים לנבוע מעומס, פרזול או בעיית קיר.",
+          "install": "נבדוק נקודות עיגון ויכולת להעביר חלקים גדולים במסדרונות ובמדרגות. נתחשב בקירות ורצפות שאינם ישרים.",
+          "care": "נקו מסילות, הימנעו מעומס יתר ואווררו את פנים הארון. טפלו בלחות לפני סגירת הקיר בנגרות.",
+          "safety": "ארונות גבוהים עשויים לדרוש עיגון נגד התהפכות. אין לכסות רטיבות פעילה או מערכות ללא בדיקה.",
+          "quote": "שלחו סקיצת חדר, מידות, סוג דלתות, מספר מגירות, אזורי תלייה ותמונות מכשולים."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "מדפים וספריות לפי מידה",
+            "שולחנות עבודה מובנים",
+            "מזנוני טלוויזיה ויחידות תצוגה",
+            "דלפקים ואחסון מסחרי",
+            "ספסלי חלון ונגרות לנישות",
+            "תיקון ושינוי ריהוט מובנה"
+          ],
+          "material": "עובי הלוח, הקנטים, הגמר והחיבורים נקבעים לפי המפתח והעומס. עץ מלא, MDF, דיקט ופורניר שונים בקשיחות ובמראה.",
+          "measure": "מסרו רוחב, גובה ועומק, משקל משוער, מידות ציוד, מיקום שקעים ומעברי כבלים. מדדו את הקיר בכמה גבהים.",
+          "issues": "מדפים מתכופפים, תושבות רופפות וריהוט לא יציב מחייבים בדיקת עומס ותשתית, ולא רק חידוש קוסמטי.",
+          "install": "יש לבחור עוגנים לפי סוג הקיר ולתכנן גישה לכבלים, אוורור מכשירים ופנלים נשלפים לתחזוקה.",
+          "care": "פזרו משקל לפי התמיכות, נקו לפי סוג הגמר ובדקו עיגונים מעת לעת.",
+          "safety": "ריהוט כבד שתלוי על קיר דורש הערכת תשתית ועיגון מקצועי. אין להעריך עומס בטוח לפי מידות בלבד.",
+          "quote": "שלחו מידות, עומסי אחסון, תמונות קיר, מיקום שקעים והשראה עיצובית."
+        },
+        "panelling": {
+          "scope": [
+            "קירות הדגשה עם פסי עץ",
+            "חיפויי עץ ודקורציה מסורתית",
+            "פנלים, הלבשות ופרופילים",
+            "חיפוי עם פתחי גישה למערכות",
+            "לוחות פורניר וצביעה מתאימה",
+            "שיקום גמר עץ פגום"
+          ],
+          "material": "עץ מלא, פורניר, דיקט ו-MDF נבחרים לפי לחות, עמידות וגמר. עץ טבעי אינו זהה לשירותי חיפוי PVC, WPC או HPL.",
+          "measure": "מדדו קירות, פינות, פתחים, שקעים וגופי תאורה. בדקו לחות, יישור קיר ואחיזת ציפוי קיים לפני התקנה.",
+          "issues": "פנלים רופפים, רווחים, קצוות נפוחים, עובש וסדקים עשויים להצביע על רטיבות או עיגון לקוי. יש לפתור את הסיבה תחילה.",
+          "install": "נתכנן מרווחי התפשטות, נקודות חיבור וגישה בטוחה לחשמל ולפתחי ביקורת. אין לסגור מערכות הדורשות טיפול.",
+          "care": "נקו בהתאם ללק או לצבע, הימנעו מלחות ממושכת וחדשו ציפוי כשנשחק.",
+          "safety": "דירוג אש או אקוסטיקה אפשרי רק למערכת שנבדקה. אין לכסות קיר רטוב ללא טיפול.",
+          "quote": "שלחו תמונות ומידות קיר, שקעים, דוגמת עיצוב, גוון עץ ופרטים על לחות."
+        },
+        "stairs": {
+          "scope": [
+            "מדרכי עץ ורומים וחיפוי מדרגות",
+            "תיקון חריקות ושחיקה",
+            "מאחזי יד ועמודי תמיכה",
+            "רכיבי מעקה עץ ודקורציה",
+            "ליטוש וחידוש גמר",
+            "החלפת חלקים פגומים מתאימים"
+          ],
+          "material": "עץ קשה או מהונדס וגמר המפחית החלקה נבחרים לפי עומס, בלאי ותחזוקה. חיפוי דקורטיבי שונה מבניית גרם מדרגות נושא עומס.",
+          "measure": "יש למדוד עומק מדרכים, גובה רומים, רוחב מהלך, פודסטים, גובה מעקה ונקודות עיגון. שינויים מבניים דורשים בדיקה מקצועית.",
+          "issues": "מדרכים רופפים, סדקים, חריקות, קצוות חלקים ומעקה מתנדנד מסכנים נפילה; צבע חדש אינו פותר כשל מבני.",
+          "install": "כל שינוי בגאומטריה, בעיגונים או במעקה מחייב הערכה ותכנון גישה בטוחה בזמן עבודה.",
+          "care": "שמרו מדרגות נקיות ויבשות, בדקו חיבורים וחדשו ציפוי מתאים לפי הצורך.",
+          "safety": "מדרגות ומעקות הם רכיבי בטיחות. יש לוודא עומסים, מידות ואישורים לפי הכללים החלים בקפריסין.",
+          "quote": "שלחו תמונות של כל גרם המדרגות, תקריב הנזק, מידות מדרכים, גמר רצוי ותיאור שינוי מבני אם מתוכנן."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "דקים ומרפסות עץ",
+            "פרגולות ומסכי גינה",
+            "שערים, גדרות ומחיצות פרטיות",
+            "ספסלים, ארגזים ואדניות",
+            "שיקום עץ שנפגע ממזג אוויר",
+            "מבני עץ מותאמים לחוץ"
+          ],
+          "material": "עץ מטופל, עץ קשה, עץ תרמי וחומרים מרוכבים נבחרים לשמש, לחות ותחזוקה. נדרש פרזול עמיד בפני קורוזיה, במיוחד ליד הים.",
+          "measure": "ציינו אורך, רוחב, גובה, מפלסי קרקע, ניקוז, חשיפה לשמש ולרוח, גבולות מגרש ושימוש מתוכנן. ייתכן צורך ביסודות או בהיתר.",
+          "issues": "לוחות שהתעקמו, שבבים, צבע דהוי, ריקבון וחיבורים רופפים מחייבים בדיקת התשתית ולא רק החלפת פני השטח.",
+          "install": "נתכנן אוורור, מרחק מקרקע רטובה, ניקוז, יסודות ועיגון לפי משקל ועומסי רוח.",
+          "care": "בדקו ציפויים וברגים לאחר חשיפה לשמש ולמלח, נקו פסולת ממרווחי ניקוז.",
+          "safety": "דקים מוגבהים, פרגולות ושינויי גבול עשויים לדרוש מהנדס והיתרים. אין הבטחה לתחזוקה אפסית.",
+          "quote": "שלחו מידות שטח, תמונות הקרקע, חשיפה לרוח, חומר מבוקש, שימוש ותכניות קיימות."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "כיוונון דלתות וצירים",
+            "תיקון חזיתות ומסילות מגירות",
+            "תיקון מסילות ארון ומדפים",
+            "החלפת חלקי עץ שניזוקו",
+            "חיזוק רהיטים ושינויים קטנים",
+            "שיקום פריטים קיימים כשהמצב מאפשר"
+          ],
+          "material": "נבדוק אם אפשר לשמור על החומר והפרזול הקיימים. חלק חלופי צריך להתאים לעובי, לחיבור ולגמר ככל האפשר.",
+          "measure": "שלחו תמונות תקריב וגם תמונה כללית, מידות, סוג חומר, דגם ציר וגישה. תארו מתי התחילה התקלה.",
+          "issues": "צירים רופפים, קצוות נפוחים, מגירות תקועות וחיבורים סדוקים נובעים מסיבות שונות. יש לבדוק לחות ותמיכה לפני החלפת רכיב גלוי.",
+          "install": "נבחר כיוונון, החלפת פרזול, חיזוק או חידוש מלא לפי מצב הפריט וגישה לעבודה.",
+          "care": "נקו מסילות, הימנעו מעומס יתר וטפלו בנזילות ורטיבות מיד עם גילוין.",
+          "safety": "ביקורי תיקון קטנים ודחופים כפופים לתנאי חוזה התחזוקה הקיים. אין להבטיח שירות חירום חד-פעמי או מחיר קבוע.",
+          "quote": "שלחו תמונות, חומר, מידות, תיאור תקלה, אזור העבודה והאם קיים חוזה תחזוקה."
+        },
+        "otherCustom": {
+          "scope": [
+            "רהיטים מיוחדים ועבודות עץ ייחודיות",
+            "מחיצות, מתקני תצוגה ונגרות ייעודית",
+            "התאמת ריהוט קיים",
+            "אחסון לנישות אדריכליות מורכבות",
+            "פרויקטים המשלבים כמה תחומי נגרות",
+            "בדיקת היתכנות לרעיונות לא סטנדרטיים"
+          ],
+          "material": "החומר, הגמר ואופן העיגון נבחרים לפי ייעוד, חוזק, לחות ותקציב. לעיתים יש צורך בדוגמה או באב-טיפוס לפני התחייבות.",
+          "measure": "צרפו שרטוט עם רוחב, גובה, עומק, מרווחים, שימוש, עומסים ותמונות. ציינו אילו מידות עדיין לא אושרו.",
+          "issues": "בפרויקטים מיוחדים עלולות להיות מגבלות מעבר, תשתית חלשה או חומר שאינו מתאים. נבדוק הרכבה, שימוש ותחזוקה לפני קבלת העבודה.",
+          "install": "נבחן הובלה, גישה, סדר הרכבה, עיגון ותשתיות, ונשתף אנשי מקצוע נוספים לפי צורך.",
+          "care": "הוראות תחזוקה נקבעות לפי חומרים שאושרו בפועל. אין להבטיח אורך חיים ללא בסיס טכני.",
+          "safety": "כל רעיון נבחן לגופו; לא כל תכנון ניתן לביצוע. בטיחות, נגישות והיתרים קודמים לשיקולים אסתטיים.",
+          "quote": "תארו ייעוד, מידות, מראה רצוי, חומרים, סקיצות ומקום התקנה."
+        }
+      }
+    },
+    "ro": {
+      "ui": {
+        "title": "Tâmplărie și lucrări din lemn la comandă în Cipru",
+        "short": "Tâmplărie și lucrări personalizate",
+        "intro": "Tâmplărie la comandă, reparații și instalare pentru locuințe, proprietăți închiriate și spații comerciale din Cipru. Fiecare proiect este evaluat și măsurat înaintea unei oferte scrise, în funcție de fezabilitate.",
+        "browse": "Descoperă cele zece specializări",
+        "materialsTitle": "Materiale, feronerie și finisaje",
+        "materialsIntro": "Materialul potrivit depinde de utilizare: lemnul masiv oferă fibră naturală, panourile stratificate pot oferi stabilitate, placajul are structură în straturi. Plăcile rezistente la umiditate cer condiții adecvate; lacurile, vopselele, fixările și suporturile trebuie să fie compatibile.",
+        "scope": "Ce putem fabrica, monta sau restaura",
+        "measurement": "Măsurători și planificare",
+        "materials": "Alegerea materialelor și a designului",
+        "issues": "Probleme frecvente și evaluare",
+        "installation": "Pregătire și instalare",
+        "care": "Finisare și întreținere",
+        "safety": "Siguranță și fezabilitate",
+        "quote": "Ofertă scrisă personalizată",
+        "quoteNote": "Preț la cerere — ofertă personalizată. Lucrările de tâmplărie la comandă nu au preț universal fix. Dimensiunile, designul, materialul, feroneria, fabricația, finisajul și montajul se evaluează împreună. Oferta scrisă urmează măsurătorile și inspecția, dacă este necesară; lucrările încep doar după aprobare.",
+        "process": "Etapele proiectului",
+        "steps": [
+          "Descrieți lucrarea și destinația ei.",
+          "Trimiteți dimensiuni aproximative, fotografii sau desene.",
+          "Discutați materialele, finisajul și feroneria.",
+          "Programați inspecția și măsurătorile finale când este necesar.",
+          "Confirmați scopul, materialele și detaliile de instalare.",
+          "Primiți o ofertă scrisă individuală.",
+          "Aprobați oferta înainte de începerea lucrărilor.",
+          "Fabricație, instalare, verificare și predare."
+        ],
+        "details": "Servicii de tâmplărie detaliate",
+        "serviceTitle": "Specializări de tâmplărie",
+        "estimator": "Creează o cerere de tâmplărie",
+        "estimatorNote": "Deschide secțiunea potrivită din estimatorul INONDA. Proiectele la comandă necesită ofertă individuală, nu un preț final automat.",
+        "quoteButton": "Solicită ofertă pentru tâmplărie",
+        "contact": "Programează o inspecție",
+        "related": "Servicii INONDA asociate",
+        "faq": "Întrebări frecvente",
+        "questions": [
+          "Ce lucrări sunt incluse în această categorie?",
+          "Ce material și finisaj se potrivesc?",
+          "Ce dimensiuni și detalii trebuie să trimit?",
+          "Se poate repara sau modifica o construcție existentă?"
+        ],
+        "requestDetails": "Pentru o evaluare corectă trimiteți localitatea, descrierea, dimensiunile în cm, cantitatea, materialul preferat, finisajul, feroneria și fotografii sau desene. Vă confirmăm dacă este necesară o vizită.",
+        "repairRule": "Reparațiile mici sau urgente se supun condițiilor contractului de întreținere existent. Nu presupuneți un serviciu de urgență individual nelimitat.",
+        "compliance": "Lucrările structurale, cu cerințe de foc, securitate sau reglementate necesită specificații, verificări și aprobări adecvate. Nu se presupune certificarea fără dovezi.",
+        "workTypes": "Sunt posibile fabricația, înlocuirea, repararea, reglarea și restaurarea, în funcție de proiect.",
+        "source": "Explorează toate lucrările de tâmplărie la comandă",
+        "return": "Înapoi la toate serviciile de tâmplărie",
+        "more": "Detalii serviciu",
+        "materialLabel": "Opțiuni de materiale",
+        "notFixed": "Fără listă publică de prețuri fixe",
+        "scopeFoot": "Fezabilitatea, furnizarea și condițiile de montaj sunt confirmate prin oferta individuală scrisă.",
+        "siteTitle": "Planificare adaptată locației",
+        "requestPhotos": "Trimiteți fotografii și măsurători disponibile. Nu distribuiți date personale sensibile prin linkuri publice."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "Uși din lemn de interior și exterior, la comandă",
+            "Uși simple, duble, batante și glisante unde sunt potrivite",
+            "Tocuri, pervazuri, praguri și elemente ornamentale",
+            "Uși cu panouri, plane sau cu vitraj adecvat",
+            "Balamale, încuietori, mânere și reglaje",
+            "Reparații parțiale, înlocuiri și refinisare"
+          ],
+          "material": "Lemnul masiv, cel stratificat, furnirul și plăcile adecvate au aspect și stabilitate diferite. Finisajul, geamul și feroneria trebuie alese în funcție de utilizare și expunere.",
+          "measure": "Furnizați lățimea și înălțimea golului, grosimea peretelui, sensul de deschidere, spațiul deasupra pardoselii și starea tocului. Verificați mobilierul vecin și trecerile.",
+          "issues": "Frecarea, lăsarea ușii, marginile umflate, tocurile fisurate și broaștele defecte necesită diagnosticare. Uneori reglajul este preferabil înlocuirii complete.",
+          "install": "Verificăm punctele de fixare, pragul, balamalele, încuietoarea și finisajele vecine. La predare testăm funcționarea sigură și lină.",
+          "care": "Curățați cu produse compatibile, verificați periodic balamalele, șuruburile, muchiile și finisajul; ușile exterioare necesită întreținere în funcție de vreme.",
+          "safety": "Nu pretindem rezistență la foc sau securitate certificată fără produse documentate, componente compatibile și instalare corespunzătoare.",
+          "quote": "Trimiteți dimensiunile golului, fotografii din ambele părți și ale tocului, sensul de deschidere, modelul, cantitatea și tipul încuietorii."
+        },
+        "timberWindows": {
+          "scope": [
+            "Rame și cercevele din lemn la comandă",
+            "Obloane și jaluzele tradiționale din lemn",
+            "Înlocuirea și repararea locală a pieselor",
+            "Balamale, închizători, garnituri și reglaje",
+            "Recondiționarea straturilor protectoare",
+            "Restaurarea ramelor existente dacă starea permite"
+          ],
+          "material": "Specia de lemn și finisajul exterior se aleg în funcție de soare, ploaie și aerul sărat. Mișcarea lemnului din cauza umidității trebuie luată în calcul.",
+          "measure": "Sunt necesare dimensiunile golului, configurația cercevelelor, grosimea ramei, geamul, sensul deschiderii, glaful și drenajul. Inspectăm interiorul și exteriorul.",
+          "issues": "Putrezirea îmbinărilor, cercevelele blocate, vopseaua exfoliată, garniturile uzate și urmele de apă cer evaluare; deteriorarea extinsă poate necesita înlocuire.",
+          "install": "Verificăm drenajul, etanșarea, rosturile de mișcare, fixările și aerisirea. Performanța depinde de ansamblul ferestrei montate.",
+          "care": "Curățați drenajul, verificați garniturile și refaceți finisajul de protecție, mai ales în zonele de coastă.",
+          "safety": "Nu promitem performanțe termice, acustice, la vânt sau de securitate fără documente pentru produs și vitraj.",
+          "quote": "Trimiteți fotografii din interior și exterior, dimensiuni, numărul de cercevele, cerințele de vitraj, locul defectului și finisajul dorit."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "Corpuri de bază, suspendate și înalte de bucătărie",
+            "Dulapuri utilitare și pentru chiuvetă",
+            "Fronturi, sertare, balamale și glisiere",
+            "Sisteme extractibile și soluții de colț",
+            "Corpuri pentru electrocasnice, cu ventilație",
+            "Refacerea și adaptarea dulapurilor existente"
+          ],
+          "material": "Melamina, placajul, MDF-ul rezistent la umiditate și lemnul masiv se aleg după umezeală, greutate și finisaj. Feroneria trebuie dimensionată pentru sarcina reală.",
+          "measure": "Trimiteți planul încăperii, înălțimea, lungimea mobilierului, modelele electrocasnicelor, poziția apei și a electricității și spațiul de deschidere a ușilor.",
+          "issues": "Corpurile umflate sub chiuvetă, canturile desprinse, ușile strâmbe și glisierele defecte impun verificarea carcasei înainte de înlocuirea fronturilor.",
+          "install": "Coordonăm lucrările cu instalatorul și electricianul dacă este necesar. Corpurile suspendate se fixează în suport potrivit, păstrând accesul și ventilația.",
+          "care": "Ștergeți imediat apa, protejați canturile și întrețineți mecanismele conform specificațiilor. Reglați balamalele când fronturile se deplasează.",
+          "safety": "Corpurile grele necesită evaluarea peretelui și a ancorelor. Lucrările la gaz, curent și țevi sunt atribuții ale specialiștilor respectivi.",
+          "quote": "Trimiteți schiță, dimensiuni, modele de electrocasnice, fronturi preferate, detalii de blat și fotografii."
+        },
+        "wardrobes": {
+          "scope": [
+            "Dulapuri încastrate și independente la dimensiune",
+            "Uși batante sau glisante",
+            "Dressinguri și bare pentru haine",
+            "Sertare, rafturi și organizatoare",
+            "Depozitare sub scări și în nișe",
+            "Reconfigurare, înlocuire uși și reparații glisiere"
+          ],
+          "material": "Melamina, MDF-ul, placajul și lemnul masiv diferă prin rezistența la umiditate și opțiunile de finisare. Greutatea ușii și calitatea șinelor influențează durata de utilizare.",
+          "measure": "Măsurați lățimea între pereți, înălțimea, adâncimea și accesul pentru montaj. Notați plintele, prizele, podeaua denivelată și cerințele de aerisire.",
+          "issues": "Ușile care se blochează, rafturile încovoiate, șinele uzate și umezeala interioară pot indica probleme de feronerie, suprasarcină sau perete.",
+          "install": "Verificăm punctele de ancorare și posibilitatea transportului pieselor mari. Proiectăm ținând cont de neregularitățile pereților și pardoselii.",
+          "care": "Curățați șinele, evitați supraîncărcarea, asigurați aerisirea și rezolvați umiditatea înainte de instalare.",
+          "safety": "Dulapurile înalte pot necesita ancorare anti-răsturnare. Nu se acoperă igrasia activă sau instalațiile fără verificare.",
+          "quote": "Trimiteți schița camerei, dimensiuni, tipul ușilor, numărul de sertare și zone de agățare, fotografii cu obstacole."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "Biblioteci și rafturi făcute la comandă",
+            "Birouri și spații de lucru integrate",
+            "Corpuri TV și vitrine",
+            "Recepții și mobilier comercial",
+            "Mobilier pentru nișe și sub ferestre",
+            "Reparația și adaptarea mobilierului fix"
+          ],
+          "material": "Grosimea plăcii, canturile, finisajul și prinderile depind de deschidere și sarcină. Placajul, MDF-ul, lemnul masiv și furnirul au rigiditate și aspect diferite.",
+          "measure": "Indicați lățimea, înălțimea, adâncimea, greutatea estimată, dimensiunile echipamentelor, prizele și cablurile. Măsurați peretele în mai multe puncte.",
+          "issues": "Rafturile încovoiate, consolele slăbite și mobilierul instabil cer evaluarea încărcării și a peretelui, nu doar îmbunătățiri cosmetice.",
+          "install": "Alegem ancore potrivite suportului și păstrăm accesul la cabluri, evacuarea căldurii și posibilitatea întreținerii.",
+          "care": "Distribuiți greutatea pe suprafețele sprijinite, curățați conform finisajului și verificați periodic fixările.",
+          "safety": "Mobilierul greu prins pe perete impune evaluarea suportului și a ancorelor; capacitatea portantă nu se deduce din dimensiuni.",
+          "quote": "Trimiteți dimensiuni, încărcări estimate, imagini ale peretelui, poziția prizelor și exemple de design."
+        },
+        "panelling": {
+          "scope": [
+            "Pereți accent cu lamele din lemn",
+            "Lambriuri și profile decorative",
+            "Plinte, pervazuri și ornamente",
+            "Placări cu acces la zone tehnice",
+            "Panouri furniruite și finisaje vopsite",
+            "Restaurarea profilelor din lemn deteriorate"
+          ],
+          "material": "Lemnul masiv, furnirul, placajul și MDF-ul se aleg după umiditate, rezistență și finisare. Lemnul autentic este diferit de serviciile PVC, WPC sau HPL.",
+          "measure": "Măsurați pereții, colțurile, deschiderile, prizele și iluminatul. Verificați umiditatea, planeitatea și aderarea finisajului vechi înainte de montaj.",
+          "issues": "Panourile desprinse, rosturile deschise, muchiile umflate, mucegaiul și fisurile pot arăta infiltrații sau prinderi nepotrivite. Cauza se rezolvă înainte de placare.",
+          "install": "Planificăm rosturi de dilatare, fixări adecvate și acces la prize și trape de inspecție. Nu se ascund instalațiile care cer service.",
+          "care": "Curățați în funcție de lac sau vopsea, evitați umezeala prelungită și refaceți protecția la uzură.",
+          "safety": "Cerințele de reacție la foc sau acustice necesită sisteme testate. Nu acoperim pereți umezi fără remediere.",
+          "quote": "Trimiteți fotografii și dimensiuni ale pereților, prize, model, nuanță de lemn și detalii despre umiditate."
+        },
+        "stairs": {
+          "scope": [
+            "Trepte, contratrepte și placări din lemn",
+            "Reparații ale scârțâitului și uzurii",
+            "Mâini curente, stâlpi și ornamente",
+            "Elemente de balustradă din lemn",
+            "Șlefuire și recondiționarea finisajului",
+            "Înlocuirea componentelor deteriorate când este posibil"
+          ],
+          "material": "Esențele tari, lemnul stratificat și finisajele cu aderență adecvată se aleg după uzură, sarcină și întreținere. Placarea decorativă diferă de realizarea unei structuri portante.",
+          "measure": "Notați adâncimea treptelor, înălțimea contratreptelor, lățimea scării, podestele, înălțimea balustradei și fixările. Modificările structurale cer expertiză.",
+          "issues": "Treptele libere, crăpăturile, scârțâitul, muchiile alunecoase și mâinile curente instabile creează risc de cădere; vopsirea nu rezolvă problemele de structură.",
+          "install": "Modificările geometriei, balustradelor sau suportului se evaluează profesional; se planifică accesul sigur pe durata lucrărilor.",
+          "care": "Păstrați treptele curate și uscate, verificați fixările și refaceți finisajele potrivite când este nevoie.",
+          "safety": "Scările și balustradele sunt elemente esențiale de siguranță; sarcinile, dimensiunile și autorizațiile se verifică potrivit normelor aplicabile în Cipru.",
+          "quote": "Trimiteți imagini cu întreaga scară, defectele de aproape, dimensiuni, finisajul dorit și eventualele modificări structurale."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "Decking și terase din lemn",
+            "Pergole și ecrane de grădină",
+            "Porți, garduri și panouri de intimitate",
+            "Bănci, depozitare și jardiniere",
+            "Recondiționarea lemnului expus la vreme",
+            "Construcții exterioare personalizate"
+          ],
+          "material": "Lemnul tratat, esențele tari, lemnul termotratat și compozitele se aleg în funcție de soare, umiditate și întreținere. Fixările trebuie să reziste la coroziune.",
+          "measure": "Indicați lungimea, lățimea, înălțimea, nivelul terenului, drenajul, vântul, soarele, limitele parcelei și destinația. Pot fi necesare fundații sau autorizații.",
+          "issues": "Scândurile deformate, așchiile, stratul de protecție decolorat, putrezirea și prinderile slăbite impun controlul structurii de sub ele.",
+          "install": "Planificăm ventilația, distanța față de solul umed, scurgerea apei, suporturile și ancorarea la vânt și sarcină.",
+          "care": "Inspectați protecția și piesele metalice după expunerea la soare și sare; îndepărtați resturile din zonele de drenaj.",
+          "safety": "Deckingul ridicat, pergolele și modificările de hotar pot necesita inginer și aprobări. Nu promitem absența întreținerii.",
+          "quote": "Trimiteți dimensiunile terenului, fotografii, expunerea la vânt, materialul, utilizarea și orice plan."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "Reglaje de uși și balamale",
+            "Reparații ale fronturilor și glisierelor sertarelor",
+            "Reparații ale șinelor și rafturilor de dulap",
+            "Înlocuirea porțiunilor de lemn deteriorate",
+            "Stabilizarea mobilierului și modificări minore",
+            "Restaurarea pieselor existente când este potrivit"
+          ],
+          "material": "Verificăm dacă materialul și feroneria actuală pot fi păstrate. Piesa de schimb trebuie să corespundă ca grosime, fixare și finisaj unde este posibil.",
+          "measure": "Trimiteți fotografii de aproape și de ansamblu, dimensiuni, material, tip de balama și acces. Explicați cum a apărut defectul.",
+          "issues": "Balamalele slăbite, marginile umflate, sertarele blocate și îmbinările crăpate au cauze diferite. Verificăm umezeala și suportul înainte de înlocuire.",
+          "install": "Optăm pentru reglaj, piesă nouă, consolidare sau reconstrucție după starea obiectului și posibilitățile de acces.",
+          "care": "Mențineți șinele curate, evitați suprasarcina și remediați prompt scurgerile sau umiditatea.",
+          "safety": "Intervențiile mici sau urgente respectă condițiile contractului existent de întreținere. Nu se promit vizite urgente individuale sau prețuri fixe.",
+          "quote": "Trimiteți fotografii detaliate și generale, materialul, dimensiunile, istoricul problemei, zona și existența unui contract de întreținere."
+        },
+        "otherCustom": {
+          "scope": [
+            "Mobilier neobișnuit și piese unice",
+            "Compartimentări, vitrine și tâmplărie specială",
+            "Adaptări ale mobilierului existent",
+            "Depozitare pentru spații arhitecturale dificile",
+            "Proiecte care combină mai multe categorii",
+            "Evaluarea fezabilității unor concepte aparte"
+          ],
+          "material": "Materialul, finisajul și prinderea se aleg după funcție, rezistență, umiditate și buget. Uneori sunt necesare mostre sau prototipuri înainte de aprobare.",
+          "measure": "Furnizați schițe cu lățimea, înălțimea, adâncimea, spațiile de trecere, utilizarea, greutatea și fotografii. Marcați dimensiunile încă neconfirmate.",
+          "issues": "Proiectele speciale pot avea acces dificil, suporturi slabe sau materiale nepotrivite. Verificăm montajul, utilizarea și reparabilitatea înainte de angajament.",
+          "install": "Evaluăm transportul, accesul, ordinea asamblării, ancorarea și contactul cu instalațiile; colaborăm cu alte specialități când este necesar.",
+          "care": "Instrucțiunile de întreținere depind de materialul și finisajul agreat; nu formulăm promisiuni de durabilitate fără bază.",
+          "safety": "Fezabilitatea se stabilește pentru fiecare proiect. Nu orice idee poate fi construită; siguranța, accesibilitatea și aprobările au prioritate.",
+          "quote": "Descrieți scopul, dimensiunile, aspectul, materialele, schițele și locul instalării."
+        }
+      }
+    }
+  }
+}

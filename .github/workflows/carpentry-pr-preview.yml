@@ -1,0 +1,61 @@
+name: INONDA Carpentry 66-page review build
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'build/carpentry*'
+      - 'build/gen.py'
+      - 'tests/carpentry-org.browser.mjs'
+      - '.github/workflows/carpentry-pr-preview.yml'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Build, translate, validate SEO and package preview
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile Python source
+        run: python3 -m compileall -q build
+      - name: Validate original six-language source files
+        run: python3 build/check_content.py
+      - name: Generate all website pages from source
+        run: python3 build/gen.py
+      - name: Validate 66 new localized Carpentry pages and old page links
+        run: python3 build/check_carpentry.py
+      - name: Run existing Python unit tests, if any
+        run: |
+          if find tests -name 'test_*.py' -print -quit | grep -q .; then python3 -m unittest discover -s tests -p 'test_*.py'; else echo 'No legacy Python unit tests; specialized Carpentry test passed.'; fi
+      - name: Install temporary browser test tools
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Run desktop, mobile and Hebrew RTL preview checks
+        run: |
+          python3 -m http.server 8899 --directory public > /tmp/inonda-carpentry-preview.log 2>&1 &
+          node tests/carpentry-org.browser.mjs
+      - name: Upload preview screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: inonda-org-carpentry-preview-screenshots
+          path: carpentry-screenshots/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Upload reviewable, unmodified site build (no publication)
+        uses: actions/upload-artifact@v4
+        with:
+          name: inonda-org-carpentry-review-66-pages
+          path: |
+            public/el/carpentry/
+            public/en/carpentry/
+            public/ru/carpentry/
+            public/uk/carpentry/
+            public/he/carpentry/
+            public/ro/carpentry/
+            public/assets/carpentry.css
+          if-no-files-found: error
+          retention-days: 14

@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.join(ROOT, 'tools'))
 from inonda_network import destinations as network_destinations, journey as network_journey, COPY as NETWORK_COPY, enhance_html, CSS as NETWORK_CSS, javascript as network_javascript, chat_javascript
 from inonda_living import living_hero, living_assets
 import a11y_copy as A11Y
+import carpentry_pages as CARPENTRY
 PUB = os.path.join(ROOT, "public")
 SRC_IMG = os.path.join(ROOT, "build", "source-images")
 BASE = "https://www.inonda.org"
@@ -57,7 +58,7 @@ SERVICES = [
 SVC = {s[0]: s for s in SERVICES}
 # Image key None: no company photo shows this exact service yet, so the drawn icon is used.
 # Owner rule (12 November 2026): a photo must show the service named beside it, or none at all.
-PAGES = ["", "services", "how-we-work", "service-areas", "about", "faq", "contact", "privacy-policy", "terms-of-service", "accessibility"]
+PAGES = ["", "services", "how-we-work", "service-areas", "about", "faq", "contact", "privacy-policy", "terms-of-service", "accessibility", "carpentry"]
 
 # ---------------------------------------------------------------- icons (24px stroke)
 I = {
@@ -258,7 +259,10 @@ def header(T, page, up, langs=None):
 def footer(T, up):
     u = T["ui"]; S = T["svc"]
     def col(g):
-        return "".join(f'<a href="{up}{s[0]}/">{e(S[s[0]]["name"])}</a>' for s in SERVICES if s[1] == g)
+        rows = "".join(f'<a href="{up}{s[0]}/">{e(S[s[0]]["name"])}</a>' for s in SERVICES if s[1] == g)
+        if g == "transformation":
+            rows += f'<a href="{up}carpentry/">{e(CARPENTRY.DETAILS[T["lang"]]["ui"]["short"])}</a>'
+        return rows
     return f'''</main>
 <footer class="site"><div class="wrap">
 <div class="fgrid4">
@@ -495,6 +499,8 @@ def page_service(T, slug):
     if len(rel) < 3:
         rel += [x[0] for x in SERVICES if x[0] != slug and x[0] not in rel][: 3 - len(rel)]
     out.append(f'<section class="stone tight"><div class="wrap"><div class="sec-head rv"><h2>{e(u["related"])}</h2></div><div class="grid g3">{"".join(svc_card(T, r, up) for r in rel)}</div></div></section>')
+    if slug == "doors-windows-carpentry":
+        out.append(CARPENTRY.promo(sys.modules[__name__], T, up))
     out.append(cta_band(T, preselect=slug))
     out.append(footer(T, up))
     return "".join(out)
@@ -554,6 +560,7 @@ def page_services(T):
         G = T["groups"][g]
         rows = "".join(svc_detail(T, s[0], up, n % 2 == 1) for n, s in enumerate(x for x in SERVICES if x[1] == g))
         out.append(f'<section class="{"stone" if i % 2 else ""}" id="{g}"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">0{i+1} / 03</p><h2>{e(G["name"])}</h2><p class="lead">{e(G["desc"])}</p></div><div class="svc-details">{rows}</div></div></section>')
+    out.append(CARPENTRY.promo(sys.modules[__name__], T, up))
     out.append(f'<section class="tight"><div class="wrap">{promises(T)}</div></section>')
     out.append(cta_band(T)); out.append(footer(T, up))
     return "".join(out)
@@ -762,7 +769,7 @@ def page_404():
 
 def sitemap():
     rows = []
-    for p in PAGES + [s[0] for s in SERVICES if s[0] not in NOINDEX]:
+    for p in PAGES + [s[0] for s in SERVICES if s[0] not in NOINDEX] + CARPENTRY.routes()[1:]:
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{url(l, p)}"/>' for l in LANGS) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{url("en", p)}"/>'
         pr = "1.0" if p == "" else ("0.9" if p in SVC or p == "services" else ("0.3" if p in ("privacy-policy", "terms-of-service", "accessibility") else "0.7"))
         for l in LANGS:
@@ -786,6 +793,9 @@ def llms():
              "We answer and quote in Greek, English, Russian and Romanian (website also in Ukrainian and Hebrew). Property management services: https://www.inonda.site/", "", "## Services"]
     for s in SERVICES:
         lines.append(f"- [{T['svc'][s[0]]['name']}]({url('en', s[0])}): {T['svc'][s[0]]['short']}")
+    lines.append(f"- [Custom carpentry]({CARPENTRY.url('en')}): Individual written quotations; ten detailed woodwork categories.")
+    for category in CARPENTRY.CATEGORIES:
+        lines.append(f"- [{category['label']['en']}]({CARPENTRY.url('en',category['id'])}): {category['description']['en']}")
     lines += ["", "## Company", f"- [How we work]({url('en', 'how-we-work')})", f"- [Service areas]({url('en', 'service-areas')})", f"- [About]({url('en', 'about')})", f"- [FAQ]({url('en', 'faq')})", f"- [Contact]({url('en', 'contact')})"]
     return "\n".join(lines) + "\n"
 
@@ -807,6 +817,8 @@ def main():
     write('assets/inonda-network.js', network_javascript())
     write('assets/inonda-chat.css', open(os.path.join(ROOT, 'tools', 'inonda_chat.css'), encoding='utf-8').read())
     write('assets/inonda-chat.js', chat_javascript())
+    CARPENTRY.validate()
+    write('assets/carpentry.css', CARPENTRY.stylesheet())
     prepare_images()
     only = [a for a in sys.argv[1:] if a in LANGS]
     for l in LANGS:
@@ -840,6 +852,9 @@ def main():
         n += 9
         for s in SERVICES:
             write(f"{l}/{s[0]}/index.html", page_service(T, s[0])); n += 1
+        write(f"{l}/carpentry/index.html", CARPENTRY.page(T, sys.modules[__name__])); n += 1
+        for category in CARPENTRY.CATEGORIES:
+            write(f"{l}/carpentry/{CARPENTRY.SLUGS[category['id']]}/index.html", CARPENTRY.page(T, sys.modules[__name__], category['id'])); n += 1
         if l in LOCAL:
             for a in LOCAL[l]["areas"]:
                 write(f"{l}/areas/{a}/index.html", page_area(T, a)); n += 1

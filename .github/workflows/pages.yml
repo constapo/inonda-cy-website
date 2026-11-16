@@ -18,6 +18,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Regenerate and validate all localized service pages
+        run: |
+          python3 build/check_content.py
+          python3 build/gen.py
+          python3 build/check_carpentry.py
       - run: touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
