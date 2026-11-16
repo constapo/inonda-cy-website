@@ -39,6 +39,8 @@ for lang in C.LANGUAGES:
         assert '/assets/carpentry.css?' in content,expected
         assert 'https://www.inonda.homes/?lang='+lang+'#bp-carpentry-section' in content,expected
         assert 'wa.me/35794091616?text=' in content,expected
+        # The existing form must label the requested Carpentry service without sending anything.
+        assert 'name="Carpentry category"' in content,expected
         assert '#quote' in content,expected
         assert not re.search(r'wasmer(?:\.io|\.app)?|hosted by|powered by (?:github|netlify|vercel)',content,re.I),expected
         assert 'HE 490415' in content,expected
