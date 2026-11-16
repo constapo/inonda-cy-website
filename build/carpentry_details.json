@@ -1,0 +1,232 @@
+{
+  "languages": {
+    "en": {
+      "ui": {
+        "title": "Carpentry & Custom Woodwork in Cyprus",
+        "short": "Carpentry & Custom Woodwork",
+        "intro": "Tailored joinery, repair and installation for homes, rental properties and commercial premises across Cyprus. Each project is measured and assessed before a written offer is agreed; the available scope depends on feasibility and the site conditions.",
+        "browse": "Explore our ten carpentry specialties",
+        "materialsTitle": "Materials, fittings and finishes",
+        "materialsIntro": "The right product depends on location and use: solid timber offers a natural grain, engineered boards can provide dimensional consistency, plywood combines layered strength, and moisture-resistant boards require appropriate specified conditions. Confirm coatings, fittings and substrate compatibility for each project. Veneers, stains, lacquers and paints require suitable preparation and maintenance.",
+        "scope": "What we can make, fit or restore",
+        "measurement": "Planning and measurements",
+        "materials": "Materials and design choices",
+        "issues": "Typical problems and assessment",
+        "installation": "Preparation and installation",
+        "care": "Finishing and aftercare",
+        "safety": "Safety and feasibility",
+        "quote": "Tailored written quotation",
+        "quoteNote": "Price on Request — Custom Quotation. Bespoke carpentry has no universal price list. Dimensions, design, material grade, fittings, fabrication, finishing, site access and installation scope are assessed together. The final written offer follows measurements and an inspection where needed; work starts only after approval.",
+        "process": "How your project proceeds",
+        "steps": [
+          "Describe the work and intended use.",
+          "Send approximate dimensions and reference photographs or drawings.",
+          "Discuss materials, finish and hardware preferences.",
+          "Arrange an inspection and confirm actual site measurements where needed.",
+          "Agree scope, materials, fittings and installation details.",
+          "Receive a tailored written quotation.",
+          "Approve the written scope before work begins.",
+          "Complete the agreed work, installation and handover."
+        ],
+        "details": "Detailed carpentry services",
+        "serviceTitle": "Specialist carpenter services",
+        "estimator": "Build a Custom Carpentry Request",
+        "estimatorNote": "Opens the corresponding Carpentry & Custom Woodwork area of the INONDA estimator. Bespoke work requires a personal quotation; the planner does not give an instant fixed price.",
+        "quoteButton": "Request a Custom Carpentry Quote",
+        "contact": "Book an Inspection",
+        "related": "Related INONDA services",
+        "faq": "Common questions",
+        "questions": [
+          "What work is included in this category?",
+          "What materials and finish should I consider?",
+          "Which dimensions and details should I send?",
+          "Can existing woodwork be repaired or modified?"
+        ],
+        "requestDetails": "For an accurate proposal send the location, project description, approximate dimensions in cm, quantities, desired timber or board type, finish, fittings and photographs or reference drawings. We will confirm what needs an on-site inspection.",
+        "repairRule": "Small or urgent repair callouts remain subject to the company's existing maintenance-contract conditions. Do not assume an unrestricted one-off emergency repair service.",
+        "compliance": "Structural, fire-rated, security-rated and regulated work is subject to appropriate specifications, safety checks and any applicable approvals. No certification or performance guarantee is implied without verification.",
+        "workTypes": "Typical scope: new fabrication, suitable replacement, repair, adjustment and restoration according to project requirements.",
+        "source": "View our complete bespoke carpentry catalogue",
+        "return": "Back to all carpentry services",
+        "more": "Explore service details",
+        "materialLabel": "Available material options",
+        "notFixed": "No fixed public price list",
+        "scopeFoot": "Feasibility, procurement, installation and suitability are confirmed in the individual written offer.",
+        "siteTitle": "Site-specific planning",
+        "requestPhotos": "Please share photographs and accurate measurements where available. Do not send sensitive personal information in public links."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "Made-to-measure interior and exterior timber door leaves",
+            "Single, double, hinged, sliding and suitable pocket-door layouts",
+            "Door frames, architraves, thresholds, stops and trims",
+            "Panelled, flush and suitable glazed timber door designs",
+            "Replacement hinges, locks, latches, handles and adjustment",
+            "Partial frame repairs, refinishing and restoration"
+          ],
+          "material": "Choose solid timber, engineered constructions or an appropriate veneered or board-based design according to expected use and exposure. Finish, grain, panel construction, glazing and hardware influence the appearance, stability and maintenance.",
+          "measure": "Record clear structural opening width and height, wall thickness, handing and swing direction, floor clearance and existing frame condition. Note adjacent cabinets, architraves and accessible routes before agreeing a bespoke size.",
+          "issues": "Look for a rubbing or sagging leaf, uneven gaps, swollen lower edges, cracked frames, noisy hinges and unreliable latches. A targeted adjustment or component repair may be more appropriate than complete replacement.",
+          "install": "Inspect wall fixing points, thresholds, hinge capacity and surrounding finishes. Confirm lockset specification and installation clearances before cutting or fitting; protect floors and check smooth operation at handover.",
+          "care": "Clean with suitable non-abrasive methods; inspect exposed edges, hinges, screws and protective finishes periodically. Exterior doors need finish maintenance according to weather and manufacturer instructions.",
+          "safety": "Fire- or security-rated performance is not implied for ordinary joinery. A rated assembly must use verified products, tested components and compatible installation specifications.",
+          "quote": "Provide opening dimensions, photos of both faces and the frame, preferred swing and design, quantity, finish and any existing lock or hardware model."
+        },
+        "timberWindows": {
+          "scope": [
+            "Custom timber window frames and casement components",
+            "Traditional wooden shutters, louvres and hinges",
+            "Replacement sash components and localised timber repairs",
+            "Weather-seal, latch, catch and opening-hardware adjustments",
+            "Refinishing, protective coatings and weatherproofing assessment",
+            "Restoration of suitable existing wooden frames"
+          ],
+          "material": "Select timber and external coating systems according to weather exposure, coastal conditions, glazing arrangement and maintenance capacity. Moisture movement and coating compatibility must be considered before fabrication or repair.",
+          "measure": "Provide aperture measurements, sash configuration, depth, glazing specification, opening direction, sill and drainage details. Inspect the frame from inside and outside for moisture and concealed damage.",
+          "issues": "Rot at joints, sticking sashes, peeling paint, failed seals, loose shutter hinges and water staining require diagnosis. Where deterioration is extensive, replacement may be safer and more durable than patch repair.",
+          "install": "Check drainage, flashing, movement gaps, sealing interfaces and fixings. Weather resistance, ventilation and wind-load suitability depend on the entire installed assembly rather than appearance alone.",
+          "care": "Maintain drainage outlets, inspect sealant and coatings, and repair early water ingress. Coastal exposure can increase maintenance needs for timber coatings and metal fittings.",
+          "safety": "Do not promise thermal, acoustic, wind or security ratings without documented product and glazing evidence. Elevated or structural openings may require specialist installation and permissions.",
+          "quote": "Share inside/outside photographs, rough opening size, number of shutters or sashes, glazing needs, damage location and preferred finish."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "Made-to-measure base, wall and tall kitchen units",
+            "Utility-room cabinets, sink bases and pantry storage",
+            "Replacement doors, drawer fronts, hinges and drawer runners",
+            "Pull-out units, corner storage and suitable soft-close mechanisms",
+            "Appliance housings and accessible service compartments",
+            "Refurbishment and adaptation of existing cabinetry"
+          ],
+          "material": "Compare melamine-faced panels, plywood, moisture-resistant MDF and solid timber according to moisture risk, desired finish, edge durability and weight. Choose drawer slides and hinges for the actual load and frequency of use.",
+          "measure": "Provide room dimensions, ceiling height, cabinet runs, appliance models, plumbing and electrical locations, door-opening clearances and skirting or uneven-wall details. Appliance ventilation and service access must remain possible.",
+          "issues": "Common problems include water-damaged sink bases, delaminated edges, sagging shelves, distorted doors, damaged hinges and failing drawer runners. Inspect the carcass before recommending new fronts or replacement units.",
+          "install": "Coordinate with plumbing, electrical and countertop installation where required. Secure wall units to appropriate structural substrates, maintain appliance clearances and check alignment and edge protection.",
+          "care": "Wipe spills promptly, protect vulnerable board edges from standing water and clean hardware according to its specification. Adjust hinges when movement causes door misalignment.",
+          "safety": "Heavy suspended units need appropriate wall assessment and fixing. Electrical, gas or plumbing changes are separate regulated trades and must not be presented as carpentry-only work.",
+          "quote": "Provide a layout sketch, linear lengths, cabinet heights, appliance specifications, chosen fronts, worktop coordination and photographs."
+        },
+        "wardrobes": {
+          "scope": [
+            "Built-in and freestanding made-to-measure wardrobes",
+            "Hinged-door, sliding-door and walk-in arrangements",
+            "Hanging rails, drawers, shelves and accessory compartments",
+            "Under-stair, linen and awkward-space storage",
+            "Wardrobe door replacement and interior reconfiguration",
+            "Repairs to tracks, hinges, runners and damaged panels"
+          ],
+          "material": "Choose melamine, MDF, plywood or suitable solid timber based on finish, budget, structural support and humidity. Sliding-track quality, door weight and accessible cleaning clearances affect long-term use.",
+          "measure": "Record wall-to-wall width, ceiling height, depth and room access. Identify skirting, sockets, air-conditioning routes, uneven floors, door swing and ventilation requirements before fabrication.",
+          "issues": "Dragging sliders, uneven doors, bowed shelves, damaged tracks, poor airflow and musty interiors may indicate hardware faults, overloaded storage or moisture conditions.",
+          "install": "Confirm anchoring points and clear assembly routes through corridors and stairs. Allow for wall and floor deviations rather than assuming perfect right angles.",
+          "care": "Keep tracks free from dust, avoid excessive shelf loading and ventilate storage zones. Inspect hinges and runners and address wall moisture before enclosing it with cabinetry.",
+          "safety": "Tall or freestanding units may require anti-tip fixing, especially where children use the space. Never conceal active dampness or building services without inspection.",
+          "quote": "Send a room sketch, dimensions, door configuration, number of drawers and hanging zones, photos of obstructions and preferred finish."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "Custom bookcases, shelves and library walls",
+            "Built-in desks and home-office work surfaces",
+            "Television, media and display units",
+            "Alcove storage, reception counters and office cabinetry",
+            "Window seats and multifunctional storage furniture",
+            "Repair or modification of fitted furniture"
+          ],
+          "material": "Material thickness, edge treatment, surface finish and fixing method must suit the expected load and span. Plywood, MDF, solid timber and veneer differ in appearance, stiffness and finishing requirements.",
+          "measure": "Specify overall available width, height and depth, load estimates, screen or equipment dimensions, socket locations, cable routes and access for assembly. Measure walls at more than one level.",
+          "issues": "Bowed shelves, weak brackets, loose joints, damaged edges and unstable furniture require assessment of load transfer and substrate. Simply replacing a decorative finish may not solve a structural issue.",
+          "install": "Check the supporting wall type and select suitable anchors and brackets. Plan for safe cable routing, heat dissipation from electronics, corner clearance and reachable maintenance panels.",
+          "care": "Follow finish-specific cleaning guidance, distribute heavy loads over supported spans and inspect wall fixings periodically. Avoid trapping heat or moisture inside closed media compartments.",
+          "safety": "Wall-mounted heavy furniture and shelves require documented assessment of substrate and fixing suitability; loads cannot be guaranteed from dimensions alone.",
+          "quote": "Provide intended load and items to be stored, dimensioned sketches, reference styles, wall material if known, socket positions and photos."
+        },
+        "panelling": {
+          "scope": [
+            "Real-timber feature walls and slat arrangements",
+            "Wainscoting, battens and decorative mouldings",
+            "Skirting boards, architraves and trim repairs",
+            "Timber lining and suitable concealed-access panels",
+            "Veneered and appropriately finished wood panels",
+            "Restoration and replacement of damaged decorative profiles"
+          ],
+          "material": "Use suitable solid timber, veneer, plywood or MDF based on substrate, expected humidity, impact risk and finish. True timber products differ from the site's separate PVC, WPC and HPL panel services.",
+          "measure": "Measure wall width and height, corners, openings, sockets and lighting locations. Check substrate flatness, dampness and existing paint or plaster adhesion before setting panel layout.",
+          "issues": "Loose boards, visible gaps, swollen edges, mould, cracking and uneven joints may reflect moisture or unsuitable fastening. Treat moisture sources before enclosing a wall.",
+          "install": "Plan battens and expansion gaps, verify fixing positions and coordinate electrical access. Panels must not cover inspection points or introduce unsafe clearances around heat sources.",
+          "care": "Dust or wipe according to the chosen finish and avoid persistent moisture. Refinish exposed timber if wear or sunlight degrades the coating.",
+          "safety": "Confirm fire-performance requirements for the occupancy and placement; do not claim acoustic or fire ratings without tested assemblies. Never conceal damp walls without remediation.",
+          "quote": "Send wall photos, full dimensions, outlet and doorway positions, reference patterns, desired wood tone and any known moisture issues."
+        },
+        "stairs": {
+          "scope": [
+            "Timber treads, risers and stair cladding",
+            "Repairs to squeaking or worn stair components",
+            "Custom timber handrails and newel posts",
+            "Timber balustrade components and decorative profiles",
+            "Refinishing and replacing suitable nonstructural woodwork",
+            "Inspection-led replacement of damaged stair sections"
+          ],
+          "material": "Choose suitable hardwood, engineered timber and compatible finishes with wear, grip, structural support and maintenance in mind. Visible surface upgrades are different from building a new load-bearing staircase.",
+          "measure": "Document tread depth, riser height, flight width, landings, headroom, balustrade height and fixing interfaces. Precise structural measurements and any existing defects need professional assessment.",
+          "issues": "Loose steps, cracked treads, squeaks, worn nosings and moving rails can pose a fall hazard. A cosmetic finish cannot resolve inadequate structure or fastening.",
+          "install": "Coordinate any work affecting stair geometry, guarding, anchors and building access. Temporary protection and safe continued access must be agreed before removal or refinishing.",
+          "care": "Keep treads clean and dry, renew compatible finishes as needed and inspect fixings and rail rigidity. Worn or slippery surfaces should be addressed promptly.",
+          "safety": "Stairs, handrails and balustrades are safety-critical. Applicable Cyprus requirements, guard dimensions, loading and approvals must be verified by competent professionals before structural work.",
+          "quote": "Supply photos of the complete flight and defects, tread/riser measurements, intended finish and whether a structural change is proposed."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "Timber decking and terrace finishes",
+            "Pergolas, garden screens and suitable shade structures",
+            "Wooden gates, fencing and privacy panels",
+            "Garden benches, storage and planters",
+            "Repair or restoration of weather-exposed timber",
+            "Special outdoor timber details and partitions"
+          ],
+          "material": "Choose treated timber, durable hardwood, thermally modified wood or suitable composite materials with exposure and manufacturer instructions in mind. Exterior coatings and corrosion-resistant fixings are important in coastal Cyprus.",
+          "measure": "Provide plan dimensions, ground levels, site photographs, drainage routes, exposure to wind and sun, nearby boundaries and intended use. Confirm whether structures need foundations or planning review.",
+          "issues": "Warped boards, splinters, fading finishes, loose fixings, rot and poor drainage are frequent exterior concerns. Inspect substructure and anchoring before replacing only the top boards.",
+          "install": "Plan ground clearance, ventilation, drainage slopes, foundations and anchoring appropriate to loading and wind. Contact with standing water should be avoided where product specifications require it.",
+          "care": "Inspect and maintain surface finishes and hardware at intervals appropriate to local exposure, especially sun and salt. Clear debris and drainage gaps to reduce water retention.",
+          "safety": "Structural pergolas, elevated decks, boundary changes and wind-exposed constructions may require engineering checks or permits. No maintenance-free service life is implied.",
+          "quote": "Send overall footprint, height, exposure, ground photos, preferred material, proposed use, boundary details and any existing drawings."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "Door hinge and alignment adjustments",
+            "Cabinet hinge, drawer-slide and handle repairs",
+            "Wardrobe track, shelf and panel repairs",
+            "Replacement of locally damaged timber components",
+            "Furniture stabilisation and minor alteration",
+            "Inspection-led restoration of suitable existing joinery"
+          ],
+          "material": "Assess whether existing wood, board or hardware can be retained. Match replacement material, thickness, finish and fixing pattern where practical; damaged substrates sometimes prevent a durable patch.",
+          "measure": "Provide photographs of the fault, affected item dimensions, existing material, hinge or fitting type and site access. A close-up and a wider context photo both help diagnosis.",
+          "issues": "Loose hinges, swollen panel edges, stuck drawers, cracked joints, sagging shelves and deteriorating finishes have different causes. Diagnose moisture or structural weakness before replacing visible parts.",
+          "install": "Choose between adjustment, targeted replacement, reinforcement and full renewal based on condition. Confirm access and any necessary removal and reassembly.",
+          "care": "Keep sliding tracks clean, avoid excessive loads and treat new leaks or damp conditions promptly. Correct use and maintenance extend the life of repaired components.",
+          "safety": "Minor and urgent repair visits remain subject to existing maintenance-contract conditions. Do not advertise instant emergency callouts or fixed repair prices; complex or safety-critical defects need assessment.",
+          "quote": "Send close-up and full-item photos, fault history, material, approximate dimensions, location and whether the work is covered by an existing maintenance contract."
+        },
+        "otherCustom": {
+          "scope": [
+            "One-off furniture and unusual fitted structures",
+            "Custom partitions, display pieces and joinery",
+            "Adaptations to existing furniture and built-in items",
+            "Storage designed for irregular architectural spaces",
+            "Combined projects spanning multiple carpentry types",
+            "Feasibility assessment for nonstandard timber concepts"
+          ],
+          "material": "Materials and finish must be chosen against intended function, required strength, environmental exposure and budget. Prototype details or samples may be needed before final fabrication is agreed.",
+          "measure": "Provide sketches with width, height, depth and relevant clearances, intended use, expected loads and photographs. Where concepts are exploratory, record assumptions and any dimensions still unconfirmed.",
+          "issues": "Nonstandard projects often involve conflicting clearances, weak existing substrates, inaccessible fixings or unsuitable materials. Review practical assembly, use and long-term service before committing to a design.",
+          "install": "Assess transport, site access, assembly sequence, anchoring, interaction with services and the consequences of later maintenance. Coordinate specialist trades if the concept extends beyond carpentry.",
+          "care": "Provide finish- and material-specific care requirements at handover once the project scope is agreed. Avoid unsupported claims about longevity or maintenance needs.",
+          "safety": "Feasibility is assessed case by case. We do not guarantee every concept can be built; structural, fire, accessibility and regulatory requirements take priority.",
+          "quote": "Describe the intended function, dimensions, desired appearance, material preferences, rough drawings or sample references and the site where the work would be installed."
+        }
+      }
+    }
+  }
+}
