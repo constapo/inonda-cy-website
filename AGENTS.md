@@ -8,7 +8,7 @@
 - Carry only allowlisted service IDs and named areas to the estimator, with no personal data, notes or saved plans. Specialist trade work is not covered by the estimator’s general handyman allowance.
 - Preserve 19% VAT-inclusive estimates on inonda.homes and its commercial pricing. Do not display the commercial adjustment percentage in public copy.
 - Company: HE490415; all-Cyprus coverage. Contact Irina +35794091616, Constantin +35794091613, inonda2026@outlook.com. Call, inspection, then written offer. Do not send messages during testing.
-- Read README.md. The main branch deploys automatically on Wasmer. Inspect current remote main and preserve concurrent edits; use expected_sha leases. Verify the live domain after deployment.
+- Read README.md. Verify the active deployment integration before treating a commit to main as published. Inspect current remote main and preserve concurrent edits; use expected_sha leases. Verify the live domain after deployment.
 - inonda.org pages are generated: keep changes in build/gen.py or the shared tools and ensure future builds preserve the network component.
 
 - The owner explicitly requested original WhatsApp and Viber brand icons. Local original files are whatsapp-official.svg and viber-official.svg; provenance is in BRAND-ASSETS.md. This is an explicit exception to the company-only media rule for communication-channel icons. Do not replace brand symbols with letters or recolour them.
