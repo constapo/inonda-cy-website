@@ -169,7 +169,15 @@ def page(T,g,category=None):
                '<h2>'+g.e(ui['related'])+'</h2><div class="btns">'
                +''.join(link(g,up+slug+'/',T['svc'][slug]['name'],'btn btn-line') for slug in RELATED)
                +'</div></div></section>')
-    out.append(g.cta_band(T,preselect='doors-windows-carpentry'))
+    # Preserve the existing required-description enquiry form while including the
+    # selected Carpentry category in the customer's editable WhatsApp draft.
+    # This is a static hidden field, not an automatically sent enquiry.
+    inquiry=g.cta_band(T,preselect='doors-windows-carpentry')
+    marker=' novalidate>'
+    assert marker in inquiry, 'Existing quote form markup changed'
+    inquiry=inquiry.replace(marker,
+        marker+'<input type="hidden" name="Carpentry category" value="'+g.e(heading)+'">',1)
+    out.append(inquiry)
     out.append(g.footer(T,up))
     return ''.join(out)
 
