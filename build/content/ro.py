@@ -160,11 +160,11 @@ T = {
 },
 "contract-repairs": {
   "name": "Reparații mici cu contract de mentenanță", "short": "Doar pentru clienții cu contract de mentenanță. Lista cu lucruri mărunte: uși, încuietori, rafturi, montaj mobilă, silicon, galerii de perdele, televizor pe perete și altele.",
-  "title": "Reparații mici cu contract de mentenanță | Inonda LTD",
-  "desc": "Doar pentru clienții cu contract de mentenanță. Meșter de încredere în Nicosia și Cipru: reparații uși și încuietori, montaj mobilă, rafturi, televizor pe perete, silicon, galerii de perdele, retușuri de tencuială și vopsea.",
-  "h1": "Reparații mici pentru clienții cu contract de mentenanță",
-  "lead": "Reparațiile mici, reparațiile urgente și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță.",
-  "intro": "Reparațiile mici fac parte din planurile noastre de mentenanță: le grupăm în vizitele programate.",
+  "title": "Reparații pentru proprietăți și lucrări de întreținere | INONDA LTD",
+  "desc": "Reparații de proprietăți în Cipru: uși, ferestre, încuietori, feronerie, etanșare, mobilier și întreținere.",
+  "h1": "Reparații pentru proprietăți și lucrări de întreținere",
+  "lead": "Descrieți reparațiile și îmbunătățirile necesare. Analizăm lucrarea în ansamblu și vă explicăm pașii următori.",
+  "intro": "Analizăm lista reparațiilor și necesarul de întreținere, programăm o inspecție când este cazul și oferim o propunere scrisă.",
   "scope": [
     ("Uși, ferestre și încuietori", ["Reglarea sau rindeluirea ușilor care se blochează ori s-au lăsat", "Înlocuirea încuietorii, clanței și cilindrului", "Mânere de fereastră, balamale și plase de insecte", "Rulouri și chingi"]),
     ("Fixare și montaj", ["Televizor pe perete cu cabluri ascunse", "Rafturi, oglinzi, tablouri și galerii de perdele", "Reglarea ușilor de bucătărie și dulap", "Montaj mobilă"]),
@@ -173,17 +173,17 @@ T = {
   ],
   "notes": ["Proprietari: trimiteți-ne raportul de predare și ofertăm toată lista deodată.", "Fotografiile fiecărui punct pe WhatsApp ne permit să aducem piesele potrivite și să terminăm dintr-o vizită."],
   "faqs": [
-    ("Există un tarif minim?", "Reparațiile mici se execută doar în baza unui contract de mentenanță, în condițiile planului dumneavoastră."),
+    ("Cum evaluați cererile de reparații?", "Trimiteți lista completă a reparațiilor și îmbunătățirilor. Analizăm cerințele și vă explicăm următorii pași."),
     ("Aduceți materiale?", "Aducem elementele de fixare și consumabilele obișnuite. Articolele specifice (mânere, baterii, încuietori) le putem procura noi sau dumneavoastră."),
     ("Puteți lucra când nu sunt acasă?", "Da, cu chei sau acces stabilit dinainte. Vă trimitem fotografii la final."),
   ],
 },
 "emergency-repairs": {
   "name": "Reparații urgente cu contract de mentenanță", "short": "Doar pentru clienții cu contract de mentenanță. Țevi sparte, inundații la vecini, căderi de curent, încuietori stricate și daune de furtună, puse rapid în siguranță.",
-  "title": "Reparații urgente cu contract de mentenanță | Inonda LTD",
-  "desc": "Intervențiile urgente sunt pentru clienții cu contract de mentenanță. Reparații urgente în Nicosia și Cipru: țevi sparte, apă care curge la vecinul de dedesubt, căderi de curent, încuietori stricate, daune la acoperiș după ploaie. Sunați sau scrieți pe WhatsApp.",
-  "h1": "Reparații urgente cu contract de mentenanță",
-  "lead": "Intervențiile urgente sunt pentru clienții cu contract de mentenanță. Curge apa din tavan? Nu aveți curent? Ușa nu se încuie? Sunați sau scrieți-ne pe WhatsApp și vă tratăm cu prioritate.",
+  "title": "Evaluarea daunelor urgente și reparații | INONDA LTD",
+  "desc": "Evaluarea daunelor la proprietăți în Cipru: infiltrații, încuietori, electricitate și daune de furtună.",
+  "h1": "Evaluarea daunelor urgente și reparații",
+  "lead": "Aveți infiltrații, o încuietoare defectă sau daune de furtună? Trimiteți descrierea și locația pentru a discuta pașii următori.",
   "intro": "Mai întâi punem proprietatea în siguranță și oprim extinderea daunelor. Apoi vă dăm o ofertă clară pentru reparația definitivă.",
   "scope": [
     ("Apă", ["Izolarea și repararea țevilor sparte sau care curg", "Infiltrații în apartamentul de dedesubt", "Rezervoare, WC-uri și boilere care dau pe dinafară", "Canalizări înfundate care refulează"]),
@@ -433,8 +433,8 @@ T = {
   "a_text": "De la sediul din Strovolos acoperim zilnic tot districtul Nicosia, plus Larnaca, Limassol și zona Famagusta pentru lucrări programate și proiecte mai mari.",
   "q_title": "Întrebări pe care le auzim zilnic",
   "faqs": [
-    ("Oferta este chiar gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Pentru diagnosticări complexe vă anunțăm dinainte eventualul cost. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici, reparațiile urgente și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță. Ofertele în cadrul unui contract de mentenanță sunt complet gratuite."),
-    ("Faceți și lucrări mici?", "Doar pentru clienții cu contract de mentenanță. În rest, preluăm lucrări care durează mai mult de o zi."),
+    ("Oferta este chiar gratuită?", "Descrieți proiectul. Vă explicăm anticipat evaluarea și eventualele costuri ale vizitei, apoi oferim o propunere scrisă pentru lucrările convenite."),
+    ("Analizați liste de reparații?", "Trimiteți lista completă a reparațiilor și îmbunătățirilor. Analizăm cerințele și vă explicăm următorii pași."),
     ("Cine va face efectiv lucrarea?", "Echipa noastră și tehnicieni parteneri autorizați care lucrează după standardele noastre, sub supravegherea și garanția noastră."),
     ("În ce limbi lucrați?", "Răspundem, facem oferte și lucrăm în greacă, engleză, rusă și română."),
   ],
@@ -513,10 +513,10 @@ T = {
   "h1": "Întrebări frecvente", "lead": "Răspunsuri rapide despre oferte, lucrări, plăți și garanție. Nu găsiți întrebarea dumneavoastră? Întrebați-ne pe WhatsApp.",
   "groups": [
     ("Oferte și prețuri", [
-      ("Oferta este gratuită?", "Evaluarea și oferta scrisă sunt gratuite și fără obligații. Evaluăm, ofertăm și preluăm doar lucrări care durează mai mult de o zi. Reparațiile mici, reparațiile urgente și lucrările de câteva minute sau ore se execută doar pentru clienții cu contract de mentenanță. Ofertele în cadrul unui contract de mentenanță sunt complet gratuite."),
+      ("Oferta este gratuită?", "Descrieți proiectul. Vă explicăm anticipat evaluarea și eventualele costuri ale vizitei, apoi oferim o propunere scrisă pentru lucrările convenite."),
       ("Puteți face ofertă după fotografii?", "Pentru lucrări simple, adesea da. Pentru renovări și infiltrații trebuie să venim și să măsurăm."),
       ("Prețurile includ materialele?", "Oferta precizează clar ce include: manoperă, materiale, evacuarea molozului și TVA."),
-      ("Există un tarif minim?", "Reparațiile mici se execută doar în baza unui contract de mentenanță, în condițiile planului dumneavoastră."),
+      ("Analizați liste de reparații?", "Trimiteți lista completă a reparațiilor și îmbunătățirilor. Analizăm cerințele și vă explicăm următorii pași."),
     ]),
     ("Lucrările", [
       ("Tehnicienii dumneavoastră sunt autorizați?", "Lucrările reglementate (electrice, sanitare, lucrări cu agent frigorific la aerul condiționat) sunt făcute de profesioniști autorizați, cu certificate unde este necesar."),
