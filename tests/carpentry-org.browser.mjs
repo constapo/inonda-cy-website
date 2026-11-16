@@ -13,7 +13,7 @@ async function openPage(locale,path='',size={width:1440,height:960}){
  await page.locator('main h1').waitFor();
  assert.equal(await page.locator('html').getAttribute('lang'),locale);
  assert.equal(await page.locator('html').getAttribute('dir'),locale==='he'?'rtl':'ltr');
- assert.equal(await page.locator('.brand img').count(),1);
+ assert.equal(await page.locator('header .brand img').count(),1);
  assert.equal(await page.locator('.langsel').count(),1);
  assert.equal(await page.locator('main h1').count(),1);
  assert.ok(await page.locator('a[href*="inonda.homes"]').count()>0);
@@ -24,7 +24,7 @@ async function openPage(locale,path='',size={width:1440,height:960}){
 }
 try{
  for(const lang of ['el','en','ru','uk','he','ro']){
-  const page=await openPage(lang);
+  const page=await openPage(lang,'',lang==='he'?{width:390,height:844}:{width:1440,height:960});
   assert.equal(await page.locator('.inonda-wood-card').count(),10,lang+' categories');
   for(const href of ['doors-frames','timber-windows-shutters','kitchen-utility-cabinets','wardrobes-storage','shelving-fitted-furniture','wall-panelling-trim','stairs-balustrades','outdoor-carpentry','repairs-alterations','custom-projects']){
    assert.ok(await page.locator('a[href*="/carpentry/'+href+'/"]').count()>=1,lang+':'+href);
