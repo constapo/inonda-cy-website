@@ -28,7 +28,7 @@ jobs:
         run: python3 build/check_carpentry.py
       - name: Run existing Python unit tests, if any
         run: |
-          if [ -d tests ]; then python3 -m unittest discover -s tests -p 'test_*.py'; fi
+          if find tests -name 'test_*.py' -print -quit | grep -q .; then python3 -m unittest discover -s tests -p 'test_*.py'; else echo 'No legacy Python unit tests; specialized Carpentry test passed.'; fi
       - name: Install temporary browser test tools
         run: |
           npm install --no-save --no-package-lock playwright@1.56.1
