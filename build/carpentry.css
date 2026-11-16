@@ -1,0 +1,36 @@
+/* INONDA LTD Carpentry & Custom Woodwork — extends existing approved Living Blueprint design. */
+.inonda-wood-section{padding:clamp(38px,6vw,78px) 0;scroll-margin-top:90px}
+.inonda-wood-section .wrap{max-width:1200px}
+.inonda-wood-section h2{color:#023e8a;margin:0 0 18px;line-height:1.25}
+.inonda-wood-section h3{line-height:1.35}
+.inonda-wood-section p{line-height:1.75}
+.inonda-wood-grid{gap:20px}
+.inonda-wood-card{display:flex;flex-direction:column;gap:12px;min-width:0;overflow-wrap:break-word}
+.inonda-wood-card h3{margin:0}
+.inonda-wood-card p{margin:0}
+.inonda-wood-card .btn{margin-top:auto;align-self:flex-start}
+.inonda-wood-list{padding-inline-start:1.5rem}
+.inonda-wood-list li{margin-bottom:10px;line-height:1.65}
+.inonda-wood-chips{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 28px}
+.inonda-wood-chips .chip{background:rgba(0,119,182,.09);border:1px solid rgba(0,119,182,.22);padding:8px 12px;border-radius:999px;font-size:.9rem;color:#023e8a}
+.inonda-wood-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.inonda-wood-actions .btn{white-space:normal;text-align:center;min-height:46px}
+.inonda-wood-process{counter-reset:inonda-steps;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;padding:0;list-style:none}
+.inonda-wood-process li{counter-increment:inonda-steps;position:relative;margin:0;padding:16px 16px 16px 52px;background:#edf5f8;border:1px solid #d8e7f1;border-radius:14px;line-height:1.6}
+.inonda-wood-process li:before{content:counter(inonda-steps);position:absolute;inset-inline-start:16px;top:16px;width:24px;height:24px;border-radius:50%;background:#0077b6;color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700}
+.inonda-wood-section .aside-grid{align-items:start}
+.inonda-wood-section .cta-card{overflow-wrap:break-word}
+.inonda-wood-section .faq summary:focus-visible{outline:3px solid #0077b6;outline-offset:4px}
+[dir=rtl] .inonda-wood-process li{padding:16px 52px 16px 16px}
+@media (max-width:760px){
+.inonda-wood-process{grid-template-columns:1fr}
+.inonda-wood-section{padding:38px 0}
+.inonda-wood-actions{flex-direction:column;align-items:stretch}
+.inonda-wood-actions .btn{width:100%}
+.inonda-wood-card{width:100%}
+}
+@media print{
+.inonda-wood-card{break-inside:avoid}
+.inonda-wood-section{padding:18px 0}
+.inonda-wood-actions{display:none}
+}
