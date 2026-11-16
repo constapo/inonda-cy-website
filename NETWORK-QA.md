@@ -12,7 +12,7 @@ The owner explicitly requested updates and mutual referrals across inonda.site, 
 - The inonda.org generator hook was executed against a temporary output and retained the shared network component.
 - Same-company referrals do not synchronize personal data or saved visitor estimates across domains.
 
-Deployment: commits to each existing private repository’s main branch, with an expected-head lease; Wasmer rebuilds automatically. Final deployment status and live link journeys must be checked after publishing.
+Deployment: commits to each existing private repository’s main branch, with an expected-head lease; The deployment mechanism must be verified before claiming a live release. Final deployment status and live link journeys must be checked after publishing.
 
 The shared six-language chatbot was tested through a complete cleaning request: service, property, area and visitor description produced the correct WhatsApp draft for each fixed company number and an email draft. No draft was opened or sent. Original channel icons loaded successfully. A separate company-site chat recognized a cleaning + renovation combination and linked to those two estimator services.
 
@@ -20,4 +20,4 @@ Footer follow links include the Facebook and Instagram profiles previously suppl
 
 Live referral validation prompted a small follow-up: regional property-management pages now preselect Management as well as their named area. An area-only referral keeps the default example disclosure visible.
 
-A returning-browser live mobile check found two legacy management-site issues: unversioned original CSS/JS and a fixed-width presentation video. The original asset links now carry the shared version and the controlled video is explicitly responsive. The Wasmer static runtime ignores the legacy settings/config.toml overrides and still returns max-age=86400 for HTML; refreshing a page retrieves its current deployment. The estimator host returns no-store.
+A returning-browser live mobile check found two legacy management-site issues: unversioned original CSS/JS and a fixed-width presentation video. The original asset links now carry the shared version and the controlled video is explicitly responsive. Previous checks found the static runtime ignored the legacy settings/config.toml overrides and returned max-age=86400 for HTML; verify current response headers; refreshing a page retrieves its current deployment. The estimator host returns no-store.
