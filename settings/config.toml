@@ -1,5 +1,5 @@
-# Inonda LTD — Wasmer Edge static web server settings
-# (Wasmer serves the "public" folder with wasmer/static-web-server using this file.)
+# INONDA LTD — legacy static web server settings
+# (Legacy static web server configuration; retain until runtime dependencies are verified.)
 
 [general]
 host = "::"
@@ -14,7 +14,7 @@ compression-static = true
 # Error page
 page404 = "./404.html"
 
-# Security headers (HSTS, nosniff, frame options, ...). HTTPS itself is provided by Wasmer Edge.
+# Security headers (HSTS, nosniff, frame options, ...). HTTPS is provided by the hosting edge; verify the active configuration.
 security-headers = true
 
 # Never show folder listings; "/en/about" -> "/en/about/"
