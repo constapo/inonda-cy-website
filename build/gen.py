@@ -18,6 +18,7 @@ from inonda_network import destinations as network_destinations, journey as netw
 from inonda_living import living_hero, living_assets
 import a11y_copy as A11Y
 import carpentry_pages as CARPENTRY
+import aluminium_details as ALUMINIUM
 PUB = os.path.join(ROOT, "public")
 SRC_IMG = os.path.join(ROOT, "build", "source-images")
 BASE = "https://www.inonda.org"
@@ -488,6 +489,8 @@ def page_service(T, slug):
 <a class="btn btn-primary" href="#quote">{e(u["cta_quote"])}</a>{est_btn}<a class="btn btn-ghost" href="https://wa.me/{WA}" target="_blank" rel="noopener">{WA_SVG}WhatsApp</a><a class="btn btn-ghost" href="tel:{PHONE1}">{ic("phone")}{PHONE1_TXT}</a>
 <p class="small">{e(u["aside_small"])}</p><p class="fee-note">{e(NETWORK_COPY[T["lang"]]["visitFee"])}</p></div></aside>'''
     out.append(f'<section><div class="wrap aside-grid"><div><div class="sec-head rv" style="margin-bottom:30px"><p class="eyebrow">{e(G["name"])}</p><h2>{e(u["scope_title"])}</h2><p>{e(d["intro"])}</p></div><div class="scope">{scope}</div>{notes}</div>{aside}</div></section>')
+    if slug == "aluminium-works":
+        out.append(ALUMINIUM.render(T["lang"]))
     out.append(f'<section class="dark tight"><div class="wrap"><div class="sec-head rv"><p class="eyebrow">{e(u["process_eyebrow"])}</p><h2>{e(u["process_title"])}</h2></div>{steps(T)}</div></section>')
     out.append(f'<section><div class="wrap"><div class="sec-head rv"><p class="eyebrow">FAQ</p><h2>{e(u["svc_faq_title"])}</h2></div>{faq_block(d["faqs"])}</div></section>')
     L = LOCAL.get(T["lang"])

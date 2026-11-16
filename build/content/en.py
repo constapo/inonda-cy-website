@@ -159,12 +159,12 @@ T = {
   ],
 },
 "contract-repairs": {
-  "name": "Small repairs under maintenance contract", "short": "Maintenance-contract customers only. The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
-  "title": "Small repairs under maintenance contract | Inonda LTD",
-  "desc": "Maintenance-contract customers only. In Nicosia and Cyprus: door and lock repairs, furniture assembly, shelves, TV mounting, silicone, curtain rails, minor plaster and paint touch-ups.",
-  "h1": "Small repairs for maintenance-contract customers",
-  "lead": "Small repairs, urgent repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract.",
-  "intro": "Small repairs are part of our maintenance plans: we group them into your scheduled visits.",
+  "name": "Property repairs and handyman work", "short": "The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
+  "title": "Property repairs and handyman work | INONDA LTD",
+  "desc": "Property repairs and handyman services in Cyprus: doors, windows, locks, fittings, sealants, furniture and upkeep.",
+  "h1": "Property repairs and handyman work",
+  "lead": "Tell us about the repairs or improvements your property needs. We assess the scope and arrange the appropriate next steps.",
+  "intro": "We review the overall list of repairs and planned maintenance requirements, arrange inspections where necessary and provide a written offer.",
   "scope": [
     ("Doors, windows & locks", ["Sticking or sagging doors adjusted or planed", "Lock, handle and cylinder replacement", "Window handles, hinges and fly screens", "Roller shutters and straps"]),
     ("Fixing & mounting", ["TV wall mounting with cables hidden", "Shelves, mirrors, pictures and curtain rails", "Kitchen and wardrobe door adjustment", "Furniture and flat-pack assembly"]),
@@ -173,17 +173,17 @@ T = {
   ],
   "notes": ["Landlords: send us the check-out report and we'll quote the whole list at once.", "Photos of each item on WhatsApp let us bring the right parts and finish in one trip."],
   "faqs": [
-    ("Is there a minimum charge?", "Small repairs are carried out only under a maintenance contract, on the terms of your plan."),
+    ("How do you assess repair requests?", "Send us the complete list of repairs and property improvements. We assess the overall requirements and explain the suitable next steps."),
     ("Do you bring materials?", "We bring standard fixings and consumables. Specific items (handles, taps, locks) can be supplied by us or by you."),
     ("Can you work while I'm not home?", "Yes, with keys or access arranged in advance. We send photos when finished."),
   ],
 },
 "emergency-repairs": {
-  "name": "Urgent repairs under maintenance contract", "short": "Maintenance-contract customers only. Burst pipes, leaks into neighbours, power failures, broken locks and storm damage, made safe fast.",
-  "title": "Urgent repairs under maintenance contract | Inonda LTD",
-  "desc": "Urgent call-outs are for customers with a maintenance contract. Urgent repairs in Nicosia and Cyprus: burst pipes, water leaking into a neighbour, power failures, broken locks, storm and roof damage. Call or WhatsApp us.",
-  "h1": "Urgent repairs under maintenance contract",
-  "lead": "Urgent call-outs are for customers with a maintenance contract. Water pouring through the ceiling? No power? A door that won't lock? Call or WhatsApp us and we'll prioritise your job.",
+  "name": "Urgent damage assessment and repairs", "short": "Burst pipes, leaks into neighbours, power failures, broken locks and storm damage, made safe fast.",
+  "title": "Urgent damage assessment and repairs | INONDA LTD",
+  "desc": "Property damage assessments in Cyprus for leaks, storm damage, faulty doors and locks, and electrical problems.",
+  "h1": "Urgent damage assessment and repairs",
+  "lead": "Have an active leak, a faulty lock or storm damage? Contact us with the situation and location so we can advise on next steps.",
   "intro": "First we make the property safe and stop the damage spreading. Then we give you a clear quote for the permanent repair.",
   "scope": [
     ("Water", ["Burst and leaking pipes isolated and repaired", "Leaks into the apartment below", "Overflowing tanks, WCs and water heaters", "Blocked drains backing up"]),
@@ -193,7 +193,7 @@ T = {
   ],
   "notes": ["Water leak? Close the main stopcock and switch off electricity to wet areas before we arrive.", "Take photos and videos of the damage for your insurer before anything is moved.", "We can provide a written report of cause and repair to support insurance claims."],
   "faqs": [
-    ("How fast can you come?", "Urgent call-outs are for customers with a maintenance contract. We prioritise urgent jobs and aim to attend the same day in Nicosia. Response depends on location and time of call; we always give you an honest ETA."),
+    ("How fast can you come?", "Please share the problem and location. We assess urgency and availability before arranging attendance. In immediate danger, contact emergency services."),
     ("Do you charge more for urgent visits?", "Out-of-hours and urgent call-outs may carry a call-out fee. We tell you before we come."),
     ("Can you help with my insurance claim?", "Yes, we provide photos and a written report of the cause and the work carried out."),
   ],
@@ -433,8 +433,8 @@ T = {
   "a_text": "Based in Strovolos, we cover all of Nicosia district daily, plus Larnaca, Limassol and the Famagusta area for scheduled works and larger projects.",
   "q_title": "Questions we hear every day",
   "faqs": [
-    ("Is the quote really free?", "Assessment and written quote are free and without obligation. For complex diagnostics we tell you any fee upfront. We assess, quote and take on only jobs of more than one day of work. Small repairs, urgent repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
-    ("Do you do small jobs?", "Only for customers with a maintenance contract. Otherwise we take on jobs of more than one day of work."),
+    ("Is the quote really free?", "Tell us about the work. We explain the inspection process and any applicable visit charge before proceeding and provide a written offer for the agreed scope."),
+    ("Do you assess repair lists?", "Send us the complete list of repairs and property improvements. We assess the overall requirements and explain the suitable next steps."),
     ("Who will actually do the work?", "Our own team and licensed partner technicians who work to our standards, under our supervision and our warranty."),
     ("Which languages do you work in?", "We answer, quote and work in Greek, English, Russian and Romanian. The website is also available in Ukrainian and Hebrew."),
   ],
@@ -513,10 +513,10 @@ T = {
   "h1": "Frequently asked questions", "lead": "Quick answers about quotes, work, payments and warranty. Can't find yours? Just ask us on WhatsApp.",
   "groups": [
     ("Quotes & prices", [
-      ("Is the quote free?", "Assessment and written quote are free and without obligation. We assess, quote and take on only jobs of more than one day of work. Small repairs, urgent repairs and jobs of a few minutes or hours are carried out only for customers with a maintenance contract. Quotations under a maintenance contract are completely free."),
+      ("Is the quote free?", "Tell us about the work. We explain the inspection process and any applicable visit charge before proceeding and provide a written offer for the agreed scope."),
       ("Can you quote from photos?", "For simple jobs, often yes. For renovations and leaks we need to visit and measure."),
       ("Do your prices include materials?", "The quote states clearly what's included: labour, materials, disposal and VAT."),
-      ("Is there a minimum charge?", "Small repairs are carried out only under a maintenance contract, on the terms of your plan."),
+      ("Do you assess repair lists?", "Send us the complete list of repairs and property improvements. We assess the overall requirements and explain the suitable next steps."),
     ]),
     ("The work", [
       ("Are your technicians licensed?", "Regulated work (electrical, plumbing, gas-related AC work) is done by licensed professionals, with certificates where required."),

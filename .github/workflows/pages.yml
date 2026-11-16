@@ -23,6 +23,7 @@ jobs:
           python3 build/check_content.py
           python3 build/gen.py
           python3 build/check_carpentry.py
+          python3 build/check_aluminium.py
       - run: touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
