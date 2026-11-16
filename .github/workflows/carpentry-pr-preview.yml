@@ -5,6 +5,7 @@ on:
     paths:
       - 'build/carpentry*'
       - 'build/gen.py'
+      - 'tests/carpentry-org.browser.mjs'
       - '.github/workflows/carpentry-pr-preview.yml'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -28,6 +29,22 @@ jobs:
       - name: Run existing Python unit tests, if any
         run: |
           if [ -d tests ]; then python3 -m unittest discover -s tests -p 'test_*.py'; fi
+      - name: Install temporary browser test tools
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Run desktop, mobile and Hebrew RTL preview checks
+        run: |
+          python3 -m http.server 8899 --directory public > /tmp/inonda-carpentry-preview.log 2>&1 &
+          node tests/carpentry-org.browser.mjs
+      - name: Upload preview screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: inonda-org-carpentry-preview-screenshots
+          path: carpentry-screenshots/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Upload reviewable, unmodified site build (no publication)
         uses: actions/upload-artifact@v4
         with:
