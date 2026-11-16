@@ -1,0 +1,634 @@
+{
+  "source": "constapo/inonda-service-estimator/dist/carpentry.mjs",
+  "note": "Imported and frozen for matching localized category names/materials. Regenerate or review when estimator taxonomy changes.",
+  "categories": [
+    {
+      "id": "doorsFrames",
+      "materials": [
+        "solid",
+        "engineered",
+        "mdf",
+        "veneer"
+      ],
+      "label": {
+        "en": "Doors & Frames",
+        "el": "Πόρτες & Κάσες",
+        "ru": "Двери и коробки",
+        "uk": "Двері та коробки",
+        "he": "דלתות ומשקופים",
+        "ro": "Uși și tocuri"
+      },
+      "description": {
+        "en": "Interior and exterior timber doors, frames and bespoke fittings",
+        "el": "Εσωτερικές και εξωτερικές ξύλινες πόρτες, κάσες και κατασκευές",
+        "ru": "Деревянные двери, коробки и изделия на заказ",
+        "uk": "Дерев’яні двері, коробки та вироби на замовлення",
+        "he": "דלתות עץ פנים וחוץ, משקופים והתאמות",
+        "ro": "Uși din lemn, tocuri și accesorii personalizate"
+      }
+    },
+    {
+      "id": "timberWindows",
+      "materials": [
+        "solid",
+        "softwood",
+        "engineered"
+      ],
+      "label": {
+        "en": "Timber Windows & Shutters",
+        "el": "Ξύλινα Παράθυρα & Παντζούρια",
+        "ru": "Деревянные окна и ставни",
+        "uk": "Дерев’яні вікна та віконниці",
+        "he": "חלונות ותריסי עץ",
+        "ro": "Ferestre și obloane din lemn"
+      },
+      "description": {
+        "en": "Wooden windows, frames, shutters and restoration",
+        "el": "Ξύλινα παράθυρα, πλαίσια, παντζούρια και αποκατάσταση",
+        "ru": "Окна, рамы, ставни и реставрация",
+        "uk": "Вікна, рами, віконниці та реставрація",
+        "he": "חלונות עץ, מסגרות, תריסים ושיקום",
+        "ro": "Ferestre, rame, obloane și restaurare"
+      }
+    },
+    {
+      "id": "kitchenCabinets",
+      "materials": [
+        "melamine",
+        "moistureMdf",
+        "plywood",
+        "solid"
+      ],
+      "label": {
+        "en": "Kitchen & Utility Cabinets",
+        "el": "Ντουλάπια Κουζίνας & Βοηθητικών Χώρων",
+        "ru": "Кухонные и хозяйственные шкафы",
+        "uk": "Кухонні та господарські шафи",
+        "he": "ארונות מטבח ושירות",
+        "ro": "Dulapuri de bucătărie și utilitare"
+      },
+      "description": {
+        "en": "Custom kitchen units and made-to-measure utility storage",
+        "el": "Ειδικά ντουλάπια κουζίνας και βοηθητικών χώρων",
+        "ru": "Кухонные шкафы и хранение по индивидуальным размерам",
+        "uk": "Кухонні шафи та зберігання за індивідуальними розмірами",
+        "he": "יחידות מטבח ואחסון לפי מידה",
+        "ro": "Corpuri de bucătărie și depozitare la comandă"
+      }
+    },
+    {
+      "id": "wardrobes",
+      "materials": [
+        "melamine",
+        "mdf",
+        "plywood",
+        "solid"
+      ],
+      "label": {
+        "en": "Wardrobes & Storage",
+        "el": "Ντουλάπες & Αποθηκευτικοί Χώροι",
+        "ru": "Шкафы и системы хранения",
+        "uk": "Шафи та системи зберігання",
+        "he": "ארונות ואחסון",
+        "ro": "Dulapuri și spații de depozitare"
+      },
+      "description": {
+        "en": "Built-in wardrobes, closets, cupboards and storage",
+        "el": "Εντοιχισμένες ντουλάπες, ερμάρια και αποθήκευση",
+        "ru": "Встроенные шкафы, гардеробные и кладовые",
+        "uk": "Вбудовані шафи, гардеробні та комори",
+        "he": "ארונות קיר, ארונות בגדים ומקומות אחסון",
+        "ro": "Dulapuri încorporate, dressinguri și spații de depozitare"
+      }
+    },
+    {
+      "id": "fittedFurniture",
+      "materials": [
+        "plywood",
+        "mdf",
+        "solid",
+        "veneer"
+      ],
+      "label": {
+        "en": "Shelving & Fitted Furniture",
+        "el": "Ράφια & Εντοιχισμένα Έπιπλα",
+        "ru": "Полки и встроенная мебель",
+        "uk": "Полиці та вбудовані меблі",
+        "he": "מדפים וריהוט מובנה",
+        "ro": "Rafturi și mobilier încorporat"
+      },
+      "description": {
+        "en": "Shelves, desks, bookcases and bespoke fitted furniture",
+        "el": "Ράφια, γραφεία, βιβλιοθήκες και ειδικά έπιπλα",
+        "ru": "Полки, столы, книжные шкафы и встроенная мебель",
+        "uk": "Полиці, столи, книжкові шафи та вбудовані меблі",
+        "he": "מדפים, שולחנות, ספריות וריהוט לפי מידה",
+        "ro": "Rafturi, birouri, biblioteci și mobilier la comandă"
+      }
+    },
+    {
+      "id": "panelling",
+      "materials": [
+        "mdf",
+        "veneer",
+        "solid",
+        "plywood"
+      ],
+      "label": {
+        "en": "Wall Panelling & Decorative Trim",
+        "el": "Ξύλινες Επενδύσεις & Διακοσμητικά Τελειώματα",
+        "ru": "Стеновые панели и декоративные молдинги",
+        "uk": "Стінові панелі та декоративні молдинги",
+        "he": "חיפויי קיר וגימורי עץ",
+        "ro": "Placări de pereți și ornamente"
+      },
+      "description": {
+        "en": "Wood wall panels, mouldings, skirting and decorative trim",
+        "el": "Ξύλινα πάνελ, κορνίζες, σοβατεπί και τελειώματα",
+        "ru": "Деревянные панели, плинтусы и молдинги",
+        "uk": "Дерев’яні панелі, плінтуси та молдинги",
+        "he": "חיפויי עץ, פנלים ועיטורים",
+        "ro": "Panouri din lemn, plinte și profile decorative"
+      }
+    },
+    {
+      "id": "stairs",
+      "materials": [
+        "solid",
+        "engineered",
+        "oak"
+      ],
+      "label": {
+        "en": "Stairs & Timber Balustrades",
+        "el": "Σκάλες & Ξύλινα Κιγκλιδώματα",
+        "ru": "Лестницы и деревянные перила",
+        "uk": "Сходи та дерев’яні поручні",
+        "he": "מדרגות ומעקות עץ",
+        "ro": "Scări și balustrade din lemn"
+      },
+      "description": {
+        "en": "Timber stair components, handrails and balustrades",
+        "el": "Ξύλινα σκαλοπάτια, κουπαστές και κιγκλιδώματα",
+        "ru": "Деревянные ступени, поручни и балюстрады",
+        "uk": "Дерев’яні сходинки, поручні та балюстради",
+        "he": "מדרגות עץ, מאחזי יד ומעקות",
+        "ro": "Trepte, mâini curente și balustrade din lemn"
+      }
+    },
+    {
+      "id": "outdoorCarpentry",
+      "materials": [
+        "treated",
+        "hardwood",
+        "thermowood",
+        "wpc"
+      ],
+      "label": {
+        "en": "Outdoor Carpentry",
+        "el": "Εξωτερικές Ξυλουργικές Κατασκευές",
+        "ru": "Наружные столярные работы",
+        "uk": "Зовнішні столярні роботи",
+        "he": "עבודות עץ חוץ",
+        "ro": "Tâmplărie exterioară"
+      },
+      "description": {
+        "en": "Timber decking, pergolas, gates, fences and structures",
+        "el": "Ξύλινα ντεκ, πέργκολες, πύλες, φράχτες και κατασκευές",
+        "ru": "Настилы, перголы, ворота, ограждения и конструкции",
+        "uk": "Настили, перголи, ворота, огорожі та конструкції",
+        "he": "דקים, פרגולות, שערים, גדרות ומבנים",
+        "ro": "Decking, pergole, porți, garduri și structuri"
+      }
+    },
+    {
+      "id": "carpentryRepairs",
+      "materials": [
+        "existing",
+        "solid",
+        "mdf",
+        "plywood",
+        "laminate"
+      ],
+      "label": {
+        "en": "Carpentry Repairs & Alterations",
+        "el": "Ξυλουργικές Επισκευές & Τροποποιήσεις",
+        "ru": "Ремонт и переделка столярных изделий",
+        "uk": "Ремонт і переробка столярних виробів",
+        "he": "תיקוני ושינויי נגרות",
+        "ro": "Reparații și modificări de tâmplărie"
+      },
+      "description": {
+        "en": "Repairs, adjustments, restoration and modifications to existing woodwork",
+        "el": "Επισκευές, ρυθμίσεις, αποκατάσταση και αλλαγές ξυλουργικών",
+        "ru": "Ремонт, регулировка, реставрация и переделка",
+        "uk": "Ремонт, регулювання, реставрація та переробка",
+        "he": "תיקונים, כוונון, שיקום ושינויים לעבודות עץ",
+        "ro": "Reparații, reglaje, restaurări și modificări"
+      }
+    },
+    {
+      "id": "otherCustom",
+      "materials": [
+        "solid",
+        "plywood",
+        "mdf",
+        "melamine",
+        "other"
+      ],
+      "label": {
+        "en": "Other Custom Carpentry",
+        "el": "Άλλες Ειδικές Ξυλουργικές Εργασίες",
+        "ru": "Другие столярные работы на заказ",
+        "uk": "Інші столярні роботи на замовлення",
+        "he": "נגרות מותאמת אחרת",
+        "ro": "Alte lucrări de tâmplărie la comandă"
+      },
+      "description": {
+        "en": "Describe a bespoke carpentry project not covered above",
+        "el": "Περιγράψτε μια ειδική ξυλουργική εργασία εκτός των παραπάνω",
+        "ru": "Опишите столярный проект, которого нет в списке",
+        "uk": "Опишіть столярний проєкт, якого немає у списку",
+        "he": "תארו פרויקט נגרות שאינו מופיע ברשימה",
+        "ro": "Descrieți un proiect de tâmplărie care nu apare mai sus"
+      }
+    }
+  ],
+  "materials": {
+    "solid": {
+      "en": "Solid timber",
+      "el": "Μασίφ ξύλο",
+      "ru": "Массив дерева",
+      "uk": "Масив дерева",
+      "he": "עץ מלא",
+      "ro": "Lemn masiv"
+    },
+    "engineered": {
+      "en": "Engineered timber",
+      "el": "Σύνθετη ξυλεία",
+      "ru": "Инженерная древесина",
+      "uk": "Інженерна деревина",
+      "he": "עץ מהונדס",
+      "ro": "Lemn stratificat"
+    },
+    "mdf": {
+      "en": "MDF",
+      "el": "MDF",
+      "ru": "МДФ",
+      "uk": "МДФ",
+      "he": "MDF",
+      "ro": "MDF"
+    },
+    "veneer": {
+      "en": "Timber veneer",
+      "el": "Καπλαμάς ξύλου",
+      "ru": "Шпон",
+      "uk": "Шпон",
+      "he": "פורניר עץ",
+      "ro": "Furnir din lemn"
+    },
+    "softwood": {
+      "en": "Softwood",
+      "el": "Μαλακή ξυλεία",
+      "ru": "Хвойная древесина",
+      "uk": "Хвойна деревина",
+      "he": "עץ רך",
+      "ro": "Lemn de rășinoase"
+    },
+    "melamine": {
+      "en": "Melamine board",
+      "el": "Μελαμίνη",
+      "ru": "ЛДСП / меламин",
+      "uk": "Меламінова плита",
+      "he": "לוח מלמין",
+      "ro": "Placă melaminată"
+    },
+    "moistureMdf": {
+      "en": "Moisture-resistant MDF",
+      "el": "Ανθυγρό MDF",
+      "ru": "Влагостойкая МДФ",
+      "uk": "Вологостійка МДФ",
+      "he": "MDF עמיד ללחות",
+      "ro": "MDF rezistent la umiditate"
+    },
+    "plywood": {
+      "en": "Plywood",
+      "el": "Κόντρα πλακέ",
+      "ru": "Фанера",
+      "uk": "Фанера",
+      "he": "דיקט",
+      "ro": "Placaj"
+    },
+    "oak": {
+      "en": "Oak",
+      "el": "Δρυς",
+      "ru": "Дуб",
+      "uk": "Дуб",
+      "he": "אלון",
+      "ro": "Stejar"
+    },
+    "treated": {
+      "en": "Treated outdoor timber",
+      "el": "Εμποτισμένη ξυλεία",
+      "ru": "Пропитанная древесина",
+      "uk": "Просочена деревина",
+      "he": "עץ מטופל לחוץ",
+      "ro": "Lemn tratat pentru exterior"
+    },
+    "hardwood": {
+      "en": "Hardwood",
+      "el": "Σκληρή ξυλεία",
+      "ru": "Твёрдая древесина",
+      "uk": "Тверда деревина",
+      "he": "עץ קשה",
+      "ro": "Lemn de esență tare"
+    },
+    "thermowood": {
+      "en": "Thermowood",
+      "el": "Θερμικά επεξεργασμένη ξυλεία",
+      "ru": "Термодревесина",
+      "uk": "Термодеревина",
+      "he": "עץ תרמי",
+      "ro": "Lemn termotratat"
+    },
+    "wpc": {
+      "en": "WPC composite",
+      "el": "Σύνθετο WPC",
+      "ru": "ДПК",
+      "uk": "ДПК",
+      "he": "WPC מורכב",
+      "ro": "Compozit WPC"
+    },
+    "existing": {
+      "en": "Match existing material",
+      "el": "Ίδιο με το υπάρχον υλικό",
+      "ru": "Под существующий материал",
+      "uk": "Під наявний матеріал",
+      "he": "התאמה לחומר קיים",
+      "ro": "Potrivire cu materialul existent"
+    },
+    "laminate": {
+      "en": "Laminate",
+      "el": "Λαμινάτο",
+      "ru": "Ламинат",
+      "uk": "Ламінат",
+      "he": "למינציה",
+      "ro": "Laminat"
+    },
+    "other": {
+      "en": "Other / to confirm",
+      "el": "Άλλο / κατόπιν συνεννόησης",
+      "ru": "Другое / уточнить",
+      "uk": "Інше / уточнити",
+      "he": "אחר / לתיאום",
+      "ro": "Altul / de stabilit"
+    }
+  },
+  "estimatorText": {
+    "en": {
+      "title": "Carpentry & Custom Woodwork",
+      "intro": "Select any of the ten work types below. Custom carpentry is assessed individually: supply your project dimensions and details to request a written offer.",
+      "material": "Material",
+      "workType": "Type of work",
+      "new": "New fabrication",
+      "replacement": "Replacement",
+      "repair": "Repair / alteration",
+      "width": "Width (cm)",
+      "height": "Height (cm)",
+      "depth": "Depth (cm)",
+      "qty": "Quantity",
+      "notes": "Project notes (optional)",
+      "notesHint": "Style, finish, hardware, access, reference photos available…",
+      "chooseMaterial": "Select material",
+      "add": "Add to estimate",
+      "save": "Save changes",
+      "cancel": "Cancel edit",
+      "edit": "Edit",
+      "remove": "Remove",
+      "summary": "Your carpentry request",
+      "empty": "No custom carpentry items added yet.",
+      "requestQuote": "Price on Request — Custom Quotation",
+      "partial": "Partial budget — custom items quoted separately",
+      "measure": "Measurements are approximate; final measurements confirmed at inspection.",
+      "photos": "Please send project photos/reference images and measurements when contacting us.",
+      "validation": "Check the required material, work type, quantity and dimensions.",
+      "itemLimit": "Maximum 40 carpentry items per request.",
+      "maxNote": "Notes must not exceed 400 characters.",
+      "items": "Custom carpentry",
+      "notesShort": "Notes",
+      "quantityShort": "Qty",
+      "widthShort": "W",
+      "heightShort": "H",
+      "depthShort": "D",
+      "locationNeeded": "Add the job location before requesting a quotation.",
+      "removed": "Item removed",
+      "saved": "Item saved"
+    },
+    "el": {
+      "title": "Ξυλουργικές Εργασίες & Ειδικές Κατασκευές",
+      "intro": "Επιλέξτε από τις δέκα κατηγορίες. Οι ειδικές κατασκευές κοστολογούνται ξεχωριστά βάσει διαστάσεων και προδιαγραφών.",
+      "material": "Υλικό",
+      "workType": "Είδος εργασίας",
+      "new": "Νέα κατασκευή",
+      "replacement": "Αντικατάσταση",
+      "repair": "Επισκευή / τροποποίηση",
+      "width": "Πλάτος (εκ.)",
+      "height": "Ύψος (εκ.)",
+      "depth": "Βάθος (εκ.)",
+      "qty": "Ποσότητα",
+      "notes": "Σημειώσεις έργου (προαιρετικό)",
+      "notesHint": "Σχέδιο, φινίρισμα, εξαρτήματα, διαθέσιμες φωτογραφίες…",
+      "chooseMaterial": "Επιλογή υλικού",
+      "add": "Προσθήκη στην εκτίμηση",
+      "save": "Αποθήκευση αλλαγών",
+      "cancel": "Ακύρωση επεξεργασίας",
+      "edit": "Επεξεργασία",
+      "remove": "Αφαίρεση",
+      "summary": "Το αίτημα ξυλουργικών εργασιών",
+      "empty": "Δεν έχουν προστεθεί ειδικές ξυλουργικές εργασίες.",
+      "requestQuote": "Τιμή κατόπιν αιτήματος — Ειδική προσφορά",
+      "partial": "Μερική εκτίμηση — ειδική προσφορά για ξυλουργικά",
+      "measure": "Οι διαστάσεις είναι ενδεικτικές· επιβεβαιώνονται κατά την αυτοψία.",
+      "photos": "Στείλτε φωτογραφίες/σχέδια και μετρήσεις κατά την επικοινωνία.",
+      "validation": "Ελέγξτε υλικό, εργασία, ποσότητα και διαστάσεις.",
+      "itemLimit": "Έως 40 ξυλουργικά είδη ανά αίτημα.",
+      "maxNote": "Οι σημειώσεις δεν πρέπει να υπερβαίνουν τους 400 χαρακτήρες.",
+      "items": "Ειδικές ξυλουργικές εργασίες",
+      "notesShort": "Σημειώσεις",
+      "quantityShort": "Τεμ.",
+      "widthShort": "Π",
+      "heightShort": "Υ",
+      "depthShort": "Β",
+      "locationNeeded": "Προσθέστε τοποθεσία για να ζητήσετε προσφορά.",
+      "removed": "Το είδος αφαιρέθηκε",
+      "saved": "Το είδος αποθηκεύτηκε"
+    },
+    "ru": {
+      "title": "Столярные работы и изделия на заказ",
+      "intro": "Выберите любую из десяти категорий. Изделия на заказ оцениваются индивидуально по размерам и требованиям.",
+      "material": "Материал",
+      "workType": "Вид работ",
+      "new": "Новое изготовление",
+      "replacement": "Замена",
+      "repair": "Ремонт / переделка",
+      "width": "Ширина (см)",
+      "height": "Высота (см)",
+      "depth": "Глубина (см)",
+      "qty": "Количество",
+      "notes": "Описание проекта (необязательно)",
+      "notesHint": "Дизайн, отделка, фурнитура, фотографии…",
+      "chooseMaterial": "Выберите материал",
+      "add": "Добавить в расчёт",
+      "save": "Сохранить изменения",
+      "cancel": "Отменить",
+      "edit": "Изменить",
+      "remove": "Удалить",
+      "summary": "Ваш запрос на столярные работы",
+      "empty": "Изделия на заказ ещё не добавлены.",
+      "requestQuote": "Цена по запросу — Индивидуальное предложение",
+      "partial": "Частичный бюджет — столярные работы отдельно",
+      "measure": "Размеры приблизительны, окончательные замеры после осмотра.",
+      "photos": "При обращении отправьте фото/чертежи и размеры.",
+      "validation": "Проверьте материал, работу, количество и размеры.",
+      "itemLimit": "Не более 40 позиций.",
+      "maxNote": "Описание не более 400 символов.",
+      "items": "Столярные изделия на заказ",
+      "notesShort": "Описание",
+      "quantityShort": "Кол-во",
+      "widthShort": "Ш",
+      "heightShort": "В",
+      "depthShort": "Г",
+      "locationNeeded": "Укажите местоположение объекта.",
+      "removed": "Позиция удалена",
+      "saved": "Позиция сохранена"
+    },
+    "uk": {
+      "title": "Столярні роботи та вироби на замовлення",
+      "intro": "Оберіть будь-яку з десяти категорій. Індивідуальні вироби оцінюються за розмірами та вимогами.",
+      "material": "Матеріал",
+      "workType": "Тип роботи",
+      "new": "Нове виготовлення",
+      "replacement": "Заміна",
+      "repair": "Ремонт / переробка",
+      "width": "Ширина (см)",
+      "height": "Висота (см)",
+      "depth": "Глибина (см)",
+      "qty": "Кількість",
+      "notes": "Примітки (необов'язково)",
+      "notesHint": "Дизайн, оздоблення, фурнітура, фото…",
+      "chooseMaterial": "Оберіть матеріал",
+      "add": "Додати до кошторису",
+      "save": "Зберегти зміни",
+      "cancel": "Скасувати",
+      "edit": "Редагувати",
+      "remove": "Видалити",
+      "summary": "Ваш столярний запит",
+      "empty": "Столярні вироби ще не додано.",
+      "requestQuote": "Ціна за запитом — Індивідуальна пропозиція",
+      "partial": "Частковий бюджет — столярні роботи окремо",
+      "measure": "Розміри орієнтовні, точні — після огляду.",
+      "photos": "Надішліть фото/креслення та розміри під час звернення.",
+      "validation": "Перевірте матеріал, роботу, кількість і розміри.",
+      "itemLimit": "Не більше 40 позицій.",
+      "maxNote": "Примітки не більше 400 символів.",
+      "items": "Столярні вироби на замовлення",
+      "notesShort": "Примітки",
+      "quantityShort": "К-сть",
+      "widthShort": "Ш",
+      "heightShort": "В",
+      "depthShort": "Г",
+      "locationNeeded": "Вкажіть розташування об'єкта.",
+      "removed": "Позицію видалено",
+      "saved": "Позицію збережено"
+    },
+    "he": {
+      "title": "נגרות ועבודות עץ בהתאמה אישית",
+      "intro": "בחרו אחת או יותר מעשר הקטגוריות. עבודות מותאמות מתומחרות לפי מידות ומפרט.",
+      "material": "חומר",
+      "workType": "סוג עבודה",
+      "new": "ייצור חדש",
+      "replacement": "החלפה",
+      "repair": "תיקון / שינוי",
+      "width": "רוחב (ס״מ)",
+      "height": "גובה (ס״מ)",
+      "depth": "עומק (ס״מ)",
+      "qty": "כמות",
+      "notes": "הערות פרויקט (לא חובה)",
+      "notesHint": "עיצוב, גימור, פרזול, תמונות…",
+      "chooseMaterial": "בחירת חומר",
+      "add": "הוספה לאומדן",
+      "save": "שמירת שינויים",
+      "cancel": "ביטול עריכה",
+      "edit": "עריכה",
+      "remove": "הסרה",
+      "summary": "בקשת הנגרות שלכם",
+      "empty": "לא נוספו עדיין פריטי נגרות.",
+      "requestQuote": "מחיר לפי בקשה — הצעת מחיר אישית",
+      "partial": "אומדן חלקי — עבודות נגרות בתמחור נפרד",
+      "measure": "המידות משוערות ויאומתו בביקור.",
+      "photos": "שלחו תמונות/תוכניות ומידות בעת הפנייה.",
+      "validation": "בדקו חומר, סוג עבודה, כמות ומידות.",
+      "itemLimit": "עד 40 פריטים בבקשה.",
+      "maxNote": "עד 400 תווים בהערות.",
+      "items": "נגרות מותאמת",
+      "notesShort": "הערות",
+      "quantityShort": "כמות",
+      "widthShort": "ר",
+      "heightShort": "ג",
+      "depthShort": "ע",
+      "locationNeeded": "יש לציין מיקום לפני בקשת הצעה.",
+      "removed": "הפריט הוסר",
+      "saved": "הפריט נשמר"
+    },
+    "ro": {
+      "title": "Tâmplărie și lucrări din lemn la comandă",
+      "intro": "Alegeți oricare dintre cele zece categorii. Lucrările la comandă se evaluează individual pe baza dimensiunilor și cerințelor.",
+      "material": "Material",
+      "workType": "Tip de lucrare",
+      "new": "Fabricare nouă",
+      "replacement": "Înlocuire",
+      "repair": "Reparație / modificare",
+      "width": "Lățime (cm)",
+      "height": "Înălțime (cm)",
+      "depth": "Adâncime (cm)",
+      "qty": "Cantitate",
+      "notes": "Note proiect (opțional)",
+      "notesHint": "Design, finisaj, feronerie, fotografii…",
+      "chooseMaterial": "Alege materialul",
+      "add": "Adaugă la estimare",
+      "save": "Salvează modificările",
+      "cancel": "Anulează",
+      "edit": "Editează",
+      "remove": "Elimină",
+      "summary": "Cererea ta de tâmplărie",
+      "empty": "Încă nu au fost adăugate lucrări de tâmplărie.",
+      "requestQuote": "Preț la cerere — Ofertă personalizată",
+      "partial": "Buget parțial — tâmplăria se cotează separat",
+      "measure": "Dimensiunile sunt aproximative; măsurătorile finale la inspecție.",
+      "photos": "Trimiteți fotografii/schițe și dimensiuni când ne contactați.",
+      "validation": "Verificați materialul, tipul de lucrare, cantitatea și dimensiunile.",
+      "itemLimit": "Maximum 40 articole de tâmplărie.",
+      "maxNote": "Notele nu pot depăși 400 de caractere.",
+      "items": "Tâmplărie la comandă",
+      "notesShort": "Note",
+      "quantityShort": "Cant.",
+      "widthShort": "L",
+      "heightShort": "Î",
+      "depthShort": "A",
+      "locationNeeded": "Introduceți localitatea pentru ofertă.",
+      "removed": "Articol eliminat",
+      "saved": "Articol salvat"
+    }
+  },
+  "slugs": {
+    "doorsFrames": "doors-frames",
+    "timberWindows": "timber-windows-shutters",
+    "kitchenCabinets": "kitchen-utility-cabinets",
+    "wardrobes": "wardrobes-storage",
+    "fittedFurniture": "shelving-fitted-furniture",
+    "panelling": "wall-panelling-trim",
+    "stairs": "stairs-balustrades",
+    "outdoorCarpentry": "outdoor-carpentry",
+    "carpentryRepairs": "repairs-alterations",
+    "otherCustom": "custom-projects"
+  }
+}
