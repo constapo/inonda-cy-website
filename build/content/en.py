@@ -159,7 +159,7 @@ T = {
   ],
 },
 "contract-repairs": {
-  "name": "Small repairs under maintenance contract", "short": "Maintenance-contract customers only. The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
+  "name": "Property repairs and handyman work", "short": "The to-do list: doors, locks, shelves, furniture assembly, silicone, curtain rails, TV mounting and more.",
   "title": "Property repairs and handyman work | INONDA LTD",
   "desc": "Property repairs and handyman services in Cyprus: doors, windows, locks, fittings, sealants, furniture and upkeep.",
   "h1": "Property repairs and handyman work",
@@ -179,7 +179,7 @@ T = {
   ],
 },
 "emergency-repairs": {
-  "name": "Urgent repairs under maintenance contract", "short": "Maintenance-contract customers only. Burst pipes, leaks into neighbours, power failures, broken locks and storm damage, made safe fast.",
+  "name": "Urgent damage assessment and repairs", "short": "Burst pipes, leaks into neighbours, power failures, broken locks and storm damage, made safe fast.",
   "title": "Urgent damage assessment and repairs | INONDA LTD",
   "desc": "Property damage assessments in Cyprus for leaks, storm damage, faulty doors and locks, and electrical problems.",
   "h1": "Urgent damage assessment and repairs",
@@ -193,7 +193,7 @@ T = {
   ],
   "notes": ["Water leak? Close the main stopcock and switch off electricity to wet areas before we arrive.", "Take photos and videos of the damage for your insurer before anything is moved.", "We can provide a written report of cause and repair to support insurance claims."],
   "faqs": [
-    ("How fast can you come?", "Urgent call-outs are for customers with a maintenance contract. We prioritise urgent jobs and aim to attend the same day in Nicosia. Response depends on location and time of call; we always give you an honest ETA."),
+    ("How fast can you come?", "Please share the problem and location. We assess urgency and availability before arranging attendance. In immediate danger, contact emergency services."),
     ("Do you charge more for urgent visits?", "Out-of-hours and urgent call-outs may carry a call-out fee. We tell you before we come."),
     ("Can you help with my insurance claim?", "Yes, we provide photos and a written report of the cause and the work carried out."),
   ],
