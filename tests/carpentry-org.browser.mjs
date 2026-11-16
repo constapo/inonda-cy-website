@@ -43,7 +43,22 @@ try{
   assert.ok(await page.locator('details').count()>=4,lang+slug+' FAQ');
   assert.ok(await page.locator('.inonda-wood-list li').count()>=5,lang+slug+' work scope');
   assert.ok((await page.locator('a[href*="wa.me/35794091616?text="]').count())>0,lang+slug+' quote action');
+  assert.equal(await page.locator('form#quote input[name="Carpentry category"]').inputValue(),
+      (await page.locator('main h1').innerText()).trim(),lang+slug+' localized category field');
   assert.ok((await page.locator('a[href*="inonda.homes/?lang='+lang+'"]').count())>0,lang+slug+' estimator action');
+  // Intercept the handoff rather than opening an external WhatsApp page.
+  // Verify the normal customer-controlled form includes the chosen service.
+  if(slug==='doors-frames/'){
+    await page.evaluate(()=>{window.__carpentryDraft='';window.open=(url)=>{window.__carpentryDraft=url;return null;};});
+    await page.locator('form#quote input[autocomplete="name"]').fill('Preview Test');
+    await page.locator('form#quote input[type="tel"]').fill('12345678');
+    await page.locator('form#quote textarea').fill('Please assess a custom door.');
+    await page.locator('form#quote input[name="Consent"]').check();
+    await page.locator('form#quote button[type="submit"]').click();
+    const draft=await page.evaluate(()=>window.__carpentryDraft||'');
+    assert.ok(draft.includes('https://wa.me/35794091616?text='));
+    assert.ok(decodeURIComponent(draft).includes('Carpentry category: Doors & Frames'));
+  }
   await page.screenshot({path:'carpentry-screenshots/'+shot,fullPage:true});
   await page.close();
  }
