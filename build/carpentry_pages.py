@@ -142,7 +142,7 @@ def page(T,g,category=None):
                    '<ul class="ticks inonda-wood-list">'+''.join('<li>'+g.e(item)+'</li>' for item in d['scope'])+'</ul>'
                    '<h2>'+g.e(ui['materials'])+'</h2><p>'+g.e(d['material'])+'</p>'
                    +material_options(g,lang,cat)
-                   '<h2>'+g.e(ui['measurement'])+'</h2><p>'+g.e(d['measure'])+'</p>'
+                   +'<h2>'+g.e(ui['measurement'])+'</h2><p>'+g.e(d['measure'])+'</p>'
                    '<h2>'+g.e(ui['issues'])+'</h2><p>'+g.e(d['issues'])+'</p>'
                    '<h2>'+g.e(ui['installation'])+'</h2><p>'+g.e(d['install'])+'</p>'
                    '<h2>'+g.e(ui['care'])+'</h2><p>'+g.e(d['care'])+'</p>'
@@ -161,7 +161,7 @@ def page(T,g,category=None):
         out.append('<section class="inonda-wood-section"><div class="wrap">'
                    '<h2>'+g.e(ui['related'])+'</h2>'
                    '<div class="grid g3 inonda-wood-grid">'
-                   +''.join(card(g,lang,c,up) for c in CATEGORIES if c['id']!=category)[:3*5000]
+                   +''.join(card(g,lang,c,up) for c in [x for x in CATEGORIES if x['id']!=category][:3])
                    +'</div>'
                    +link(g,up+'carpentry/',ui['return'],'btn btn-line')
                    +'</div></section>')
