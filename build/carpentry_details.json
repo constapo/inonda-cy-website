@@ -1139,6 +1139,234 @@
           "quote": "תארו ייעוד, מידות, מראה רצוי, חומרים, סקיצות ומקום התקנה."
         }
       }
+    },
+    "ro": {
+      "ui": {
+        "title": "Tâmplărie și lucrări din lemn la comandă în Cipru",
+        "short": "Tâmplărie și lucrări personalizate",
+        "intro": "Tâmplărie la comandă, reparații și instalare pentru locuințe, proprietăți închiriate și spații comerciale din Cipru. Fiecare proiect este evaluat și măsurat înaintea unei oferte scrise, în funcție de fezabilitate.",
+        "browse": "Descoperă cele zece specializări",
+        "materialsTitle": "Materiale, feronerie și finisaje",
+        "materialsIntro": "Materialul potrivit depinde de utilizare: lemnul masiv oferă fibră naturală, panourile stratificate pot oferi stabilitate, placajul are structură în straturi. Plăcile rezistente la umiditate cer condiții adecvate; lacurile, vopselele, fixările și suporturile trebuie să fie compatibile.",
+        "scope": "Ce putem fabrica, monta sau restaura",
+        "measurement": "Măsurători și planificare",
+        "materials": "Alegerea materialelor și a designului",
+        "issues": "Probleme frecvente și evaluare",
+        "installation": "Pregătire și instalare",
+        "care": "Finisare și întreținere",
+        "safety": "Siguranță și fezabilitate",
+        "quote": "Ofertă scrisă personalizată",
+        "quoteNote": "Preț la cerere — ofertă personalizată. Lucrările de tâmplărie la comandă nu au preț universal fix. Dimensiunile, designul, materialul, feroneria, fabricația, finisajul și montajul se evaluează împreună. Oferta scrisă urmează măsurătorile și inspecția, dacă este necesară; lucrările încep doar după aprobare.",
+        "process": "Etapele proiectului",
+        "steps": [
+          "Descrieți lucrarea și destinația ei.",
+          "Trimiteți dimensiuni aproximative, fotografii sau desene.",
+          "Discutați materialele, finisajul și feroneria.",
+          "Programați inspecția și măsurătorile finale când este necesar.",
+          "Confirmați scopul, materialele și detaliile de instalare.",
+          "Primiți o ofertă scrisă individuală.",
+          "Aprobați oferta înainte de începerea lucrărilor.",
+          "Fabricație, instalare, verificare și predare."
+        ],
+        "details": "Servicii de tâmplărie detaliate",
+        "serviceTitle": "Specializări de tâmplărie",
+        "estimator": "Creează o cerere de tâmplărie",
+        "estimatorNote": "Deschide secțiunea potrivită din estimatorul INONDA. Proiectele la comandă necesită ofertă individuală, nu un preț final automat.",
+        "quoteButton": "Solicită ofertă pentru tâmplărie",
+        "contact": "Programează o inspecție",
+        "related": "Servicii INONDA asociate",
+        "faq": "Întrebări frecvente",
+        "questions": [
+          "Ce lucrări sunt incluse în această categorie?",
+          "Ce material și finisaj se potrivesc?",
+          "Ce dimensiuni și detalii trebuie să trimit?",
+          "Se poate repara sau modifica o construcție existentă?"
+        ],
+        "requestDetails": "Pentru o evaluare corectă trimiteți localitatea, descrierea, dimensiunile în cm, cantitatea, materialul preferat, finisajul, feroneria și fotografii sau desene. Vă confirmăm dacă este necesară o vizită.",
+        "repairRule": "Reparațiile mici sau urgente se supun condițiilor contractului de întreținere existent. Nu presupuneți un serviciu de urgență individual nelimitat.",
+        "compliance": "Lucrările structurale, cu cerințe de foc, securitate sau reglementate necesită specificații, verificări și aprobări adecvate. Nu se presupune certificarea fără dovezi.",
+        "workTypes": "Sunt posibile fabricația, înlocuirea, repararea, reglarea și restaurarea, în funcție de proiect.",
+        "source": "Explorează toate lucrările de tâmplărie la comandă",
+        "return": "Înapoi la toate serviciile de tâmplărie",
+        "more": "Detalii serviciu",
+        "materialLabel": "Opțiuni de materiale",
+        "notFixed": "Fără listă publică de prețuri fixe",
+        "scopeFoot": "Fezabilitatea, furnizarea și condițiile de montaj sunt confirmate prin oferta individuală scrisă.",
+        "siteTitle": "Planificare adaptată locației",
+        "requestPhotos": "Trimiteți fotografii și măsurători disponibile. Nu distribuiți date personale sensibile prin linkuri publice."
+      },
+      "entries": {
+        "doorsFrames": {
+          "scope": [
+            "Uși din lemn de interior și exterior, la comandă",
+            "Uși simple, duble, batante și glisante unde sunt potrivite",
+            "Tocuri, pervazuri, praguri și elemente ornamentale",
+            "Uși cu panouri, plane sau cu vitraj adecvat",
+            "Balamale, încuietori, mânere și reglaje",
+            "Reparații parțiale, înlocuiri și refinisare"
+          ],
+          "material": "Lemnul masiv, cel stratificat, furnirul și plăcile adecvate au aspect și stabilitate diferite. Finisajul, geamul și feroneria trebuie alese în funcție de utilizare și expunere.",
+          "measure": "Furnizați lățimea și înălțimea golului, grosimea peretelui, sensul de deschidere, spațiul deasupra pardoselii și starea tocului. Verificați mobilierul vecin și trecerile.",
+          "issues": "Frecarea, lăsarea ușii, marginile umflate, tocurile fisurate și broaștele defecte necesită diagnosticare. Uneori reglajul este preferabil înlocuirii complete.",
+          "install": "Verificăm punctele de fixare, pragul, balamalele, încuietoarea și finisajele vecine. La predare testăm funcționarea sigură și lină.",
+          "care": "Curățați cu produse compatibile, verificați periodic balamalele, șuruburile, muchiile și finisajul; ușile exterioare necesită întreținere în funcție de vreme.",
+          "safety": "Nu pretindem rezistență la foc sau securitate certificată fără produse documentate, componente compatibile și instalare corespunzătoare.",
+          "quote": "Trimiteți dimensiunile golului, fotografii din ambele părți și ale tocului, sensul de deschidere, modelul, cantitatea și tipul încuietorii."
+        },
+        "timberWindows": {
+          "scope": [
+            "Rame și cercevele din lemn la comandă",
+            "Obloane și jaluzele tradiționale din lemn",
+            "Înlocuirea și repararea locală a pieselor",
+            "Balamale, închizători, garnituri și reglaje",
+            "Recondiționarea straturilor protectoare",
+            "Restaurarea ramelor existente dacă starea permite"
+          ],
+          "material": "Specia de lemn și finisajul exterior se aleg în funcție de soare, ploaie și aerul sărat. Mișcarea lemnului din cauza umidității trebuie luată în calcul.",
+          "measure": "Sunt necesare dimensiunile golului, configurația cercevelelor, grosimea ramei, geamul, sensul deschiderii, glaful și drenajul. Inspectăm interiorul și exteriorul.",
+          "issues": "Putrezirea îmbinărilor, cercevelele blocate, vopseaua exfoliată, garniturile uzate și urmele de apă cer evaluare; deteriorarea extinsă poate necesita înlocuire.",
+          "install": "Verificăm drenajul, etanșarea, rosturile de mișcare, fixările și aerisirea. Performanța depinde de ansamblul ferestrei montate.",
+          "care": "Curățați drenajul, verificați garniturile și refaceți finisajul de protecție, mai ales în zonele de coastă.",
+          "safety": "Nu promitem performanțe termice, acustice, la vânt sau de securitate fără documente pentru produs și vitraj.",
+          "quote": "Trimiteți fotografii din interior și exterior, dimensiuni, numărul de cercevele, cerințele de vitraj, locul defectului și finisajul dorit."
+        },
+        "kitchenCabinets": {
+          "scope": [
+            "Corpuri de bază, suspendate și înalte de bucătărie",
+            "Dulapuri utilitare și pentru chiuvetă",
+            "Fronturi, sertare, balamale și glisiere",
+            "Sisteme extractibile și soluții de colț",
+            "Corpuri pentru electrocasnice, cu ventilație",
+            "Refacerea și adaptarea dulapurilor existente"
+          ],
+          "material": "Melamina, placajul, MDF-ul rezistent la umiditate și lemnul masiv se aleg după umezeală, greutate și finisaj. Feroneria trebuie dimensionată pentru sarcina reală.",
+          "measure": "Trimiteți planul încăperii, înălțimea, lungimea mobilierului, modelele electrocasnicelor, poziția apei și a electricității și spațiul de deschidere a ușilor.",
+          "issues": "Corpurile umflate sub chiuvetă, canturile desprinse, ușile strâmbe și glisierele defecte impun verificarea carcasei înainte de înlocuirea fronturilor.",
+          "install": "Coordonăm lucrările cu instalatorul și electricianul dacă este necesar. Corpurile suspendate se fixează în suport potrivit, păstrând accesul și ventilația.",
+          "care": "Ștergeți imediat apa, protejați canturile și întrețineți mecanismele conform specificațiilor. Reglați balamalele când fronturile se deplasează.",
+          "safety": "Corpurile grele necesită evaluarea peretelui și a ancorelor. Lucrările la gaz, curent și țevi sunt atribuții ale specialiștilor respectivi.",
+          "quote": "Trimiteți schiță, dimensiuni, modele de electrocasnice, fronturi preferate, detalii de blat și fotografii."
+        },
+        "wardrobes": {
+          "scope": [
+            "Dulapuri încastrate și independente la dimensiune",
+            "Uși batante sau glisante",
+            "Dressinguri și bare pentru haine",
+            "Sertare, rafturi și organizatoare",
+            "Depozitare sub scări și în nișe",
+            "Reconfigurare, înlocuire uși și reparații glisiere"
+          ],
+          "material": "Melamina, MDF-ul, placajul și lemnul masiv diferă prin rezistența la umiditate și opțiunile de finisare. Greutatea ușii și calitatea șinelor influențează durata de utilizare.",
+          "measure": "Măsurați lățimea între pereți, înălțimea, adâncimea și accesul pentru montaj. Notați plintele, prizele, podeaua denivelată și cerințele de aerisire.",
+          "issues": "Ușile care se blochează, rafturile încovoiate, șinele uzate și umezeala interioară pot indica probleme de feronerie, suprasarcină sau perete.",
+          "install": "Verificăm punctele de ancorare și posibilitatea transportului pieselor mari. Proiectăm ținând cont de neregularitățile pereților și pardoselii.",
+          "care": "Curățați șinele, evitați supraîncărcarea, asigurați aerisirea și rezolvați umiditatea înainte de instalare.",
+          "safety": "Dulapurile înalte pot necesita ancorare anti-răsturnare. Nu se acoperă igrasia activă sau instalațiile fără verificare.",
+          "quote": "Trimiteți schița camerei, dimensiuni, tipul ușilor, numărul de sertare și zone de agățare, fotografii cu obstacole."
+        },
+        "fittedFurniture": {
+          "scope": [
+            "Biblioteci și rafturi făcute la comandă",
+            "Birouri și spații de lucru integrate",
+            "Corpuri TV și vitrine",
+            "Recepții și mobilier comercial",
+            "Mobilier pentru nișe și sub ferestre",
+            "Reparația și adaptarea mobilierului fix"
+          ],
+          "material": "Grosimea plăcii, canturile, finisajul și prinderile depind de deschidere și sarcină. Placajul, MDF-ul, lemnul masiv și furnirul au rigiditate și aspect diferite.",
+          "measure": "Indicați lățimea, înălțimea, adâncimea, greutatea estimată, dimensiunile echipamentelor, prizele și cablurile. Măsurați peretele în mai multe puncte.",
+          "issues": "Rafturile încovoiate, consolele slăbite și mobilierul instabil cer evaluarea încărcării și a peretelui, nu doar îmbunătățiri cosmetice.",
+          "install": "Alegem ancore potrivite suportului și păstrăm accesul la cabluri, evacuarea căldurii și posibilitatea întreținerii.",
+          "care": "Distribuiți greutatea pe suprafețele sprijinite, curățați conform finisajului și verificați periodic fixările.",
+          "safety": "Mobilierul greu prins pe perete impune evaluarea suportului și a ancorelor; capacitatea portantă nu se deduce din dimensiuni.",
+          "quote": "Trimiteți dimensiuni, încărcări estimate, imagini ale peretelui, poziția prizelor și exemple de design."
+        },
+        "panelling": {
+          "scope": [
+            "Pereți accent cu lamele din lemn",
+            "Lambriuri și profile decorative",
+            "Plinte, pervazuri și ornamente",
+            "Placări cu acces la zone tehnice",
+            "Panouri furniruite și finisaje vopsite",
+            "Restaurarea profilelor din lemn deteriorate"
+          ],
+          "material": "Lemnul masiv, furnirul, placajul și MDF-ul se aleg după umiditate, rezistență și finisare. Lemnul autentic este diferit de serviciile PVC, WPC sau HPL.",
+          "measure": "Măsurați pereții, colțurile, deschiderile, prizele și iluminatul. Verificați umiditatea, planeitatea și aderarea finisajului vechi înainte de montaj.",
+          "issues": "Panourile desprinse, rosturile deschise, muchiile umflate, mucegaiul și fisurile pot arăta infiltrații sau prinderi nepotrivite. Cauza se rezolvă înainte de placare.",
+          "install": "Planificăm rosturi de dilatare, fixări adecvate și acces la prize și trape de inspecție. Nu se ascund instalațiile care cer service.",
+          "care": "Curățați în funcție de lac sau vopsea, evitați umezeala prelungită și refaceți protecția la uzură.",
+          "safety": "Cerințele de reacție la foc sau acustice necesită sisteme testate. Nu acoperim pereți umezi fără remediere.",
+          "quote": "Trimiteți fotografii și dimensiuni ale pereților, prize, model, nuanță de lemn și detalii despre umiditate."
+        },
+        "stairs": {
+          "scope": [
+            "Trepte, contratrepte și placări din lemn",
+            "Reparații ale scârțâitului și uzurii",
+            "Mâini curente, stâlpi și ornamente",
+            "Elemente de balustradă din lemn",
+            "Șlefuire și recondiționarea finisajului",
+            "Înlocuirea componentelor deteriorate când este posibil"
+          ],
+          "material": "Esențele tari, lemnul stratificat și finisajele cu aderență adecvată se aleg după uzură, sarcină și întreținere. Placarea decorativă diferă de realizarea unei structuri portante.",
+          "measure": "Notați adâncimea treptelor, înălțimea contratreptelor, lățimea scării, podestele, înălțimea balustradei și fixările. Modificările structurale cer expertiză.",
+          "issues": "Treptele libere, crăpăturile, scârțâitul, muchiile alunecoase și mâinile curente instabile creează risc de cădere; vopsirea nu rezolvă problemele de structură.",
+          "install": "Modificările geometriei, balustradelor sau suportului se evaluează profesional; se planifică accesul sigur pe durata lucrărilor.",
+          "care": "Păstrați treptele curate și uscate, verificați fixările și refaceți finisajele potrivite când este nevoie.",
+          "safety": "Scările și balustradele sunt elemente esențiale de siguranță; sarcinile, dimensiunile și autorizațiile se verifică potrivit normelor aplicabile în Cipru.",
+          "quote": "Trimiteți imagini cu întreaga scară, defectele de aproape, dimensiuni, finisajul dorit și eventualele modificări structurale."
+        },
+        "outdoorCarpentry": {
+          "scope": [
+            "Decking și terase din lemn",
+            "Pergole și ecrane de grădină",
+            "Porți, garduri și panouri de intimitate",
+            "Bănci, depozitare și jardiniere",
+            "Recondiționarea lemnului expus la vreme",
+            "Construcții exterioare personalizate"
+          ],
+          "material": "Lemnul tratat, esențele tari, lemnul termotratat și compozitele se aleg în funcție de soare, umiditate și întreținere. Fixările trebuie să reziste la coroziune.",
+          "measure": "Indicați lungimea, lățimea, înălțimea, nivelul terenului, drenajul, vântul, soarele, limitele parcelei și destinația. Pot fi necesare fundații sau autorizații.",
+          "issues": "Scândurile deformate, așchiile, stratul de protecție decolorat, putrezirea și prinderile slăbite impun controlul structurii de sub ele.",
+          "install": "Planificăm ventilația, distanța față de solul umed, scurgerea apei, suporturile și ancorarea la vânt și sarcină.",
+          "care": "Inspectați protecția și piesele metalice după expunerea la soare și sare; îndepărtați resturile din zonele de drenaj.",
+          "safety": "Deckingul ridicat, pergolele și modificările de hotar pot necesita inginer și aprobări. Nu promitem absența întreținerii.",
+          "quote": "Trimiteți dimensiunile terenului, fotografii, expunerea la vânt, materialul, utilizarea și orice plan."
+        },
+        "carpentryRepairs": {
+          "scope": [
+            "Reglaje de uși și balamale",
+            "Reparații ale fronturilor și glisierelor sertarelor",
+            "Reparații ale șinelor și rafturilor de dulap",
+            "Înlocuirea porțiunilor de lemn deteriorate",
+            "Stabilizarea mobilierului și modificări minore",
+            "Restaurarea pieselor existente când este potrivit"
+          ],
+          "material": "Verificăm dacă materialul și feroneria actuală pot fi păstrate. Piesa de schimb trebuie să corespundă ca grosime, fixare și finisaj unde este posibil.",
+          "measure": "Trimiteți fotografii de aproape și de ansamblu, dimensiuni, material, tip de balama și acces. Explicați cum a apărut defectul.",
+          "issues": "Balamalele slăbite, marginile umflate, sertarele blocate și îmbinările crăpate au cauze diferite. Verificăm umezeala și suportul înainte de înlocuire.",
+          "install": "Optăm pentru reglaj, piesă nouă, consolidare sau reconstrucție după starea obiectului și posibilitățile de acces.",
+          "care": "Mențineți șinele curate, evitați suprasarcina și remediați prompt scurgerile sau umiditatea.",
+          "safety": "Intervențiile mici sau urgente respectă condițiile contractului existent de întreținere. Nu se promit vizite urgente individuale sau prețuri fixe.",
+          "quote": "Trimiteți fotografii detaliate și generale, materialul, dimensiunile, istoricul problemei, zona și existența unui contract de întreținere."
+        },
+        "otherCustom": {
+          "scope": [
+            "Mobilier neobișnuit și piese unice",
+            "Compartimentări, vitrine și tâmplărie specială",
+            "Adaptări ale mobilierului existent",
+            "Depozitare pentru spații arhitecturale dificile",
+            "Proiecte care combină mai multe categorii",
+            "Evaluarea fezabilității unor concepte aparte"
+          ],
+          "material": "Materialul, finisajul și prinderea se aleg după funcție, rezistență, umiditate și buget. Uneori sunt necesare mostre sau prototipuri înainte de aprobare.",
+          "measure": "Furnizați schițe cu lățimea, înălțimea, adâncimea, spațiile de trecere, utilizarea, greutatea și fotografii. Marcați dimensiunile încă neconfirmate.",
+          "issues": "Proiectele speciale pot avea acces dificil, suporturi slabe sau materiale nepotrivite. Verificăm montajul, utilizarea și reparabilitatea înainte de angajament.",
+          "install": "Evaluăm transportul, accesul, ordinea asamblării, ancorarea și contactul cu instalațiile; colaborăm cu alte specialități când este necesar.",
+          "care": "Instrucțiunile de întreținere depind de materialul și finisajul agreat; nu formulăm promisiuni de durabilitate fără bază.",
+          "safety": "Fezabilitatea se stabilește pentru fiecare proiect. Nu orice idee poate fi construită; siguranța, accesibilitatea și aprobările au prioritate.",
+          "quote": "Descrieți scopul, dimensiunile, aspectul, materialele, schițele și locul instalării."
+        }
+      }
     }
   }
 }
