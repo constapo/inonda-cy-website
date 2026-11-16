@@ -159,7 +159,7 @@ T = {
   ],
 },
 "contract-repairs": {
-  "name": "Reparații mici cu contract de mentenanță", "short": "Doar pentru clienții cu contract de mentenanță. Lista cu lucruri mărunte: uși, încuietori, rafturi, montaj mobilă, silicon, galerii de perdele, televizor pe perete și altele.",
+  "name": "Reparații pentru proprietăți și lucrări de întreținere", "short": "Lista cu lucruri mărunte: uși, încuietori, rafturi, montaj mobilă, silicon, galerii de perdele, televizor pe perete și altele.",
   "title": "Reparații pentru proprietăți și lucrări de întreținere | INONDA LTD",
   "desc": "Reparații de proprietăți în Cipru: uși, ferestre, încuietori, feronerie, etanșare, mobilier și întreținere.",
   "h1": "Reparații pentru proprietăți și lucrări de întreținere",
@@ -179,7 +179,7 @@ T = {
   ],
 },
 "emergency-repairs": {
-  "name": "Reparații urgente cu contract de mentenanță", "short": "Doar pentru clienții cu contract de mentenanță. Țevi sparte, inundații la vecini, căderi de curent, încuietori stricate și daune de furtună, puse rapid în siguranță.",
+  "name": "Evaluarea daunelor urgente și reparații", "short": "Țevi sparte, inundații la vecini, căderi de curent, încuietori stricate și daune de furtună, puse rapid în siguranță.",
   "title": "Evaluarea daunelor urgente și reparații | INONDA LTD",
   "desc": "Evaluarea daunelor la proprietăți în Cipru: infiltrații, încuietori, electricitate și daune de furtună.",
   "h1": "Evaluarea daunelor urgente și reparații",
@@ -193,7 +193,7 @@ T = {
   ],
   "notes": ["Scurgere de apă? Închideți robinetul general și opriți curentul în zonele ude înainte să ajungem.", "Faceți fotografii și filmări ale daunelor pentru asigurator înainte de a muta ceva.", "Putem oferi un raport scris despre cauză și reparație pentru dosarul de asigurare."],
   "faqs": [
-    ("Cât de repede puteți veni?", "Intervențiile urgente sunt pentru clienții cu contract de mentenanță. Tratăm urgențele cu prioritate și ne propunem să ajungem în aceeași zi în Nicosia. Timpul depinde de zonă și de ora apelului; vă spunem mereu sincer când ajungem."),
+    ("Cât de repede puteți veni?", "Trimiteți descrierea problemei și locația. Evaluăm urgența și disponibilitatea înainte de o vizită. În caz de pericol imediat, contactați serviciile de urgență."),
     ("Costă mai mult intervențiile urgente?", "Apelurile urgente și cele în afara programului pot avea o taxă de deplasare. Vă anunțăm înainte să venim."),
     ("Mă ajutați cu dosarul de asigurare?", "Da, oferim fotografii și un raport scris despre cauză și lucrările efectuate."),
   ],
